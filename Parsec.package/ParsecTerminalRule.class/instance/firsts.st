@@ -1,4 +1,4 @@
 accessing
 firsts
 
-	^ { self regExpr }
+	^ firsts ifNil: [self computeFirsts]

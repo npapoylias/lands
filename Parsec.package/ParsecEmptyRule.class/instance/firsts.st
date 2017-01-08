@@ -1,4 +1,4 @@
 filtering
 firsts
 
-	^ { self name }
+	^ firsts ifNil: [ self computeFirsts]
