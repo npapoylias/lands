@@ -6,7 +6,8 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"array" ],
+		"array",
+		"regExpr" ],
 	"name" : "ParsecDFAArray",
 	"pools" : [
 		 ],

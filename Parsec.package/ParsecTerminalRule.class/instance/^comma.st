@@ -1,4 +1,4 @@
 ops
 , aString
 
-	rightHandSide last addLast: aString asTotRegex asDFA
+	rightHandSide last addLast: (aString asParsecRegex asDFA regExpr: aString)

@@ -1,4 +1,4 @@
 filtering
 computeFirsts
 
-	^ firsts := { self name }
+	^ firsts := { self name } asOrderedCollection

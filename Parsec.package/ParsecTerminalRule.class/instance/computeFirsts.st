@@ -1,4 +1,4 @@
 accessing
 computeFirsts
 
-	^ firsts := { self regExpr }
+	^ firsts := { self regExpr } asOrderedCollection

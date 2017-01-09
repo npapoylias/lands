@@ -2,7 +2,6 @@ filtering
 follow
 
 	^ follow 
-		ifNil: [ follow := Set new ] 
-""
+		ifNil: [ follow := Set new ]
 	
 	

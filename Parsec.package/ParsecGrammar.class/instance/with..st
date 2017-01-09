@@ -11,7 +11,7 @@ with: aRuleCollection
 		rule flattenFirsts size])] whileTrue. 
 	"ie run as long as there is nothing to add -- recheck how this works with memoization"
 	size := 0.
-	(self at: #start) follow add: (self at: #Eof) flattenFirsts.
+	(self at: #start) follow addAll: (self at: #Eof) flattenFirsts.
 	[size ~= (size := self values sum: [:rule |
 		"self halt."
 		rule computeFollow. 

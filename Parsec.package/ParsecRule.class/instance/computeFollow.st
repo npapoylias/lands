@@ -11,10 +11,10 @@ computeFollow
 		1 to: rule size do: [ :index | 
 			|left right|
 			left := rule at: index.
-			right := rule at: index + 1 ifAbsent: [self name] "last one".
-			(self followFor: left) 
-				addAll: ((self flattenFirstsFor: right) select: [ :r |( r == #e) not ]).
-			((lastEpsilon = rule size and: [ index >= firstEpsilon ]) or: [ index = rule size ])
+			right := rule at: index + 1 ifAbsent: [nil] "last one".
+			right ifNotNil: [(self followFor: left) 
+				addAll: ((self flattenFirstsFor: right) select: [ :r | ( r == #e) not ])].
+			((lastEpsilon = rule size and: [ index + 1 >= firstEpsilon ]) or: [ index = rule size ])
 				ifTrue: [ (self followFor: left) addAll: self follow ] 
 			]
 		]			
