@@ -16,7 +16,8 @@
 		"iregExpr",
 		"directRefs",
 		"firsts",
-		"follow" ],
+		"follow",
+		"canBeEmpty" ],
 	"name" : "ParsecRule",
 	"pools" : [
 		 ],

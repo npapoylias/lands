@@ -2,6 +2,6 @@ filtering
 followAsStrings
 
 
-	^ self follow collect: [ :f | f isString ifTrue: [ f ] ifFalse: [  f regExpr ] ]
+	^ self follow collect: [ :f | f isEmptyOrEof ifTrue: [ f name ] ifFalse: [  f regExpr regExpr ] ]
 	
 	

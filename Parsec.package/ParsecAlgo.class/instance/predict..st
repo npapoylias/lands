@@ -5,5 +5,5 @@ predict: aState
 		ifTrue: [ ^ self forkToHandle: aState ]."
 	
 
-	charts currentAddAll: 
-		(aState rightHandSideAsNewStatesOn: aState to)
+	charts currentAddAll: (self alternativesFor: aState)
+		

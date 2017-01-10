@@ -5,5 +5,6 @@ computeFirsts
 	rightHandSide do: [ :rule | 
 		firsts add: (self firstForRightHandSide: rule)
 	].
+	canBeEmpty := firsts anySatisfy: [ :r | r isEmpty ].
 	^ firsts	
 	

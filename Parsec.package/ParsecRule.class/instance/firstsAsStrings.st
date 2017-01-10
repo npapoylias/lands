@@ -2,6 +2,6 @@ filtering
 firstsAsStrings
 
 
-	^ self flattenFirsts collect: [ :f | f isString ifTrue: [ f ] ifFalse: [  f regExpr ] ]
+	^ self flattenFirsts collect: [ :f | f isEmptyOrEof ifTrue: [ f name ] ifFalse: [  f regExpr regExpr ] ]
 	
 	

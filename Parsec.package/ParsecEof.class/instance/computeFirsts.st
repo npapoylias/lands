@@ -1,4 +1,4 @@
 accessing
 computeFirsts
 
-	^ firsts := { self name } asOrderedCollection
+	^ firsts := { {self} asSet } asOrderedCollection
