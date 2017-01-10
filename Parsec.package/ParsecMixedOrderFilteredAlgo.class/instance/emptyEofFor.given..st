@@ -6,11 +6,11 @@ emptyEofFor: rule given: aState
 					(aState
 						asScannerStateFrom: readingPosition
 						to: readingPosition
-						withIndex: 1) ]
-		ifFalse: [ input size = aState to
+						withIndex: 1). true ]
+		ifFalse: [ input size == aState to
 				ifTrue: [ charts
 						nextAdd:
 							(aState
 								asScannerStateFrom: readingPosition
 								to: readingPosition
-								withIndex: 1) ] ]
+								withIndex: 1). true ] ifFalse: [ false ] ]
