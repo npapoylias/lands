@@ -12,4 +12,4 @@ firstForRightHandSide: rule
 			index := index + 1 
 		].
 	
-	^ totalFirsts deepFlatten asSet
+	^ totalFirsts deepFlatten asSet asOrderedCollection
