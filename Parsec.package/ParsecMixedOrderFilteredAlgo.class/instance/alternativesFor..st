@@ -6,7 +6,7 @@ alternativesFor: aState
 	firsts := currentRule firsts.
 	1 to: firsts size do: [ :j | 
 		| alternative |
-		alternative := firsts at: j. "too expensive should be done before"
+		alternative := firsts at: j.
 		1 to: alternative size do: [ :i | 
 			|rule|
 			rule := alternative at: i. 
