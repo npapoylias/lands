@@ -1,5 +1,5 @@
 as yet unclassified
 expecting: name at: start
 	^ to == start
-		and: [ self isIncomplete and: [ (rightHand at: dotPosition + 1) == name ]]
+		and: [ self isIncomplete and: [ self ruleAtDot name == name ]]
 			
