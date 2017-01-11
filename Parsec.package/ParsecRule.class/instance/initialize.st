@@ -2,10 +2,9 @@ accessing
 initialize
 
 	super initialize.
-	rightHandSide := OrderedCollection new.
-	rightHandSide add: OrderedCollection new.
-	childRules := OrderedCollection new.
-	directRefs := Dictionary new.
+	rightHandSide := ParsecCollection new.
+	rightHandSide add: ParsecCollection new.
+	childRules := ParsecCollection new.
 	isAnd := false. 
 	isNot := false. 
 	ordered := false. "by default -- changes with \"

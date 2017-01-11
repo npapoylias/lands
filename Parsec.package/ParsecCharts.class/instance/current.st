@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 current
 
-	^ self at: chartIndex
+	^ current

@@ -6,12 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"chartIndex",
-		"stateIndex",
-		"logging",
-		"current" ],
-	"name" : "ParsecCharts",
+		 ],
+	"name" : "ParsecGammaStart",
 	"pools" : [
 		 ],
-	"super" : "ParsecCollection",
+	"super" : "ParsecRule",
 	"type" : "normal" }

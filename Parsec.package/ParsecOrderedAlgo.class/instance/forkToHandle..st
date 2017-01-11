@@ -6,7 +6,7 @@ forkToHandle: aState
 	"optimizaiton: retrieve memoized terminals"
 	(forkedGrammar := grammar copy)
 		at: aState ruleAtDot name put: aState ruleAtDot copy beVanilla;
-		at: #start put: ((#start --> aState ruleAtDot name) "firsts: aState ruleAtDot firsts").
+		at: #start put: ((#start --> aState ruleAtDot name) asGammaStart "firsts: aState ruleAtDot firsts").
 
 	resultPosition := 
 		(logging
