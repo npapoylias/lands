@@ -6,5 +6,5 @@ computeFirsts
 		firsts add: (self firstForRightHandSide: rule)
 	].
 	canBeEmpty := firsts deepFlatten anySatisfy: [ :r | r isEmpty ].
-	^ firsts	
+	^ firsts := firsts	asParsecCollection.
 	

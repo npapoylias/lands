@@ -7,5 +7,5 @@ on: aRule alternative: index from: start to: finish dot: aDotPosition
 	dotPosition := aDotPosition.
 	rightHandIndex := index.
 	rightHand := rule at: rightHandIndex.
-	rule isTerminal ifFalse: [dRefRightHand := rule directRefsAt: rightHandIndex].
+	rule isTerminal ifFalse: [dRefRightHand := (rule directRefsAt: rightHandIndex)].
 	rightHandSize := rightHand size.

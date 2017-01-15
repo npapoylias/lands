@@ -1,5 +1,5 @@
-ops
+logical operations
 | aSymbolOrString
 
-	rightHandSide addLast: OrderedCollection new.
+	rightHandSide addLast: ParsecCollection new.
 	self , aSymbolOrString

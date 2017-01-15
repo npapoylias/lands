@@ -1,5 +1,5 @@
-accessing
+adding
 anySatisfy: aBlock
 
-	1 to: currentSize do: [:i | (aBlock value: (self at: i)) ifTrue: [ ^ true ] ].
+	self do: [:each | (aBlock value: each) ifTrue: [^ true]].
 	^ false

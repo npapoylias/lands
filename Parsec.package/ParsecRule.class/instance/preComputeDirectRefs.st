@@ -5,6 +5,6 @@ preComputeDirectRefs
 	1 to: rightHandSide size do: [ :i | 
 		directRefs 
 					at: i 
-					put: ((rightHandSide at: i) collect: [ :symbol | symbol isString ifTrue: [ grammar at: symbol ] ifFalse: [ symbol ] ]) ]. 
+					put: ((rightHandSide at: i) collect: [ :symbol | symbol isString ifTrue: [ grammar at: symbol ] ifFalse: [ symbol ] ])  ]. 
 	"directRefs := directRefs values asOrderedCollection asArray."
 	
