@@ -16,5 +16,6 @@ with: aRuleCollection
 		"self halt."
 		rule computeFollow. 
 		rule follow size])] whileTrue.
+	self values do: [ :v | v computePredict ].
 	"lazy compute firsts now
 	that all rules are in place and before parsing"

@@ -17,7 +17,8 @@
 		"directRefs",
 		"firsts",
 		"follow",
-		"canBeEmpty" ],
+		"canBeEmpty",
+		"predict" ],
 	"name" : "ParsecRule",
 	"pools" : [
 		 ],
