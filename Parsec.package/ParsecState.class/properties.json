@@ -17,7 +17,6 @@
 		"ruleAtDot",
 		"rightHand",
 		"rightHandSize",
-		"hash",
 		"dRefRightHand" ],
 	"name" : "ParsecState",
 	"pools" : [
