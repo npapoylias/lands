@@ -1,5 +1,5 @@
-adding
+enumerating
 anySatisfy: aBlock
 
-	self do: [:each | (aBlock value: each) ifTrue: [^ true]].
+	1 to: currentSize do: [:i | (aBlock value: (self at: i)) ifTrue: [^ true]].
 	^ false

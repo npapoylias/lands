@@ -6,7 +6,10 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"regExpr" ],
+		"regExpr",
+		"lastInput",
+		"lastResult",
+		"lastPosition" ],
 	"name" : "ParsecTerminalRule",
 	"pools" : [
 		 ],

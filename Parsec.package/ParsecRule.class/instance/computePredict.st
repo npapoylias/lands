@@ -2,7 +2,7 @@ filtering
 "protocol: filtering"
 computePredict
 
-	predict := firsts 
+	^ predict := self firsts 
 		collect: [ :f | 
 			(f anySatisfy: [ :r | r isEmpty ])
 				ifTrue: [ (f select: [ :r | r isEmpty not ]) union: follow ]

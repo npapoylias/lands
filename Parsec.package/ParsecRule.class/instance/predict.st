@@ -1,6 +1,6 @@
 filtering
 predict
 
-	^ predict ifNil: [predict := self computePredict]
+	^ predict ifNil: [self computePredict]
 		
 	

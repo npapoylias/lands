@@ -1,24 +1,26 @@
 as yet unclassified
 alternativesFor: aState
-
-	| firsts currentRule |
 	
-	alternatives := ParsecCollection new.
-
-	currentRule := aState ruleAtDot.
-	firsts := currentRule firsts.
-	1 to: firsts size do: [ :j | 
-		| alternative |
-		alternative := firsts at: j.
-		1 to: alternative size do: [ :i | 
-			|rule "added"|
-			rule := alternative at: i. 
-			rule isEmptyOrEof
-				ifTrue: [ "added :=" self emptyEofFor: rule index: j given: aState ]
-				ifFalse: [ "added :="  self try: rule index: j for: aState]. 
-			"currentRule isOrdered & added ifTrue: [ ^ alternatives ]." "LL(1) ?"
-		]
+	"inlined super and filter alternatives"
+	
+	| newStates rule |
+	
+	newStates := ParsecCollection new.
+	rule := aState ruleAtDot.
+	
+	1 to: rule rightHandSide size do: [ :i | 
+		((rule directRefsAt: i) first isNot | (self check: (rule predict at: i) at: aState to))
+				ifTrue: [  
+					newStates
+						add:
+						((ParsecState
+							on: aState ruleAtDot
+							alternative: i
+							from: aState to
+							to: aState to
+							dot: 0)
+							fromTerminal: aState toTerminal;
+							toTerminal: aState toTerminal) ] 
 	].
-
-	^ alternatives
-	
+				
+	^ newStates
