@@ -13,7 +13,7 @@ matchesStreamPrefix: s
 	] whileTrue: [ row := array at: index].
 	
 	^ endPos 
-		ifNil: [ s position: initPosition. false] "maybe in a end state"
-		ifNotNil: [ s position: endPos. true ]
+		ifNil: [ s directSetPos: initPosition. false] "maybe in a end state"
+		ifNotNil: [ s directSetPos: endPos. true ]
 
 	
