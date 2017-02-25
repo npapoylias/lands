@@ -2,7 +2,7 @@ tests
 testJson
 
 	| tJSParser  |
-	tJSParser := ParsecJsonLoggingParser new. "remember that the grammar is created its time -- for bench etc"
+	tJSParser := ParsecJsonLoggingGrammar new. "remember that the grammar is created its time -- for bench etc"
 
 	charts := tJSParser parse: '{ "firstName" : "John",
 "lastName" : "Smith",

@@ -1,5 +1,7 @@
-as yet unclassified
+initialization
 initialize
 
-	previousStates := ParsecCollection new.
+	childrenStates := OrderedCollection new.
+	alternativeSelf := OrderedCollection new.
+	values := OrderedCollection new. 
 	fromTerminal := toTerminal := 0.

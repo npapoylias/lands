@@ -2,7 +2,7 @@ accessing
 viewWithLayoutCoefficient: forceCoefficient
 
 	
-	|anchors before edges elements v data e label |
+	|anchors before edges elements v data  |
 
 	anchors := OrderedCollection new.	
 	v := RTView new.
