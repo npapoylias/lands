@@ -2,7 +2,7 @@ tests
 testBigJson
 
 	| tJSParser  |
-	tJSParser := ParsecJsonGrammar new. "remember that the grammar is created its time -- for bench etc"
+	tJSParser := ParsecJsonParser new. "remember that the grammar is created its time -- for bench etc"
 
 	charts := tJSParser parse: '[
   {

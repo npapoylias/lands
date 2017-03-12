@@ -2,7 +2,7 @@ tests
 testBigJsonTO
 
 	| tJSParser  |
-	tJSParser := ParsecJsonGrammar new with: ParsecOrderedAlgo. "remember that the grammar is created its time -- for bench etc"
+	tJSParser := ParsecJsonParser new with: ParsecOrderedAlgo. "remember that the grammar is created its time -- for bench etc"
 
 	charts := tJSParser parse: '[
   {
