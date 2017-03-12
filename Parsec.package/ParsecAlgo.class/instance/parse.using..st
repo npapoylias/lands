@@ -1,7 +1,6 @@
 parsing
-parse: aString using: aGrammar 
+parse: aString using: aGrammar
 
-	string := aString.
 	input := aString readStream.
 	grammar := aGrammar.
 	dummyRule grammar: grammar.

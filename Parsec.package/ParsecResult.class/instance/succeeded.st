@@ -1,4 +1,0 @@
-accessing
-succeeded
-
-	^ charts succeeded

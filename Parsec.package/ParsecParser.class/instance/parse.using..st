@@ -1,8 +1,9 @@
 parsing
-parse: aString using: algoInst
-	|charts|
-	charts := (algoInst  parse: aString using: grammar). 
+parse: aString using: anAlgorithmClass
 
-	^ ParsecResult new
-		 charts: charts;
-		 value: (charts successfullTrees first valueRoot: aString withAlternatives: OrderedCollection new)
+	| algoInst |
+	algo := anAlgorithmClass.
+	algoInst := self class log 
+		ifTrue: [ algo new log ]
+		ifFalse: [ algo new ].
+	^ algoInst  parse: aString using: grammar

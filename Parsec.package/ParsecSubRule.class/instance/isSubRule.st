@@ -1,4 +1,0 @@
-testing
-isSubRule
-
-	^ true

@@ -11,8 +11,7 @@
 		"grammar",
 		"input",
 		"charts",
-		"logging",
-		"string" ],
+		"logging" ],
 	"name" : "ParsecAlgo",
 	"pools" : [
 		 ],

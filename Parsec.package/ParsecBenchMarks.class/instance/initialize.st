@@ -6,4 +6,4 @@ initialize
 	ppJsonMemoParser := PPJsonGrammar new memoized transform: [ :each | each memoized ].
 	ppcJsonParser := PP2JsonGrammar new.
 	ppcJsonMemoParser := PP2JsonGrammar new memoize transform: [ :each | each memoize ].
-	totJsonParser := ParsecJsonGrammar new.
+	totJsonParser := ParsecJsonParser new.
