@@ -18,7 +18,8 @@
 		"firsts",
 		"follow",
 		"canBeEmpty",
-		"predict" ],
+		"predict",
+		"action" ],
 	"name" : "ParsecRule",
 	"pools" : [
 		 ],

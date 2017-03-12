@@ -2,7 +2,7 @@ tests
 testJsonTA
 
 	| tJSParser  |
-	tJSParser := ParsecJsonParser new with: ParsecAlgo. "remember that the grammar is created its time -- for bench etc"
+	tJSParser := ParsecJsonGrammar new with: ParsecAlgo. "remember that the grammar is created its time -- for bench etc"
 
 	charts := tJSParser parse: '{ "firstName" : "John",
 "lastName" : "Smith",

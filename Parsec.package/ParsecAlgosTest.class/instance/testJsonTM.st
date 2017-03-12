@@ -2,7 +2,7 @@ tests
 testJsonTM
 
 	| tJSParser  |
-	tJSParser := ParsecJsonLoggingParser new with: ParsecMixedOrderAlgo. "remember that the grammar is created its time -- for bench etc"
+	tJSParser := ParsecJsonLoggingGrammar new with: ParsecMixedOrderAlgo. "remember that the grammar is created its time -- for bench etc"
 
 	charts := tJSParser parse: '{ "firstName" : "John",
 "lastName" : "Smith",

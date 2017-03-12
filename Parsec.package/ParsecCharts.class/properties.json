@@ -9,7 +9,8 @@
 		"chartIndex",
 		"stateIndex",
 		"logging",
-		"current" ],
+		"current",
+		"successfullTrees" ],
 	"name" : "ParsecCharts",
 	"pools" : [
 		 ],

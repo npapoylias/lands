@@ -1,5 +1,5 @@
 as yet unclassified
 initialize
 
-	previousStates := ParsecCollection new.
+	childrenStates := ParsecCollection new.
 	fromTerminal := toTerminal := 0.

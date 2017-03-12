@@ -1,0 +1,15 @@
+{
+	"category" : "Parsec",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"parsecState",
+		"input" ],
+	"name" : "ParsecToken",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

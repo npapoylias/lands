@@ -1,0 +1,15 @@
+{
+	"category" : "Parsec",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"charts",
+		"value" ],
+	"name" : "ParsecResult",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

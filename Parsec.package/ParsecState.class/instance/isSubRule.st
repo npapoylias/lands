@@ -1,0 +1,5 @@
+action
+isSubRule
+
+	^ rule isSubRule
+

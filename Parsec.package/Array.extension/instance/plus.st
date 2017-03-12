@@ -5,4 +5,4 @@ plus
 	
 	|name|
 	name := ('tp' , self hash asString) asSymbol.
-	^  name -->  self , {name . #| . #e} . "returns rule"
+	^  name --|>  self , {name . #| . #e} . "returns rule"
