@@ -16,7 +16,7 @@ copyStatesWaitingFor: aState from: start to: end
 				"newState previousStates add: aState."
 				newState fromTerminal: element fromTerminal; toTerminal: chartIndex - 1.
 				newState advanceDot end: end.
-				(self currentAdd: newState) "will return either the newState or the identical pre-existing"
+				(self currentAddWithState: newState) "will return either the newState or the identical pre-existing"
 					childrenStates add: aState "children from multiple trees"  
 			]
 	].
