@@ -6,7 +6,7 @@ copyStatesWaitingFor: aState from: start to: end
 	name := aState rule name.
 
 	
-	chart := (self at: aState fromTerminal + 1).
+	chart := (self at: aState fromTerminal + 1). 
 
     1 to: chart size do: [ :index |
 		element := chart at: index.
@@ -17,6 +17,6 @@ copyStatesWaitingFor: aState from: start to: end
 				newState fromTerminal: element fromTerminal; toTerminal: chartIndex - 1.
 				newState advanceDot end: end.
 				(self currentAddWithState: newState) "will return either the newState or the identical pre-existing"
-					childrenStates add: aState "children from multiple trees"  
+					childrenStatesAdd: aState "children from multiple trees"  
 			]
 	].
