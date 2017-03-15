@@ -17,7 +17,8 @@
 		"rightHand",
 		"rightHandSize",
 		"dRefRightHand",
-		"childrenStates" ],
+		"childrenStates",
+		"childrenForest" ],
 	"name" : "ParsecState",
 	"pools" : [
 		 ],
