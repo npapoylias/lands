@@ -7,14 +7,14 @@ example2
 
 	| result root |
 	result := ParsecExprGrammar new 
-		parse: '2*3+4/1' using: ParsecMixedOrderAlgo new log.
-	root := result charts last detect: [ :state | state isFinal ].
+		"should be 250" "parse: '(1*2+3/4)+(5*6+7/8)*(9*10+11/12)' using: ParsecMixedOrderAlgo new log."
+		parse: '1*2+3/4' using: ParsecMixedOrderAlgo new log.
 	"children := root perform: #childrenStates.
 	edges := root perform: #childrenPositions."
 
 	
 	^ (ParsecTree new 
-		withRootElement: root 
+		withRootElement: result value 
 		childSelector: #childrenStates 
 		edgeSelector: #childrenWithPositions;
 		view) open
