@@ -12,9 +12,11 @@ example2
 	"children := root perform: #childrenStates.
 	edges := root perform: #childrenPositions."
 
+	"this is a single multi-tree for the moment should split in a proper forest
+	using children forest"
 	
 	^ (ParsecTree new 
-		withRootElement: result value 
-		childSelector: #childrenStates 
+		withRootElement: result charts successfullRoot 
+		childSelector: #childrenStatesValues
 		edgeSelector: #childrenWithPositions;
 		view) open

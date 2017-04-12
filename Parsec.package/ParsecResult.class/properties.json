@@ -7,7 +7,7 @@
 	"commentStamp" : "",
 	"instvars" : [
 		"charts",
-		"value" ],
+		"trees" ],
 	"name" : "ParsecResult",
 	"pools" : [
 		 ],

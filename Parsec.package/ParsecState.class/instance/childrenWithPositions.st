@@ -1,4 +1,4 @@
-as yet unclassified
+drawing-should-depricate
 childrenWithPositions
 
-	^ childrenStates collect: [ :child | self -> (child from -> child to) -> child ]
+	^ childrenStates values deepFlatten collect: [ :child | self -> (child from -> child to) -> child ]
