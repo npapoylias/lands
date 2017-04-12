@@ -1,6 +1,8 @@
 action
 populate: aForest with: childOrChildren 
 
+	self halt.
+
 	childOrChildren isCollection 
 		ifFalse: [ 
 			childOrChildren rule isTerminal ifFalse: [ .
@@ -12,7 +14,7 @@ populate: aForest with: childOrChildren
 				]. "recurse in depth"
 			].
 			aForest do: [ :tree | tree add: childOrChildren ].
-			childOrChildren rule isEof ifTrue: [ ^ aForest ].
+			(childOrChildren rule isEof or: [ childOrChildren rule isEmpty ]) ifTrue: [ ^ aForest ].
 			self populate: aForest with: (childrenStates at: childOrChildren to ifAbsent: [^ aForest]).
 		]
 		ifTrue: [ 
