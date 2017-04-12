@@ -1,6 +1,7 @@
 action
 childrenForest
 
-	^ childrenForest := self populate: ParsecCollection new with: (childrenStates at: self from).
+	^ childrenForest ifNil: [childrenForest := self 
+		populate: { {  } asOrderedCollection } asOrderedCollection 
+		with: (childrenStates at: self from ifAbsent: [ ^ { {  } asOrderedCollection } asOrderedCollection  ])].
 
- 

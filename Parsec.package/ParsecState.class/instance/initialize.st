@@ -1,5 +1,5 @@
 as yet unclassified
 initialize
 
-	childrenStates := ParsecCollection new.
+	childrenStates := Dictionary new.
 	fromTerminal := toTerminal := 0.

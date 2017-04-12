@@ -7,7 +7,7 @@ example2
 
 	| result root |
 	result := ParsecExprGrammar new 
-		parse: '2*3+4' using: ParsecMixedOrderAlgo new log.
+		parse: '2*3+4/1' using: ParsecMixedOrderAlgo new log.
 	root := result charts last detect: [ :state | state isFinal ].
 	"children := root perform: #childrenStates.
 	edges := root perform: #childrenPositions."
