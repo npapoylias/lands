@@ -1,8 +1,6 @@
 action
 populate: aForest with: childOrChildren 
 
-	self halt.
-
 	childOrChildren isCollection 
 		ifFalse: [ 
 			childOrChildren rule isTerminal ifFalse: [ .
