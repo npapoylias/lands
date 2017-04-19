@@ -1,4 +1,4 @@
-accessing
+initialization
 initialize
 
 	super initialize.
@@ -8,3 +8,6 @@ initialize
 	isAnd := false. 
 	isNot := false. 
 	ordered := false. "by default -- changes with \"
+	action := Dictionary new.
+	
+	

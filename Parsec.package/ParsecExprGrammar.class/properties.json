@@ -8,10 +8,7 @@
 	"instvars" : [
 		"start",
 		"expression",
-		"number",
-		"parentheses",
-		"multiplicationOrDivision",
-		"additionOrSubstraction" ],
+		"number" ],
 	"name" : "ParsecExprGrammar",
 	"pools" : [
 		 ],

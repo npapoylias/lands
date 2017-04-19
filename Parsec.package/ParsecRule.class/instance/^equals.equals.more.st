@@ -1,6 +1,6 @@
-ops
+logical operations
 ==> aBlock
 
-	action := aBlock
+	action at: rightHandSide size put: aBlock
 	
 	
