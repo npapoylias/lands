@@ -17,7 +17,8 @@
 		"parentheses",
 		"unaryOp",
 		"action",
-		"atom" ],
+		"atom",
+		"lexicalRule" ],
 	"name" : "EPEGgrammar",
 	"pools" : [
 		 ],

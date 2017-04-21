@@ -8,7 +8,7 @@ parseCountedRepetition
 	[ (next := stream next) isDigit ] whileTrue: [ from nextPut: next ].
 	from := from contents asNumber.
 	
-	stream peek == $.
+	stream peek == $,
 		ifTrue: [  
 			stream next.
 			[ (next := stream next) isDigit ] whileTrue: [ to nextPut: next ].
