@@ -18,7 +18,8 @@
 		"unaryOp",
 		"action",
 		"atom",
-		"lexicalRule" ],
+		"lexicalRule",
+		"ruleExpressions" ],
 	"name" : "EPEGgrammar",
 	"pools" : [
 		 ],
