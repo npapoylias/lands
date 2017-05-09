@@ -1,4 +1,4 @@
 accessing
 ruleExpressions
 
-	ruleExpressions --> optionOperand , ('\||/' optionOperand) star 
+	^ ruleExpressions --> optionOperand , #('\||/' optionOperand) star 

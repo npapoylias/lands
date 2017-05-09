@@ -1,4 +1,4 @@
 accessing
 parenteses
 
-	parentheses --> '(' , ruleExpressions , ')'
+	^ parentheses --> '\(' , ruleExpressions , '\)'

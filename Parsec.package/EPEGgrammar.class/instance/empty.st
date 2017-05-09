@@ -1,5 +1,5 @@
 accessing
 empty
 
-	empty --> 'e'
+	^ empty --> 'e'
 	

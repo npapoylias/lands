@@ -1,4 +1,4 @@
 accessing
 concatOperand
 
-	concatOperand --> atom | unaryOp
+	^ concatOperand --> atom | unaryOp
