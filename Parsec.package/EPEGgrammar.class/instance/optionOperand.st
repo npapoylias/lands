@@ -1,4 +1,4 @@
 accessing
 optionOperand
 
-	optionOperand --> concatOperand plus , action opt
+	optionOperand --> concatOperand plus

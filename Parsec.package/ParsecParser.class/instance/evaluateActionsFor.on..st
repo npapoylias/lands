@@ -11,4 +11,4 @@ evaluateActionsFor: aTree on: input
 	
   ^ 	(aTree rule action keys includes: aTree rightHandIndex)
 			ifTrue: [(aTree rule action at: aTree rightHandIndex) value: childrenTokens]
-			ifFalse: [^ childrenTokens]. 
+			ifFalse: [^ childrenTokens "with: aTree for: input should be ParsecDerivation already"]. 
