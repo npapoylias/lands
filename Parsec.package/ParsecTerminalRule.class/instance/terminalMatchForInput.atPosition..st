@@ -9,5 +9,5 @@ terminalMatchForInput: input atPosition: readingPosition
 	better semantics here and in return value (for non match)"
 	^ lastResult := ((self regExpr matchesStreamPrefix: input)
 			ifTrue: [self ignoreRegExpr matchesStreamPrefix: input. input position]
-			ifFalse: [ input directSetPos: readingPosition. "returns directPos" ])
+			ifFalse: [ readingPosition])
 			
