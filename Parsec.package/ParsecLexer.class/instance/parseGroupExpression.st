@@ -17,4 +17,4 @@ parseGroupExpression
 					ifFalse: [ optionNode add: (ParsecLexerOperand new with: start) ]
 			]].
 	stream next. "eat ]"
-	^ optionNode size = 1 ifTrue: [ optionNode first ] ifFalse: [ optionNode ] "flatten"
+	^ optionNode "size = 1 ifTrue: [ optionNode first ] ifFalse: [ optionNode ]" "flatten does not work well with single char groups"
