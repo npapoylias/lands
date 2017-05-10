@@ -1,4 +1,4 @@
 *Parsec
 directSetPos: aPosition
 
-	position := aPosition
+	^ position := aPosition

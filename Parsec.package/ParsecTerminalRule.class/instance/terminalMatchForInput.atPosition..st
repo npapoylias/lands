@@ -5,8 +5,9 @@ terminalMatchForInput: input atPosition: readingPosition
 	lastInput := input. lastPosition := readingPosition.
 	readingPosition == input size 
 		ifTrue: [ ^ lastResult := readingPosition  ]. "no match already at end"		
-	input directSetPos: readingPosition. "already the case ?"
+	input directSetPos: readingPosition. "already the case -- Refactor lexer for
+	better semantics here and in return value (for non match)"
 	^ lastResult := ((self regExpr matchesStreamPrefix: input)
 			ifTrue: [self ignoreRegExpr matchesStreamPrefix: input. input position]
-			ifFalse: [ readingPosition ])
+			ifFalse: [ input directSetPos: readingPosition. "returns directPos" ])
 			
