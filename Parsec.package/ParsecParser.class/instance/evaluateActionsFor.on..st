@@ -11,14 +11,14 @@ evaluateActionsFor: aTree on: input
 			do: [ :child | |tokens|
 						tokens := (self evaluateActionsFor: child on: input).
 						tokens ifNotNil: [ 
-							child isSubRule
-						 	ifTrue: [childrenTokens addAll: tokens ]
-						 	ifFalse: [ childrenTokens add: tokens ] 
+							(aTree isSubRule and: [child isSubRule])
+						 		ifTrue: [childrenTokens addAll: tokens ]
+						 		ifFalse: [ childrenTokens add: tokens ] 
 						]
 				]. 
 	
 	childrenTokens isEmpty ifTrue: [ ^ ParsecToken new with: aTree for: input ].
-	childrenTokens size = 1 
+	(childrenTokens size = 1 and: [ aTree isSubRule not ])
 		ifTrue: [ childrenTokens := childrenTokens first ] "single token"
 		"ifFalse: [ aTree isSubRule ifTrue: [^ childrenTokens flatten] ]". 
 	
