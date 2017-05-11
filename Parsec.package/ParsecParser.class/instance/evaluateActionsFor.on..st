@@ -3,11 +3,24 @@ evaluateActionsFor: aTree on: input
 
 	|childrenTokens|
 	
-	childrenTokens := aTree childrenForest first "forests have been seperated already"
-		collect: [ :child | self evaluateActionsFor: child on: input ].
+	aTree isEmpty ifTrue: [ ^ nil ].
+	
+	childrenTokens := OrderedCollection new.
+	
+	aTree childrenForest first "forests have been seperated already"
+			do: [ :child | |tokens|
+						tokens := (self evaluateActionsFor: child on: input).
+						tokens ifNotNil: [ 
+							child isSubRule
+						 	ifTrue: [childrenTokens addAll: tokens ]
+						 	ifFalse: [ childrenTokens add: tokens ] 
+						]
+				]. 
 	
 	childrenTokens isEmpty ifTrue: [ ^ ParsecToken new with: aTree for: input ].
-	childrenTokens size = 1 ifTrue: [ childrenTokens := childrenTokens first ]. "single token"
+	childrenTokens size = 1 
+		ifTrue: [ childrenTokens := childrenTokens first ] "single token"
+		"ifFalse: [ aTree isSubRule ifTrue: [^ childrenTokens flatten] ]". 
 	
   ^ 	(aTree rule action keys includes: aTree rightHandIndex)
 			ifTrue: [(aTree rule action at: aTree rightHandIndex) value: childrenTokens]
