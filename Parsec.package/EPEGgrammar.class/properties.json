@@ -17,7 +17,9 @@
 		"parentheses",
 		"unaryOp",
 		"atom",
-		"ruleExpressions" ],
+		"ruleExpressions",
+		"delimeterStar",
+		"delimeterStaro" ],
 	"name" : "EPEGgrammar",
 	"pools" : [
 		 ],

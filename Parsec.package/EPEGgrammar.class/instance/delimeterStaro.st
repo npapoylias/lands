@@ -1,0 +1,4 @@
+accessing
+delimeterStaro
+
+	^ delimeterStaro --> '/{' , ruleExpressions , '/}'

@@ -1,4 +1,4 @@
 accessing
 ruleExpressions
 
-	^ ruleExpressions --> optionOperand , #('\||/' optionOperand) star 
+	^ ruleExpressions --> #(optionOperand '\||/') delimeterStar "optionOperand , #('\||/' optionOperand) star" 
