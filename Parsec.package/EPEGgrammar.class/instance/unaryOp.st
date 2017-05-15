@@ -1,8 +1,11 @@
 accessing
 unaryOp
 
-	^ unaryOp --> atom , '\*' | atom , '/*' "staro" "concrete examples of difference"
-		| atom , '\+' | atom , '/+' "pluso ?" "concerte example of difference"
-		| atom , '\?' | atom , '/?' "opto" "concrete example of difference"
-		| '&' , atom
-		| '!' , atom
+	^ unaryOp --> atom , '\*' ==> [ :tokens | tokens first star ] 
+		| atom , '/*' ==> [ :tokens | tokens first staro ]"staro" "concrete examples of difference"
+		| atom , '\+' ==> [ :tokens | tokens first plus ]
+		| atom , '/+' ==> [ :tokens | tokens first pluso ]"pluso ?" "concerte example of difference"
+		| atom , '\?' ==> [ :tokens | tokens first opt ]
+		| atom , '/?' ==> [ :tokens | tokens first opto ]"opto" "concrete example of difference"
+		| '&' , atom ==> [ :tokens | tokens second and ]
+		| '!' , atom ==> [ :tokens | tokens first not ]

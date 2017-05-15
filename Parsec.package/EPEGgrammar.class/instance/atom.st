@@ -1,4 +1,13 @@
 accessing
 atom
 
-	^ atom --> terminal | regExpr | id | empty | parentheses | delimeterStar | delimeterStaro
+	^ atom --> terminal ==> [ :token | |s|
+			s := (token value atAll: (2 to: token value size - 1)). 
+			(ParsecLexer new parseAsString: s) asDFA regExpr: token value.
+		]
+		| regExpr ==> [ :token | token value atAll: (2 to: token value size - 1) ]
+		| id 
+		| empty ==> [ :token | #e ]
+		| parentheses ==> [ :tokens | tokens second ]
+		| delimeterStar ==> [ :tokens | tokens second ]
+		| delimeterStaro ==> [ :tokens | tokens second ]

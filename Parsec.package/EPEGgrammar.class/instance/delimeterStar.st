@@ -1,4 +1,4 @@
 accessing
 delimeterStar
 
-	^ delimeterStar --> '{' , ruleExpressions , '}'
+	^ delimeterStar --> '\{' , ruleExpressions , '}'

@@ -1,4 +1,4 @@
 accessing
 delimeterStaro
 
-	^ delimeterStaro --> '/{' , ruleExpressions , '/}'
+	^ delimeterStaro --> '/\{' , ruleExpressions , '/}'

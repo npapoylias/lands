@@ -1,4 +1,8 @@
 ops
-, aString
+, aStringOrDfa
 
-	rightHandSide last addLast: (aString asParsecRegex asDFA regExpr: aString)
+	aStringOrDfa isString ifTrue: [  
+		rightHandSide last addLast: (aStringOrDfa asParsecRegex asDFA regExpr: aStringOrDfa)
+	] ifFalse: [ "assume DFA"
+		rightHandSide last addLast: aStringOrDfa
+	]
