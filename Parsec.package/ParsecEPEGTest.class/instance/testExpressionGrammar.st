@@ -1,11 +1,11 @@
 tests
 testExpressionGrammar
 
-	self assert: (EPEGgrammar new parse: '
+	(EPEGgrammar new parse: '
 	<expression> ::= <expression> "*" <expression>
 						| <expression> "/" <expression>
 						| <expression> "+" <expression>
 						| <expression> "-" <expression>
 						| ''[0-9]+(.[0-9]+)?''
-') results first class = ParsecRule
+') inspect
 
