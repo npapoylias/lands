@@ -1,7 +1,8 @@
 accessing
 withRec: aRuleCollection
 
-	aRuleCollection do: [ :rule | 
-		self at: rule name put: (rule grammar: self).
-		self withRec: rule tempRules "if any"
+	aRuleCollection do: [ :rule | |epegRule| 
+		epegRule := rule asEpegRule. "poly for string (without actions) and ParsecRule"
+		self at: epegRule name put: (epegRule grammar: self).
+		self withRec: epegRule tempRules "if any"
 	].

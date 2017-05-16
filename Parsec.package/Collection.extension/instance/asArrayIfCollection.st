@@ -1,0 +1,4 @@
+*Parsec
+asArrayIfCollection
+
+	^ self asArray

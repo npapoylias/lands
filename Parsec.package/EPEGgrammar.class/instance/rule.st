@@ -4,9 +4,9 @@ rule
 	^ rule --> id , '::=' , ruleExpressions ==> [ :tokens | |r expressions|
 		"TODO: why not giving tokens the names of the symbols in EPEG ?"
 		expressions := tokens third.
-		r := (tokens first --> expressions first asArray).
-		expressions allButFirst do: [ :e | r | e asArray ].
-		r 		
+		r := (tokens first --> expressions first asArrayIfCollection).
+		expressions allButFirst do: [ :e | r | e asArrayIfCollection ].
+		r 		 
 	]
 	
 	"'(\n|\r){2}' , '\n|\r' star" "remember space is handled implicitely (See ParseGrammar>>#init))"

@@ -9,5 +9,5 @@ atom
 		| id 
 		| empty ==> [ :token | #e ]
 		| parentheses ==> [ :tokens | tokens second ]
-		| delimeterStar ==> [ :tokens | tokens second ]
-		| delimeterStaro ==> [ :tokens | tokens second ]
+		| delimeterStar ==> [ :tokens | tokens second delimeterStar ]
+		| delimeterStaro ==> [ :tokens | tokens second delimeterStaro ]
