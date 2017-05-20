@@ -3,7 +3,7 @@ transformCode: code
 
 	|stream selector methodCode transformedCode|
 
-	self = CustomLanguageClass ifTrue: [ ^ code ]. "Only for subclasses ;)"
+	self grammar ifNil: [ ^ code ]. "Only for subclasses that define a custom grammar ;)"
 
 	stream := code readStream.
 	'[a-zA-Z0-9]+' asParsecRegex asDFA matchesStreamPrefix: stream.

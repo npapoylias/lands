@@ -1,4 +1,4 @@
 compiling
 grammar
 
-	self subclassResponsibility
+	^ nil "no custom language -- also used in subclasses of actions"
