@@ -1,7 +1,5 @@
-initialization
+Parsec-LanguageClasses
 initialize
-
-	super initialize.
 	
 	grammar := ParsecGrammar 
 		new named: self class name; 
