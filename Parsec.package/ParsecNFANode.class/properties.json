@@ -1,16 +1,15 @@
 {
-	"category" : "Parsec-Lexing",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Parsec-Lexing",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"char",
 		"out",
-		"outWithoutEpsilons" ],
+		"outWithoutEpsilons"
+	],
 	"name" : "ParsecNFANode",
-	"pools" : [
-		 ],
-	"super" : "Object",
-	"type" : "normal" }
+	"type" : "normal"
+}

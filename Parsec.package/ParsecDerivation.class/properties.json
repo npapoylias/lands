@@ -1,15 +1,14 @@
 {
-	"category" : "Parsec",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
+	"super" : "OrderedCollection",
+	"category" : "Parsec",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"parsecState",
-		"input" ],
+		"input"
+	],
 	"name" : "ParsecDerivation",
-	"pools" : [
-		 ],
-	"super" : "OrderedCollection",
-	"type" : "normal" }
+	"type" : "normal"
+}

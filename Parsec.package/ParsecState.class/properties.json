@@ -1,10 +1,10 @@
 {
-	"category" : "Parsec",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Parsec",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"rule",
 		"dotPosition",
@@ -18,9 +18,8 @@
 		"rightHandSize",
 		"dRefRightHand",
 		"childrenStates",
-		"childrenForest" ],
+		"childrenForest"
+	],
 	"name" : "ParsecState",
-	"pools" : [
-		 ],
-	"super" : "Object",
-	"type" : "normal" }
+	"type" : "normal"
+}

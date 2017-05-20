@@ -1,10 +1,10 @@
 {
-	"category" : "Parsec",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "NickPapoulias 11/30/2016 14:48",
+	"super" : "Object",
+	"category" : "Parsec",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"readingPosition",
 		"dummyRule",
@@ -12,9 +12,8 @@
 		"input",
 		"charts",
 		"logging",
-		"string" ],
+		"string"
+	],
 	"name" : "ParsecAlgo",
-	"pools" : [
-		 ],
-	"super" : "Object",
-	"type" : "normal" }
+	"type" : "normal"
+}

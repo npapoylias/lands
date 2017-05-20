@@ -1,10 +1,10 @@
 {
-	"category" : "Parsec",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "NickPapoulias 11/30/2016 15:33",
+	"super" : "ParsecParser",
+	"category" : "Parsec",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"start",
 		"rule",
@@ -19,9 +19,8 @@
 		"atom",
 		"ruleExpressions",
 		"delimeterStar",
-		"delimeterStaro" ],
+		"delimeterStaro"
+	],
 	"name" : "EPEGgrammar",
-	"pools" : [
-		 ],
-	"super" : "ParsecParser",
-	"type" : "normal" }
+	"type" : "normal"
+}

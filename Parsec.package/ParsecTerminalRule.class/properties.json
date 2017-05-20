@@ -1,17 +1,16 @@
 {
-	"category" : "Parsec",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
+	"super" : "ParsecRule",
+	"category" : "Parsec",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"regExpr",
 		"lastInput",
 		"lastResult",
-		"lastPosition" ],
+		"lastPosition"
+	],
 	"name" : "ParsecTerminalRule",
-	"pools" : [
-		 ],
-	"super" : "ParsecRule",
-	"type" : "normal" }
+	"type" : "normal"
+}

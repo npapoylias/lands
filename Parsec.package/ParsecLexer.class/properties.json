@@ -1,14 +1,15 @@
 {
-	"category" : "Parsec-Lexing",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		"EscapeChars" ],
 	"commentStamp" : "",
-	"instvars" : [
-		"stream" ],
-	"name" : "ParsecLexer",
-	"pools" : [
-		 ],
 	"super" : "Object",
-	"type" : "normal" }
+	"category" : "Parsec-Lexing",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"EscapeChars"
+	],
+	"instvars" : [
+		"stream"
+	],
+	"name" : "ParsecLexer",
+	"type" : "normal"
+}

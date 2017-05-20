@@ -1,14 +1,11 @@
 {
-	"category" : "Parsec",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
-	"instvars" : [
-		 ],
-	"name" : "ParsecGammaStart",
-	"pools" : [
-		 ],
 	"super" : "ParsecRule",
-	"type" : "normal" }
+	"category" : "Parsec",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "ParsecGammaStart",
+	"type" : "normal"
+}

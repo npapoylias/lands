@@ -1,14 +1,11 @@
 {
-	"category" : "Parsec",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
-	"instvars" : [
-		 ],
-	"name" : "ParsecEof",
-	"pools" : [
-		 ],
 	"super" : "ParsecTerminalRule",
-	"type" : "normal" }
+	"category" : "Parsec",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "ParsecEof",
+	"type" : "normal"
+}

@@ -1,10 +1,10 @@
 {
-	"category" : "Parsec",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
+	"super" : "ParsecParser",
+	"category" : "Parsec",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"members",
 		"pair",
@@ -17,9 +17,8 @@
 		"ttrue",
 		"tfalse",
 		"null",
-		"start" ],
+		"start"
+	],
 	"name" : "ParsecJsonGrammar",
-	"pools" : [
-		 ],
-	"super" : "ParsecParser",
-	"type" : "normal" }
+	"type" : "normal"
+}

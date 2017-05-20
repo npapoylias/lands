@@ -1,17 +1,16 @@
 {
-	"category" : "Parsec",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
+	"super" : "ParsecCollection",
+	"category" : "Parsec",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"chartIndex",
 		"stateIndex",
 		"logging",
-		"current" ],
+		"current"
+	],
 	"name" : "ParsecCharts",
-	"pools" : [
-		 ],
-	"super" : "ParsecCollection",
-	"type" : "normal" }
+	"type" : "normal"
+}

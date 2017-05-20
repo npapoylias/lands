@@ -1,14 +1,13 @@
 {
-	"category" : "Parsec-Lexing",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
-	"instvars" : [
-		"nfaNodes" ],
-	"name" : "ParsecNFANodeNot",
-	"pools" : [
-		 ],
 	"super" : "ParsecNFANode",
-	"type" : "normal" }
+	"category" : "Parsec-Lexing",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"nfaNodes"
+	],
+	"name" : "ParsecNFANodeNot",
+	"type" : "normal"
+}
