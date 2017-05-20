@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "Object",
+	"super" : "ParsecParser",
 	"category" : "Parsec-LanguageClasses",
 	"classinstvars" : [ ],
 	"pools" : [ ],
