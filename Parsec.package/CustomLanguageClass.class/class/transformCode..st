@@ -11,7 +11,7 @@ transformCode: code
 	methodCode := stream upToEnd.
 	"just for testing, normally here either give the result or the compiled actions"
 	transformedCode := selector , 
-		'^  (' , self grammar class name , ' new 
+		'^  (' , self grammar name , ' new 
 						parse: ''' ,  (self quoteCode: methodCode) , ''') results first. '.
 	Transcript show: transformedCode; cr.
 	^ transformedCode
