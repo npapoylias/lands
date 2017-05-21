@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "ExpressionEpeg",
+	"category" : "Parsec-LanguageClasses",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "ExpressionEvaluator",
+	"type" : "normal"
+}
