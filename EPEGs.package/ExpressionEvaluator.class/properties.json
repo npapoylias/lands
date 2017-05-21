@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "CustomLanguageClass",
-	"category" : "Parsec-LanguageClasses",
+	"super" : "ExpressionEpeg",
+	"category" : "EPEGs",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "ExtentedPeg",
+	"name" : "ExpressionEvaluator",
 	"type" : "normal"
 }
