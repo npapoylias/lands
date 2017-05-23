@@ -13,7 +13,7 @@ transformCode: code
 	transformedCode := selector , 
 		'^  (' , self grammar name , ' new 
 						parse: ''' ,  (self quoteCode: methodCode) , ''') results first. '.
-	Transcript show: transformedCode; cr.
+	"Transcript show: transformedCode; cr."
 	^ transformedCode
 	
 	
