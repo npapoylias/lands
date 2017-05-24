@@ -7,9 +7,7 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"algo",
-		"grammar",
-		"input",
-		"methodOffset"
+		"grammar"
 	],
 	"name" : "ParsecParser",
 	"type" : "normal"

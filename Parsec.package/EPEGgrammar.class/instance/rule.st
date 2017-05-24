@@ -1,7 +1,7 @@
 accessing
 rule
 
-	^ super rule ==> [ :tokens | |r expressions|
+	^ rule --> id , '::=' , ruleExpressions ==> [ :tokens | |r expressions|
 		"TODO: why not giving tokens the names of the symbols in EPEG ?"
 		expressions := tokens third.
 		r := (tokens first --> expressions first asArrayIfCollection).
