@@ -1,5 +1,7 @@
 *Parsec
 lazyValue: anArgument
 
-	^ [ self value: anArgument value ] "value inside the block is polymorphic, can be an object
-	returning self or another block (nested lazyValues) that will be chained evaluated"
+	^ anArgument isCollection "what about more nested cases ? -- should check and use
+	a more dedicated value method ?"
+		ifTrue: [ [ self value: (anArgument collect: [ :arg | arg value ]) ] ]
+		ifFalse: [ [ self value: anArgument value ] ]

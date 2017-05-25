@@ -6,4 +6,4 @@ testForestResult
 		"should be 250" parse: '5*2+3' using: ParsecMixedOrderAlgo new log.
 	
 	self assert: result trees size = 2.
-	self assert: result results asSet = { 13 . 25 } asSet.
+	self assert: (result results collect: [ :r | r value ]) asSet = { 13 . 25 } asSet.
