@@ -1,4 +1,0 @@
-accessing
-delimeterStar
-
-	^ delimeterStar --> '\{' , ruleExpressions , '}'

@@ -1,5 +1,0 @@
-accessing
-empty
-
-	^ empty --> 'e'
-	

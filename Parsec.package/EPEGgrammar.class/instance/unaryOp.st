@@ -1,11 +1,14 @@
 accessing
+"protocol: accessing"
 unaryOp
 
-	^ unaryOp --> atom , '\*' ==> [ :tokens | tokens first star ] 
-		| atom , '/*' ==> [ :tokens | tokens first staro ]"staro" "concrete examples of difference"
-		| atom , '\+' ==> [ :tokens | tokens first plus ]
-		| atom , '/+' ==> [ :tokens | tokens first pluso ]"pluso ?" "concerte example of difference"
-		| atom , '\?' ==> [ :tokens | tokens first opt ]
-		| atom , '/?' ==> [ :tokens | tokens first opto ]"opto" "concrete example of difference"
-		| '&' , atom ==> [ :tokens | tokens second and ]
-		| '!' , atom ==> [ :tokens | tokens first not ]
+	^ super unaryOp ==> {
+		[ :tokens | tokens first star ]. 
+		[ :tokens | tokens first staro ]."staro" "concrete examples of difference"
+		[ :tokens | tokens first plus ].
+		[ :tokens | tokens first pluso ]."pluso ?" "concerte example of difference"
+		[ :tokens | tokens first opt ].
+		[ :tokens | tokens first opto ]."opto" "concrete example of difference"
+		[ :tokens | tokens second and ].
+		[ :tokens | tokens first not ]
+	}.
