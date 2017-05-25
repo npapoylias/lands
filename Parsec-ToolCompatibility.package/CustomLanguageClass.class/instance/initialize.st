@@ -1,5 +1,7 @@
-Parsec-LanguageClasses
+Parsec-ToolCompatibility
 initialize
+	
+	self recompile. "loading order fix"
 	
 	grammar := ParsecGrammar 
 		new named: self class name; 
