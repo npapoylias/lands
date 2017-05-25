@@ -1,16 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "Object",
+	"super" : "EPEGgrammarRules",
 	"category" : "Parsec",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"algo",
-		"grammar",
-		"input",
-		"methodOffset"
-	],
-	"name" : "ParsecParser",
+	"instvars" : [ ],
+	"name" : "EPEGgrammarSH",
 	"type" : "normal"
 }
