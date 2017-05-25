@@ -23,5 +23,5 @@ evaluateActionsFor: aTree on: input
 		"ifFalse: [ aTree isSubRule ifTrue: [^ childrenTokens flatten] ]". 
 	
   ^ 	(aTree rule action keys includes: aTree rightHandIndex)
-			ifTrue: [(aTree rule action at: aTree rightHandIndex) lazyValue: childrenTokens]
+			ifTrue: [(aTree rule action at: aTree rightHandIndex) value: childrenTokens]
 			ifFalse: [^ childrenTokens "with: aTree for: input should be ParsecDerivation already"]. 

@@ -7,5 +7,5 @@ testExpressionGrammar
 						| <expression> "+" <expression>
 						| <expression> "-" <expression>
 						| ''[0-9]+(.[0-9]+)?''
-') results first class = ParsecRule
+') results first  class = ParsecRule
 
