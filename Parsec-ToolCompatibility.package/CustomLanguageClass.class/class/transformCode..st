@@ -12,7 +12,7 @@ transformCode: code
 	"just for testing, normally here either give the result or the compiled actions"
 	transformedCode := selector , 
 		'^  (' , self grammar name , ' new 
-						parse: ''' ,  (self quoteCode: methodCode) , ''') results first. '.
+						parse: ''' ,  (self quoteCode: methodCode) , ''') results first value. '.
 	"Transcript show: transformedCode; cr."
 	^ transformedCode
 	

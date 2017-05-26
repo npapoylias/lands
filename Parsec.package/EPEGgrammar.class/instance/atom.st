@@ -4,10 +4,10 @@ atom
 
 	^ super atom ==> { 
 		[ :token | |s|
-			s := (token value atAll: (2 to: token value size - 1)). 
+			s := (token tokenValue atAll: (2 to: token tokenValue size - 1)). 
 			(ParsecLexer new parseAsString: s) asDFA regExpr: token value.
 		].
-		[ :token | token value atAll: (2 to: token value size - 1) ].
+		[ :token | token tokenValue atAll: (2 to: token tokenValue size - 1) ].
 		[ :token | token ]. "should fix to nil, or use dict ?"
 		[ :token | #e ].
 		[ :tokens | tokens second ].
