@@ -1,4 +1,4 @@
 *Parsec
 ==> aBlockOrBlocks
 
-	^ self asEpegRule ==> aBlockOrBlocks
+	^ self asEpegRule value ==> aBlockOrBlocks
