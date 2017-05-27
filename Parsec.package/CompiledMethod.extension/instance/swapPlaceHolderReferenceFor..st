@@ -8,6 +8,6 @@ swapPlaceHolderReferenceFor: anObject
 	globalVar := (GlobalVariable key: #PlaceHolderReference value: PlaceHolderReference).
 	
 	1 to: self numLiterals do: [ :i | 
-		(self literal at: i) = globalVar
+		(self literalAt: i) = globalVar
 			ifTrue: [ globalVar value: anObject. ^ self literalAt: i put: globalVar ]	
 	]

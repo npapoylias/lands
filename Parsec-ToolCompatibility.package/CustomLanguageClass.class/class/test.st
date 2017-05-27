@@ -1,0 +1,4 @@
+compiling
+test
+
+	^ PlaceHolderReference value
