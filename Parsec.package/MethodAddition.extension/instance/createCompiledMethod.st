@@ -1,7 +1,7 @@
 *Parsec
 createCompiledMethod
 	compiledMethod := myClass compiler 
-		source: (myClass transformCode: text asString);
+		source: (myClass transformCode: text asString) key;
 		requestor: requestor;
 		failBlock: [ ^nil ];
 		compile.
