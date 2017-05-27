@@ -13,11 +13,12 @@ compile: text classified: cat withStamp: changeStamp notifying: requestor logSou
 		withStamp: changeStamp
 		notifying: requestor
 		logSource: logSource.
-		
-	self grammar ifNil: [ ^ method ]. "Only for subclasses that define a custom grammar ;)"
-		
+	
+	"will not cause problems if ref is not found"
 	(self>>method) swapPlaceHolderReferenceFor: (self grammar new parse: methodBody) results first.
 	
+	self grammar ifNil: [ ^ method ]. "Only for subclasses that define a custom grammar ;)"
+			
 	"edit ast nodes"
 	
 	^ method.
