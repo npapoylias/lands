@@ -17,9 +17,10 @@ recompile: selector from: oldClass
 				compile.   "Assume OK after proceed from SyntaxError"
 	selector == newMethod selector ifFalse: [self error: 'selector changed!'].
 	
-	(self>>selector) swapPlaceHolderReferenceFor: (self grammar new parse: methodBody) results first.
-	
 	self grammar ifNil: [ ^ method ]. "Only for subclasses that define a custom grammar ;)"
+
+	
+	(self>>selector) swapPlaceHolderReferenceFor: (self grammar new parse: methodBody) results first.	
 	
 	
 	self basicAddSelector: selector withMethod: newMethod.
