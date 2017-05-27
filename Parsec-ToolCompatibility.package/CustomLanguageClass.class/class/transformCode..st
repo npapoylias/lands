@@ -3,7 +3,7 @@ transformCode: code
 
 	|stream selector methodCode transformedCode|
 
-	self grammar ifNil: [ ^ code ]. "Only for subclasses that define a custom grammar ;)"
+	self grammar ifNil: [ ^ code -> code]. "Only for subclasses that define a custom grammar ;)"
 
 	stream := code readStream.
 	self methodSignatureRegExpr matchesStreamPrefix: stream.
