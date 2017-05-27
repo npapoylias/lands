@@ -1,4 +1,0 @@
-compiling
-test
-
-	^ PlaceHolderReference value

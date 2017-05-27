@@ -1,9 +1,21 @@
 compiling
 compile: text classified: cat withStamp: changeStamp notifying: requestor logSource: logSource
 	
-	^ super
-		compile: (self transformCode: text)
+	|transformedCode methodBody method|
+	
+	transformedCode := self transformCode: text.
+	methodBody := transformedCode value.
+	transformedCode := transformedCode key.
+	
+	method := super
+		compile:  transformedCode
 		classified: category
 		withStamp: changeStamp
 		notifying: requestor
-		logSource: logSource
+		logSource: logSource.
+		
+	method swapPlaceHolderReferenceFor: (self grammar new parse: methodBody) results first.
+	
+	"edit ast nodes"
+	
+	^ method.

@@ -10,10 +10,11 @@ transformCode: code
 	selector := stream contents atAll: (1 to: stream position).
 	methodCode := stream upToEnd.
 	"just for testing, normally here either give the result or the compiled actions"
-	transformedCode := selector , 
+	"transformedCode := selector , 
 		'^  (' , self grammar name , ' new 
-						parse: ''' ,  (self quoteCode: methodCode) , ''') results first value. '.
+						parse: ''' ,  (self quoteCode: methodCode) , ''') results first value. '".
+	transformedCode := selector , '^  PlaceHolderReference value '.
 	"Transcript show: transformedCode; cr."
-	^ transformedCode
+	^ transformedCode -> methodCode
 	
 	
