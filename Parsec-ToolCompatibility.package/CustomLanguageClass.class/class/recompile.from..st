@@ -17,10 +17,15 @@ recompile: selector from: oldClass
 				compile.   "Assume OK after proceed from SyntaxError"
 	selector == newMethod selector ifFalse: [self error: 'selector changed!'].
 	
-	self grammar ifNil: [ ^ method ]. "Only for subclasses that define a custom grammar ;)"
+	self grammar ifNil: [ ^ newMethod ]. "Only for subclasses that define a custom grammar ;)"
 
 	
-	(self>>selector) swapPlaceHolderReferenceFor: (self grammar new parse: methodBody) results first.	
+	"newMethod swapPlaceHolderReferenceFor: (self grammar new parse: methodBody) results first."	
 	
 	
 	self basicAddSelector: selector withMethod: newMethod.
+	
+	"will not cause problems if ref is not found"
+	(self>>selector) swapPlaceHolderReferenceFor: (self grammar new parse: methodBody) results first.
+				
+	"edit ast nodes"
