@@ -1,6 +1,8 @@
 compiling
 recompile: selector from: oldClass
-	"Compile the method associated with selector in the receiver's method dictionary."
+	"Depends on loading order, recheck with baseline vs package loading (pre-post also
+	can solve similar problems).
+	Compile the method associated with selector in the receiver's method dictionary."
 
 	| method newMethod transformedCode methodBody|
 	method := oldClass compiledMethodAt: selector.
