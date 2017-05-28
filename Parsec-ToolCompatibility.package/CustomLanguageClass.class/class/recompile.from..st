@@ -16,16 +16,14 @@ recompile: selector from: oldClass
 				compiledMethodTrailer: method trailer;
 				compile.   "Assume OK after proceed from SyntaxError"
 	selector == newMethod selector ifFalse: [self error: 'selector changed!'].
+
+	self basicAddSelector: selector withMethod: newMethod.
 	
 	self grammar ifNil: [ ^ newMethod ]. "Only for subclasses that define a custom grammar ;)"
 
 	
-	"newMethod swapPlaceHolderReferenceFor: (self grammar new parse: methodBody) results first."	
-	
-	
-	self basicAddSelector: selector withMethod: newMethod.
-	
+	"newMethod swapPlaceHolderReferenceFor: (self grammar new parse: methodBody) results first."		
 	"will not cause problems if ref is not found"
-	(self>>selector) swapPlaceHolderReferenceFor: (self grammar new parse: methodBody) results first.
+	newMethod swapPlaceHolderReferenceFor: (self grammar new parse: methodBody) results first.
 				
 	"edit ast nodes"
