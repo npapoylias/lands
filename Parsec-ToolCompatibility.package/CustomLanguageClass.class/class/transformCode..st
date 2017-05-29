@@ -1,7 +1,7 @@
 compiling
 transformCode: code
 
-	|stream selector methodCode transformedCode|
+	|stream selector methodCode transformedCode placeHolderMsg|
 
 	self grammar ifNil: [ ^ code -> code]. "Only for subclasses that define a custom grammar ;)"
 
@@ -13,7 +13,12 @@ transformCode: code
 	"transformedCode := selector , 
 		'^  (' , self grammar name , ' new 
 						parse: ''' ,  (self quoteCode: methodCode) , ''') results first value. '".
-	transformedCode := selector , '^  PlaceHolderReference value '.
+	placeHolderMsg := '^ PlaceHolderReference value'.
+	
+	"placeHolderMsg := self balance: placeHolderMsg with: methodCode.
+	methodCode := self balance: methodCode with: placeHolderMsg."
+	
+	transformedCode := selector , placeHolderMsg.
 	"Transcript show: transformedCode; cr."
 	^ transformedCode -> methodCode
 	

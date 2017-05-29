@@ -4,10 +4,10 @@ recompile: selector from: oldClass
 	can solve similar problems).
 	Compile the method associated with selector in the receiver's method dictionary."
 
-	| method newMethod transformedCode methodBody|
+	| method newMethod transformedCode methodBody logSource|
 	method := oldClass compiledMethodAt: selector.
-		
-	transformedCode := self transformCode: (oldClass sourceCodeAt: selector).
+	logSource := (oldClass sourceCodeAt: selector).
+	transformedCode := self transformCode: logSource.
 	methodBody := transformedCode value.
 	transformedCode := transformedCode key.
 	
@@ -27,5 +27,6 @@ recompile: selector from: oldClass
 	"newMethod swapPlaceHolderReferenceFor: (self grammar new parse: methodBody) results first."		
 	"will not cause problems if ref is not found"
 	newMethod swapPlaceHolderReferenceFor: (self grammar new parse: methodBody) results first.
+	"newMethod ast body: (RBLiteralValueNode value: nil start: logSource size - methodBody size stop: logSource size)."
 				
 	"edit ast nodes"

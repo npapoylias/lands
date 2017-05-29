@@ -16,11 +16,8 @@ compile: text classified: cat withStamp: changeStamp notifying: requestor logSou
 	
 	self grammar ifNil: [ ^ method ]. "Only for subclasses that define a custom grammar ;)"
 
-	
-	"will not cause problems if ref is not found"
+
 	(self>>method) swapPlaceHolderReferenceFor: (self grammar new parse: methodBody) results first.
-				
-	"edit ast nodes"
-	"smth like ast body: (RBLiteralValueNode value: nil start: start stop: stop) -- making 
-	sources the same lenght ?"
+	"(self>>method) ast body: (RBLiteralValueNode value: nil start: logSource size - methodBody size stop: logSource size)."
+
 	^ method.
