@@ -1,7 +1,9 @@
 Parsec-ToolCompatibility
 initialize
+
+	self class recompile. "loading order temporary fix - REDO"
+	(self class allSuperclassesIncluding: ExtentedPeg) do: [ :c | c recompile ].
 	
-	self class recompile. "loading order temporary fix"
 	
 	grammar := ParsecGrammar 
 		new named: self class name; 
