@@ -18,7 +18,7 @@ evaluateActionsFor: aTree on: input
 				]. 
 	
 	childrenTokens isEmpty ifTrue: [ ^ ParsecToken new with: aTree for: input ].
-	(childrenTokens size = 1 "and: [ aTree isSubRule not ]")
+	(childrenTokens size = 1 and: [ aTree isSubRule not ])
 		ifTrue: [ childrenTokens := childrenTokens first ] "single token"
 		"ifFalse: [ aTree isSubRule ifTrue: [^ childrenTokens flatten] ]". 
 	
