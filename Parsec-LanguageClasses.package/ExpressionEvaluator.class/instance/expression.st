@@ -7,6 +7,6 @@ expression
 			[ :tokens | tokens first / tokens last ]. 
 			[ :tokens | tokens first + tokens last ].
 			[ :tokens | tokens first - tokens last ].
-			[ :token  | token first tokenValue asNumber "incosistency between parser and grammar on handling
+			[ :token  | token  tokenValue asNumber "incosistency between parser and grammar on handling
 			single tokens -- you should check.." ]
 		} 
