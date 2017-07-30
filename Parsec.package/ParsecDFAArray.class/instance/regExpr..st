@@ -1,4 +1,4 @@
 instance creation
-regExpr: aString
+regExpr: anObject
 
-	regExpr := aString
+	regExpr := anObject asString "this can be a token -- code smell"
