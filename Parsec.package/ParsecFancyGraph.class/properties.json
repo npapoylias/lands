@@ -6,12 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"modelRoot",
-		"nameSelector",
-		"childrenSelector",
-		"edgesSelector",
-		"shouldRepeat"
+		"gEdges",
+		"gElements"
 	],
-	"name" : "ParsecTree",
+	"name" : "ParsecFancyGraph",
 	"type" : "normal"
 }

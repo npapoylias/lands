@@ -15,7 +15,7 @@ example2
 	"this is a single multi-tree for the moment should split in a proper forest
 	using children forest"
 	
-	^ (ParsecTree new 
+	^ (ParsecFancyTree new 
 		withRootElement: result charts successfullRoot 
 		childSelector: #childrenStatesValues
 		edgeSelector: #childrenWithPositions;

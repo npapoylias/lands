@@ -1,7 +1,7 @@
 example
 example
 
-	^ ParsecGraph new 
+	^ ParsecFancyGraph new 
 	with: { 
 		'a' -> '1' -> 'b' .  
 		'b' -> '2' -> 'c' .
