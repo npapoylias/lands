@@ -10,7 +10,8 @@
 		"nameSelector",
 		"childrenSelector",
 		"edgesSelector",
-		"shouldRepeat"
+		"shouldRepeat",
+		"forestIndexPerNode"
 	],
 	"name" : "ParsecTree",
 	"type" : "normal"
