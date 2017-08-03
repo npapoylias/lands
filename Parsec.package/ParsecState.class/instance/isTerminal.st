@@ -1,0 +1,5 @@
+action
+isTerminal
+
+	^ rule isTerminal
+
