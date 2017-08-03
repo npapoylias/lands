@@ -1,11 +1,11 @@
 accessing
 allChildrenNodesFor: aNode in: aSet
 
-	((aNode perform: childrenSelector) at: (self forestIndexFor: aNode))
+	(self childrenAtForestIndexFor: aNode)
 		do: [ :c | 
-			(aSet includes: aNode) 
+			(aSet includes: c) 
 				ifFalse: [
-					aSet add: aNode. 
+					aSet add: c. 
 					self allChildrenNodesFor: c in: aSet 
 				]
 		].

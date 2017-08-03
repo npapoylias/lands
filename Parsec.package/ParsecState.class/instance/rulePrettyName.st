@@ -1,0 +1,4 @@
+accessing
+rulePrettyName
+
+	^ rule prettyName
