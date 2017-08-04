@@ -1,6 +1,6 @@
 accessing
 updateElementsFor: v
-	| arrow es |
+	| arrow es|
 	
 	v cleanAll.
 	

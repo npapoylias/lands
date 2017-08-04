@@ -1,16 +1,22 @@
 accessing
 addSliderOn: v
+	| d max oldValue|
+	oldValue := self forestIndexFor: modelRoot.
+	max := (modelRoot perform: childrenSelector) size.
 	RTSlider new
 		labeled;
 		useIntegerLabel;
-		min: 1 max: (modelRoot perform: childrenSelector) size;
+		min: 1 max: max;
 		view: v;
 		size: 100;
 		"you can extend to do this per node"
 			callback: [ :value | 
-			forestIndexPerNode at: modelRoot put: value.
-			self updateElementsFor: v.
-			self addSliderOn: v ];
+				value> oldValue 
+					ifTrue: [ d := 1 ] ifFalse: [ d := -1 ].
+				oldValue := value.
+				forestIndexPerNode at: modelRoot put: ((self forestIndexFor: modelRoot) + d min: max).
+				self updateElementsFor: v.
+				self addSliderOn: v];
 		move: #below;
-		value: (self forestIndexFor: modelRoot);
+		value: oldValue;
 		build
