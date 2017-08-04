@@ -8,6 +8,7 @@ updateElementsFor: v
 		color: Color black;
 		elementsOn: self allNodes.
 	es @ RTDraggable.
+	v addAll: es.
 	es
 		@
 			(RTLabeled new
@@ -15,7 +16,6 @@ updateElementsFor: v
 				center;
 				setAsShouldBeInTheFront;
 				text: [ :n | n perform: nameSelector ]).
-	v addAll: es.
 	arrow := RTArrowedLine new
 		color: Color white;
 		attachPoint: RTVerticalAttachPoint instance.
@@ -28,4 +28,4 @@ updateElementsFor: v
 		connectFrom: #yourself
 			toAll: [ :n | self childrenAtForestIndexFor: n ].
 	RTTreeLayout new on: es.
-	v canvas signalUpdate. "signal update"
+	v signalUpdate. "signal update"
