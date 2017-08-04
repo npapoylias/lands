@@ -2,22 +2,18 @@ accessing
 view
 	"see RTRoassalExample>>exampleArrow"
 
-	| v es c arrow |
+	| v |
 	v := RTView new.
-	c := RTMultiLinearColor new.
-	es := (RTEllipse new size: 50) color: Color black; elementsOn: self allNodes.
-	v addAll: es.
-	es @ RTDraggable.
-	es @ (RTLabeled new color: Color white; center; setAsShouldBeInTheFront; text: [:n | n perform: nameSelector]).
-	arrow := RTArrowedLine new
-		color: Color white;
-		attachPoint: RTVerticalAttachPoint instance.
-	RTEdgeBuilder new
+	self updateElementsFor: v.
+	RTSlider new
+		labeled;
+		useIntegerLabel;
+		min: 1 max: (modelRoot perform: childrenSelector) size;
 		view: v;
-		objects: self allNodes;
-		shape: arrow;
-		label: [:from :to | (to perform: edgesSelector) asString  ] fontSize: 10;
-		connectFrom: #yourself
-			toAll: [ :n | self childrenAtForestIndexFor: n].
-	RTTreeLayout new on: es.
+		size: 100;
+		"you can extend to do this per node"
+		callback: [ :value | forestIndexPerNode at: modelRoot put: value. self updateElementsFor: v ];
+		move: #below;
+		value: 1;
+		build.
 	^ v
