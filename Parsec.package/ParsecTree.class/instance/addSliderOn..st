@@ -14,9 +14,9 @@ addSliderOn: v
 				value> oldValue 
 					ifTrue: [ d := 1 ] ifFalse: [ d := -1 ].
 				oldValue := value.
-				forestIndexPerNode at: modelRoot put: ((self forestIndexFor: modelRoot) + d min: max).
+				forestIndexPerNode at: modelRoot put: (((self forestIndexFor: modelRoot) + d min: max) max: 1).
 				self updateElementsFor: v.
 				self addSliderOn: v];
-		move: #below;
+		move: #above;
 		value: oldValue;
 		build
