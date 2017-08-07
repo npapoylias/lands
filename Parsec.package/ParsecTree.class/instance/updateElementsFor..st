@@ -2,7 +2,11 @@ accessing
 updateElementsFor: v
 	| arrow es|
 	
-	v cleanAll.
+	v removeElements: 
+		(v elements select: [:e | e model ~= nil]). "control elements such as slider. cleanAll."
+	
+	"label clean-up"
+	v canvas removeShapes: (v canvas shapes select: [:s | s class = TRLabelShape]).
 	
 	es := (RTEllipse new size: 50)
 		color: Color black;
@@ -15,7 +19,10 @@ updateElementsFor: v
 				color: Color white;
 				center;
 				setAsShouldBeInTheFront;
-				text: [ :n | n perform: nameSelector ]).
+				text: [ :n | n = modelRoot 
+										ifTrue: ['#' , (self forestIndexFor: modelRoot) asString , ' of ' , (modelRoot perform: childrenSelector) size asString] 
+										ifFalse: [n perform: nameSelector] 
+					 	]).
 	arrow := RTArrowedLine new
 		color: Color white;
 		attachPoint: RTVerticalAttachPoint instance.

@@ -4,7 +4,7 @@ addSliderOn: v
 	oldValue := self forestIndexFor: modelRoot.
 	max := (modelRoot perform: childrenSelector) size.
 	RTSlider new
-		labeled;
+		"labeled;"
 		useIntegerLabel;
 		min: 1 max: max;
 		view: v;
@@ -15,8 +15,9 @@ addSliderOn: v
 					ifTrue: [ d := 1 ] ifFalse: [ d := -1 ].
 				oldValue := value.
 				forestIndexPerNode at: modelRoot put: (((self forestIndexFor: modelRoot) + d min: max) max: 1).
+				"self halt."
 				self updateElementsFor: v.
-				self addSliderOn: v];
+				"no need to rebuild: self addSliderOn: v"];
 		move: #above;
 		value: oldValue;
 		build
