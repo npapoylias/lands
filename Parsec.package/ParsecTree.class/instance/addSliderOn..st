@@ -8,7 +8,7 @@ addSliderOn: v
 		size: 100;
 		"you can extend to do this per node"
 			callback: [ :value | 
-				Transcript show: value;cr.
+				"Transcript show: value;cr."
 				forestIndexPerNode at: modelRoot put: value rounded.
 				self updateElementsFor: v.
 				"no need to rebuild: self addSliderOn: v"];
