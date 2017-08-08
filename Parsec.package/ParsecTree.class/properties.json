@@ -11,7 +11,8 @@
 		"childrenSelector",
 		"edgesSelector",
 		"shouldRepeat",
-		"forestIndexPerNode"
+		"forestIndexPerNode",
+		"popUpBlock"
 	],
 	"name" : "ParsecTree",
 	"type" : "normal"

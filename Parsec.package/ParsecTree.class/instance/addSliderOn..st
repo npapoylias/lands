@@ -4,8 +4,9 @@ addSliderOn: v
 	max := (modelRoot perform: childrenSelector) size.
 	RTSlider new
 		min: 1 max: max;
+		"vertical;"
 		view: v;
-		size: 100;
+		size: 5*max;
 		"you can extend to do this per node"
 			callback: [ :value | 
 				"Transcript show: value;cr."

@@ -8,7 +8,8 @@
 	"instvars" : [
 		"charts",
 		"trees",
-		"results"
+		"results",
+		"input"
 	],
 	"name" : "ParsecResult",
 	"type" : "normal"
