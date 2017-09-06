@@ -2,11 +2,15 @@ accessing
 "protocol: accessing"
 rule
 
-	^ super rule ==> [ :tokens | |r expressions|
+	^ super rule ==> [ :tokens | |r expressions operators|
 		"TODO: why not giving tokens the names of the symbols in EPEG ?"
-		expressions := tokens third.
+		expressions := tokens third key.
+		operators := tokens third value.
 		r := (tokens first --> expressions first asArrayIfCollection).
-		expressions allButFirst do: [ :e | r | e asArrayIfCollection ].
+		expressions allButFirst doWithIndex: [ :e :index | 
+			r 
+				perform: (operators at: index) tokenValue asSymbol
+				withArguments: { e asArrayIfCollection } ].
 		r 		 
 	]
 	
