@@ -19,7 +19,8 @@
 		"follow",
 		"canBeEmpty",
 		"predict",
-		"action"
+		"action",
+		"parent"
 	],
 	"name" : "ParsecRule",
 	"type" : "normal"
