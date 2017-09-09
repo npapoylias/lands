@@ -9,7 +9,8 @@
 		"chartIndex",
 		"stateIndex",
 		"readingPosition",
-		"state"
+		"state",
+		"initState"
 	],
 	"name" : "ParsecBackTrackState",
 	"type" : "normal"

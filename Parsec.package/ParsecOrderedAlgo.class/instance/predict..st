@@ -10,15 +10,15 @@ predict: aState
 	alter isEmpty ifTrue: [ ^ self ]. "this normally can only happen through TFOAlgo -- fix
 	see with the non-peg example"
 	(charts currentAdd: alter first)
-		ifTrue: [ "could be duplicate"2 to: alter size  do: [:i| |a| a := (alter at: i). self backTrackAdd: a]
+		ifTrue: [ "could be duplicate"2 to: alter size  do: [:i| |a| a := (alter at: i). self backTrackAdd: a for: aState]
 		] ifFalse: [  
 			|added|
 			2 to: alter size do: [ :i | |a|
 				a := alter at: i. 
-				added ifNotNil: [ self backTrackAdd: a ]
+				added ifNotNil: [ self backTrackAdd: a for: aState ]
 						ifNil: [ (charts currentAdd: a) 
 										ifTrue: [ added := a ]  
-										ifFalse: [  self backTrackAdd: a ]
+										ifFalse: [  self backTrackAdd: a for: aState ]
 								]
 				]
 		] "duplicate"

@@ -1,14 +1,13 @@
 removing
-removeStackAlternativesOf: aRule startingAt: from
+removeStackAlternativesOf: aState
 	
 	"optimize -- normally this should remove one or more at the top -- or can be a dict of stacks"
 	|btState|
-	[
+	[ 
 		backTrackStack isEmpty 
 			ifTrue: [ false ]
 			ifFalse: [  
-				btState := backTrackStack top.
-				btState state rule == aRule and: [ btState state from == from]
+				backTrackStack top initState == aState.
 			]
 	] whileTrue: [ backTrackStack pop ].
 	"(backTrackStack 
