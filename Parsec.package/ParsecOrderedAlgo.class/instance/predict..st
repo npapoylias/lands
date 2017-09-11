@@ -21,5 +21,4 @@ predict: aState
 										ifFalse: [  self backTrackAdd: a for: aState ]
 								]
 				]
-		] "duplicate"
-	
+		]. "duplicate"

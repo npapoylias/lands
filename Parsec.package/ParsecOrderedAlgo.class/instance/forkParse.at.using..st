@@ -17,5 +17,5 @@ forkParse: aStream at: position using: aGrammar
 	[charts currentDo: 
 		[:state | self totAlgoOn: state]; proceed] whileTrue.
 
-	^ (charts last detect: [ :state | state rule name = #gamma ]) to " on NotFound ? "
+	^ [(charts last detect: [ :state | state rule name = #gamma ]) to] on: NotFound do: [0]" on NotFound ? "
 	 

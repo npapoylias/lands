@@ -2,7 +2,6 @@ changing suspended state
 complete: aState
 
 	"aState is complete delete stack alternatives otherwise this is a full backtrack"
-	self removeStackAlternativesOf: aState.
-	charts copySingleAlternativesWaitingFor: aState 
+	(charts copySingleAlternativesWaitingFor: aState 
 			from: aState from"previousReadingPosition"
-			to: aState to 
+			to: aState to) do: [ :copiedState | self removeStackAlternativesOf: copiedState ] 
