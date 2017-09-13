@@ -11,7 +11,7 @@ parse: aString using: aGrammar
 		(ParsecState on: dummyRule alternative: 1 from: readingPosition to: readingPosition dot: 0).
 	"proceed returns true while we have more charts to loop through"
 	[charts currentDo: 
-		[:state | self totAlgoOn: state]; proceed] whileTrue.
+		[:state | self algoStepOn: state]; proceed] whileTrue.
 
 	^ charts
 	 

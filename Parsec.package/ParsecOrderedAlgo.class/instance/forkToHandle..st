@@ -19,8 +19,8 @@ forkToHandle: aState
 	charts printToLog.
 	(resultPosition > readingPosition) "succeed"
 			ifTrue: [ aState expectingAnd 
-								ifTrue: [ aState advanceDot. self totAlgoOn: aState ]
+								ifTrue: [ aState advanceDot. self algoStepOn: aState ]
 								ifFalse: [ self backTrack "expected not but succeeded" ] ]
 			ifFalse: [ aState expectingNot
-								ifTrue: [ aState advanceDot. self totAlgoOn: aState ] "failed with not"
+								ifTrue: [ aState advanceDot. self algoStepOn: aState ] "failed with not"
 								ifFalse: [ self backTrack ] ] "failed with and"		

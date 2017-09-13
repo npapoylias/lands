@@ -15,7 +15,7 @@ forkParse: aStream at: position using: aGrammar
 	
 	"proceed returns true while we have more charts to loop through"
 	[charts currentDo: 
-		[:state | self totAlgoOn: state]; proceed] whileTrue.
+		[:state | self algoStepOn: state]; proceed] whileTrue.
 
 	^ [(charts last detect: [ :state | state rule name = #gamma ]) to] on: NotFound do: [0]" on NotFound ? "
 	 

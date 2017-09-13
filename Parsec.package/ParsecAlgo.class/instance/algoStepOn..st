@@ -1,5 +1,5 @@
 as yet unclassified
-totAlgoOn: state
+algoStepOn: state
 
 	logging ifTrue: [ Transcript show: state; cr. ].
 
