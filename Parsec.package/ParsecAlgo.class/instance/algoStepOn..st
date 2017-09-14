@@ -3,6 +3,8 @@ algoStepOn: state
 
 	logging ifTrue: [ Transcript show: state; cr. ].
 
+	self halt. 
+
 	state	isIncomplete
 		ifTrue: [   
 			state expectingTerminal

@@ -11,8 +11,11 @@ backTrackAt: indexPair with: aNewState
 			show: 'BT: [Chart' , chartIndex asString , '(' , stateIndex asString , ')' ,  ']';  
 			show: '======================'; cr.
 	].
-	(self at: chartIndex) at: stateIndex put: aNewState.
 	chartIndex + 1 to: self size do: [:i | self removeIndex: i  ]. "remove"
-	stateIndex + 1 to: self current size do: [ :i | self current removeIndex: i ].
-	self halt.
-	stateIndex := stateIndex - 1. "replay"
+	stateIndex to: self current size do: [ :i | self current removeIndex: i ].
+	^ (self currentAdd: aNewState) 
+		ifTrue: [ stateIndex := stateIndex - 1. true ] 
+		ifFalse: [ stateIndex := stateIndex - 2. false ]
+	"(self at: chartIndex) at: stateIndex put: aNewState."
+	
+	 "replay"

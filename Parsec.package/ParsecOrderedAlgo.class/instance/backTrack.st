@@ -6,6 +6,6 @@ backTrack
 		ifFalse: [ ^ self ].
 	btState := backTrackStack pop.
 	readingPosition := btState readingPosition.
-	charts
+	(charts
 		backTrackAt: btState chartIndex -> btState stateIndex
-		with: btState state
+		with: btState state) ifFalse: [ self backTrack ]
