@@ -1,8 +1,6 @@
 parsing
 checkSuccessOrBackTrack
 
-	self halt.
-
 	charts last
 		detect: [ :state | state isFinal ]
 		ifNone: [ 

@@ -2,6 +2,7 @@ accessing
 addSliderOn: v
 	| max |
 	max := (modelRoot perform: childrenSelector) size.
+	max = 1 ifTrue: [ ^ self ].
 	RTSlider new
 		min: 1 max: max;
 		"vertical;"
