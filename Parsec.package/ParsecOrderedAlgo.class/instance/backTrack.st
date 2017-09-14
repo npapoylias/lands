@@ -1,7 +1,7 @@
 accessing
 backTrack
 	| btState |
-	
+
 	(backTrackStack isNotEmpty and: [ self atChartAndStateEnd ])
 		ifFalse: [ ^ self ].
 	btState := backTrackStack pop.

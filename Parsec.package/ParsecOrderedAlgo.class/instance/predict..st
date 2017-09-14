@@ -12,13 +12,16 @@ predict: aState
 	(charts currentAdd: alter first)
 		ifTrue: [ "could be duplicate"2 to: alter size  do: [:i| |a| a := (alter at: i). self backTrackAdd: a for: aState]
 		] ifFalse: [  
-			|added|
+			|added toStack|
+			toStack := ParsecCollection new.
+			toStack add:	alter first.
 			2 to: alter size do: [ :i | |a|
 				a := alter at: i. 
-				added ifNotNil: [ self backTrackAdd: a for: aState ]
+				added ifNotNil: [ toStack add: a ]
 						ifNil: [ (charts currentAdd: a) 
 										ifTrue: [ added := a ]  
-										ifFalse: [  self backTrackAdd: a for: aState ]
+										ifFalse: [  toStack add: a ]
 								]
-				]
+				].
+			added ifNotNil: [ 1 to: toStack size do: [ :i | self backTrackAdd: (toStack at: i) for: aState ] ].
 		]. "duplicate"

@@ -18,7 +18,8 @@
 		"rightHandSize",
 		"dRefRightHand",
 		"childrenStates",
-		"childrenForest"
+		"childrenForest",
+		"alternative"
 	],
 	"name" : "ParsecState",
 	"type" : "normal"
