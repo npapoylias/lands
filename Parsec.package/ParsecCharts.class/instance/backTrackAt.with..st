@@ -15,7 +15,7 @@ backTrackAt: indexPair with: aNewState
 	stateIndex to: self current size do: [ :i | self current removeIndex: i ].
 	^ (self currentAdd: aNewState) 
 		ifTrue: [ stateIndex := stateIndex - 1. true ] 
-		ifFalse: [ stateIndex := stateIndex - 2. false ]
+		ifFalse: [ stateIndex := stateIndex - 1. false ]
 	"(self at: chartIndex) at: stateIndex put: aNewState."
 	
 	 "replay"

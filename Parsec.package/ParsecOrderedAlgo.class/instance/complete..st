@@ -5,4 +5,4 @@ complete: aState
 
 	(charts copySingleAlternativesWaitingFor: aState 
 			from: aState from"previousReadingPosition"
-			to: aState to) do: [ :copiedState | self removeStackAlternativesOf: copiedState ].
+			to: aState to) do: [ :copiedState | "self removeStackAlternativesOf: copiedState" ].
