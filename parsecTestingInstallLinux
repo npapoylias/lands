@@ -14,8 +14,5 @@ unzip sources.zip
 wget http://files.pharo.org/get-files/60/pharo-linux-stable.zip
 unzip pharo-linux-stable.zip
 chmod a+x ./pharo
-./pharo -vm-display-null moose-6.1.image eval --save "Metacello new
-        baseline: #Parsec;
-        repository: 'github://npapoylias/parsec';
-        load: #(Parsec #'Parsec-ToolCompatibility' #'Parsec-LanguageClasses')"
+./pharo -vm-display-null moose-6.1.image eval --save "Gofer it repository: (MCFileTreeRepository new directory: FileLocator imageDirectory); package: 'Parsec'; load. Gofer it repository: (MCFileTreeRepository new directory: FileLocator imageDirectory); package: 'Parsec-ToolCompatibility'; load. Gofer it repository: (MCFileTreeRepository new directory: FileLocator imageDirectory); package: 'Parsec-LanguageClasses'; load."
 ./pharo -vm-display-null moose-6.1.image test --fail-on-failure  "Parsec"
