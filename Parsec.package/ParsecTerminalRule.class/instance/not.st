@@ -1,4 +1,5 @@
 ops
 not
-
-	^ self copy name: ('tn' , (name hash asString)) asSymbol; beNot
+	|tName|
+	tName := ('tn' , self hash asString) asSymbol.
+	^  (tName --|>  name) not. "returns rule"

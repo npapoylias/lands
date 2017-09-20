@@ -1,3 +1,5 @@
 ops
 and
-	^ self copy name: 'ta' , (name hash asString) asSymbol; beAnd
+	|tName|
+	tName := ('ta' , self hash asString) asSymbol.
+	^  (tName --|>  name) and. "returns rule"

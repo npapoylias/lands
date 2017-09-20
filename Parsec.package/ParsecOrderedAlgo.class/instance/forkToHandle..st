@@ -2,7 +2,7 @@ as yet unclassified
 forkToHandle: aState
 
 	|resultPosition forkedGrammar |
-	
+
 	"optimizaiton: retrieve memoized terminals"
 	(forkedGrammar := grammar copy)
 		at: aState ruleAtDot name put: aState ruleAtDot copy beVanilla;
