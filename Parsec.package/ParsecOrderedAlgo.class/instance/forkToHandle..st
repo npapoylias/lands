@@ -3,8 +3,6 @@ forkToHandle: aState
 
 	|resultPosition forkedGrammar |
 	
-	self halt.
-	
 	"optimizaiton: retrieve memoized terminals"
 	(forkedGrammar := grammar copy)
 		at: aState ruleAtDot name put: aState ruleAtDot copy beVanilla;
