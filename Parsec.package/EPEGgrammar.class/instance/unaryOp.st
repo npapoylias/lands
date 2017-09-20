@@ -11,4 +11,4 @@ unaryOp
 		[ :tokens | tokens first opto ]."opto" "concrete example of difference"
 		[ :tokens | tokens second and ].
 		[ :tokens | tokens second not ]
-	}.
+	}. 
