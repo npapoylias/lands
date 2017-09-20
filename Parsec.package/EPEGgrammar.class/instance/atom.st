@@ -3,9 +3,10 @@ accessing
 atom
 
 	^ super atom ==> { 
-		[ :token | |s| 
+		[ :token | |s name| 
 			s := (token tokenValue atAll: (2 to: token tokenValue size - 1)). 
-			(ParsecLexer new parseAsString: s) asDFA regExpr: s.
+			name := ('ta' , self hash asString) asSymbol.
+			((ParsecLexer new parseAsString: s) asDFA regExpr: s) asRule.
 		].
 		[ :token | token tokenValue atAll: (2 to: token tokenValue size - 1) ].
 		[ :token | token ]. "should fix to nil, or use dict ?"
