@@ -5,7 +5,6 @@ atom
 	^ super atom ==> { 
 		[ :token | |s name| 
 			s := (token tokenValue atAll: (2 to: token tokenValue size - 1)). 
-			name := ('ta' , self hash asString) asSymbol.
 			((ParsecLexer new parseAsString: s) asDFA regExpr: s) asRule.
 		].
 		[ :token | token tokenValue atAll: (2 to: token tokenValue size - 1) ].
