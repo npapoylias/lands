@@ -1,17 +1,17 @@
 copying
 copySingleAlternativesWaitingFor: aState from: start to: end
 
-	| name chart element newState addedStates copiedStates|
+	| name chart element newState addedStates "copiedStates"|
 
 	addedStates := ParsecCollection new.
-	copiedStates := ParsecCollection new.
+	"copiedStates := ParsecCollection new."
 
 	name := aState rule name.
 
 	
 	chart := (self at: aState fromTerminal + 1).
 
-    1 to: chart size do: [ :index |
+    chart size to: 1 by: -1 do: [ :index | "bottom-up"
 		element := chart at: index.
 		newState := element copy.
 				"newState previousStates add: aState."
@@ -20,7 +20,7 @@ copySingleAlternativesWaitingFor: aState from: start to: end
 		((element expecting: name at: start) and: [ (addedStates anySatisfy: [:state | state alternativeOf: newState  ]) not ])
 			ifTrue: [  |childrenDict|
 				addedStates add: newState.
-				copiedStates add: element.
+				"copiedStates add: element."
 				childrenDict := (self currentAddWithState: newState) childrenStates. "will return either the newState or the identical pre-existing"
 				childrenDict ~= newState childrenStates "already exists transfer children"
 					ifTrue: [ newState childrenStates keysAndValuesDo: [:k :values |  
@@ -38,4 +38,4 @@ copySingleAlternativesWaitingFor: aState from: start to: end
 			]
 	].
 
-	^ copiedStates
+	"^ copiedStates"
