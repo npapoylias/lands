@@ -1,5 +1,5 @@
 ops
 / aSymbolOrString
 
-	ordered := true.
+	self beOrdered.
 	self | aSymbolOrString
