@@ -1,4 +1,5 @@
 testing
 withParent: aRule
 
-	parent := aRule
+	parent := aRule.
+	ordered := parent isOrdered

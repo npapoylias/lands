@@ -10,7 +10,8 @@
 		"stateIndex",
 		"readingPosition",
 		"state",
-		"initState"
+		"initState",
+		"completedState"
 	],
 	"name" : "ParsecBackTrackState",
 	"type" : "normal"

@@ -1,11 +1,13 @@
-as yet unclassified
+printing
 printOn: aStream
 
-	aStream nextPutAll: rule name; nextPutAll: ' --> '.
+	aStream nextPutAll: rule prettyName; nextPutAll: ' --> '.
 	
-	rightHand doWithIndex: [:item :index |
-		dotPosition + 1 = index ifTrue: [ aStream nextPutAll: ' . ' ].
-		aStream nextPutAll: item asString; nextPutAll: ' '.
+	dRefRightHand ifNotNil: [
+		dRefRightHand doWithIndex: [:item :index |
+			dotPosition + 1 = index ifTrue: [ aStream nextPutAll: ' . ' ].
+			aStream nextPutAll: item prettyName; nextPutAll: ' '.
+		]
 	].
 
 	aStream nextPutAll: ' [ '; nextPutAll: (from->to) asString; nextPutAll: ' ] '.	

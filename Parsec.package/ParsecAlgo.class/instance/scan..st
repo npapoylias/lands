@@ -13,7 +13,7 @@ scan: aState
 	(match > aState to)
 		ifTrue: [ 
 			charts nextAdd: 
-				(aState asScannerStateFrom: readingPosition to: match withIndex: 1). 
+				(aState asScannerStateFrom: aState to to: match withIndex: 1). 
 				"always 1 for terminals"
 			readingPosition := match.
 			^ true

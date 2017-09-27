@@ -2,7 +2,6 @@ as yet unclassified
 predict: aState
 
 	|alter|
-	
 	(aState expectingAnd or: [ aState expectingNot ]) 
 		ifTrue: [ ^ self forkToHandle: aState ].
 	

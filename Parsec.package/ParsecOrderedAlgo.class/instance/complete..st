@@ -6,3 +6,4 @@ complete: aState
 	charts copySingleAlternativesWaitingFor: aState 
 			from: aState from"previousReadingPosition"
 			to: aState to
+			for: self

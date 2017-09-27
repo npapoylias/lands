@@ -8,4 +8,5 @@ backTrack
 	readingPosition := btState readingPosition.
 	(charts
 		backTrackAt: btState chartIndex -> btState stateIndex
-		with: btState state) ifFalse: [ self backTrack ]
+		with: btState state
+		havingCompleted: btState completedState) ifFalse: [ self backTrack ]
