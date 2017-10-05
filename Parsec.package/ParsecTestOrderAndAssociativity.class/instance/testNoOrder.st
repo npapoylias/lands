@@ -14,15 +14,15 @@ testNoOrder
 		' ==> { 
 			[ :tokens | tokens second ].
 			[ :token  | token tokenValue asNumber ].
-			[ :tokens | tokens first * tokens last ].
-			[ :tokens | tokens first / tokens last ].
 			[ :tokens | tokens first + tokens last ].
 			[ :tokens | tokens first - tokens last ].
+			[ :tokens | tokens first * tokens last ].
+			[ :tokens | tokens first / tokens last ].
 		}
 	}.
 
 	results := grammar parse: '1+2*3'.
 
 	self assert: results trees size = 2.
-	results results first value = 9.
-	results results second value = 7.
+	self assert: results results first value = 9.
+	self assert: results results second value = 7.

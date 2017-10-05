@@ -1,5 +1,5 @@
 tests
-testOrder
+testAssociativityLeft
 
 	grammar := ParsecGrammar new
 		named: #ExpressionGrammar;
@@ -11,22 +11,21 @@ testOrder
 			| <expression> "-" <expression>
 			| <expression> "*" <expression>
 			| <expression> "/" <expression>
+			| <expression> "^" <expression>
 		' ==> { 
 			[ :tokens | tokens second ].
 			[ :token  | token tokenValue asNumber ].
-			[ :tokens | tokens first * tokens last ].
-			[ :tokens | tokens first / tokens last ].
 			[ :tokens | tokens first + tokens last ].
 			[ :tokens | tokens first - tokens last ].
+			[ :tokens | tokens first * tokens last ].
+			[ :tokens | tokens first / tokens last ].
+			[ :tokens | tokens first raisedTo: tokens last ].
 		}
 	}.
 
-	results := grammar parse: '1+2*3'.
+	results := grammar parseLogging: '2^3^4'.
 
 	self assert: results trees size = 1.
-	results results first value = 7.
 	
-	results := grammar parse: '1*2+3'.
-
-	self assert: results trees size = 1.
-	results results first value = 5.
+	self assert: results results first value = 4096.
+	
