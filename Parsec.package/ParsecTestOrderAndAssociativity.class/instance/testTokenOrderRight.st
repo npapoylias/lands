@@ -1,32 +1,31 @@
 tests
-testOrder
+testTokenOrderRight
 
 	grammar := ParsecGrammar new
 		named: #ExpressionGrammar;
 		with: { 
 		'<start> ::= <expression>'.
 		'<expression> ::=  "(" <expression> ")"
-			/ ''[0-9]+(\.[0-9]+)?''
 			| <expression> "+" <expression> 
 			| <expression> "-" <expression>
 			| <expression> "*" <expression>
 			| <expression> "/" <expression>
+			| <expression> "^" <expression>
+			/ ''[0-9]+(\.[0-9]+)?'' 
 		' ==> { 
 			[ :tokens | tokens second ].
-			[ :token  | token tokenValue asNumber ].
-			[ :tokens | tokens first * tokens last ].
-			[ :tokens | tokens first / tokens last ].
 			[ :tokens | tokens first + tokens last ].
 			[ :tokens | tokens first - tokens last ].
+			[ :tokens | tokens first * tokens last ].
+			[ :tokens | tokens first / tokens last ].
+			[ :tokens | tokens first raisedTo: tokens last ].
+			[ :token  | token tokenValue asNumber ].
 		}
 	}.
 
-	results := grammar parse: '2+3*4'.
+	results := grammar parseLogging: '2^3^4'.
 
 	self assert: results trees size = 1.
-	results results first value = 14.
 	
-	results := grammar parse: '2*3+4'.
-
-	self assert: results trees size = 1.
-	results results first value = 10.
+	self assert: results results first value = 2417851639229258349412352.
+	

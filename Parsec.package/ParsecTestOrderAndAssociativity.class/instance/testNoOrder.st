@@ -21,8 +21,8 @@ testNoOrder
 		}
 	}.
 
-	results := grammar parse: '1+2*3'.
+	results := grammar parse: '2+3*4'.
 
 	self assert: results trees size = 2.
-	self assert: results results first value = 9.
-	self assert: results results second value = 7.
+	self assert: results results first value = 20.
+	self assert: results results second value = 14.
