@@ -10,7 +10,7 @@ atom
 		[ :token | token tokenValue atAll: (2 to: token tokenValue size - 1) ].
 		[ :token | token ]. "should fix to nil, or use dict ?"
 		[ :token | #e ].
-		[ :tokens | tokens second ].
+		[ :token | token ].
 		[ :tokens | tokens second delimeterStar ].
 		[ :tokens | tokens second delimeterStaro ].
 	}.
