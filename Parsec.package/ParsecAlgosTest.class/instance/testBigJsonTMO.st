@@ -2,7 +2,9 @@ tests
 testBigJsonTMO
 
 	| tJSParser  |
-	tJSParser := ParsecJsonGrammar new with: ParsecMixedOrderAlgo. "remember that the grammar is created its time -- for bench etc"
+	tJSParser := ParsecJsonGrammar new with: ParsecMixedOrderFilteredAlgo 
+	"check memory consumption in the ParsecMixedOrderAlgo test in the smaller JSON test below"
+	"ParsecMixedOrderAlgo". "remember that the grammar is created its time -- for bench etc"
 
 	charts := tJSParser parse: '[
   {
