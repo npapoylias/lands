@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "ParsecJsonGrammar",
+	"category" : "Parsec-LanguageClasses",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "JSONEpeg",
+	"type" : "normal"
+}
