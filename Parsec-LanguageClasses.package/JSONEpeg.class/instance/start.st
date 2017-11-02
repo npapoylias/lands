@@ -1,4 +1,4 @@
-accessing
+rules
 start
 
-	^ start --> value
+	<start> ::= <value>

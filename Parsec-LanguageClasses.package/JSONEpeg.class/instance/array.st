@@ -1,4 +1,6 @@
-grammar
+rules
 array
 
-	^ array --> '\[' , elements opto , ']' 
+	<array> ::= "[" <elements> ? "]"
+	
+	

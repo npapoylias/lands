@@ -1,0 +1,4 @@
+rules
+true
+
+	<true> ::= "true"

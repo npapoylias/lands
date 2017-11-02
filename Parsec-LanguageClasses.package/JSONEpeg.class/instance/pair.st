@@ -1,4 +1,4 @@
-grammar
+rules
 pair
 
-	^ pair --> string , '\:' , value
+	<pair> ::= <string> ":" <value>

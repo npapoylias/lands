@@ -1,4 +1,4 @@
-tokens
+rules
 null
-
-	^ null --> 'null'
+	
+	<null> ::= "null"

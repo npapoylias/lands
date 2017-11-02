@@ -1,4 +1,4 @@
-grammar
+rules
 elements
 
-	^ elements --> value , #(',' , value) staro
+	<elements> ::= <value> ( "," <value> ) *  

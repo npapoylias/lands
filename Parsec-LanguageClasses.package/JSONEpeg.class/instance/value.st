@@ -1,4 +1,10 @@
-grammar
+rules
 value
 
-	^ value --> string / number / object / array / ttrue / tfalse / null
+	<value> ::= <string>
+		| <number>
+		| <object>
+		| <array>
+		| <true>
+		| <false>
+		| <null>

@@ -1,4 +1,4 @@
-accessing
+rules
 number
 
-	^ number --> ('-?[0-9]+' , '\.[0-9]+' lopt , '[eE][-+]?[0-9]+' lopt) 
+	<number> ::= '-?[0-9]+(\.[0-9]+)?([eE][-+]?[0-9]+)?' 

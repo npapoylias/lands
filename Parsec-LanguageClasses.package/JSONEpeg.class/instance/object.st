@@ -1,4 +1,4 @@
-accessing
+rules
 object
-
-	^ object --> '\{' , members opto , '}' 
+	
+	<object> ::= "{" <members> * "}"

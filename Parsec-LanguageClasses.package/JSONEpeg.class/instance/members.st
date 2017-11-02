@@ -1,4 +1,4 @@
-grammar
+rules
 members
 
-	^ members --> pair , #(',' , pair) staro
+	<members> ::= <pair> ( "," <pair> ) *
