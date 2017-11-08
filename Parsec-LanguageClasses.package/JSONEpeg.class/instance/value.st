@@ -1,4 +1,4 @@
-rules
+Parsec-LanguageClasses
 value
 
 	<value> ::= <string>
@@ -7,4 +7,4 @@ value
 		| <array>
 		| <true>
 		| <false>
-		| <null>
+		| <null> 

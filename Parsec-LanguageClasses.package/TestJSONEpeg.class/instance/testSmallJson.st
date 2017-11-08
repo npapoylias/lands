@@ -3,7 +3,7 @@ testSmallJson
 
 	|results|
 
-	results := JSONEpeg new parse: '{ "firstName" : "John",
+	results := JSONEpeg new parseLogging: '{ "firstName" : "John",
 "lastName" : "Smith",
 "age" : 25,
 "address" :
