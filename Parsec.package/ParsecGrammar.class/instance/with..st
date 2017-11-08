@@ -2,6 +2,7 @@ accessing
 with: aRuleCollection
 
 	|size|
+
 	self withRec: aRuleCollection.
 	self values do: [ :v | v preComputeDirectRefs ].
 	size := 0. "init first and follow as sets"

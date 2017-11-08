@@ -1,7 +1,10 @@
 tests
-testStarParentheses
+testStringOp
 
 	|results|
+	
+	"((ParsecLexer new parseAsString: 's') asDFA regExpr: 's') asRule plus"
+	"no tempRules matching rightHandSide"
 
 	results := JSONEpegDebug new parse: '{ "firstName" : "John",
 "lastName" : "Smith",
