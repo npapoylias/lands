@@ -1,4 +1,4 @@
 rules
 elements
 
-	<elements> ::= <value> ( "," <value> ) *  
+	<elements> ::= { <value> "," }  

@@ -2,4 +2,4 @@ accessing
 "protocol: accessing"
 delimeterStar
 
-	^ delimeterStar --> '\{' , ruleExpressions , '}'
+	^ delimeterStar --> '\{' , atom , atom , '}'

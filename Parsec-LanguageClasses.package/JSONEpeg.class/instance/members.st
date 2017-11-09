@@ -1,4 +1,4 @@
 rules
 members
 
-	<members> ::= <pair> ( "," <pair> ) *
+	<members> ::= { <pair> "," }
