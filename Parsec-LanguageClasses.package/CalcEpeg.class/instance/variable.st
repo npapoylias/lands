@@ -1,4 +1,4 @@
-Parsec-LanguageClasses
+terminals
 variable
 
-	<variable> ::= '[a-zA-z_][a-zA-Z_0-9]+' 
+	<variable> ::= '[a-zA-Z_][a-zA-Z_]*'

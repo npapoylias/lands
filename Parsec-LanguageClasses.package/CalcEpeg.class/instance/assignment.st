@@ -1,4 +1,4 @@
-Parsec-LanguageClasses
+statements
 assignment
 
-	<assignment> ::= <variable> "=" <expression> 
+	<assignment> ::= <variable> "=" <expression>

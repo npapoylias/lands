@@ -1,4 +1,4 @@
-Parsec-LanguageClasses
+start
 start
 
-	<start> ::= <statement> +         
+	<start> ::= <statement> + 

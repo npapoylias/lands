@@ -1,4 +1,6 @@
-Parsec-LanguageClasses
+statements
 loop 
 
-	<loop> ::= "while" "(" <relation> ")" "{" <lazyStatement> * "}" 
+	<loop> ::= "while" "(" <logical> ")" "{" 
+						<lazyStatement> * 
+					"}" 

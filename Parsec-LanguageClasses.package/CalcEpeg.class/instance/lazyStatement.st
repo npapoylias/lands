@@ -1,4 +1,4 @@
-Parsec-LanguageClasses
+statements
 lazyStatement 
 
 	<lazyStatement> ::= <assignment>

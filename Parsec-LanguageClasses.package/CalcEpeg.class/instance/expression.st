@@ -1,11 +1,5 @@
-Parsec-LanguageClasses
-expression 
+expressions
+expression
 
-	<expression> ::= "(" <expression> ")"
-			| <variable>
-			| <number>   
-			| <expression> "+" <expression> 
-			| <expression> "-" <expression>   
-			| <expression> "*" <expression>
-			| <expression> "/" <expression>      
-			| <expression> "^" <expression> ! "^"      
+	<expression> ::= <numerical> 
+		| <logical> "includes relational"
