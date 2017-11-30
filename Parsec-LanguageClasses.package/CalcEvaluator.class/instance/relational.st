@@ -1,4 +1,4 @@
-Parsec-LanguageClasses
+rules
 relational
 
 	^ super relational ==> {  

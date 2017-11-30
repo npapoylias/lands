@@ -1,4 +1,4 @@
-Parsec-LanguageClasses
+rules
 start
 
 	env := Dictionary new.

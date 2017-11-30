@@ -1,4 +1,4 @@
-expressions
+Parsec-LanguageClasses
 expression
 
 	<expression> ::= <numerical> 

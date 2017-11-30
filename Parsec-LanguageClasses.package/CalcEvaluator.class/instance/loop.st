@@ -1,4 +1,4 @@
-Parsec-LanguageClasses
+rules
 loop
 
 	^ super loop ==> [ :tokens | [ |value|

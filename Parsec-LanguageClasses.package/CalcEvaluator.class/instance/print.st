@@ -1,4 +1,4 @@
-Parsec-LanguageClasses
+rules
 print
 
 	^ super print ==> [ :tokens | [ |value|

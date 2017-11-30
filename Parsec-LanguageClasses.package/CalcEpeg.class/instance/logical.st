@@ -4,7 +4,7 @@ logical
 	<logical> ::= "(" <logical> ")"
 			| "true"
 			| "false"
-			| <variable> 
+			| <variable>
 			| <relational> 
 			| <logical> "||" <logical> 
 			| <logical> "&&" <logical>   

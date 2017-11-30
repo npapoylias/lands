@@ -9,7 +9,8 @@
 		"algo",
 		"grammar",
 		"input",
-		"methodOffset"
+		"methodOffset",
+		"lastResult"
 	],
 	"name" : "ParsecParser",
 	"type" : "normal"

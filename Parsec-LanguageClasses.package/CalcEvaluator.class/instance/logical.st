@@ -1,4 +1,4 @@
-Parsec-LanguageClasses
+rules
 logical
 
 	^ super logical ==> {  
