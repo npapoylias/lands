@@ -1,4 +1,4 @@
-rules
+Parsec-LanguageClasses
 elements
 
-	<elements> ::= { <value> "," }  
+	<elements> ::= { <value> "," }   

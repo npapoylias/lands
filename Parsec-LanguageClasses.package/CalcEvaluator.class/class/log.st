@@ -1,4 +1,4 @@
 compiling
 log
 
-	^ true
+	^ false

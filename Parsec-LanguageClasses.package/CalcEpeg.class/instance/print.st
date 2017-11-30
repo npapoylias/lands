@@ -1,4 +1,4 @@
-statements
+Parsec-LanguageClasses
 print
 
-	<print> ::= "print" (<expression> | <string>)
+	<print> ::= "print" <printList>

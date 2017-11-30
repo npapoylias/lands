@@ -1,4 +1,4 @@
-Parsec-LanguageClasses
+rules
 variable
 
 	^ super variable ==> [ :token | token tokenValue asSymbol ]

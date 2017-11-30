@@ -1,7 +1,7 @@
 as yet unclassified
 terminalMatchForInput: input atPosition: readingPosition
 	
-	(readingPosition == lastPosition and: [ lastInput == input ]) ifTrue: [^ lastResult]. "last position memoize -- threaded ?"
+	(readingPosition == lastPosition and: [ lastInput == input ]) ifTrue: [^ lastResult]."last position memoize -- threaded ?"
 	lastInput := input. lastPosition := readingPosition.
 	readingPosition == input size 
 		ifTrue: [ ^ lastResult := readingPosition  ]. "no match already at end"		

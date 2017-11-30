@@ -1,6 +1,6 @@
-statements
+Parsec-LanguageClasses
 loop 
 
 	<loop> ::= "while" "(" <logical> ")" "{" 
-						<lazyStatement> * 
+						<statements>
 					"}" 
