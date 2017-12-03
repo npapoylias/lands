@@ -13,8 +13,7 @@ populate: aForest with: childOrChildren
 				]. "recurse in depth"
 			].
 			aForest do: [ :tree | tree add: childOrChildren].
-			recurseWith := (childrenStates at: childOrChildren to ifAbsent: [{} asOrderedCollection]) copy.
-			(recurseWith includes: childOrChildren) ifTrue: [ recurseWith remove: childOrChildren ]. "empty, eof, etc where from==to"
+			recurseWith := (childrenStates at: childOrChildren to ifAbsent: [{} asOrderedCollection]) copy select: [:cState | cState isEmpty not].
 			recurseWith isEmpty ifTrue: [ ^ aForest ]. 
 			self populate: aForest with: recurseWith.
 		]
