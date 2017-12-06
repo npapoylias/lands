@@ -1,0 +1,13 @@
+{
+	"classtraitcomposition" : "TParsecFiltering classTrait",
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "ParsecOrderedFilteredAlgo",
+	"commentStamp" : "",
+	"super" : "ParsecOrderedAlgo",
+	"traitcomposition" : "TParsecFiltering",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Parsec"
+}

@@ -1,7 +1,7 @@
 tests
 testNonPegOrdJustO
 
-	charts := ParsecOrderedAlgo new log
+	charts := ParsecOrderedFilteredAlgo new log
 		parse: 'xxxxxxx'
 		using: ParsecGrammar nonPegOrd.
 		

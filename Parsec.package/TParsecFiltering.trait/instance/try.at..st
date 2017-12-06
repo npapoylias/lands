@@ -2,5 +2,5 @@ as yet unclassified
 try: pRule at: position
 
 	^ (pRule
-		terminalMatchForInput: input
+		terminalMatchForInput: self input
 		atPosition: position) > position

@@ -6,6 +6,6 @@ testExpressionGrammarFiltered
 	|result|
 
 	result := ParsecExprGrammar new 
-		parse: '2+4' using: ParsecMixedOrderFilteredAlgo new log.
+		parse: '2+4' using: ParsecMixedOrderedFilteredAlgo new log.
 		
 	self assert: result succeeded.
