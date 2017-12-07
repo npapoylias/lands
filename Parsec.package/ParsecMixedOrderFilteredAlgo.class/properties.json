@@ -1,11 +1,11 @@
 {
-	"commentStamp" : "NickPapoulias 11/30/2016 14:49",
-	"super" : "ParsecOrderedAlgo",
+	"commentStamp" : "",
+	"super" : "ParsecMixedOrderAlgo",
 	"category" : "Parsec",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "ParsecMixedOrderedAlgo",
+	"name" : "ParsecMixedOrderFilteredAlgo",
 	"type" : "normal"
 }

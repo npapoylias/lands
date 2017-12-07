@@ -1,7 +1,7 @@
 tests
 testFMOcontextSensitive
 
-	charts := ParsecMixedOrderedFilteredAlgo new log "curiosity does not work without the filter"
+	charts := ParsecMixedOrderFilteredAlgo new log "curiosity does not work without the filter"
 		parse: 'aaabbbccc'
 		using: ParsecGrammar contextSensitive.
 		

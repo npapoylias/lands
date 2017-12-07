@@ -1,4 +1,4 @@
 accessing
 parse: aString
 
-	^ self parse: aString using: ParsecMixedOrderedFilteredAlgo new
+	^ self parse: aString using: ParsecMixedOrderFilteredAlgo new

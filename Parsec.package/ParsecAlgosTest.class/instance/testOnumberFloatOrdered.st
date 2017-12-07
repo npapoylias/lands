@@ -1,7 +1,7 @@
 tests
 testOnumberFloatOrdered
 
-	charts := ParsecOrderedFilteredAlgo new log
+	charts := ParsecOrderedAlgo new log
 		parse: '23.23'
 		using: ParsecGrammar numberFloatOrdered.
 		

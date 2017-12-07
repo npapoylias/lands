@@ -1,7 +1,7 @@
 tests
 testOcontextSensitive
 	
-	charts := ParsecMixedOrderedFilteredAlgo new log
+	charts := ParsecMixedOrderFilteredAlgo new log
 		parse: 'aaabbbccc'
 		using: ParsecGrammar contextSensitive.
 

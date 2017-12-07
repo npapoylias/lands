@@ -1,7 +1,7 @@
 tests
 testFMOnumberFloat
 
-	charts := ParsecMixedOrderedFilteredAlgo new log
+	charts := ParsecMixedOrderAlgo new log
 		parse: '23.23'
 		using: ParsecGrammar numberFloat.
 		
