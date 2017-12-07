@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "ParsecMixedOrderedAlgo",
+	"category" : "Parsec",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "ParsecMixedOrderedFilteredAlgo",
+	"type" : "normal"
+}

@@ -1,6 +1,6 @@
 as yet unclassified
 runFilteredWithPPC
 		
-	self use: ParsecMixedOrderFilteredAlgo.
+	self use: ParsecMixedOrderedFilteredAlgo.
 
 	^ (self totJson / self ppcJson) asFloat

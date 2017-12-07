@@ -1,7 +1,7 @@
 tests
 testFMOenglisOpsMixed
 
-	charts := ParsecMixedOrderAlgo new log
+	charts := ParsecMixedOrderedFilteredAlgo new log
 		parse: 'book that flight   '
 		using: ParsecGrammar englishWithTempsEmptyInlineTerminalsAndOpsMixed.
 		
