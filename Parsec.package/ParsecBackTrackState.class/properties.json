@@ -12,7 +12,7 @@
 		"state",
 		"initState",
 		"completedState",
-		"wasSeen"
+		"hasFailed"
 	],
 	"name" : "ParsecBackTrackState",
 	"type" : "normal"

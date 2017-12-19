@@ -6,7 +6,7 @@ backTrack
 		ifFalse: [ ^ self ].
 	btState := backTrackStack pop.
 	readingPosition := btState readingPosition.
-	btState wasSeen 
+	btState hasFailed 
 		ifTrue: [ self backTrack ] "memoized failure"
 		ifFalse: [
 			(charts

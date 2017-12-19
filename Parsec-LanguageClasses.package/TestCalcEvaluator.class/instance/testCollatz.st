@@ -2,6 +2,8 @@ tests
 testCollatz
 	|results|
 
+	"check ambiguity when considering expressions as statements"
+
 	results := CalcEvaluator new parse: '
 		x=7
 		print x 

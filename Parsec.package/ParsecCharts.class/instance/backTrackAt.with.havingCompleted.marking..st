@@ -8,7 +8,7 @@ backTrackAt: indexPair with: aNewState havingCompleted: completedState marking: 
 	chartIndex := indexPair key. current := self at: chartIndex.
 	stateIndex := indexPair value.
 	
-	backTrackStack markFor: (self current at: stateIndex). 
+	backTrackStack markFailureFor: (self current at: stateIndex). 
 	
 	logging ifTrue: [
 		Transcript
