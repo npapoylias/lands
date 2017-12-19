@@ -11,7 +11,8 @@
 		"readingPosition",
 		"state",
 		"initState",
-		"completedState"
+		"completedState",
+		"wasSeen"
 	],
 	"name" : "ParsecBackTrackState",
 	"type" : "normal"
