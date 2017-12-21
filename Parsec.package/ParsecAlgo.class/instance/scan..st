@@ -1,4 +1,4 @@
-as yet unclassified
+public api
 scan: aState
 
 	|match |
@@ -15,7 +15,7 @@ scan: aState
 			charts nextAdd: 
 				(aState asScannerStateFrom: aState to to: match withIndex: 1). 
 				"always 1 for terminals"
-			readingPosition := match.
+			match > readingPosition ifTrue: [readingPosition := match].
 			^ true
 		].
 	
