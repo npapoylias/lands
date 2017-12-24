@@ -20,4 +20,6 @@ updateChildrenWaitingFor: aState withNewState: newState andStateAdded: stateAdde
 		ifNotNil: [
 			(childrenDict
 				at: aState from
-				ifAbsent: [ childrenDict at: aState from put: OrderedCollection new ]) add: aState]	"children from multiple trees"
+				ifAbsent: [ childrenDict at: aState from put: OrderedCollection new ]) 
+				detect: [ :p | p equalTo: aState ] 
+				ifNone: [ (childrenDict at: aState from) add: aState]]	"children from multiple trees"
