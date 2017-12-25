@@ -5,3 +5,4 @@ statement
 		| <conditional>
 		| <loop>
 		| <print>
+		| <block>

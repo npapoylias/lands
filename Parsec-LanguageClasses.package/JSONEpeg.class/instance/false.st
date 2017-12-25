@@ -1,4 +1,4 @@
-rules
+Parsec-LanguageClasses
 false
 
 	<false> ::= "false"

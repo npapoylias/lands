@@ -1,4 +1,4 @@
-rules
+Parsec-LanguageClasses
 array
 
 	<array> ::= "[" <elements> ? "]"

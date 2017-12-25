@@ -1,8 +1,7 @@
-statements
+Parsec-LanguageClasses
 conditional 
 
-	<conditional> ::= "if" "(" <logical> ")" "{" 
-			<statements> 
-		"}" ( "else" "{" 
-			<statements> 
-		"}" ) ?
+	<conditional> ::= "if" "(" <expression> ")" <statement> "else" <statement>
+		| "if" "(" <expression> ")" <statement>
+			
+	

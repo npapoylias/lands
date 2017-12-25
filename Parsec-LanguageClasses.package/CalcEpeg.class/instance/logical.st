@@ -1,11 +1,8 @@
-expressions
+Parsec-LanguageClasses
 logical
 
-	<logical> ::= "(" <logical> ")"
-			| "true"
+	<logical> ::= "true"
 			| "false"
-			| <variable>
-			| <relational> 
-			| <logical> "||" <logical> 
-			| <logical> "&&" <logical>   
+			| <expression> "||" <expression> 
+			| <expression> "&&" <expression>  
 			

@@ -1,9 +1,18 @@
-rules
+Parsec-LanguageClasses
 conditional
 
-	^ super conditional ==> [ :tokens | [
+	^ super conditional ==> { 
+	
+		[ :tokens | [
 			tokens third value
-				ifTrue: [ tokens sixth do: [ :stmt | stmt value ] ] "if and optional else"
-				ifFalse: [ tokens size > 7 ifTrue: [ (tokens at: 10) do: [:stmt | stmt value ] ] ]
-		] ]
+				ifTrue: [ tokens fifth do: [ :stmt | stmt value ] ] "if else"
+				ifFalse: [ (tokens at: 7) do: [:stmt | stmt value ] ]
+		] ]. 
+
+		[ :tokens | [
+			tokens third value
+				ifTrue: [ tokens fifth do: [ :stmt | stmt value ] ] "if"
+		] ].
+
+	}
 	

@@ -1,6 +1,4 @@
-statements
+Parsec-LanguageClasses
 loop 
 
-	<loop> ::= "while" "(" <logical> ")" "{" 
-						<statements>
-					"}" 
+	<loop> ::= "while" "(" <expression> ")" <statement>

@@ -1,9 +1,9 @@
-expressions
+Parsec-LanguageClasses
 relational
 
-	<relational> ::= <numerical> ">" <numerical> 
-			| <numerical> "<" <numerical>   
+	<relational> ::= <expression> ">" <expression> 
+			| <expression> "<" <expression>  
 			| <expression> "==" <expression>
 			| <expression> "!=" <expression>
-			| <numerical> ">=" <numerical>      
-			| <numerical> "<=" <numerical> 
+			| <expression> ">=" <expression>      
+			| <expression> "<=" <expression> 
