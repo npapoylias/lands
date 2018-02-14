@@ -10,4 +10,4 @@ elementLabel
 			n = modelRoot
 				ifTrue: [ '#' , (self forestIndexFor: modelRoot) asString , ' of '
 						, (modelRoot perform: childrenSelector) size asString ]
-				ifFalse: [ n perform: nameSelector ] ]
+				ifFalse: [ (n perform: nameSelector) truncate: 10 ] ]
