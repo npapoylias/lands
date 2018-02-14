@@ -1,10 +1,9 @@
 as yet unclassified
 defaultViewFor: results
-
-	^ (ParsecTree new 
-			startingFrom: results
-			withChildren: #childrenForestTraversingTemps 
-			named: #rulePrettyName
-			popUp: [ :e | results input "you can show the action values also here, optimally per node"
-				atAll: (e interval key + 1 to:  e interval value)]
-			andEdges: #interval "this should be sent to the children for marking the interval") view
+	^ (ParsecTree new
+		startingFrom: results
+		withChildren: #childrenForestTraversingTemps
+		named: #rulePrettyName
+		ofSize: #childrenForestTraversingTempsSize 
+		popUp: 	[ :e | results input atAll: (e interval key + 1 to: e interval value)	"you can show the action values also here, optimally per node" ]
+		andEdges: #interval) view	"this should be sent to the children for marking the interval"

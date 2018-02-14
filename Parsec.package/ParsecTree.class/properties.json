@@ -10,9 +10,9 @@
 		"nameSelector",
 		"childrenSelector",
 		"edgesSelector",
-		"shouldRepeat",
 		"forestIndexPerNode",
-		"popUpBlock"
+		"popUpBlock",
+		"sizeSelector"
 	],
 	"name" : "ParsecTree",
 	"type" : "normal"

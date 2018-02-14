@@ -1,40 +1,29 @@
 accessing
-updateElementsFor: v
-	| arrow es|
+updateElementsFor: view
+	| arrow elements |
 	
-	v removeElements: 
-		(v elements select: [:e | e model ~= nil]). "control elements such as slider. cleanAll."
-	
-	"label clean-up"
-	v canvas removeShapes: (v canvas shapes select: [:s | s class = TRLabelShape]).
-	
-	es := (RTEllipse new size: 75)
-		color: [:e | self colorFor: (e perform: nameSelector) ] "Color black";
+	self cleanView: view.
+	elements := RTEllipse new "distinguish between ellipses and squares when you have nodes with forests ?"
+		size: [ :e | (e perform: sizeSelector) * 10];
+		"was 75: Should both control navigating with clicks and forest size (also focus on mouse over etc...)"
+		color: [ :e | self colorFor: (e perform: nameSelector) ];
 		elementsOn: self allNodes.
-	es @ RTDraggable.
-	es @ (RTPopup text: [ :e | popUpBlock value: e ]).
-	v addAll: es.
-	es
-		@
-			(RTLabeled new
-				color: Color black;
-				fontSize: 18;
-				center;
-				setAsShouldBeInTheFront;
-				text: [ :n | n = modelRoot 
-										ifTrue: ['#' , (self forestIndexFor: modelRoot) asString , ' of ' , (modelRoot perform: childrenSelector) size asString] 
-										ifFalse: [n perform: nameSelector] 
-					 	]).
+	elements @ RTDraggable.
+	elements @ (RTPopup text: [ :e | popUpBlock value: e ]).
+	view addAll: elements.
+	elements @ self elementLabel.
 	arrow := RTArrowedLine new
 		color: Color black;
 		attachPoint: RTVerticalAttachPoint instance.
 	RTEdgeBuilder new
-		view: v;
+		view: view;
 		highlightable;
 		objects: self allNodes;
 		shape: arrow;
-		label: [ :from :to | (to perform: edgesSelector) asString ]fontSize: 10 color: Color white;
+		label: [ :from :to | (to perform: edgesSelector) asString ]
+			fontSize: 10
+			color: Color white;
 		connectFrom: #yourself
 			toAll: [ :n | self childrenAtForestIndexFor: n ].
-	RTTreeLayout new on: es.
-	v signalUpdate. "signal update"
+	RTTreeLayout new on: elements.
+	view signalUpdate
