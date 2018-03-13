@@ -9,7 +9,7 @@ populate: aForest with: childOrChildren
 					^ self 
 						populate: aForest 
 						with: (childOrChildren childrenForest collect: [ :tree | 
-							childOrChildren shallowCopy childrenForest: { tree } asOrderedCollection ])
+							childOrChildren shallowCopy mimicSingleTreeAndMemoize: { tree } asOrderedCollection ])
 				]. "recurse in depth"
 			].
 			aForest do: [ :tree | tree add: childOrChildren].

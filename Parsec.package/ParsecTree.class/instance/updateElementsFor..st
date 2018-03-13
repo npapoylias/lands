@@ -4,7 +4,7 @@ updateElementsFor: view
 	
 	self cleanView: view.
 	elements := RTEllipse new "distinguish between ellipses and squares when you have nodes with forests ?"
-		size: [ :e | (e perform: sizeSelector) * 50];
+		size: [ :e | (e perform: sizeSelector) * 50]; "should normalize here depending on the root"
 		"was 75: Should both control navigating with clicks and forest size (also focus on mouse over etc...)"
 		color: [ :e | self colorFor: (e perform: nameSelector) ];
 		elementsOn: self allNodes.

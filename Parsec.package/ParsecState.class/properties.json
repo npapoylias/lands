@@ -19,7 +19,8 @@
 		"dRefRightHand",
 		"childrenStates",
 		"childrenForest",
-		"alternative"
+		"alternative",
+		"memoizedChildrenForest"
 	],
 	"name" : "ParsecState",
 	"type" : "normal"
