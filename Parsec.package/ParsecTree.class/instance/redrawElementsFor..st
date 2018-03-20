@@ -11,8 +11,8 @@ redrawElementsFor: view
 						node := RTEllipse new
 							size: (self sizeForElement: n);
 							color: (self colorFor: labelText).
-						label := RTLabel new text: labelText; color: Color white; height: 18.
-						shape add: node; add: label; elementOn:n
+						label := RTLabel new text: labelText; color: Color black; height: 28.
+						shape add: node; add: label; elementOn: n.
 					]);
 		yourself.
 	velements @ RTDraggable.
@@ -20,14 +20,14 @@ redrawElementsFor: view
 	view addAll: velements.
 	"velements @ self elementLabel."
 	arrow := RTArrowedLine new
-		color: Color white;
+		color: Color black;
 		attachPoint: RTVerticalAttachPoint instance.
 	eb := RTEdgeBuilder new
 		view: view;
 		highlightable;
 		objects: nodes;
 		shape: arrow;
-		label: [ :from :to | (to perform: edgesSelector) asString ] fontSize: 10 color: Color white;
+		"label: [ :from :to | (to perform: edgesSelector) asString ] fontSize: 10 color: Color white;"
 		connectFrom: #yourself
 		toAll: [ :n | self childrenOf: n ].
 	RTTreeLayout new on: velements.
