@@ -12,7 +12,8 @@
 		"edgesSelector",
 		"forestIndexPerNode",
 		"popUpBlock",
-		"sizeSelector"
+		"sizeSelector",
+		"elements"
 	],
 	"name" : "ParsecTree",
 	"type" : "normal"

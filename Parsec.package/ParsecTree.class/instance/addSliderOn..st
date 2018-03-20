@@ -7,12 +7,12 @@ addSliderOn: v
 		min: 1 max: max;
 		"vertical;"
 		view: v;
-		size: 5*max;
+		size: 10*max;
 		"you can extend to do this per node"
 			callback: [ :value | 
 				"Transcript show: value;cr."
 				forestIndexPerNode at: modelRoot put: value rounded.
-				self updateElementsFor: v.
+				self redrawElementsFor: v.
 				"no need to rebuild: self addSliderOn: v"];
 		move: #above;
 		value: 1;

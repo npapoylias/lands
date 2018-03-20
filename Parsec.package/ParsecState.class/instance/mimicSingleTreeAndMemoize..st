@@ -1,5 +1,7 @@
 action
 mimicSingleTreeAndMemoize: singleTreeForest
 
-	memoizedChildrenForest := childrenForest.
+	memoizedChildrenForest 
+		ifNil: [ memoizedChildrenForest:= childrenForest ];
+		ifNotNil: [ memoizedChildrenForest addAll: childrenForest ].
 	childrenForest := singleTreeForest
