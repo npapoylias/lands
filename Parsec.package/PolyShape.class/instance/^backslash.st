@@ -1,4 +1,0 @@
-accessing
-\ anotherShape
-
-	^ anotherShape / self

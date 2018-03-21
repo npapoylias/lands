@@ -1,4 +1,4 @@
 accessing
 - anotherShape
 
-	^ anotherShape + self 
+	^ anotherShape + self

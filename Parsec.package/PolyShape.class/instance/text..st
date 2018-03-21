@@ -1,4 +1,4 @@
 accessing
 text: aString
 
-	shapeElement := (RTText new text: aString) element.
+	shapeElement := (RTLabel new text: aString) element.
