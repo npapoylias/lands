@@ -1,13 +1,13 @@
 accessing
-exampleCompositeNode
+exampleCompositeNodeBoxed
 
 |labelText shape1 shape2 node label el innerNode|
 
 labelText := 'hello world' , Character cr asString , 'second line'.
-node := RTEllipse new
+node := RTBox new
 	color: Color green;
 	element.
-innerNode := RTEllipse new
+innerNode := RTBox new
 	color: Color red;
 	element.
 label := (RTText new text: labelText; color: Color black; height: 20) element.
