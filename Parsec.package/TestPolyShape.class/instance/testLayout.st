@@ -7,8 +7,9 @@ testLayout
 	p2 := PolyShape new box; color: #red.
 	p1 render.
 	p2 render.
+	(p1>p2) render.
+	(p1<p2) render.
 	(p1+p2) render.
 	(p1-p2) render.
-	(p1 / p2) render.
-	(p1 \ p2) render.
-	(p1 <- p2) render
+	(p1*p2) render.
+	(p1/p2) render.
