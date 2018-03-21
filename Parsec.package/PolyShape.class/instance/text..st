@@ -1,4 +1,6 @@
 accessing
 text: aString
 
-	shapeElement := (RTLabel new text: aString) element.
+	"RTEditable ?? -- check morph"
+
+	shapeElement := (RTStyledLabel new bold; text: aString) element.
