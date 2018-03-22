@@ -1,4 +1,4 @@
 accessing
 shapeElement: anObject
 
-	shapeElement := anObject
+	shapeElement := anObject 
