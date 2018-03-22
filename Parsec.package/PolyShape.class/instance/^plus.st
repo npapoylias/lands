@@ -7,4 +7,4 @@ accessing
 	RTNest new on: encompassingBox nest: { self shapeElement . anotherShape shapeElement }.
 	^ self class new 
 		shapeElement: encompassingBox;
-		group: ((self group copy addAll: anotherShape group) add: encompassingBox; yourself)
+		group: ((self group copy addAll: anotherShape group;yourself) add: encompassingBox; yourself)
