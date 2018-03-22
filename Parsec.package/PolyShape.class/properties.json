@@ -7,8 +7,6 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"shapeElement",
-		"labelElement",
-		"gapSize",
 		"group"
 	],
 	"name" : "PolyShape",

@@ -1,5 +1,5 @@
 accessing
 displayOn: aView
 
-	aView add: shapeElement.
+	aView add: group.
 	^ aView

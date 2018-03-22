@@ -1,5 +1,10 @@
 accessing
 > anotherShape
 
+	|encompassingBox|
+	RTHorizontalLineLayout new on: { self shapeElement . anotherShape shapeElement }.
+	encompassingBox := RTBox new element. "this should be color transparent"
+	RTNest new on: encompassingBox nest: { self shapeElement . anotherShape shapeElement }.
 	^ self class new 
-		shapeElement:(shapeElement shape + anotherShape shape) horizontal element
+		shapeElement: encompassingBox;
+		group: ((self group copy addAll: anotherShape group) add: encompassingBox; yourself)
