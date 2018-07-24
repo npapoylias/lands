@@ -1,13 +1,14 @@
 filtering
 firstForRightHandSide: rule
 	
-	|symbolFirsts totalFirsts index|
+	|symbolFirsts totalFirsts index ruleRef|
 	
 	index := 1.
 	totalFirsts := { } asOrderedCollection.
-	[symbolFirsts = nil or: [(symbolFirsts includes: #e) and: [ index <= rule size ]]]
+	[symbolFirsts = nil or: [ ruleRef isNot or: [(symbolFirsts includes: #e) and: [ index <= rule size ]]]]
 		whileTrue: [ 
-			symbolFirsts := self firstsFor: (rule at: index).
+			ruleRef := self grammar at: (rule at: index).
+			symbolFirsts := ruleRef firsts.
 			totalFirsts addAll: symbolFirsts. "will return asSet at the end" 
 			index := index + 1 
 		].

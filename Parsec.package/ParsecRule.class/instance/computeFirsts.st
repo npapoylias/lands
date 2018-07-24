@@ -8,3 +8,5 @@ computeFirsts
 	canBeEmpty := firsts deepFlatten anySatisfy: [ :r | r isEmpty ].
 	^ firsts := firsts	asParsecCollection.
 	
+	
+	
