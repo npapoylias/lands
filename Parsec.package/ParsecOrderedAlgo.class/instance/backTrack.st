@@ -2,7 +2,7 @@ accessing
 backTrack
 	| btState |
 
-	(backTrackStack isEmpty and: [ self atChartAndStateEnd ])
+	(backTrackStack isEmpty" and: [ self atChartAndStateEnd ]")
 		ifTrue: [ ^ self ].
 	btState := backTrackStack pop.
 	readingPosition := btState readingPosition.
