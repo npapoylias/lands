@@ -2,7 +2,7 @@ accessing
 rightHandSideAsNewStatesOn: readingPosition fromTerminal: fromTerminal toTerminal: toTerminal
 
 	| newStates |
-	newStates := ParsecCollection new.
+	newStates := OrderedCollection new.
 
 	1 to: self rightHandSide size do: [ :i |
 		newStates add: 

@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"backTrackStack"
+		"backTrackStack",
+		"ruleToAlternativeIndex"
 	],
 	"name" : "ParsecOrderedAlgo",
 	"type" : "normal"
