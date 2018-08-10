@@ -3,4 +3,4 @@ enumerating
 
 	self beOrdered.
 	self | aSymbolOrString.
-	childRules last recursiveIndex: 1.
+	childRules ifNotEmpty: [childRules last recursiveIndex: 1].

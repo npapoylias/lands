@@ -3,4 +3,4 @@ arithmetic
 
 	self beOrdered.
 	self | aSymbolOrString.
-	childRules last recursiveIndex: 0.
+	childRules ifNotEmpty: [childRules last recursiveIndex: 0].
