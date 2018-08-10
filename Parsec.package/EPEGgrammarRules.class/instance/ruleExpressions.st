@@ -2,4 +2,4 @@ accessing
 "protocol: accessing"
 ruleExpressions
 
-	^ ruleExpressions --> #(optionOperand '\||/') delimeterStar 
+	^ ruleExpressions --> #(optionOperand '\||/|\\') delimeterStar 

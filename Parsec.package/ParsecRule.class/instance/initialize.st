@@ -9,5 +9,6 @@ initialize
 	isNot := false. 
 	ordered := false. "by default -- changes with \"
 	action := Dictionary new.
+	recursiveIndex := 1. "left recursive by default"
 	
 	

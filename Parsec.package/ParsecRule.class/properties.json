@@ -20,7 +20,8 @@
 		"canBeEmpty",
 		"predict",
 		"action",
-		"parent"
+		"parent",
+		"recursiveIndex"
 	],
 	"name" : "ParsecRule",
 	"type" : "normal"

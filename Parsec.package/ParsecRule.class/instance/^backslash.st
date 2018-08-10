@@ -1,5 +1,6 @@
-ops
+enumerating
 \ aSymbolOrString
 
 	self beOrdered.
-	self | aSymbolOrString
+	self | aSymbolOrString.
+	childRules last recursiveIndex: 1.

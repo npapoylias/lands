@@ -5,7 +5,7 @@ recursiveAlternativesFor: aState
 	^ aState ruleAtDot  == aState rule parent
 		ifTrue: [ |index|
 			index := aState rule parent indexOf: aState rule. 
-			alternatives copyFrom: index + 1 to: alternatives size  
+			alternatives copyFrom: index + (aState rule recursiveIndex) to: alternatives size  
 		] ifFalse: [ alternatives ]
 
 	
