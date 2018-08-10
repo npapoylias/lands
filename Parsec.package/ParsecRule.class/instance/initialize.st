@@ -4,7 +4,7 @@ initialize
 	super initialize.
 	rightHandSide := ParsecCollection new.
 	rightHandSide add: ParsecCollection new.
-	childRules := ParsecCollection new.
+	childRules := OrderedCollection new.
 	isAnd := false. 
 	isNot := false. 
 	ordered := false. "by default -- changes with \"

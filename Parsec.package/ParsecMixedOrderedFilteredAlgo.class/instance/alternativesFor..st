@@ -5,7 +5,7 @@ alternativesFor: aState
 	
 	| newStates rule |
 	
-	newStates := ParsecCollection new.
+	newStates := OrderedCollection new.
 	rule := aState ruleAtDot.
 	
 	1 to: rule rightHandSide size do: [ :i | "we can use either predict either first here"
