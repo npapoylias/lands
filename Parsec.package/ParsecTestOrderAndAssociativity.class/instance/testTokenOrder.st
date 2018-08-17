@@ -27,5 +27,5 @@ testTokenOrder
 
 	self assert: results trees size = 1.
 	
-	self assert: results results first value = 2417851639229258349412352.
+	self assert: results results first value = 4096.
 	

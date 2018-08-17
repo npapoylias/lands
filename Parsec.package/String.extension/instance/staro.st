@@ -3,4 +3,4 @@ staro
 
 	"A* = #(A+ | e)"
 	
-	^ { self pluso . #\ . #e }
+	^ { self pluso . #/ . #e }
