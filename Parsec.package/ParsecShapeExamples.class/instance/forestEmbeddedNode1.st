@@ -22,7 +22,7 @@ e2 := ((RTEllipse new
 		borderWidth: 5) ++ ((RTLabel text: [:c | c]) color: Color black;yourself)) elementOn: 'expression'.
 
 e1 embed: { 
-	(RTBox new color: Color transparent; element) embed: {
+	(RTBox new color: Color transparent; element) eqEmbed: {
 		(RTLabel new text: 'expression'; color: Color black) element. e2 
 	} vertically: 2.
 	(RTRoundedBox new "borderRadius: 10;" color: (Color "transparent"yellow alpha: 0.3); element) embed: 				{
