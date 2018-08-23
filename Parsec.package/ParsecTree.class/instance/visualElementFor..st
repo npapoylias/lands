@@ -14,6 +14,10 @@ visualElementFor: n
 		add: node;
 		add: label;
 		elementOn: n"
-		
-	^ self simpleNodeOn: n
+	| nEl |
+	nEl := (elements at: n). 
+	^ nEl size == 1
+		ifTrue: [ self simpleNodeOn: nEl first]
+		ifFalse: [ self simpleNodeOn: nEl first"self embededNodesOn: nEl"]
+ 
 	

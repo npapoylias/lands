@@ -4,8 +4,9 @@ defaultNodeShape
 	"update with actual selectors"
 	^ defaultNodeShape ifNil: [
 		defaultNodeShape := self 
-			shape: RTEllipse size: nil  
-			color: Color brown  
+			shape: RTEllipse 
+			size: nil 
+			color: [:e | self colorFor: (self labelForElement: e)]  
 			borderColor: Color white 
-			borderWidth: 5
+			borderWidth: 3
 		]

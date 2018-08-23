@@ -4,7 +4,7 @@ redrawElementsFor: view
 	self cleanView: view.
 	nodes := self allNodes.
 	velements := RTGroup new
-		addAll: (nodes collect: [ :n | self visualElementFor: n ]);
+		addAll: (nodes collect: [ :n | self visualElementFor: n ]) deepFlatten;
 		yourself.
 	velements @ RTDraggable.
 	velements @ (RTPopup text: [ :e | popUpBlock value: e ]).
