@@ -5,7 +5,7 @@ exampleNodes
 t := ParsecTree new.
 e := t embededNodesOn: {'start' . 'expression' . 'number' . '7'}.
 v := t roassalView.
-v addAll: e.
+v addAll: e allElements.
 v.
 
 t := ParsecTree new.
@@ -20,19 +20,21 @@ t := ParsecTree new.
 e := t embededNodesOn: {'start' . 'expression' . 'number' . '7'}.
 e := t forestNodesOn: e index: 1 of: 7.
 v := t roassalView.
-v addAll: e.
+v addAll: e allElements.
 v.
 
 t := ParsecTree new.
 e := t embededNodesOn: {'start' . 'expression' . 'number' . '7'}.
 e := t forestNodesOn: e index: 1 of: 7.
 v := t roassalView.
-v addAll: e.
+RTTreeLayout new on: {e}.
+v addAll: e allElements.
 v.
 
 t := ParsecTree new.
 e := t simpleNodeOn: 'expression'.
 e := t forestNodesOn: e index: 1 of: 7.
 v := t roassalView.
-v addAll: e.
+RTTreeLayout new on: {e}.
+v addAll: e allElements.
 v.

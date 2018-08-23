@@ -7,4 +7,4 @@ forestNodesOn: element index: atIndex of: forestSize
 		(element isCollection ifTrue: [ element first] ifFalse: [element]) . 
 		controls
 	} deepFlatten horizontally: 2.
-	^ surroundingElement allElements
+	^ surroundingElement "allElements"
