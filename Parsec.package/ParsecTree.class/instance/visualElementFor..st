@@ -1,6 +1,6 @@
-accessing
+visual-nodes
 visualElementFor: n
-	| shape label node labelText |
+	"| shape label node labelText |
 	shape := RTCompositeShape new.
 	labelText := self labelForElement: n.
 	node := RTEllipse new
@@ -13,4 +13,7 @@ visualElementFor: n
 	^ shape
 		add: node;
 		add: label;
-		elementOn: n
+		elementOn: n"
+		
+	^ self simpleNodeOn: n
+	
