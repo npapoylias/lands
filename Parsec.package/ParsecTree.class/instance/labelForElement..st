@@ -1,7 +1,10 @@
 accessing
 labelForElement: n
-
-	|es s|
+	n class == ParsecResult ifTrue: [ ^ 'Tree' ].
+	^ n rule isPureTerminal
+		ifTrue: [ popUpBlock value: n  ]
+		ifFalse: [ n perform: nameSelector.  ]
+	"|es s|
 	es := elements at: n ifAbsent: [^ n asString].
 	s := WriteStream on: String new.
 	s nextPutAll: (es first perform: nameSelector).
@@ -9,5 +12,5 @@ labelForElement: n
 		s
 			nextPut: Character cr;
 			nextPutAll: (e perform: nameSelector) ].
-	^ s contents
+	^ s contents"
 		 

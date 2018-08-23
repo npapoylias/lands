@@ -18,6 +18,6 @@ visualElementFor: n
 	nEl := (elements at: n). 
 	^ nEl size == 1
 		ifTrue: [ self simpleNodeOn: nEl first]
-		ifFalse: [ self simpleNodeOn: nEl first"self embededNodesOn: nEl"]
+		ifFalse: [ self embededNodesOn: nEl ]
  
 	

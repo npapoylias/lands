@@ -2,7 +2,6 @@ accessing
 view
 	"see RTRoassalExample>>exampleArrow"
 
-	| v |
 	v := RTView new.
 	self redrawElementsFor: v.
 	self addSliderOn: v.

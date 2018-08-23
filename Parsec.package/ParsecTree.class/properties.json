@@ -19,7 +19,8 @@
 		"defaultNodeShapeWithLabel",
 		"defaultForestSurroundingShape",
 		"defaultControls",
-		"down"
+		"down",
+		"v"
 	],
 	"name" : "ParsecTree",
 	"type" : "normal"
