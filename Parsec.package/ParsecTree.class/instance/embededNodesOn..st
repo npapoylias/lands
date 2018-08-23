@@ -2,9 +2,14 @@ visual-nodes
 embededNodesOn: objects 
 
 	| surroundingElement embededElements |
-	surroundingElement := "RTBox new color: Color transparent; element."self defaultNodeShape elementOn: objects first.
-	surroundingElement @ (RTLabeled new color: Color white; text: [ :entry | self labelForElement: entry ]; view: v).
+	surroundingElement := RTEllipse new color: Color transparent; "self defaultNodeShape" elementOn: objects first.
+	"surroundingElement @ (RTLabel new color: Color white; fontSize: 7; text: [ :entry | self labelForElement: entry ]; view: v)."
 	embededElements := (objects allButFirst collect: [:o | self visualElementFor: o"self simpleNodeOn: o"]) asOrderedCollection.
-	surroundingElement eqEmbed: embededElements vertically: 2.
+	embededElements 
+		addFirst: (RTLabel new 
+			color: Color white; 
+			"height: 7;" 
+			elementOn: (self labelForElement: objects first)) . 
+	surroundingElement embed: embededElements vertically: 0.
 	^ surroundingElement "allElements"
 	

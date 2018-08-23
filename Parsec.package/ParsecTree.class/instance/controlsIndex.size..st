@@ -10,11 +10,11 @@ controlsIndex: atIndex size: forestSize
 				color: Color black";
 				height: 7") element.
 			 up := (RTPolygon triangle
-				"size: 21;"
+				"size: 21"
 				color: Color black;
 				elementOn: #up).
 			down := ((RTPolygon triangleRotated: Float pi)
-				"size: 22;"
+				"size: 22"
 				color: Color black;
 				elementOn: #down)}
 		vertically: 2.	"borderRadius: 10;"	"transparent"

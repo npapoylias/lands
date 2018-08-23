@@ -5,7 +5,7 @@ defaultNodeShape
 	^ defaultNodeShape ifNil: [
 		defaultNodeShape := self 
 			shape: RTEllipse 
-			size: nil 
+			size: 50 
 			color: [:e | self colorFor: (self labelForElement: e)]  
 			borderColor: Color white 
 			borderWidth: 3

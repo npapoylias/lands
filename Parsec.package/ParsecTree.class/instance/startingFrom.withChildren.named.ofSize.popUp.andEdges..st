@@ -3,7 +3,7 @@ startingFrom: root withChildren: cSelector named: nSelector ofSize: sSelector po
 
 	"use both selectors and blocks here ??"
 
-	modelRoot := root.
+	modelRoot := root. 
 	childrenSelector := cSelector.
 	nameSelector := nSelector.
 	sizeSelector := sSelector.

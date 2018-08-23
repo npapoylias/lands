@@ -14,10 +14,15 @@ visualElementFor: n
 		add: node;
 		add: label;
 		elementOn: n"
-	| nEl |
+	| nEl node |
 	nEl := (elements at: n). 
-	^ nEl size == 1
-		ifTrue: [ self simpleNodeOn: nEl first]
-		ifFalse: [ self embededNodesOn: nEl ]
+	node :=  
+		nEl size == 1
+			ifTrue: [ self simpleNodeOn: nEl first]
+			ifFalse: [ "self visualElementFor: nEl second" "embeding is recursive el at: n has max 2"self embededNodesOn: nEl ].
+	^ n memoizedChildrenForestTraversingTempsSize > 1 
+		ifTrue: [ self forestNodesOn: node index: (self forestIndexFor: n) of: n memoizedChildrenForestTraversingTempsSize ]
+		ifFalse: [ node ]
+	
  
 	
