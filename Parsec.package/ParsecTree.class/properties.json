@@ -13,7 +13,13 @@
 		"forestIndexPerNode",
 		"popUpBlock",
 		"sizeSelector",
-		"elements"
+		"elements",
+		"defaultLabel",
+		"defaultNodeShape",
+		"defaultNodeShapeWithLabel",
+		"defaultForestSurroundingShape",
+		"defaultControls",
+		"down"
 	],
 	"name" : "ParsecTree",
 	"type" : "normal"
