@@ -20,7 +20,8 @@
 		"defaultForestSurroundingShape",
 		"defaultControls",
 		"down",
-		"v"
+		"v",
+		"defaultPopUp"
 	],
 	"name" : "ParsecTree",
 	"type" : "normal"

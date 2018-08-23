@@ -7,7 +7,7 @@ redrawElementsFor: view
 		addAll: (nodes collect: [ :n | self visualElementFor: n ]);
 		yourself.
 	velements @ RTDraggable.
-	velements @ (RTPopup text: [ :e | popUpBlock value: e ]).
+	velements @ self defaultPopUp.
 	view addAll: (velements collect: [ :ve | ve allElements ]) deepFlatten.
 	"velements @ self elementLabel."
 	arrow := RTArrowedLine new

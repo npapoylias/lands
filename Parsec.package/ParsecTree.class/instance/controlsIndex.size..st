@@ -3,6 +3,7 @@ controlsIndex: atIndex size: forestSize
 	| controls label up |
 	controls := (RTRoundedBox new
 		color: (Color yellow alpha: 0.3);
+		borderRadius: 20;
 		element)
 		eqEmbed:
 			{label := (RTLabel new
