@@ -1,7 +1,7 @@
 accessing
 sizeForElement: e
 	"|children childrenAlternatives sum esize|"
-	^ (e perform: sizeSelector) * 50.
+	^ (e perform: forestSelector) * 50.
 	"children := self childrenAtForestIndexFor: e.
 	childrenAlternatives := children collect: [ :c | c perform: sizeSelector ].
 	sum := childrenAlternatives isEmpty ifTrue: [ 0 ] ifFalse: [ childrenAlternatives sum ].

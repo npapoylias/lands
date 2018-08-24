@@ -12,7 +12,6 @@
 		"edgesSelector",
 		"forestIndexPerNode",
 		"popUpBlock",
-		"sizeSelector",
 		"elements",
 		"defaultLabel",
 		"defaultNodeShape",
@@ -21,7 +20,8 @@
 		"defaultControls",
 		"down",
 		"v",
-		"defaultPopUp"
+		"defaultPopUp",
+		"forestSelector"
 	],
 	"name" : "ParsecTree",
 	"type" : "normal"

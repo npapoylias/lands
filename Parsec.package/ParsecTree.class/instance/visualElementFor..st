@@ -20,8 +20,8 @@ visualElementFor: n
 		nEl size == 1
 			ifTrue: [ self simpleNodeOn: nEl first]
 			ifFalse: [ "self visualElementFor: nEl second" "embeding is recursive el at: n has max 2"self embededNodesOn: nEl ].
-	^ n memoizedChildrenForestTraversingTempsSize > 1 
-		ifTrue: [ self forestNodesOn: node index: (self forestIndexFor: n) of: n memoizedChildrenForestTraversingTempsSize ]
+	^ (n perform: forestSelector) size  > 1 
+		ifTrue: [ self forestNodesOn: node index: (self forestIndexFor: n) of: (n perform: forestSelector) size ]
 		ifFalse: [ node ]
 	
  
