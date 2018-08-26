@@ -1,5 +1,5 @@
 visual-nodes
-controlsIndex: atIndex size: forestSize
+controlsIndex: atIndex size: forestSize for: node
 	| controls label up |
 	controls := (RTRoundedBox new
 		color: (Color yellow alpha: 0.3);
@@ -19,6 +19,12 @@ controlsIndex: atIndex size: forestSize
 				color: Color black;
 				elementOn: #down)}
 		vertically: 2.	"borderRadius: 10;"	"transparent"
-	self installInteractionsOn: up.
-	self installInteractionsOn: down.
+	up @ RTHighlightable.
+	up when: TRMouseClick do: [ :evt | 
+		forestIndexPerNode at: node put: (self forestIndexFor: node) + 1. 
+		self redrawElementsFor: v.  ].
+	down @ RTHighlightable.
+	down when: TRMouseClick do: [ :evt | 
+		forestIndexPerNode at: node put: (self forestIndexFor: node) - 1.
+		self redrawElementsFor: v  ].
 	^ controls	
