@@ -19,6 +19,6 @@ redrawElementsFor: view
 		objects: nodes;
 		shape: arrow;
 		"label: [ :from :to | (to perform: edgesSelector) asString ] fontSize: 10 color: Color white;"
-			connectFrom: #yourself toAll: [ :n | self childrenOf: n ] .
+			connectFrom: #yourself toAll: [ :n | self childrenAtForestIndexFor: n ] .
 	RTTreeLayout new on: velements.
 	view signalUpdate
