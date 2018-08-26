@@ -20,6 +20,9 @@ visualElementFor: n
 		nEl size == 1
 			ifTrue: [ self simpleNodeOn: nEl first]
 			ifFalse: [ "self visualElementFor: nEl second" "embeding is recursive el at: n has max 2"self embededNodesOn: nEl ].
+			
+	"self assert: node model == n."
+			
 	^ (n perform: forestSelector) size  > 1 
 		ifTrue: [ self forestNodesOn: node index: (self forestIndexFor: n) of: (n perform: forestSelector) size ]
 		ifFalse: [ node ]
