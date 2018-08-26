@@ -2,7 +2,7 @@ visual-nodes
 forestNodesOn: element index: atIndex of: forestSize
 	| surroundingElement controls |
 	surroundingElement := self defaultForestSurroundingShape elementOn: element model.
-	controls := self controlsIndex: atIndex size: forestSize for: element model.
+	controls := self controlsIndex: atIndex size: forestSize totalSize: (element model perform: sizeSelector) for: element model.
 	element model: nil.
 	surroundingElement embed: { 
 		(element isCollection ifTrue: [ element first] ifFalse: [element]) . 

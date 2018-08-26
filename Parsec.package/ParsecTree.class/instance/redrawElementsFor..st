@@ -21,4 +21,5 @@ redrawElementsFor: view
 		"label: [ :from :to | (to perform: edgesSelector) asString ] fontSize: 10 color: Color white;"
 			connectFrom: #yourself toAll: [ :n | self childrenAtForestIndexFor: n ] .
 	RTTreeLayout new on: velements.
+	v @ (RTGridView new gridSize: 50; color: (Color white copy alpha:0.1)).
 	view signalUpdate

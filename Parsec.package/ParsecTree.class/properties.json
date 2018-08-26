@@ -21,7 +21,8 @@
 		"down",
 		"v",
 		"defaultPopUp",
-		"forestSelector"
+		"forestSelector",
+		"sizeSelector"
 	],
 	"name" : "ParsecTree",
 	"type" : "normal"

@@ -1,12 +1,18 @@
 action
 memoizedChildrenForestTraversingTemps
 
-	memoizedChildrenForest ifNil: [^ {{}} "terminals"].
-	
-	^ memoizedChildrenForest collect: [ :children | 
-			(children collect: [ :child |  
-					(child isSubRule	and: [ child isTerminal not ])
-						ifTrue: [ child childrenForestTraversingTemps ]
-						ifFalse: [ child ]
-			]) deepFlatten 
+	| memoizedChildrenForestTraversingTemps |
+	^ memoizedChildrenForestTraversingTemps
+		ifNil: [ 
+			memoizedChildrenForest 
+				ifNil: [ memoizedChildrenForestTraversingTemps := {{}} "terminals"]
+				ifNotNil: [ memoizedChildrenForestTraversingTemps :=
+					memoizedChildrenForest collect: [ :children | 
+						(children collect: [ :child |  
+							(child isSubRule	and: [ child isTerminal not ])
+								ifTrue: [ child childrenForestTraversingTemps ]
+								ifFalse: [ child ]
+							]) deepFlatten 
+					]
+				]
 		]

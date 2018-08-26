@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "TRDarkSolarizedTheme",
+	"category" : "Parsec",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "TRParsecDarkTheme",
+	"type" : "normal"
+}
