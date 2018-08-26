@@ -1,4 +1,8 @@
 action
 memoizedChildrenForestTraversingTempsAsSet
 
-	^ self memoizedChildrenForestTraversingTemps asSet asOrderedCollection
+	^ memoizedChildrenForestTraversingTempsAsSet
+		ifNil: [
+			memoizedChildrenForestTraversingTempsAsSet := 
+				self memoizedChildrenForestTraversingTemps asSet asOrderedCollection
+		]

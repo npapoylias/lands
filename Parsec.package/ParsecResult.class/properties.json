@@ -9,7 +9,8 @@
 		"charts",
 		"trees",
 		"results",
-		"input"
+		"input",
+		"memoizedChildrenForestTraversingTempsAsSet"
 	],
 	"name" : "ParsecResult",
 	"type" : "normal"

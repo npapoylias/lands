@@ -1,10 +1,10 @@
 accessing
 childrenAtForestIndexFor: n
-	|children forestIndex|
-	forestIndex := self forestIndexFor: n.
-	forestIndex=1
+	|children forest|
+	forest := n perform: forestSelector.
+	forest size=1
 		ifTrue: [ children := (n perform: childrenSelector) first]
-		ifFalse: [ children := (n perform: forestSelector) at: (self forestIndexFor: n)].
+		ifFalse: [ children := forest at: (self forestIndexFor: n)].
 	^ children size = 1 
 		ifTrue: [ 
 			self updateElementFor: n with: children first. 
