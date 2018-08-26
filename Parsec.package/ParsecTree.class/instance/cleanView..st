@@ -1,6 +1,8 @@
 accessing
-cleanView: v
+cleanView: view
 	elements := Dictionary new.
-	v removeElements: (v elements select: [ :e | e model ~= nil ]).	"control elements such as slider. cleanAll."
-	v canvas
-		removeShapes: (v canvas shapes select: [ :s | s class = TRLabelShape ])
+	"view clean."
+	view elements do: [ :e | e safeRemoveForDuplicates ].	"control elements such as slider. cleanAll."
+	view canvas removeShapes: view canvas shapes.
+	"view canvas
+		removeShapes: (view canvas shapes select: [ :s | s class = TRLabelShape ])"

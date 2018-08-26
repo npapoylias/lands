@@ -21,10 +21,10 @@ controlsIndex: atIndex size: forestSize for: node
 		vertically: 2.	"borderRadius: 10;"	"transparent"
 	up @ RTHighlightable.
 	up when: TRMouseClick do: [ :evt | 
-		forestIndexPerNode at: node put: (self forestIndexFor: node) + 1. 
+		"forestIndexPerNode at: node put: (self forestIndexFor: node) + 1. "
 		self redrawElementsFor: v.  ].
 	down @ RTHighlightable.
 	down when: TRMouseClick do: [ :evt | 
-		forestIndexPerNode at: node put: (self forestIndexFor: node) - 1.
+		"forestIndexPerNode at: node put: (self forestIndexFor: node) - 1."
 		self redrawElementsFor: v  ].
 	^ controls	
