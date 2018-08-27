@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "ExtentedPeg",
+	"category" : "Parsec-LanguageClasses",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "StEpeg",
+	"type" : "normal"
+}
