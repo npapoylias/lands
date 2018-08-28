@@ -2,4 +2,4 @@ accessing
 "protocol: accessing"
 regExpr
 
-	^ regExpr --> '''([^'']|(''''))*'''
+	^ regExpr --> '''([^'']|(\\''))*'''

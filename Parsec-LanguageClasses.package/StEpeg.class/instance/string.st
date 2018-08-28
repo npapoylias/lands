@@ -1,4 +1,4 @@
 Parsec-LanguageClasses
 string
 
-	<string> ::= '"[^"]*"' 
+	<string> ::= '\'[^\']*\'' 
