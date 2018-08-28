@@ -1,4 +1,4 @@
 Parsec-LanguageClasses
 identifier
 
-	<identifier> ::=  '[a-zA-z][a-zA-Z0-9]*'
+	<identifier> ::=  '[a-zA-Z][a-zA-Z0-9]*' 

@@ -1,4 +1,4 @@
 Parsec-LanguageClasses
 statements
 
-	<statements> ::= <e>
+	<statements> ::= <literalArray>
