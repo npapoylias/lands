@@ -1,4 +1,4 @@
-generated
+Parsec-LanguageClasses
 expression
 
 	<expression> ::= <literal>
@@ -7,5 +7,5 @@ expression
 		| <block>
 		| "(" <expression> ")"
 		| <msgSend>
-		| <assignment>
+		| <assignment> 
 	
