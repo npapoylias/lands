@@ -1,11 +1,11 @@
-Parsec-LanguageClasses
+generated
 expression
 
 	<expression> ::= <literal>
 		| <variable>
 		| <dynArray>
 		| <block>
-		| '(' <expression> ')'
+		| "(" <expression> ")"
 		| <msgSend>
 		| <assignment>
 	

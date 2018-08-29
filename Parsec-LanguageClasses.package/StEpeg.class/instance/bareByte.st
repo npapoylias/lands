@@ -1,4 +1,4 @@
 Parsec-LanguageClasses
 bareByte
 
-	<bareByte> ::= '\[' '[0-9]+' ']'
+	<bareByte> ::= "[" '[0-9]+' "]"

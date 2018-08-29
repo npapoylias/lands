@@ -2,4 +2,4 @@ generated
 statement
 
 	<statement> ::= <expression> 
-		| '^' <expression>
+		| "^" <expression>

@@ -1,4 +1,4 @@
 Parsec-LanguageClasses
 embeddedByte
 	
-	<embeddedByte> ::= '\[' '[ 0-9 ]+' ']'
+	<embeddedByte> ::= "[" '[ 0-9 ]+' "]"

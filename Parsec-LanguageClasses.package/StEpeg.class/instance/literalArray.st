@@ -1,4 +1,4 @@
 Parsec-LanguageClasses
 literalArray
 
-	<literalArray> ::= '#\(' <arrayItem> + '\)'
+	<literalArray> ::= "#(" <arrayItem> + ")"

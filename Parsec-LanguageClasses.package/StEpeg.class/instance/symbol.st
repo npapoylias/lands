@@ -1,4 +1,4 @@
-Parsec-LanguageClasses
+accessing
 symbol
 
-	<symbol> ::= '#' <bareSymbol>
+	<symbol> ::= "#" <bareSymbol>

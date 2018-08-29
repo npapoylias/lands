@@ -1,4 +1,4 @@
 Parsec-LanguageClasses
 blockArg
 
-	<blockArg> ::= ':' <variable>
+	<blockArg> ::= ":" <variable>

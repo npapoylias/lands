@@ -1,4 +1,4 @@
 Parsec-LanguageClasses
 embeddedArray
 
-	<embeddedArray> ::= '\(' <arrayItem> + '\)'
+	<embeddedArray> ::= "(" <arrayItem> + ")"
