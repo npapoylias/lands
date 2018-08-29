@@ -1,11 +1,11 @@
-Parsec-LanguageClasses
+accessing
 literal
 
 	<literal> ::= <number> 
 		| <string>
 		| <char>
 		| <byte>
-		| <array>
+		| <literalArray>
 		| <symbol>
 		| "nil"
 		| "true"
