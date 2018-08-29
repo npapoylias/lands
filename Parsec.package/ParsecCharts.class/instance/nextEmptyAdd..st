@@ -1,6 +1,8 @@
-accessing
+adding
 nextEmptyAdd: aState
+	|next|
+	next := self next.
+	1 to: next size do: [ :i | ((next at: i) equalTo: aState) ifTrue: [ ^ self ]  ].
 	self atEnd
-		ifFalse: [ ^ self ].
-	self augment.
+		ifTrue: [ self augment ].
 	self next add: aState
