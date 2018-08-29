@@ -1,4 +1,4 @@
-Parsec-LanguageClasses
+accessing
 method
 
-	<method> ::= <methodDeclaration> <methodSequence>
+	<method> ::= <methodDeclaration> <pragmas> ? <temporariesDeclaration> ? (<statement> '\.*') *

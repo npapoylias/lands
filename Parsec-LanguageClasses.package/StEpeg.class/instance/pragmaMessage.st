@@ -1,6 +1,6 @@
 Parsec-LanguageClasses
 pragmaMessage
 
-	<pragmaMessage> ::= <unaryPragmaMessage> 
-		| <binaryPragmaMessage> 
-		| <keywordPragmaMessage> 
+	<pragmaMessage> ::= <identifier> 
+		| <binaryOp> <arrayItem> 
+		| ( <keyword> <arrayItem> ) +

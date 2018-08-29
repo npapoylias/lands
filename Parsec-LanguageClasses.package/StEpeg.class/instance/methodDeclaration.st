@@ -1,6 +1,6 @@
 Parsec-LanguageClasses
 methodDeclaration
 
-	<methodDeclaration> ::= <unaryMethodDeclaration>
-		| <binaryMethodDeclaration>
-		| <keywordMethodDeclaration> 
+	<methodDeclaration> ::= <identifier>
+		| <binaryOp> <variable>
+		| (<keyword> <variable>) + 

@@ -2,6 +2,6 @@ grammar-literals
 arrayItem
 
 	<arrayItem> ::= <literal> 
-		/ <bareSymbol> 
+		| <bareSymbol> 
 		| <bareByte>
 		| <embeddedArray> 
