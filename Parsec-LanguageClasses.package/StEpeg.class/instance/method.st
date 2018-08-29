@@ -1,4 +1,4 @@
 accessing
 method
 
-	<method> ::= <methodDeclaration> <pragmas> ? <temporariesDeclaration> ? (<statement> '\.*') *
+	<method> ::= <methodDeclaration> <pragmas> ? <temporariesDeclaration> ? ( <statement> '\.' ? ) *
