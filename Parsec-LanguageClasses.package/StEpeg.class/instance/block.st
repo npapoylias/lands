@@ -1,4 +1,4 @@
-generated
+Parsec-LanguageClasses
 block
 
-	<block> ::= '[' ( <blockArg> + '|' ) ? <temporariesDeclaration> ? (<expression> '\.*') + ']'
+	<block> ::= '[' ( <blockArg> + '\|' ) ? <temporariesDeclaration> ? (<expression> '\.*') + ']'
