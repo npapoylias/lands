@@ -4,7 +4,7 @@ populate: aForest with: childOrChildren
 	childOrChildren isCollection 
 		ifFalse: [ 
 			| recurseWith |
-			childOrChildren rule isTerminal ifFalse: [ .
+			childOrChildren rule isTerminal ifFalse: [
 				childOrChildren childrenForest size > 1 ifTrue: [
 					^ self 
 						populate: aForest 
@@ -18,12 +18,13 @@ populate: aForest with: childOrChildren
 			self populate: aForest with: recurseWith.
 		]
 		ifTrue: [ 
-			|newForests| 
+			|newForests |
 			newForests := childOrChildren allButFirst
 				 collect: [ :child | 
-					self 
-						populate: (aForest collect: [:tree | tree copy]) 
-						with: child].
+							self 
+								populate: (aForest collect: [:tree | tree copy]) 
+								with: child
+						].
 			self populate: aForest with: childOrChildren first.
 			newForests do: [:forest | aForest addAll: forest].
 		].

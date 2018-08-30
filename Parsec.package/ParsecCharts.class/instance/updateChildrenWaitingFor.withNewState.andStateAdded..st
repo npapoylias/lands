@@ -1,6 +1,6 @@
 copying
 updateChildrenWaitingFor: aState withNewState: newState andStateAdded: stateAdded
-	| childrenDict |
+	| childrenDict col|
 
 	childrenDict := stateAdded childrenStates.	"will return either the newState or the identical pre-existing"
 
@@ -9,17 +9,18 @@ updateChildrenWaitingFor: aState withNewState: newState andStateAdded: stateAdde
 				keysAndValuesDo: [ :k :values | 
 					values
 						do: [ :v | 
-								| col |
 								col := childrenDict
 									at: k
-									ifAbsent: [ childrenDict at: k put: OrderedCollection new ].
-								col detect: [ :p | p equalTo: v ] ifNone: [ col add: v ] ] ] ].	"already exists transfer children"
+									ifAbsent: [ OrderedCollection new ].
+								col detect: [ :p | p equalTo: v ] ifNone: [ v isEmpty not ifTrue: [  col add: v ]].
+								col isEmpty not ifTrue: [ childrenDict at: k put: col ]. 
+						]]].	"already exists transfer children"
 
 	^ aState 
 		ifNil: [nil] 
 		ifNotNil: [
 			(childrenDict
 				at: aState from
-				ifAbsent: [ childrenDict at: aState from put: OrderedCollection new ]) 
+				ifAbsent: [ col := OrderedCollection new ]) 
 				detect: [ :p | p equalTo: aState ] 
-				ifNone: [ (childrenDict at: aState from) add: aState]]	"children from multiple trees"
+				ifNone: [ aState isEmpty not ifTrue: [(childrenDict at: aState from ifAbsentPut: [ col ] ) add: aState]]]	"children from multiple trees"
