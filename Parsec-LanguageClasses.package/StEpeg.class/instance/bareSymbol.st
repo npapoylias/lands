@@ -2,6 +2,5 @@ Parsec-LanguageClasses
 bareSymbol
 
 	<bareSymbol> ::= <identifier> 
-		| <keyword> +
-		| <binaryOp> +
-		| <string>
+		| '[a-zA-z][a-zA-Z0-9]*:'
+		| <binaryOp>
