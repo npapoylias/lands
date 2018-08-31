@@ -5,4 +5,6 @@ equalTo: anotherState
 	and: [rightHandIndex == anotherState rightHandIndex 
 	and: [dotPosition == anotherState dotPosition
 	and: [ from == anotherState from 
-	and: [ to == anotherState to ]]]]
+	and: [ to == anotherState to 
+	and: [fromTerminal == anotherState fromTerminal
+	and: [toTerminal == anotherState toTerminal]]]]]]
