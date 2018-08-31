@@ -1,5 +1,5 @@
 Parsec-LanguageClasses
 integer
 
-	<integer> ::= <radixInteger> 
-		/ <decimalInteger>
+	<integer> ::= <decimalInteger>
+		| <radixInteger> 

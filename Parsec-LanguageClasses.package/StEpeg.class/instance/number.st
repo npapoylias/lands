@@ -1,6 +1,7 @@
-Parsec-LanguageClasses
+accessing
 number
 
-	<number> ::= <floatingPoint>
-		/ <scaledDecimal>
-		| <integer>
+	<number> ::= <integer>
+		| <scaledDecimal>
+		| <floatingPoint>
+		
