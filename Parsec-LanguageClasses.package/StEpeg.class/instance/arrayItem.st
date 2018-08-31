@@ -1,7 +1,7 @@
-grammar-literals
+Parsec-LanguageClasses
 arrayItem
 
 	<arrayItem> ::= <literal> 
-		| <bareSymbol> 
+		/ <bareSymbol> 
 		| <bareByte>
 		| <embeddedArray> 
