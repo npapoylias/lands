@@ -1,4 +1,4 @@
 accessing
 successfullTrees
 
-	^ self successfullRoot childrenForest
+	^ (self successfullRoots collect: [ :root | root childrenForest]) flatten
