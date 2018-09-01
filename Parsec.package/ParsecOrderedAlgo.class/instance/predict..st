@@ -9,7 +9,7 @@ predict: aState
 	alter isEmpty ifTrue: [ ^ self ]. "this normally can only happen through TFOAlgo -- fix
 	see with the non-peg example"
 	(charts currentAdd: alter first)
-		ifTrue: [ "could be duplicate"alter size to: 2 by: -1  do: [:i| |a| a := (alter at: i). self backTrackAdd: a for: aState]] 
+		ifTrue: [ "could be duplicate""alter size to: 2 by: -1 " 2 to: alter size do: [:i| |a| a := (alter at: i). self backTrackAdd: a for: aState]] 
 		ifFalse: [  
 			|added toStack|
 			toStack := OrderedCollection new.
