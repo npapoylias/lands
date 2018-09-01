@@ -1,4 +1,4 @@
 Parsec-LanguageClasses
 start
 
-	<start> ::= <literalArray>
+	<start> ::= <method>
