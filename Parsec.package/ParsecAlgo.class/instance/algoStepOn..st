@@ -1,7 +1,7 @@
 as yet unclassified
 algoStepOn: state
 	
-	logging ifTrue: [ Transcript show: state; cr. ].
+	"logging ifTrue: [ Transcript show: state; cr. ]."
 
 	state	isIncomplete
 		ifTrue: [   
