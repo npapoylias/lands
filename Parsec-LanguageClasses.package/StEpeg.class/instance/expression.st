@@ -1,11 +1,12 @@
 Parsec-LanguageClasses
 expression
 
-	<expression> ::= <msgSend>
-		| <assignment>
-		| <literal>
+	<expression> ::= <assignment>
+		/ <literal>
 		| <variable>
 		| <dynArray>
 		| <block>
 		| "(" <expression> ")"
+		| <msgSend>
+		
 	

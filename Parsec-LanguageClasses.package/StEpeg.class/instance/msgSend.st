@@ -2,7 +2,7 @@ Parsec-LanguageClasses
 msgSend
 
 	<msgSend> ::= <msgSend> ";" <cascadeMsgSend> +
-		| <keywordMsgSend>
+		/ <keywordMsgSend>
 		| <binaryMsgSend>
 		| <unaryMsgSend>
 		
