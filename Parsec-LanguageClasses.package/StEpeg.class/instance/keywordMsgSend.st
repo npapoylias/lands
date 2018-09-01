@@ -1,5 +1,5 @@
 Parsec-LanguageClasses
 keywordMsgSend
 
-	<keywordMsgSend> ::= <expression> ( <keyword> <expression> ) +
+	<keywordMsgSend> ::= <keywordMsgSendOperand> (<keyword> <keywordMsgSendOperand>) + 
 		

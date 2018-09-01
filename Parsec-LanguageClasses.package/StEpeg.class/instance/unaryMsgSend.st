@@ -1,5 +1,5 @@
 Parsec-LanguageClasses
 unaryMsgSend
 
-	<unaryMsgSend> ::= <expression> <identifier>
+	<unaryMsgSend> ::= <primaryExpression> <identifier> +
 		
