@@ -18,8 +18,10 @@ backTrackAt: indexPair with: aNewState havingCompleted: completedState marking: 
 	
 	chartIndex + 1 to: self size do: [:i | self removeIndex: i  ]. "remove"
 	
-	Transcript show: aNewState; show: 'instead of: # '; show: (self current at: stateIndex); cr.
-	
+	logging ifTrue: [ 
+		Transcript show: aNewState; show: 'instead of: # '; show: (self current at: stateIndex); cr.
+	].
+
 	stateIndex to: self current size do: [ :i | self current removeIndex: i ].
 	
 	stateAdded := self currentAddWithState: aNewState.
