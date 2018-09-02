@@ -1,4 +1,4 @@
 Parsec-LanguageClasses
 dynArray
 
-	<dynArray> ::= "{" { <expression> '\.' } "}" 
+	<dynArray> ::= "{" { <expression> ('\.'+) } "}" 
