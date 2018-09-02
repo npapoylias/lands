@@ -1,0 +1,4 @@
+Parsec-LanguageClasses
+binaryOp
+
+	<binaryOp> ::= '[!%&*+,\-/<=>?@\\|~]+' 
