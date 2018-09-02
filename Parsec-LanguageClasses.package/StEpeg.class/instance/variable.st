@@ -1,4 +1,5 @@
 Parsec-LanguageClasses
 variable
 
-	<variable> ::= <identifier>
+	<variable> ::= <pseudoVariable>
+		| <identifier>

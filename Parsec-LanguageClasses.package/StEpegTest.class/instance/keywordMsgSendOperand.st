@@ -1,2 +1,0 @@
-Parsec-LanguageClasses
-keywordMsgSendOperand^ PlaceHolderReference value

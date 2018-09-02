@@ -2,7 +2,7 @@ Parsec-LanguageClasses
 expression
 
 	<expression> ::= <primaryExpression>
-		/ <msgSend> 
+		| <msgSend> 
 		| <assignment>
 		
 	

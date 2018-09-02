@@ -1,2 +1,0 @@
-Parsec-LanguageClasses
-floatingPoint^ PlaceHolderReference value

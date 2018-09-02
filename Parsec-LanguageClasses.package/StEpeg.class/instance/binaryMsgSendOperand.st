@@ -1,4 +1,4 @@
 Parsec-LanguageClasses
 binaryMsgSendOperand
 
-	<binaryMsgSendOperand> ::= <unaryMsgSend> \ <primaryExpression>
+	<binaryMsgSendOperand> ::= <unaryMsgSend> | <primaryExpression>

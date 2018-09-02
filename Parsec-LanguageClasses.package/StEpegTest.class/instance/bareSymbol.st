@@ -1,2 +1,0 @@
-Parsec-LanguageClasses
-bareSymbol^ PlaceHolderReference value

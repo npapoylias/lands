@@ -2,6 +2,6 @@ Parsec-LanguageClasses
 cascadeMsgSend
 
 	<cascadeMsgSend> ::= <identifier> 
-		| <binaryOp> + <expression> 
-		| (<keyword> <expression>) + 
+		| <binaryOp> + <binaryMsgSendOperand> 
+		| (<keyword> <keywordMsgSendOperand>) + 
 		

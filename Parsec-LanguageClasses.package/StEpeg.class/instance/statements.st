@@ -1,5 +1,4 @@
 Parsec-LanguageClasses
 statements
 
-	<statements> ::= { <expression> '\.' } 
-		| "^" <expression>
+	<statements> ::= { <expression> '\.' } ( "^" <expression> ) ?

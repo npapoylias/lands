@@ -1,2 +1,0 @@
-Parsec-LanguageClasses
-embeddedByte^ PlaceHolderReference value

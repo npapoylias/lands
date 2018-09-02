@@ -1,5 +1,5 @@
 Parsec-LanguageClasses
 binaryMsgSend
 
-	<binaryMsgSend> ::= <binaryMsgSendOperand> <binaryOp> (<binaryMsgSend> \ <binaryMsgSendOperand>) 
+	<binaryMsgSend> ::= <binaryMsgSendOperand> <binaryOp> (<binaryMsgSend> | <binaryMsgSendOperand>) 
 		

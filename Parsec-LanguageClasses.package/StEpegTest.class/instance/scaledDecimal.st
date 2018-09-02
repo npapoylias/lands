@@ -1,2 +1,0 @@
-Parsec-LanguageClasses
-scaledDecimal^ PlaceHolderReference value

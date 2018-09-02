@@ -1,2 +1,0 @@
-Parsec-LanguageClasses
-temporariesDeclaration^ PlaceHolderReference value
