@@ -6,11 +6,4 @@ testViewClassDefinition
 	self assert: results results first value = 6.
 	self assert: results results second value = 6.
 
-	^ (ParsecTree new 
-			startingFrom: results
-			withChildren: #childrenForestTraversingTemps 
-			named: #rulePrettyName
-			forest: #childrenForestTraversingTemps
-			popUp: [ :e | results input "you can show the action values also here, optimally per node"
-				atAll: (e interval key + 1 to:  e interval value)]
-			andEdges: #interval "this should be sent to the children for marking the interval")  
+	^ results defaultView
