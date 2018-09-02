@@ -1,6 +1,6 @@
 adding
 markFailureFor: aState
 
-	"aState ifNotNil: [
+	aState ifNotNil: [
 		self do: [ :s | (s state equalTo: aState) ifTrue: [ s failed ] ]
-	]"
+	]
