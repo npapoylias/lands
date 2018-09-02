@@ -1,5 +1,5 @@
 tests
 testUnordered
 
-	algo := ParsecOrderedAlgo.
+	algo := ParsecAlgo.
 	self parse
