@@ -1,11 +1,11 @@
 actions
 beOrdered
 	
-	ordered 
+	"ordered 
 		ifTrue: [ ^ self ]
-		ifFalse: [ 
+		ifFalse: [ "
 			ordered := true.
-			"childRules do: [ :child | child beOrdered ]"
-		]
+			"childRules do: [ :child | child beOrdered ]
+		]"
 	
 	

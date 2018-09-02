@@ -2,5 +2,5 @@ testing
 withParent: aRule
 
 	parent := aRule.
-	parent isOrdered ifTrue: [ self beOrdered ]
+	"parent isOrdered ifTrue: [ self beOrdered ]"
 	
