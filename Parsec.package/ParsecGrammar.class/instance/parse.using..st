@@ -5,7 +5,7 @@ parse: aString using: algoInst
 
 	"put a timeout by default for debugging purposes"
 
-	charts := (algoInst  parse: aString using: self timeout: 5). 
+	charts := (algoInst  parse: aString using: self "timeout: 5"). 
 
 	^ ParsecResult new
 		 for: aString;
