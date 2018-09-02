@@ -20,7 +20,7 @@ forkToHandle: aState
 	(resultPosition > readingPosition) "succeed"
 			ifTrue: [ aState expectingAnd 
 								ifTrue: [ aState advanceDot. self algoStepOn: aState ]
-								ifFalse: [ self backTrack "expected not but succeeded" ] ]
+								"ifFalse: [" "self backTrack" "expected not but succeeded" "]" ]
 			ifFalse: [ aState expectingNot
 								ifTrue: [ aState advanceDot. self algoStepOn: aState ] "failed with not"
-								ifFalse: [ self backTrack ] ] "failed with and"		
+								"ifFalse: [" "self backTrack ]" ] "failed with and"		
