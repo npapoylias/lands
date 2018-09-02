@@ -1,7 +1,7 @@
 Parsec-LanguageClasses
 msgSend
 
-	<msgSend> ::= <msgSend> { <cascadeMsgSend> ";" }
+	<msgSend> ::= <msgSend> ( ";" <cascadeMsgSend> ) +
 		| <keywordMsgSend>
 		| <binaryMsgSend>
 		| <unaryMsgSend>

@@ -1,6 +1,6 @@
 Parsec-LanguageClasses
 pseudoVariable
 
-	<pseudovariable> ::= "self"
+	<pseudoVariable> ::= "self"
 		| "super"
 		| "thisContext"
