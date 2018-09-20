@@ -1,4 +1,4 @@
 accessing
-recursiveIndex: zeroOrOne
+recursiveIndex: zeroOrPMOne
 
-	recursiveIndex := zeroOrOne 
+	recursiveIndex := zeroOrPMOne 
