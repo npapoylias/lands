@@ -2,7 +2,7 @@ Parsec-LanguageClasses
 message
 
 	<message> ::= 
-		\ (<keyword> <expression>) +  
+		\ ( <keyword> <expression> ) +
 		\ <binaryOp> <expression> 
 		| <identifier> 
 		 
