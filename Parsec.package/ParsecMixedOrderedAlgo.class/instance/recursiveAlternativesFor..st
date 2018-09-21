@@ -2,6 +2,7 @@ as yet unclassified
 recursiveAlternativesFor: aState
 	|alternatives index from recursiveAddedIndex|
 	alternatives := self alternativesFor: aState.
+	alternatives ifEmpty: [ ^ alternatives ].
 	lastSeenIndex 
 		at: aState rule parent 
 		put: (aState rule parent indexOf: aState rule). 

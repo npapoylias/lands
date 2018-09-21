@@ -1,7 +1,9 @@
 Parsec-LanguageClasses
 expression
 
-	<expression> ::= <msgSendExpr> 
-		| <assignment> 
+	<expression> ::= <assignment>
+		/ <msgSend>
+		| "(" <expression> ")"
+		| <variable>
+		| <primaryValue>
 		
-	

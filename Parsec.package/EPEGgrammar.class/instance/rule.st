@@ -2,15 +2,21 @@ accessing
 "protocol: accessing"
 rule
 
-	^ super rule ==> [ :tokens | |r expressions operators|
+	^ super rule ==> [ :tokens | |r expressions operators operands| 
 		"TODO: why not giving tokens the names of the symbols in EPEG ?"
-		expressions := tokens third key.
-		operators := tokens third value.
-		r := (tokens first --> expressions first asArrayIfCollection).
-		expressions allButFirst doWithIndex: [ :e :index | 
-			r 
-				perform: (operators at: index) tokenValue asSymbol
-				withArguments: { e asArrayIfCollection } ].
+		expressions := tokens third key. 
+		operators := tokens third value.  
+		r := ParsecRule new name: tokens first.
+		"r := (tokens first --> expressions first asArrayIfCollection)."
+		expressions size == operators size 
+			ifTrue: [ r rightHandSide removeFirst. "empty" operands := expressions]
+			ifFalse: [ r , expressions first asArrayIfCollection. 
+				operands := expressions allButFirst. ].
+		operands "allButFirst" doWithIndex: [ :e :index | 
+					r 
+						perform: (operators at: index) tokenValue asSymbol
+						withArguments: { e asArrayIfCollection } 
+		].
 		r 		 
 	]
 	 

@@ -2,7 +2,7 @@ initialization
 initialize
 
 	super initialize.
-	rightHandSide := ParsecCollection new.
+	rightHandSide := OrderedCollection new.
 	rightHandSide add: ParsecCollection new.
 	childRules := OrderedCollection new.
 	isAnd := false. 
