@@ -3,7 +3,7 @@ backTrack
 	| btState |
 
 	(backTrackStack isEmpty" and: [ self atChartAndStateEnd ]")
-		ifTrue: [ ^ self ].
+		ifTrue: [ ^ nil ].
 	btState := backTrackStack pop.
 	readingPosition := btState readingPosition.
 	^ btState hasFailed 
