@@ -2,7 +2,7 @@ as yet unclassified
 recursiveAlternativesFor: aState
 	|alternatives index from recursiveAddedIndex|
 	"aState dotPosition = 0 ifTrue: ["
-		aState rule name = #expression ifTrue: [ self halt ].
+		"aState rule name = #expression ifTrue: [ self halt ]."
 		(lastSeenIndex at: aState rule name ifAbsentPut: [ Stack new ])
 			push: aState rightHandIndex
 	"]". 
