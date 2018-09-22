@@ -1,14 +1,16 @@
 as yet unclassified
 recursiveAlternativesFor: aState
 	|alternatives index from recursiveAddedIndex|
-
+	aState ruleAtDot name = #message ifTrue: [ self halt ].
 	(lastSeenIndex at: aState rule parent ifAbsentPut: [ Stack new ])
 		push: (aState rule parent indexOf: aState rule). 
 	alternatives := self alternativesFor: aState.
 	alternatives ifEmpty: [ ^ alternatives ].
 	index := lastSeenIndex at: aState ruleAtDot ifAbsentPut: [Stack new]. 
-	index isEmpty ifTrue: [ index := 1 ] ifFalse: [ index := index top ].
-	^ (recursiveAddedIndex := ((aState ruleAtDot directRefsAt: index) first recursiveIndex)) = -1
+	index isEmpty 
+		ifTrue: [ index := 1. recursiveAddedIndex := 0 ] 
+		ifFalse: [ index := index top. recursiveAddedIndex := (aState ruleAtDot directRefsAt: index) first recursiveIndex ].
+	^ recursiveAddedIndex = -1
 		ifTrue: [ alternatives ] "vanilla ordered choice"
 		ifFalse: [ "recursive ordered choices"
 				from := index + recursiveAddedIndex.
