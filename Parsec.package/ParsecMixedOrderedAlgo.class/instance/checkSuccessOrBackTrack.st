@@ -1,4 +1,4 @@
-changing suspended state
+parsing
 checkSuccessOrBackTrack
 
 	charts last
@@ -7,9 +7,9 @@ checkSuccessOrBackTrack
 			backTrackStack isEmpty ifFalse: [ |aState|
 				aState := self backTrack.
 				aState ifNotNil: [ |s|
-					s := lastSeenIndex at: aState rule parent ifAbsentPut: [ Stack new ].
+					s := lastSeenIndex at: aState rule name ifAbsentPut: [ Stack new ].
 					s ifNotEmpty: [s pop].
-					s push: (aState rule parent indexOf: aState rule)
+					"s push: aState rightHandIndex."
 				].
 				self algoLoop.
 				self checkSuccessOrBackTrack 
