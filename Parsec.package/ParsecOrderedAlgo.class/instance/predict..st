@@ -5,7 +5,7 @@ predict: aState
 	(aState expectingAnd or: [ aState expectingNot ]) 
 		ifTrue: [ ^ self forkToHandle: aState ].
 	
-	alter := self recursiveAlternativesFor: aState.
+	alter := (self recursiveAlternativesFor: aState) select: [ :s | s isNotNil ].
 	alter isEmpty ifTrue: [ ^ self ]. "this normally can only happen through TFOAlgo -- fix
 	see with the non-peg example"
 	(charts currentAdd: alter first)
