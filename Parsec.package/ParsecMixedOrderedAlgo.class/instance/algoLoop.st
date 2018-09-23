@@ -4,19 +4,19 @@ algoLoop
 	[ charts
 		currentDo: [ :state | |s|
 							"state ruleAtDot name = #expression ifTrue: [ self halt ]."
-			"state ruleAtDot ifNotNil: [ 
-				s := lastSeenIndex at: state ruleAtDot name ifAbsent: [ 1 ].
-			] ifNil: [ s := 1 ].
-			s isCollection
+			(state ruleAtDot isNotNil and: [ state ruleAtDot isOrdered ]) ifTrue: [ 
+				s := lastSeenIndex at: state ruleAtDot topLevelParent name ifAbsent: [ 1 ].
+				s isCollection
 				ifTrue: [ s isEmpty 
 					ifTrue: [ s := 1 ] 
 					ifFalse: [ 
 						s := s top. 
-						s := s + (state ruleAtDot directRefsAt: s) first recursiveIndex. 
+						s := s + (state ruleAtDot topLevelParent directRefsAt: s) first recursiveIndex. 
 					] 
-			].
+				]
+			] ifFalse: [ s := 1 ].			
 			Transcript
-				show: $|; show: s; show: $|; cr."
+				show: $|; show: s; show: $|; cr.
 			self algoStepOn: state 
 		];
 		proceed ] whileTrue
