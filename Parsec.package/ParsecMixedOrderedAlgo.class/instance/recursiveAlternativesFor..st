@@ -3,9 +3,8 @@ recursiveAlternativesFor: aState
 	|alternatives index from recursiveAddedIndex|
 	"aState dotPosition = 0 ifTrue: ["
 		"aState rule name = #expression ifTrue: [ self halt ]."
-		(lastSeenIndex at: aState rule name ifAbsentPut: [ Stack new ])
-			push: aState rightHandIndex
-	"]". 
+	"]"
+	(lastSeenIndex at: aState rule topLevelParent name ifAbsentPut: [ Stack new ]) push: aState rightHandIndex.
 	alternatives := self alternativesFor: aState.
 	alternatives ifEmpty: [ ^ alternatives ].
 	index := lastSeenIndex at: aState ruleAtDot name ifAbsentPut: [Stack new]. 
