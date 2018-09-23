@@ -6,7 +6,7 @@ complete: aState
 	aState rule isOrdered
 		ifTrue: [ 
 			super complete: aState.
-			s := lastSeenIndex at: aState rule name ifAbsentPut: [ Stack new ].
+			s := lastSeenIndex at: aState rule topLevelParent name ifAbsentPut: [ Stack new ].
 			s ifNotEmpty: [ s pop ].  
 		] ifFalse: [super completeUnordered: aState].
 	
