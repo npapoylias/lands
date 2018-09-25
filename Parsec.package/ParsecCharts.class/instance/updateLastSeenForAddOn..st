@@ -1,5 +1,5 @@
 recursive-ordering
 updateLastSeenForAddOn: aState
 
-	(lastSeenIndex at: aState rule name ifAbsentPut: [ Stack new ])
-			push: aState rightHandIndex
+	aState rule parent isOrdered
+		ifTrue: [  (lastSeenIndex at: aState rule name ifAbsentPut: [ Stack new ]) push: aState rightHandIndex ]

@@ -26,7 +26,8 @@ backTrackAt: indexPair with: aNewState havingCompleted: completedState marking: 
 
 	stateIndex to: self current size do: [ :i | self current removeIndex: i ].
 	
-	stateAdded := self currentAddWithState: aNewState.
+	self updateLastSeenOnBackTrackFrom: oldState to: aNewState. "only old state is needed here.."
+	stateAdded := self currentAddWithState: aNewState. "new state should be last seen here only if added.."
 	
 	
 	self
@@ -35,10 +36,7 @@ backTrackAt: indexPair with: aNewState havingCompleted: completedState marking: 
 		andStateAdded: stateAdded.
 		
 	^ (stateAdded == aNewState) 
-		ifTrue: [ 
-			self updateLastSeenOnBackTrackFrom: oldState to: aNewState. 
-			stateIndex := stateIndex - 1. true  
-		] 
+		ifTrue: [ stateIndex := stateIndex - 1. true ] 
 		ifFalse: [ stateIndex := stateIndex - 1. false ]
 	"(self at: chartIndex) at: stateIndex put: aNewState."
 	
