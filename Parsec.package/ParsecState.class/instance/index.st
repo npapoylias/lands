@@ -2,5 +2,5 @@ accessing
 index
 
 	^ rule isOrdered
-			ifTrue: [ rightHandIndex  ]
+			ifTrue: [ rightHandIndex ]
 			ifFalse: [ rule parent indexOf: rule ] 
