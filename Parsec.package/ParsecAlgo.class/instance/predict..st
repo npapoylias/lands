@@ -5,5 +5,5 @@ predict: aState
 		ifTrue: [ ^ self forkToHandle: aState ]."
 	
 
-	charts currentAddAll: (self alternativesFor: aState)
+	charts currentAddAll: ((self alternativesFor: aState) select: [ :s | s isNotNil ])
 		

@@ -10,7 +10,8 @@
 		"stateIndex",
 		"logging",
 		"current",
-		"interrupt"
+		"interrupt",
+		"lastSeenIndex"
 	],
 	"name" : "ParsecCharts",
 	"type" : "normal"

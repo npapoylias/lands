@@ -4,6 +4,8 @@ nextAdd: aState
 	
 	|next|
 	
+	self updateLastSeenForAddOn: aState.
+	
 	next := self next.
 	1 to: next size do: [ :i | ((next at: i) equalTo: aState) ifTrue: [ ^ self ]  ].
 	current := self current.

@@ -1,3 +1,4 @@
 as yet unclassified
-recursiveAlternativesFor: aState
+computeAlternativesFor: aState
+
 	^ self alternativesFor: aState "implement recursive order choice in subclasses"

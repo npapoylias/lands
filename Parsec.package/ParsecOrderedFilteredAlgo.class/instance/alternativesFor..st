@@ -21,6 +21,7 @@ alternativesFor: aState
 							dot: 0)
 							fromTerminal: aState toTerminal;
 							toTerminal: aState toTerminal) ] 
+					ifFalse: [ newStates add: nil ]
 	].
 				
 	^ newStates
