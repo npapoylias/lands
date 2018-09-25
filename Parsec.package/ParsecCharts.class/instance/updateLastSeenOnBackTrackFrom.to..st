@@ -1,8 +1,8 @@
 recursive-ordering
 updateLastSeenOnBackTrackFrom: oldState to: aNewState
 	
-	oldState rule parent ifNotNil: [ |s| 
-		s := lastSeenIndex at: oldState rule parent name ifAbsent: [ nil ].
+	oldState ifNotNil: [ |s| 
+		s := lastSeenIndex at: oldState indexedParent name ifAbsent: [ nil ].
 		s ifNotNil: [s ifNotEmpty: [ s pop ]]
 	].
 

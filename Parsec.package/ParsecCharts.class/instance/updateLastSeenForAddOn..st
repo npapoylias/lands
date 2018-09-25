@@ -1,10 +1,10 @@
 recursive-ordering
 updateLastSeenForAddOn: aState
 
-	aState rule parent isOrdered
+	aState indexedParent isOrdered 
 		ifTrue: [  
-			(lastSeenIndex at: aState rule parent name ifAbsentPut: [ Stack new ]) push: (aState rule parent indexOf: aState rule).
+			(lastSeenIndex at: aState indexedParent name ifAbsentPut: [ Stack new ]) push: aState index.
 			logging ifTrue: [ 
-				Transcript cr; cr; show: aState rule parent name; show: ' has now RI: '; show: (lastSeenIndex at: aState rule parent name); cr.
+				Transcript cr; cr; show: aState indexedParent name; show: ' has now RI: '; show: (lastSeenIndex at: aState indexedParent name); cr.
 			].
 		]
