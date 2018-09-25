@@ -3,8 +3,6 @@ copyStatesWaitingFor: aState from: start to: end
 
 	| name chart element newState |
 
-	self updateLastSeenOnCompleteFor: aState.
-
 	name := aState rule name.
 	
 	chart := (self at: aState fromTerminal + 1).
