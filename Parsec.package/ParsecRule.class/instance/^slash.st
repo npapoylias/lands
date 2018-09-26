@@ -2,5 +2,5 @@ arithmetic
 / aSymbolOrString
 
 	self beOrdered.
+	recursiveIndex add: 0.
 	self | aSymbolOrString.
-	childRules ifNotEmpty: [childRules last recursiveIndex: 0].

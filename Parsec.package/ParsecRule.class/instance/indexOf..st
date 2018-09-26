@@ -1,4 +1,4 @@
 accessing
 indexOf: subRule
 
-	^ childRules indexOf: subRule
+	^ directFirsts flatten indexOf: subRule

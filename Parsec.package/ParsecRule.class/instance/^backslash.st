@@ -2,5 +2,5 @@ enumerating
 \ aSymbolOrString
 
 	self beOrdered.
+	recursiveIndex add: 1.
 	self | aSymbolOrString.
-	childRules ifNotEmpty: [childRules last recursiveIndex: 1].

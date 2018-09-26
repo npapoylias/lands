@@ -2,5 +2,5 @@ as yet unclassified
 || aSymbolOrString
 
 	self beOrdered.
+	recursiveIndex add: -1. "vanilla ordering"
 	self | aSymbolOrString.
-	childRules ifNotEmpty: [childRules last recursiveIndex: -1]. "Vanilla ordered choice"

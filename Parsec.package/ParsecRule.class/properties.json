@@ -21,7 +21,8 @@
 		"predict",
 		"action",
 		"parent",
-		"recursiveIndex"
+		"recursiveIndex",
+		"directFirsts"
 	],
 	"name" : "ParsecRule",
 	"type" : "normal"
