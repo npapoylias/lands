@@ -12,4 +12,4 @@ backTrack
 				backTrackAt: btState chartIndex -> btState stateIndex
 				with: btState state
 				havingCompleted: btState completedState
-				marking: backTrackStack) ifFalse: [ self backTrack ] ifTrue: [btState]]
+				marking: backTrackStack) ifFalse: [ self backTrack ] ifTrue: [ btState]]

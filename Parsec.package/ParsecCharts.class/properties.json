@@ -11,7 +11,8 @@
 		"logging",
 		"current",
 		"interrupt",
-		"lastSeenIndex"
+		"lastSeenIndex",
+		"lastSeenBTCopy"
 	],
 	"name" : "ParsecCharts",
 	"type" : "normal"

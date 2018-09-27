@@ -12,7 +12,8 @@
 		"state",
 		"initState",
 		"completedState",
-		"hasFailed"
+		"hasFailed",
+		"lastSeenIndex"
 	],
 	"name" : "ParsecBackTrackState",
 	"type" : "normal"
