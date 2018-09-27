@@ -1,4 +1,4 @@
 Parsec-LanguageClasses
 start
 
-	<start> ::= <expression> 
+	<start> ::= <method> 
