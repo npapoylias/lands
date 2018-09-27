@@ -18,9 +18,9 @@ updateLastSeenOnBackTrackFrom: oldState to: aNewState given: aBtState
 			ifTrue: [ 
 				s := (lastSeenIndex at: aNewState indexedParent name ifAbsent: [ nil ]).
 				(s isNotNil and: [aNewState isComplete not]) ifTrue: [ s push: aNewState index ].
-				logging ifTrue: [ 
+				"logging ifTrue: [ 
 					Transcript cr; cr; show: aNewState indexedParent name; show: ' has now RI: '; show: s; cr.
-				].
+				]."
 			]
 	
 
