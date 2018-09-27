@@ -12,7 +12,7 @@ updateLastSeenOnBackTrackFrom: oldState to: aNewState
 		(aNewState rule isOrdered not and: [ aNewState indexedParent isNotNil])
 			ifTrue: [ 
 				s := (lastSeenIndex at: aNewState indexedParent name ifAbsent: [ nil ]).
-				s ifNotNil: [ s push: aNewState index ].
+				(s isNotNil and: [aNewState isComplete not]) ifTrue: [ s push: aNewState index ].
 				logging ifTrue: [ 
 					Transcript cr; cr; show: aNewState indexedParent name; show: ' has now RI: '; show: s; cr.
 				].

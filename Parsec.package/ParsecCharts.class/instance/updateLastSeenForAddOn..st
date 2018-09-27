@@ -1,6 +1,6 @@
 recursive-ordering
 updateLastSeenForAddOn: aState
-
+	"aState rule name = #message ifTrue: [ self halt ]."
 	aState isComplete ifTrue: [ ^ self updateLastSeenOnCompleteFor: aState].
 
 	aState rule isOrdered 

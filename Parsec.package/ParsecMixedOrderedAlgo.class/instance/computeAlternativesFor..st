@@ -10,7 +10,7 @@ computeAlternativesFor: aState
 		ifFalse: [ "recursive ordered choices"
 				(alternatives 
 					copyFrom: from to: alternatives size)
-					addAll: (alternatives copyFrom: 1 to: from -1); 
+					"addAll: (alternatives copyFrom: 1 to: from -1); "
 					yourself
 		]
 	
