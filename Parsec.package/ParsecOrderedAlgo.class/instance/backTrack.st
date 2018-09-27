@@ -9,7 +9,7 @@ backTrack
 		ifTrue: [ self backTrack ] "memoized failure"
 		ifFalse: [
 			(charts
-				backTrackAt: btState chartIndex -> btState stateIndex
+				backTrackAt: btState
 				with: btState state
 				havingCompleted: btState completedState
 				marking: backTrackStack) ifFalse: [ self backTrack ] ifTrue: [ btState]]

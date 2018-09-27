@@ -5,9 +5,7 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"lastSeenIndex"
-	],
+	"instvars" : [ ],
 	"name" : "ParsecMixedOrderedAlgo",
 	"type" : "normal"
 }

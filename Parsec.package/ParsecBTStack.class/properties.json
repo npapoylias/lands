@@ -5,7 +5,9 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"charts"
+	],
 	"name" : "ParsecBTStack",
 	"type" : "normal"
 }

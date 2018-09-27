@@ -2,4 +2,4 @@ initialization
 initialize
 
 	super initialize.
-	backTrackStack := ParsecBTStack new.
+	backTrackStack := ParsecBTStack new forCharts: charts
