@@ -11,7 +11,7 @@ updateLastSeenOnBackTrackFrom: oldState to: aNewState given: aBtState
 				Transcript cr; cr; show: oldState indexedParent name; show: ' has now RI: '; show: s; cr.
 			].
 		]."
-	
+
 		lastSeenIndex := aBtState lastSeenIndex. "backTrack index"
 	
 		(aNewState rule isOrdered not and: [ aNewState indexedParent isNotNil])

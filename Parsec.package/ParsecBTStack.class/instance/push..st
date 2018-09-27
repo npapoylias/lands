@@ -1,7 +1,7 @@
 adding
 push: anItem
 
-	anItem lastSeenIndex: charts lastSeenIndex copy. "this is a copy for every btState,
+	anItem lastSeenIndex: charts lastSeenIndex deepCopy. "this is a copy for every btState,
 	there is room for optimizations here"
 	
 	self 
