@@ -10,8 +10,8 @@ testTokenOrderRight
 			| <expression> "-" <expression>
 			| <expression> "*" <expression>
 			| <expression> "/" <expression>
-			| <expression> "^" <expression>
-			/ ''[0-9]+(\.[0-9]+)?'' 
+			/ <expression> "^" <expression>
+			| ''[0-9]+(\.[0-9]+)?'' 
 		' ==> { 
 			[ :tokens | tokens second ].
 			[ :tokens | tokens first + tokens last ].
@@ -27,5 +27,4 @@ testTokenOrderRight
 
 	self assert: results trees size = 1.
 	
-	self assert: results results first value = 4096.
-	
+	self assert: results results first value = 	2417851639229258349412352

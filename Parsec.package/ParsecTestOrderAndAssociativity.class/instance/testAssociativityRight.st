@@ -6,20 +6,20 @@ testAssociativityRight
 		with: { 
 		'<start> ::= <expression>'.
 		'<expression> ::=  "(" <expression> ")"
-			/ ''[0-9]+(\.[0-9]+)?''
 			| <expression> "+" <expression> 
 			| <expression> "-" <expression>
 			| <expression> "*" <expression>
 			| <expression> "/" <expression>
-			| <expression> "^" <expression> ! "^"
+			/ <expression> "^" <expression>
+			| ''[0-9]+(\.[0-9]+)?'' 
 		' ==> { 
 			[ :tokens | tokens second ].
-			[ :token  | token tokenValue asNumber ].
 			[ :tokens | tokens first + tokens last ].
 			[ :tokens | tokens first - tokens last ].
 			[ :tokens | tokens first * tokens last ].
 			[ :tokens | tokens first / tokens last ].
 			[ :tokens | tokens first raisedTo: tokens last ].
+			[ :token  | token tokenValue asNumber ].
 		}
 	}.
 
