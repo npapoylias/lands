@@ -26,8 +26,10 @@ backTrackAt: btState with: aNewState havingCompleted: completedState marking: ba
 	].
 
 	stateIndex to: self current size do: [ :i | self current removeIndex: i ].
-	
+
+	"aNewState rule name = #message ifTrue: [ self halt ]."	
 	self updateLastSeenOnBackTrackFrom: oldState to: aNewState given: btState. 
+
 	stateAdded := self currentAddWithState: aNewState. "new state should be last seen here only if added.."
 	
 	

@@ -2,6 +2,6 @@ changing suspended state
 complete: aState
 
 	aState rule isOrdered
-		ifTrue: [ super complete: aState] 
+		ifTrue: [ charts memoizeLastSeenIndex. super complete: aState] 
 		ifFalse: [super completeUnordered: aState].
 	

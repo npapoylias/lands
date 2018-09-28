@@ -12,16 +12,15 @@ updateLastSeenOnBackTrackFrom: oldState to: aNewState given: aBtState
 			].
 		]."
 
-		lastSeenIndex := aBtState lastSeenIndex. "backTrack index"
+		lastSeenIndex := aBtState lastSeenIndex deepCopy. "btStates that were
+		pushed together share the same lastSeenIndex"
 	
-		(aNewState rule isOrdered not and: [ aNewState indexedParent isNotNil])
+		"(aNewState rule isOrdered and: [ aNewState indexedParent isNotNil])
 			ifTrue: [ 
-				s := (lastSeenIndex at: aNewState indexedParent name ifAbsent: [ nil ]).
-				(s isNotNil and: [aNewState isComplete not]) ifTrue: [ s push: aNewState index ].
-				"logging ifTrue: [ 
-					Transcript cr; cr; show: aNewState indexedParent name; show: ' has now RI: '; show: s; cr.
-				]."
-			]
+				s := (lastSeenIndex at: aNewState indexedParent name ifAbsentPut: [ Stack new ]).
+				aNewState isComplete not 
+					ifTrue: [ s push: aNewState index ].
+			]"
 	
 
 	
