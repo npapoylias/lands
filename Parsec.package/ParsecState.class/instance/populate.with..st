@@ -1,12 +1,12 @@
 action
 populate: aForest with: childOrChildren
-
 	childOrChildren isCollection
 		ifFalse: [ | recurseWith |
-			childOrChildren rule isTerminal ifFalse: [ 
-				childOrChildren childrenForest size > 1 ifTrue: [ 
-					^ self populate: aForest with: (self forested: childOrChildren) ]
-			].
+			(self isValidChild: childOrChildren) ifFalse: [ ^ aForest ].
+			childOrChildren rule isTerminal
+				ifFalse: [ 
+					childOrChildren childrenForest size > 1
+						ifTrue: [ ^ self populate: aForest with: (self forested: childOrChildren) ] ].
 			aForest do: [ :tree | tree add: childOrChildren ].
 			recurseWith := (childrenStates
 				at: childOrChildren to

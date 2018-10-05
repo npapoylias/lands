@@ -2,6 +2,8 @@ copying
 updateChildrenWaitingFor: aState withNewState: newState andStateAdded: stateAdded
 	| childrenDict col|
 
+
+	
 	childrenDict := stateAdded childrenStates.	"will return either the newState or the identical pre-existing"
 
 	childrenDict ~= newState childrenStates
