@@ -10,8 +10,7 @@ testExplicitAssociativityLeft
 			| <expression> "-" <expression>
 			| <expression> "*" <expression>
 			| <expression> "/" <expression>
-			| <expression> "^" <expression> 
-			| <expression> "^" <expression> & "^"
+			\ <expression> "^" <expression>
 			/ ''[0-9]+(\.[0-9]+)?''
 		' ==> { 
 			[ :tokens | tokens second ].
@@ -19,7 +18,6 @@ testExplicitAssociativityLeft
 			[ :tokens | tokens first - tokens last ].
 			[ :tokens | tokens first * tokens last ].
 			[ :tokens | tokens first / tokens last ].
-			[ :tokens | tokens first raisedTo: tokens last ].
 			[ :tokens | tokens first raisedTo: tokens last ].
 			[ :token  | token tokenValue asNumber ].
 		}
