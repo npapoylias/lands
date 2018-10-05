@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "ParsecAlgo",
+	"category" : "Parsec",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "ParsecFilteredAlgo",
+	"type" : "normal"
+}
