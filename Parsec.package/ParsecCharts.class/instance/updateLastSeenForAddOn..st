@@ -5,7 +5,9 @@ updateLastSeenForAddOn: aState
 
 	aState rule isOrdered 
 		ifTrue: [  
-			(self lastSeenIndex at: aState rule name ifAbsentPut: [ Stack new ]) push: aState index.
+			(aState rule recursiveIndexOf: aState index) = -1
+				ifTrue: [ self enterNewLastSeenScope ]
+				ifFalse: [ (self lastSeenIndex at: aState rule name ifAbsentPut: [ Stack new ]) push: aState index]
 			"logging ifTrue: [ 
 				Transcript cr; cr; show: aState rule name; show: ' has now RI: '; show: (lastSeenIndex at: aState rule name); cr.
 			]."
