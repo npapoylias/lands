@@ -5,10 +5,10 @@ complete: aState
 		ifTrue: [ |index|
 			charts memoizeLastSeenStack. 
 			super complete: aState.
-			index := self lastSeenIndex at: aState rule name ifAbsent: [ nil ].
-			index ifNotNil: [  |recursiveAddedIndex|
+			index := charts lastSeenIndex at: aState rule name ifAbsent: [ nil ].
+			(index isNil or: [index isEmpty]) ifFalse: [  |recursiveAddedIndex|
 				index := index top. 
-				recursiveAddedIndex := aState rule parent recursiveIndexOf: index.
+				recursiveAddedIndex := aState rule recursiveIndexOf: aState rightHandIndex.
 				recursiveAddedIndex = -1
 					ifTrue: [ charts exitCurrentLastSeenScope ] "a || rule was completed"
 			]
