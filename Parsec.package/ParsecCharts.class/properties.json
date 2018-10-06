@@ -11,8 +11,8 @@
 		"logging",
 		"current",
 		"interrupt",
-		"lastSeenIndex",
-		"lastSeenIndexCopy"
+		"lastSeenStack",
+		"lastSeenStackCopy"
 	],
 	"name" : "ParsecCharts",
 	"type" : "normal"

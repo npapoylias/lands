@@ -2,7 +2,7 @@ recursive-ordering
 recursiveOrderIndexFor: aState
 
 	| index recursiveAddedIndex |
-	index := lastSeenIndex at: aState ruleAtDot name ifAbsent: [nil].
+	index := self lastSeenIndex at: aState ruleAtDot name ifAbsent: [nil].
 	index 
 		ifNil: [ index := 1. recursiveAddedIndex := 0 ] 
 		ifNotNil: [ 

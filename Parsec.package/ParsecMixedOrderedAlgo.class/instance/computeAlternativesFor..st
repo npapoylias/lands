@@ -6,7 +6,7 @@ computeAlternativesFor: aState
 	alternatives ifEmpty: [ ^ alternatives ].
 	from := charts recursiveOrderIndexFor: aState.
 	^ from = -1
-		ifTrue: [ alternatives ] "vanilla ordered choice"
+		ifTrue: [ charts enterNewLastSeenScope. alternatives ] "vanilla ordered choice"
 		ifFalse: [ "recursive ordered choices"
 				(alternatives 
 					copyFrom: from to: alternatives size)

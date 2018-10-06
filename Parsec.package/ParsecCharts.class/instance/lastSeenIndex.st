@@ -1,4 +1,4 @@
 recursive-ordering
 lastSeenIndex
 
-	^ lastSeenIndex
+	^ lastSeenStack top

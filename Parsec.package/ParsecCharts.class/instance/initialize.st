@@ -7,6 +7,7 @@ initialize
 	logging := false.
 	interrupt := false.
 "	successfullTrees := ParsecCollection new."
-	lastSeenIndex := Dictionary new.
+	lastSeenStack := Stack new.
+	lastSeenStack push: Dictionary new.
 	self augment.
 	current := self at:1.

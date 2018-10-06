@@ -12,7 +12,7 @@ updateLastSeenOnBackTrackFrom: oldState to: aNewState given: aBtState
 			].
 		]."
 		"nil can happen in fully ordered cases"
-		aBtState lastSeenIndex ifNotNil: [ lastSeenIndex := aBtState lastSeenIndex deepCopy ]. "btStates that were
+		aBtState lastSeenStackIndex ifNotNil: [ lastSeenStack := aBtState lastSeenStackIndex deepCopy ]. "btStates that were
 		pushed together share the same lastSeenIndex"
 	
 		"(aNewState rule isOrdered and: [ aNewState indexedParent isNotNil])

@@ -1,7 +1,7 @@
 adding
 push: anItem
 
-	anItem lastSeenIndex: charts lastSeenIndexCopy. 
+	anItem lastSeenStackIndex: charts lastSeenStackCopy. 
 	
 	self 
 		detect: [ :state | state hasFailed and: [state equalTo: anItem ]]
