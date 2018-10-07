@@ -1,4 +1,4 @@
 *Parsec
 delimeterStaro
 
-	^ { self first . #, . self reverse staro }
+	^ { self first . #, . self reverse staro } 

@@ -1,4 +1,4 @@
 *Parsec
 delimeterStar
 
-	^ { self first . #, . self reverse star }
+	^ { self first . #, . self reverse star } 
