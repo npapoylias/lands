@@ -32,6 +32,13 @@ backTrackAt: btState with: aNewState havingCompleted: completedState marking: ba
 	stateAdded := self currentAddWithState: aNewState. "new state should be last seen here only if added.."
 	
 	
+	"backTrack for previous complete returning to child of ordered rule"
+	( stateAdded rule parent isOrdered and: [stateAdded isIncomplete ]) 
+			ifTrue: [ 
+				(stateAdded rule parent recursiveIndexOf: stateAdded index) = -1
+					ifTrue: [ self enterNewLastSeenScope ]
+					ifFalse: [ (self lastSeenIndex at: stateAdded rule parent name ifAbsentPut: [ Stack new ]) push: stateAdded index] ].
+	
 	self
 		updateChildrenWaitingFor: completedState
 		withNewState: aNewState
