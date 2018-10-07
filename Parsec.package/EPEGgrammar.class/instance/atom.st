@@ -11,6 +11,6 @@ atom
 		[ :token | token ]. "should fix to nil, or use dict ?"
 		[ :token | #e ].
 		[ :token | token ].
-		[ :tokens | {tokens second . tokens third} asArray delimeterStar ].
+		[ :tokens | {tokens second . tokens third} asArray delimeterStaro ]. "we flipped staro by default syncing"
 		[ :tokens | {tokens second . tokens third} asArray delimeterStaro ].
 	}.
