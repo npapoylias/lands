@@ -1,5 +1,4 @@
 Parsec-LanguageClasses
 msgSend
 
-	<msgSend> ::= <expression> <message>
-		| <msgSend> (";" <message>) +
+	<msgSend> ::= <expression> <message> (";" <message>) *
