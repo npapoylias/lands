@@ -1,4 +1,7 @@
 Parsec-LanguageClasses
 method
 
-	<method> ::= <methodDeclaration> <pragmas> ? <temporariesDeclaration> ? <statements> 
+	<method> ::= <methodDeclaration> 
+		<pragmas> ? 
+		<temporariesDeclaration> ? 
+		<statements> 
