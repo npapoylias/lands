@@ -1,7 +1,7 @@
 parsing
 parse: aString using: aGrammar
 	string := aString.
-	input := aString readStream.
+	input := ParsecReadStream on: aString.
 	grammar := aGrammar.
 	dummyRule grammar: grammar.
 	(grammar at: #ignore) regExpr matchesStreamPrefix: input.	"always at the start of next token"

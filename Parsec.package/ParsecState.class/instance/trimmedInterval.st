@@ -1,0 +1,4 @@
+accessing
+trimmedInterval
+
+	^ from -> trimmedEnd 

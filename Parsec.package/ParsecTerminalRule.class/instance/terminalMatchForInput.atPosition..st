@@ -8,6 +8,6 @@ terminalMatchForInput: input atPosition: readingPosition
 	input directSetPos: readingPosition. "already the case -- Refactor lexer for
 	better semantics here and in return value (for non match)"
 	^ lastResult := ((self regExpr matchesStreamPrefix: input)
-			ifTrue: [self ignoreRegExpr matchesStreamPrefix: input. input position]
+			ifTrue: [input updateLastTokenPos. self ignoreRegExpr matchesStreamPrefix: input. input position]
 			ifFalse: [ readingPosition])
 			

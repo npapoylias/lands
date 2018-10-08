@@ -22,7 +22,8 @@
 		"alternative",
 		"memoizedChildrenForest",
 		"memoizedChildrenForestTraversingTempsAsSet",
-		"childrenForestTraversingTemps"
+		"childrenForestTraversingTemps",
+		"trimmedEnd"
 	],
 	"name" : "ParsecState",
 	"type" : "normal"
