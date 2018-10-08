@@ -1,4 +1,4 @@
 accessing
 trimmedInterval
 
-	^ from -> trimmedEnd 
+	^ trimmedEnd ifNil: [ self interval ] ifNotNil: [from -> trimmedEnd]
