@@ -1,4 +1,4 @@
 recursive-ordering
 exitCurrentLastSeenScope
 	
-	lastSeenStack pop
+	lastSeenStack pop.
