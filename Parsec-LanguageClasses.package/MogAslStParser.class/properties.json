@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "StEpegTest",
+	"category" : "Parsec-LanguageClasses",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "MogAslStParser",
+	"type" : "normal"
+}
