@@ -1,4 +1,4 @@
 *Parsec
-literal
+lit
 
 	^ self "polymorphc with tokens"

@@ -1,4 +1,4 @@
 Parsec-LanguageClasses
 symbol
 
-	^ super symbol ==> [ :nodes | nodes second sym ]
+	^ super symbol ==> [ :values | values second sym <-> values ]

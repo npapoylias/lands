@@ -1,4 +1,4 @@
 Parsec-LanguageClasses
 literal
 
-	^ super literal ==> [ :tokenOrNode | tokenOrNode lit ]
+	^ super literal ==> [ :value | value lit ]

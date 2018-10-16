@@ -1,0 +1,4 @@
+*Parsec
+, e
+
+	stop := e
