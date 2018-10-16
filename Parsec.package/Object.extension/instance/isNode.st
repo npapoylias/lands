@@ -1,0 +1,4 @@
+*Parsec
+isNode
+
+	^ true

@@ -1,0 +1,4 @@
+*Parsec
+@ s
+
+	left := s
