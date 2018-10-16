@@ -1,0 +1,4 @@
+*Parsec
+@ start
+
+	return := start

@@ -1,0 +1,4 @@
+Parsec-LanguageClasses
+return
+
+	^ super return ==> [ :values | values second return <-> values ]
