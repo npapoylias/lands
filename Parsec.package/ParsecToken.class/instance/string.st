@@ -1,4 +1,4 @@
 instance creation
-tokenValue
+string
 
 	^ (input atAll: (parsecState from + 1 to: parsecState to)) trim

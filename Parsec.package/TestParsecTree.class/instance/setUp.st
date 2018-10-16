@@ -16,7 +16,7 @@ setUp
 				[ :tokens | tokens first / tokens last ].
 				[ :tokens | tokens first + tokens last ].
 				[ :tokens | tokens first - tokens last ].
-				[ :token  | token tokenValue asNumber ]
+				[ :token  | token string asNumber ]
 			}.
 		'<number> ::= ''[0-9]+(\.[0-9]+)?''' 
 	}.

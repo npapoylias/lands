@@ -1,5 +1,5 @@
 Parsec-LanguageClasses
 variable
 
-	^ super variable ==> [ :token | token tokenValue asSymbol ]
+	^ super variable ==> [ :token | token string asSymbol ]
 	

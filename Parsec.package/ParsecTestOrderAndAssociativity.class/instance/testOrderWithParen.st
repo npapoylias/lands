@@ -17,7 +17,7 @@ testOrderWithParen
 			[ :tokens | tokens first / tokens last ].
 			[ :tokens | tokens first + tokens last ].
 			[ :tokens | tokens first - tokens last ].
-			[ :tokens  | tokens first tokenValue asNumber ].
+			[ :tokens  | tokens first string asNumber ].
 		}
 	}.
 

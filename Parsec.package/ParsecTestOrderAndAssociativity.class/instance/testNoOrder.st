@@ -13,7 +13,7 @@ testNoOrder
 			| <expression> "/" <expression>
 		' ==> { 
 			[ :tokens | tokens second ].
-			[ :token  | token tokenValue asNumber ].
+			[ :token  | token string asNumber ].
 			[ :tokens | tokens first + tokens last ].
 			[ :tokens | tokens first - tokens last ].
 			[ :tokens | tokens first * tokens last ].

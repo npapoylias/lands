@@ -17,7 +17,7 @@ testOrder
 			[ :tokens | tokens first / tokens last ].
 			[ :tokens | tokens first + tokens last ].
 			[ :tokens | tokens first - tokens last ].
-			[ :token  | token tokenValue asNumber ].
+			[ :token  | token string asNumber ].
 		}
 	}.
 

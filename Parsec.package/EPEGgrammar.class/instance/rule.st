@@ -14,7 +14,7 @@ rule
 				operands := expressions allButFirst. ].
 		operands "allButFirst" doWithIndex: [ :e :index | 
 					r 
-						perform: (operators at: index) tokenValue asSymbol
+						perform: (operators at: index) string asSymbol
 						withArguments: { e asArrayIfCollection } 
 		].
 		r 		 

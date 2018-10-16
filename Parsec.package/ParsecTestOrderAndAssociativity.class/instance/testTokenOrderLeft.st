@@ -19,7 +19,7 @@ testTokenOrderLeft
 			[ :tokens | tokens first * tokens last ].
 			[ :tokens | tokens first / tokens last ].
 			[ :tokens | tokens first raisedTo: tokens last ].
-			[ :token  | token tokenValue asNumber ].
+			[ :token  | token string asNumber ].
 		}
 	}.
 
