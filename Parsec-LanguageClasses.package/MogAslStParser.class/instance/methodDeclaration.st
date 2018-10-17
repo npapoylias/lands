@@ -1,8 +1,8 @@
-grammar
+Parsec-LanguageClasses
 methodDeclaration
 
 	^ super methodDeclaration ==> {   
-		[ :token | token dclr ]. "verbatim this will be #(unary) decl etc."
+		[ :token | token dclr ]. 
 		[ :values | values binDclr ]. 
 		[ :values | values keyDclr ]
 	} 
