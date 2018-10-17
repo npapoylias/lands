@@ -1,0 +1,4 @@
+*Parsec
+isVar
+
+	^ true
