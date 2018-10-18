@@ -2,4 +2,4 @@
 binDclr
 	^ RBMethodNode
 		selector: self first string asSymbol
-		arguments: self second
+		arguments: self second var
