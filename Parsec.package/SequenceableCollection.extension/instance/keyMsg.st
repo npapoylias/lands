@@ -10,7 +10,7 @@ keyMsg
 			ifFalse: [ 	arguments add: (item isNode ifTrue: [ item ] ifFalse: [ item lit ]) ]
 	].
 	^ RBMessageNode
-		receiver: nil "will be supplied later"
-		selector: keywords asSymbol
+		receiver: nil lit "will be supplied later"
+		selector: keywords contents asSymbol
 		keywordsPositions: positions
 		arguments: arguments.

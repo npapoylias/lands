@@ -1,4 +1,4 @@
 *Parsec
 isNode
 
-	^ true
+	^ false
