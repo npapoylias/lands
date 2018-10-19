@@ -1,4 +1,4 @@
 Parsec-LanguageClasses
 symbol
 
-	^ super symbol ==> [ :values | values second asSymbol lit <-> values ]
+	^ super symbol ==> [ :values | values second symbol lit <-> values ]
