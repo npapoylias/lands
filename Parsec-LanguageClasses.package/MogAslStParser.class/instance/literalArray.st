@@ -1,4 +1,4 @@
 Parsec-LanguageClasses
 literalArray
 
-	^ super literalArray ==> [ :values | values second array <-> values ]
+	^ super literalArray ==> [ :values | values second litArray <-> values ]

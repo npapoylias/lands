@@ -6,7 +6,7 @@ keyDclr
 	arguments := OrderedCollection new.
 	self deepFlatten doWithIndex: [ :item :index |
 		index % 2 == 1
-			ifTrue: [ keywords nextPutAll: item string. positions add: item from]
+			ifTrue: [ keywords nextPutAll: item string. positions add: item from ]
 			ifFalse: [ arguments add: item ].
 	].
 	^ RBMethodNode

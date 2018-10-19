@@ -1,4 +1,4 @@
 Parsec-LanguageClasses
 dynArray
 
-	^ super dynArray ==> [ :values | values nodes dynArray <-> values ]
+	^ super dynArray ==> [ :values | values nodes array <-> values ]

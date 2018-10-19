@@ -1,8 +1,6 @@
 *Parsec
 array "Asl method"
 
-	^ RBLiteralArrayNode
-		startPosition: self first start
-		contents: self second
-		stopPosition: self last start
-		isByteArray: false
+
+	^ RBArrayNode
+		statements: (self collect: [ :n | n isNode ifTrue: [ n ] ifFalse: [ n lit ] ])

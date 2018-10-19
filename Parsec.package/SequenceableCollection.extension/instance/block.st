@@ -1,22 +1,16 @@
 *Parsec
 block
 
-	|args temps stmts t|
+	|args temps stmts|
 	
-	stmts := self stmts.
+	stmts := self stmts sequence.
+	args := (self detect: [ :i | i isOrderedCollection ] ifNone: [#()])
+		collect: [ :a | a var ].	 
+	temps := (self detect: [ :i | i isArray ] ifNone: [ #() ])
+		collect: [ :t | t isToken ifTrue: [ t ] ifFalse: [ t var ] ].
 	
-	t := self second detect: [ :v | v isToken ] ifNone: [ nil ].
-	
-	t 
-		ifNil: [ args := #(). temps := self vars "can be empty" ]
-	 	ifNotNil: [ t string = '|' 
-			ifTrue: [ 
-				args := self second vars. 
-				self third isSequence
-					ifTrue: [ temps := #() ]
-					ifFalse: [ temps := self third vars. stmts <-> self third  ]
-			]
-		].
+	stmts <-> self temps. "if tokens are present, first and last will be the || bars"
+	stmts temporaries: (self temps select: [ :t | t isToken not ]).
 	
 	^ RBBlockNode 
 		arguments: args
