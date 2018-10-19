@@ -3,5 +3,5 @@ arrayItem
 
 	<arrayItem> ::= <literal> 
 		| <bareSymbol> 
-		| <bareByte>
+		| <bareByteArray>
 		| <embeddedArray>   

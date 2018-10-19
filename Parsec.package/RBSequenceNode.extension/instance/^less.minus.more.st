@@ -1,7 +1,9 @@
 *Parsec
-<-> temps
-
-	(temps isEmpty not and: [temps first isToken]) ifTrue: [ 
-		leftBar := temps first from.
-		rightBar := temps last to
-	]	
+<-> values
+	|bars|
+	bars := values bars.
+	(bars isEmpty not) ifTrue: [ 
+		leftBar := bars first from.
+		rightBar := bars last to
+	].
+	periods := values dots collect: [ :t | t from ].

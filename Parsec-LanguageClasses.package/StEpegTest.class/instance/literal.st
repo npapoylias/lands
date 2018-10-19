@@ -4,7 +4,7 @@ literal
 	<literal> ::= <number> 
 		| <string>
 		| <char>
-		| <byte> 
+		| <byteArray> 
 		| <literalArray>
 		| <symbol>
 		| "nil"

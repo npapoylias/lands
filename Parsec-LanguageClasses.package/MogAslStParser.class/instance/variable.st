@@ -1,4 +1,4 @@
 Parsec-LanguageClasses
 variable
 
-	^ super variable ==> [ :token | token var ] 
+	^ super variable ==> [ :token | token string asSymbol var <-> token ] 

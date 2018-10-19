@@ -2,5 +2,5 @@ Parsec-LanguageClasses
 msgSend
 
 	^ super msgSend ==> [ :values | 
-		values first |> values allButFirst msgs <-> values semicolons 
+		values first |> values allButFirst <-> values  
 	]

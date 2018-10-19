@@ -1,4 +1,4 @@
 *Parsec
-<-> scolons "polymorphic. Use for eg in cascade so need it in msg"
+<-> values "polymorphic. Use for eg in cascade so need it in msg"
 
-	self semicolons: (scolons collect: [ :s | s from ]) asArray
+	self semicolons: (values semicolons collect: [ :s | s from ]) asArray
