@@ -8,4 +8,10 @@
 				ifTrue: [ {self messageNodeFrom: message} ]
 				ifFalse: [ message collect: [ :m | self messageNodeFrom: m ] ]
 		].
-	^ (self isNode ifTrue: [ self ] ifFalse: [ self lit]) |> messageNodes
+	^ (self isNode 
+			ifTrue: [ self ] 
+			ifFalse: [ 
+				self isLiteral 
+					ifTrue: [self lit] "if this is not literal treat obj as global" 
+					ifFalse: [self printString asSymbol var]
+			 ]) |> messageNodes
