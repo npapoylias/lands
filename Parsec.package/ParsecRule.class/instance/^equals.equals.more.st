@@ -2,7 +2,8 @@ logical operations
 ==> aBlockOrBlocks
 
 	aBlockOrBlocks isCollection
-		ifFalse: [ action at: rightHandSide size put: aBlockOrBlocks ]
+		ifFalse: [ 
+			1 to: rightHandSide size do: [ :i | action at: i put: aBlockOrBlocks] ]
 		ifTrue: [ aBlockOrBlocks doWithIndex: [ :aBlock :index |  
 				action at: index put: aBlock	
 		]]
