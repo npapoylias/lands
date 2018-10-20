@@ -1,8 +1,10 @@
 *Parsec
 |> msgs "both for value and message nodes"
-	msgs isSymbol ifTrue: [ ^ self |> { msgs msg }  ].
-	msgs first isSymbol ifTrue: [ ^ super |> msgs ].
-	msgs withoutSemicolons do: [ :msg | msg receiver: self ].
-	^ msgs withoutSemicolons size > 1
-			ifTrue: [ RBCascadeNode messages: msgs ] "semicolon positions ?"
-			ifFalse: [ msgs first ]
+	|ret|
+	(msgs isSymbol or: [ msgs isToken ]) ifTrue: [ ^ self |> { msgs msg }  ].
+	(msgs first isSymbol or: [ msgs first isToken ]) 
+		ifTrue: [ ^ msgs size = 1 ifTrue: [ super |> msgs first] ifFalse: [ super |> msgs ] ].
+	ret := msgs withoutSemicolons collect: [ :msg | (msg isNode ifTrue: [ msg ] ifFalse: [ self |> msg ]) receiver: self ].
+	^ ret withoutSemicolons size > 1
+			ifTrue: [ RBCascadeNode messages: ret ] "semicolon positions ?"
+			ifFalse: [ ret first ]

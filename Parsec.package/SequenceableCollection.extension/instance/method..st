@@ -6,7 +6,7 @@ method: aCollection
 	self size = 1
 		ifTrue: [ mNode := self dclr ] "unary"
 		ifFalse: [ 
-			self first last = $:
+			self first string last = $:
 				ifFalse: [ mNode := self binDclr ] "binary"
 				ifTrue: [ mNode := self keyDclr ] "keyword" 
 		].

@@ -3,7 +3,7 @@ expression
 
 	<expression> ::= <assignment>
 		/ <msgSend>
-		|| "(" <expression> ")"
+		|| <paren>
 		| <variable>
 		| <primaryValue>
 		

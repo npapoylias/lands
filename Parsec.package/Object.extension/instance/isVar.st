@@ -1,0 +1,3 @@
+*Parsec
+isVar
+	^ false

@@ -1,10 +1,10 @@
 *Parsec
 |> message
 	| messageNodes |
-	messageNodes := message isSymbol
+	messageNodes := (message isSymbol or: [ message isToken ])
 		ifTrue: [ "unary" { message msg } ]
 		ifFalse: [ 
-			message first isSymbol
+			(message first isSymbol or: [ message first isToken ])
 				ifTrue: [ {self messageNodeFrom: message} ]
 				ifFalse: [ message collect: [ :m | self messageNodeFrom: m ] ]
 		].

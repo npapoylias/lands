@@ -1,7 +1,12 @@
 *Parsec
 messageNodeFrom: message
-	^ message isSymbol
+	^ (message isSymbol or: [ message isToken  ])
 		ifTrue: [ "unary" message msg ]
-		ifFalse: [ message first last = $:
-				ifTrue: [ message keyMsg ]
-				ifFalse: [ message binMsg ] ]
+		ifFalse: [ 
+			message size = 1 
+				ifTrue: [ message first msg ]
+				ifFalse: [
+					message first string last = $:
+						ifTrue: [ message keyMsg ]
+						ifFalse: [ message binMsg ] ]
+		]
