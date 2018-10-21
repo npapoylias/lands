@@ -1,4 +1,4 @@
 Parsec-LanguageClasses
 embeddedArray
 
-	^ super embeddedArray ==> [ :values | values nodes asArray lit <-> values ]
+	^ super embeddedArray ==> [ :values | values second asArray lit <-> values ]

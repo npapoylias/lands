@@ -1,4 +1,4 @@
 Parsec-LanguageClasses
 number
 
-	^ super number ==> [ :val | val number lit <-> val ]
+	^ super number ==> [ :token | token number lit  <-> token ]
