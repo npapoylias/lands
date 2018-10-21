@@ -1,4 +1,4 @@
 Parsec-LanguageClasses
 string
 
-	^ super string ==> [ :token | token string lit <-> token ]
+	^ super string ==> [ :token | token string withoutQuotes lit <-> token ]
