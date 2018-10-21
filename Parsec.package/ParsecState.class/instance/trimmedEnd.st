@@ -1,3 +1,3 @@
 accessing
 trimmedEnd
-	^ trimmedEnd
+	^ trimmedEnd ifNil: [ to ]

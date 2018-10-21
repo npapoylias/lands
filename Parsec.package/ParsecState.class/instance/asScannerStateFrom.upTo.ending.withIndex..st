@@ -5,4 +5,4 @@ asScannerStateFrom: start upTo: tokenEnd ending: endWithIgnore withIndex: anAlte
 	^ (self ruleAtDot asScannerStateFrom: start to: endWithIgnore withIndex: anAlternative)
 			fromTerminal: self toTerminal;
 			toTerminal: self toTerminal + 1;
-			trimmedEnd: tokenEnd
+			trimmedEnd: tokenEnd 

@@ -15,7 +15,7 @@ scan: aState
 			charts nextAdd: 
 				(aState 
 					asScannerStateFrom: aState to 
-					upTo: input lastTokenPos 
+					upTo: input lastTokenPos
 					ending: match 
 					withIndex: 1). 
 				"always 1 for terminals"
