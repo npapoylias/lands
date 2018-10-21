@@ -1,6 +1,6 @@
 *Parsec
 lit
 
-	^ RBLiteralValueNode
-			value: self 
+	^ RBLiteralValueNode 
+			value: self
 	
