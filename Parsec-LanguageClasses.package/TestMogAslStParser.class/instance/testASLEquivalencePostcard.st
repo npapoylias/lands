@@ -14,7 +14,7 @@ testASLEquivalencePostcard
     ^x < y') eval first = (
 
 #(exampleWithNumber: x) method: {  
-	#(menu: 3 priority: #'34') pragma.
+	#(menu: 3 priority: #'-34') pragma.
 	#(y) temps.
 	true "lit optionally" |> {#& . false |> #not } |> {#& . nil |> #isNil } |> {#ifFalse: . { #self |> #halt } block }.
 	#y === (#self |> #size |> { #+ . #super |> #size }).
