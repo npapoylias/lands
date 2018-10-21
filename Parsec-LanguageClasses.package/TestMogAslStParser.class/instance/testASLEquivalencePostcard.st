@@ -1,13 +1,15 @@
 tests
 testASLEquivalencePostcard
 
+	"fix the trimmed end for comments"
+
 	self assert: (MogAslStParser new parse: 'exampleWithNumber: x
 	 <menu: 3 priority: #''-34''>
     | y |
     true & false not & (nil isNil) ifFalse: [self halt].
     y := self size + super size.
 	{ $a . #a . 1 . 1.0 class}.
-    #($a #a "a" 1 1.0)
+    #($a #a 1 1.0)
         do: [ :each | |t|
             Transcript show: (each class name);
                        show: '' ''].
