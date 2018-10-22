@@ -1,7 +1,7 @@
 as yet unclassified
-rbAST
+mogAslAST
 
-	^ RBParser parseMethod: 'exampleWithNumber: x
+	^ (MogAslStParser new parse: 'exampleWithNumber: x
 	 <menu: 3 priority: #''-34''>
     | y |
     true & false not & (nil isNil) ifFalse: [self halt].
@@ -11,4 +11,4 @@ rbAST
         do: [ :each | |t|
             Transcript show: (each class name);
                        show: '' ''].
-    ^x < y'
+    ^x < y') eval first
