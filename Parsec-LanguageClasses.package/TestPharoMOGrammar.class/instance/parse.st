@@ -45,7 +45,8 @@ PharoMOGrammar new
     	^	x < y' using: algo new "log"; defaultView.
 		
 	PharoMOGrammar new
-		parse: '<menu: 3 priority: #''-34''>
+		parse: 'postcard: x
+		<menu: 3 priority: #''-34''>
    		|y d| 
 		y :=  #[100] + self bSize + super bSize.
 		d := Dictionary new.
