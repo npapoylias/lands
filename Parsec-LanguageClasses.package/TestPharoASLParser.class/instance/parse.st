@@ -1,8 +1,8 @@
-test
+parsing
 parse
 
 	PharoASLParser new 
-		parseval: 'at: index put: aValue 
+		parseval: 'at: index put: aValue
 			<menu: 3 priority: #''-34''>
 			|x y z|
 			#(-422434.3342e-10 343434 -10r9 32424s at:put: selector ''string'' [3] (car (cdr list)))

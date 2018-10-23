@@ -1,4 +1,4 @@
-tests
+parsing
 parse
 
 "The reason the ordered version is slower (especially on
@@ -6,8 +6,8 @@ errors at the end) is because there is only memoization
 for failures not of successes (it tries all possible routes
 again and again)"
 
-PharoMOGrammar new  
-	parse: 'at: index put: aValue 
+PharoMOGrammar new 
+	parse: 'at: index put: aValue
 		<menu: 3 priority: #''-34''>
 		|x y z|
 		#(-422434.3342e-10 343434 -10r9 32424s at:put: selector ''string'' [3] (car (cdr list)))
