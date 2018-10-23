@@ -2,4 +2,4 @@ tests
 testMixedOrderedFiltered
 
 	algo := ParsecMixedOrderedFilteredAlgo.
-	self parse
+	self parse 
