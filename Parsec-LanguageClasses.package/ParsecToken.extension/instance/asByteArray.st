@@ -1,4 +1,4 @@
 asl
 asByteArray
 
-	^ { self number } asByteArray
+	^ { self number } asByteArray 
