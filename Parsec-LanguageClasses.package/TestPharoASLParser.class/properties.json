@@ -5,7 +5,9 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"algo"
+	],
 	"name" : "TestPharoASLParser",
 	"type" : "normal"
 }
