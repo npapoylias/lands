@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "ExpressionEpeg",
+	"super" : "ExpressionMOGrammar",
 	"category" : "Parsec-LanguageClasses",
 	"classinstvars" : [ ],
 	"pools" : [ ],

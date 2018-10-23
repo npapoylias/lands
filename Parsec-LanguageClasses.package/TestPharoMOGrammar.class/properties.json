@@ -1,13 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "CalcMOGrammar",
+	"super" : "TestCase",
 	"category" : "Parsec-LanguageClasses",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"env"
+		"algo"
 	],
-	"name" : "CalcEvaluator",
+	"name" : "TestPharoMOGrammar",
 	"type" : "normal"
 }
