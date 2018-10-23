@@ -2,30 +2,30 @@ parsing
 parse
 
 	PharoASLParser new 
-		parse: 'at: index put: aValue
+		parseval: 'at: index put: aValue
 			<menu: 3 priority: #''-34''>
 			|x y z|
 			#(-422434.3342e-10 343434 -10rA0 32424s at:put: selector ''string'' [3] (car (cdr list)))
-			' using: algo new "log"; defaultView.
+			'. 
 		
 	PharoASLParser new 
-		parse: 'method
+		parseval: 'method
 		rcv at: 3 class	
-		'using: algo new "log"; defaultView.
+		'.
 
 	PharoASLParser new 
-		parse: 'method
+		parseval: 'method
 			3 + 4 class	
-		'using: algo new "log"; defaultView.
+		'.
 
 
 	PharoASLParser new 
-		parse: 'at: index put: aValue
+		parseval: 'at: index put: aValue
 		x dict size at: 3 + 4 + 6 put: (''meh'')
-		'using: algo new "log"; defaultView.
+		'.
 		
 	PharoASLParser new
-		parse: 'exampleWithNumber: x
+		parseval: 'exampleWithNumber: x
     	"A comment"
 	 	<menu: 3 priority: #''-34''>
     	| y |
@@ -35,10 +35,10 @@ parse
         do: [ :each |
             Transcript show: (each class name);
                        show: '' ''].
-    	^	x < y' using: algo new "log"; defaultView.
+    	^	x < y'.
 		
 	PharoASLParser new
-		parse: 'postcard: x
+		parseval: 'postcard: x
 		<menu: 3 priority: #''-34''>
    		|y d| 
 		y :=  #[100] + self bSize + super bSize.
@@ -55,4 +55,4 @@ parse
          		Transcript show: t; show: '' ''; show: item; show: '' ''
 			].
 		] ifFalse: [self halt].
-		^ x < y first' using: algo new; defaultView
+		^ x < y first'
