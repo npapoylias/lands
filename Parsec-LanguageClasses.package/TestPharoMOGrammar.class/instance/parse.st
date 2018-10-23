@@ -61,4 +61,4 @@ PharoMOGrammar new
          		Transcript show: t; show: '' ''; show: item; show: '' ''
 			].
 		] ifFalse: [self halt].
-		^ x < y first' using algo new; defaultView
+		^ x < y first' using: algo new; defaultView
