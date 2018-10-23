@@ -6,4 +6,4 @@ testASLEquivalencePostcard
 	self assert: self aslAST = self rbAST.
 	self assert: self mogAslAST = self rbAST.
 	source := (self class >> #postcard:) sourceCode.
-	self assert: (RBParser parseMethod: source) = (PharoASLParser new parseval: source) first.
+	self assert: (RBParser parseMethod: source) = (PharoASLParser new parse: source) eval first.
