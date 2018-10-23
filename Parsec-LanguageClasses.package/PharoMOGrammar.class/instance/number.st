@@ -1,7 +1,4 @@
 Parsec-LanguageClasses
 number
 
-	<number> ::= <floatingPoint>
-		| <scaledDecimal>
-		| <integer>
-		 
+	<number> ::= '-?[0-9]+(\.[0-9]+)?([rsedq]-?[0-9]*)?' 
