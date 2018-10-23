@@ -1,7 +1,6 @@
 as yet unclassified
 postcard: x
-	"self new postcard: 100.	
-	self new postcard: 255."
+
 	<menu: 3 priority: #'-34'>
    |y d| 
 	y :=  #[100] + self bSize + super bSize.
