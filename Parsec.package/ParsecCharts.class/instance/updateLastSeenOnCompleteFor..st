@@ -7,5 +7,5 @@ updateLastSeenOnCompleteFor: aState
 		ifTrue: [ self exitCurrentLastSeenScope ]
 		ifFalse: [ 
 			s := self lastSeenIndex at: aState rule name ifAbsentPut: [ Stack new ].
-			s ifNotEmpty: [ [s pop = aState index] whileFalse ]
+			s ifNotEmpty: [ s pop ]
 		].
