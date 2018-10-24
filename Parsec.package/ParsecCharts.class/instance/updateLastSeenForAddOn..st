@@ -1,7 +1,7 @@
 recursive-ordering
 updateLastSeenForAddOn: aState
-
-	aState isComplete ifTrue: [  ^ self updateLastSeenOnCompleteFor: aState].
+	aState rule name = #expression ifTrue: [ self halt ].
+	aState isComplete ifTrue: [ ^ self updateLastSeenOnCompleteFor: aState].
 	"aState rule ifNil: [ ^ self ]."
 	aState rule isOrdered 
 		ifTrue: [   

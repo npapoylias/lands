@@ -1,8 +1,10 @@
 recursive-ordering
 updateLastSeenOnBackTrackFrom: oldState to: aNewState given: aBtState
 
+
+	aNewState rule name = #expression ifTrue: [ self halt ].
+
 	"update for old state should be obsolete"
-	|s|
 	"oldState ifNotNil: [ |s |
 		oldState indexedParent ifNotNil: [
 			s := lastSeenIndex at: oldState indexedParent name ifAbsent: [ nil ].
