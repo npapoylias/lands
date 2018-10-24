@@ -31,7 +31,7 @@ backTrackAt: btState with: aNewState havingCompleted: completedState marking: ba
 	stateAdded := self currentAddWithState: aNewState.	"new state should be last seen here only if added.."
 
 	"backTrack for previous complete returning to child of ordered rule"
-	"self updateLastSeenForBackTrackedOrderedChild: stateAdded."
+	self updateLastSeenForBackTrackedOrderedChild: stateAdded.
 
 	self
 		updateChildrenWaitingFor: completedState
