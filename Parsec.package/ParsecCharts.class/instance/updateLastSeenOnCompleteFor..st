@@ -1,11 +1,10 @@
 recursive-ordering
 updateLastSeenOnCompleteFor: aState
-	|s|
-	aState rule name = #expression ifTrue: [ self halt ]. 
+	| s |
+	aState rule name = #expression
+		ifTrue: [ self halt ].
 	"aState rule parent ifNil: [ ^ self ]."
-	(aState rule  isOrdered and: [(aState rule recursiveIndexOf: aState index) = -1])
+	(aState rule isOrdered
+		and: [ (aState rule recursiveIndexOf: aState index) = -1 ])
 		ifTrue: [ self exitCurrentLastSeenScope ]
-		ifFalse: [ 
-			s := self lastSeenIndex at: aState rule name ifAbsentPut: [ Stack new ].
-			s ifNotEmpty: [ s pop ]
-		].
+		ifFalse: [ self popLastSeenAt: aState rule name ]
