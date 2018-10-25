@@ -6,7 +6,7 @@ recursiveOrderIndexFor: aState
 	index isEmpty
 		ifTrue: [ index := 1. recursiveAddedIndex := 0 ] 
 		ifFalse: [ 
-					index := index top. 
+					index := index top x. 
 					recursiveAddedIndex := aState ruleAtDot recursiveIndexOf: index 
 		]. 
 	^ recursiveAddedIndex = -1 ifTrue: [ -1 ] ifFalse: [ index + recursiveAddedIndex ]

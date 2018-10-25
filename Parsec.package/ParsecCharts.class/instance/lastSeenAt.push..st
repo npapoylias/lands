@@ -1,4 +1,4 @@
 recursive-ordering-api
-lastSeenAt: aName push: anObject
+lastSeenAt: aName push: aState
 
-	^ (self lastSeenAt: aName) push: anObject
+	^ (self lastSeenAt: aName) push: aState index @ aState to
