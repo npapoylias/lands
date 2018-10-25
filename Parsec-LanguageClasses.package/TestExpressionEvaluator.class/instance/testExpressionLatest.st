@@ -24,7 +24,6 @@ testExpressionLatest
 
 	results := grammar parse: '5*3*4+4/(2-8)^2^3-7' using: ParsecMixedOrderedFilteredAlgo  new log."'4+3*4^7^9/7-6'." "5*3*4+4/2-8^2^3-7"
 	
-	self halt.
 	self assert: results eval first = (22254913/419904).
 
 	"self assert: results trees size = 1.
