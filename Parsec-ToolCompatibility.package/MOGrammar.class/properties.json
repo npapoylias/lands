@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "ExtentedPeg",
+	"name" : "MOGrammar",
 	"type" : "normal"
 }
