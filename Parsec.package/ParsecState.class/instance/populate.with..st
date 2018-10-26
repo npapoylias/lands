@@ -1,5 +1,6 @@
 action
 populate: aForest with: childOrChildren
+
 	childOrChildren isCollection
 		ifFalse: [ | recurseWith |
 			(self isValidChild: childOrChildren) ifFalse: [ ^ aForest ].
