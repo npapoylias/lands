@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "CustomLanguageClass",
-	"category" : "Parsec-ToolCompatibility",
+	"category" : "Parsec-LanguageClasses",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
