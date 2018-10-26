@@ -1,7 +1,7 @@
 tests
 testForestResult
 
-	| result root |
+	| result root | 
 	result := ParsecExprGrammar new 
 		"should be 250" parse: '5*2+3' using: ParsecMixedOrderedFilteredAlgo new log.
 	
