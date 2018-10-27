@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "PharoASLParser",
+	"category" : "Parsec-LanguageClasses",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "PharoASLExtGrammar",
+	"type" : "normal"
+}
