@@ -1,4 +1,4 @@
 Parsec-LanguageClasses
 bareKeyword
 
-	^ super bareKeyword ==> [:value | value symbol ]
+	^ super bareKeyword ==> [:value | value string , ':' ]
