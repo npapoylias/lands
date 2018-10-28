@@ -3,5 +3,6 @@ statement
 
 	<statement> ::= <classicIf>
 		/ <classicWhile>
+		| <classicReturn>
 		| <expression>
 	  
