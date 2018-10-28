@@ -4,7 +4,13 @@ block
 	|args temps stmts|
 	
 	stmts := self stmts sequence.
-	args := self detect: [ :i | i isOrderedCollection and: [ i nodes first isVar ]  ] ifNone: [#()].	 
+	args := self 
+		detect: [ :i | 
+			i isOrderedCollection and: [ 
+				|nodes| 
+				nodes := i nodes.  
+				nodes ifNotEmpty: [ i nodes first isVar ] ifEmpty: [ false ] ] 
+			] ifNone: [#()].	 
 	temps := self detect: [ :i | i isArray ] ifNone: [ #() ].
 	
 	stmts <-> temps. "if tokens are present, first and last will be the || bars"

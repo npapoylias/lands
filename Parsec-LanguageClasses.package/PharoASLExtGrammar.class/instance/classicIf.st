@@ -1,4 +1,5 @@
 Parsec-LanguageClasses
 classicIf
 
-	<classicIf> ::= "if" <expression> <bracketBlock> ( "else" <bracketBlock> ) ?
+	<classicIf> ::= "if" <expression> <bracketBlock> "else" <bracketBlock>
+		/ "if" <expression> <bracketBlock>

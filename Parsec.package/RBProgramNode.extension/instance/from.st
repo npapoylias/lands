@@ -1,0 +1,4 @@
+*Parsec
+from
+
+	^ self start
