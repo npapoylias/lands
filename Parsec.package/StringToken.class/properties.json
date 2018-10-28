@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "ParsecToken",
+	"category" : "Parsec",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"from",
+		"to"
+	],
+	"name" : "StringToken",
+	"type" : "normal"
+}

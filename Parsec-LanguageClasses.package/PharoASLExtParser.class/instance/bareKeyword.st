@@ -1,4 +1,4 @@
 Parsec-LanguageClasses
 bareKeyword
 
-	^ super bareKeyword ==> [:value | value string , ':' ]
+	^ super bareKeyword ==> [:token | (token string , ':') token <-> token ]

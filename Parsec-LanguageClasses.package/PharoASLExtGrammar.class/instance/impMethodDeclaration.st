@@ -1,6 +1,6 @@
 Parsec-LanguageClasses
 impMethodDeclaration
 
-	<impMethodDeclaration> ::= <identifier> "(" 
-		( <identifier> ("." <identifier> "=" <identifier> ) * ) ?  
+	<impMethodDeclaration> ::= <bareKeyword> "(" 
+		( <identifier> ("." <bareKeyword> "=" <variable> ) * ) ?  
 	")" ":" 

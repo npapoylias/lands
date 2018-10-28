@@ -1,5 +1,5 @@
 as yet unclassified
-impDeclforFBlockReturnWhileIfPostcard
+impDeclForFBlockReturnWhileIfPostcard
 
 	^ 'postcard(x):
 	<menu: 3 priority: #''-34''>
