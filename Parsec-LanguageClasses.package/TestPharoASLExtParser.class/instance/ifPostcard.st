@@ -16,5 +16,6 @@ ifPostcard
 			|t| t := item class name.
 			d at: t put: item. 
          Transcript show: t; show: '' ''; show: item; show: '' ''
+		]
 	} else self halt.
 	^ x < y first'
