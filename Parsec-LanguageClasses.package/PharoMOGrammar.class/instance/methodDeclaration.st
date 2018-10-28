@@ -2,5 +2,5 @@ Parsec-LanguageClasses
 methodDeclaration
 
 	<methodDeclaration> ::= <identifier>
-		| <binaryOp> <variable>
+		/ <binaryOp> <variable>
 		| (<keyword> <variable>) +    

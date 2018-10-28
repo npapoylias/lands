@@ -20,7 +20,7 @@ PharoMOGrammar new
 
 PharoMOGrammar new 
 	parse: 'method
-		3 + 4 class	
+		(3 + 4 class)	
 	'using: algo new "log"; defaultView.
 
 

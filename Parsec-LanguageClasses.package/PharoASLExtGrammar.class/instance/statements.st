@@ -4,5 +4,5 @@ statements
 	<statements> ::= 
 		{ <statement> <dots> } ? 
 		<dots> ? 
-		<return> ? 
-		<dots> ? 
+		<return> ?
+		<dots> ?  

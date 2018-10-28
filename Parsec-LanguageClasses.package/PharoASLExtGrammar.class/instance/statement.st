@@ -1,7 +1,7 @@
 Parsec-LanguageClasses
 statement
 
-	<statement> ::=  <classicIf>
-		/ <classicWhile> 
-		|  <expression>
+	<statement> ::= <classicIf>
+		/ <classicWhile>
+		| <expression>
 	  
