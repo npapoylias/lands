@@ -1,4 +1,4 @@
 Parsec-LanguageClasses
 classicFor
 
-	<classicFor> ::= "for" { <identifier> "," } "in" <variable> <keyword> <bracketBlock>
+	<classicFor> ::= "for" { <identifier> "," } "in" <expression> <keyword> <bracketBlock>
