@@ -11,7 +11,7 @@ block
 				nodes := i nodes.  
 				nodes ifNotEmpty: [ i nodes first isVar ] ifEmpty: [ false ] ] 
 			] ifNone: [#()].	 
-	temps := self detect: [ :i | i isArray ] ifNone: [ #() ].
+	temps := (self select: [ :i | i isArray ]) deepFlatten select: [:i | i isVar or: [i isToken]].
 	
 	stmts <-> temps. "if tokens are present, first and last will be the || bars"
 	stmts temporaries: (temps select: [ :t | t isToken not ]).
