@@ -1,4 +1,4 @@
 Parsec-LanguageClasses
 bracketBlock
 
-	^ super bracketBlock ==> [:values | values block <-> values ]
+	^ super bracketBlock ==> [:values | self halt. values block <-> values ]
