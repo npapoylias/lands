@@ -1,0 +1,4 @@
+*Parsec
+block
+
+	^ { self } block
