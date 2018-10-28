@@ -1,5 +1,5 @@
 Parsec-LanguageClasses
 bracketBlock
 
-	<bracketBlock> ::= || "{" <statements> "}"
+	<bracketBlock> ::= || "{" <temporariesDeclaration> ? <statements> "}"
 		|| <expression> <dots>
