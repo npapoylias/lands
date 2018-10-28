@@ -1,4 +1,4 @@
 Parsec-LanguageClasses
 functorInvocation
 
-	<functor> ::= <expression> "(" { <expression> <dots> } ")"
+	<functorInvocation> ::= "(" { <expression> <dots> } ")"
