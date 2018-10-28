@@ -1,5 +1,5 @@
 tests
-testforFblockClassicReturnWhileIf
+testForFblockClassicReturnWhileIf
 
 	|original extented|
 	original := (self class >> #postcard:) sourceCode.
