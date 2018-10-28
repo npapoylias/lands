@@ -1,0 +1,4 @@
+*Parsec
+first
+
+	^ self
