@@ -1,4 +1,4 @@
 Parsec-LanguageClasses
 impVarDeclaration
 
-	<impVarDeclaration> ::= "var" <identifier> (":=" <statement>) ?
+	<impVarDeclaration> ::= "var" <identifier> (":=" <expression> <dots>) ?
