@@ -1,7 +1,7 @@
 as yet unclassified
 altPostcard
 
-  ^ 'altPostcard(x): 
+  ^ 'postcard(x): 
 	 	<menu: 3 priority: #''-34''>
     	var y := #[100] + self.bSize() + super.bSize().
 	 	var d := Dictionary.new().
