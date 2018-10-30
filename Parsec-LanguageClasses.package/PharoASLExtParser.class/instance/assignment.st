@@ -10,5 +10,5 @@ assignment
 					#copyReplaceFrom: values third key . 
 					#to: . values third value . 
 					#with: . values last } <-> values ] "slice with association"
-		]
+		].
 	}  

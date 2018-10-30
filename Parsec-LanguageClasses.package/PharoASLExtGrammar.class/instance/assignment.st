@@ -1,5 +1,4 @@
 Parsec-LanguageClasses
 assignment
 
-	<assignment> ::= <variable> ":=" <expression> 
-		| <impIndexingAssignment> 
+	<assignment> ::= <variable> ":=" <expression>
