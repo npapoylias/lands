@@ -13,7 +13,7 @@ indAsgImpIndImpInvFuncInvVarImpDeclForFBlockReturnWhileIfPostcard
 		for item in inter do: { 
 			var t := item class name.
 			t := t[1::t.size()-1].
-			d at: t put: item. 
+			d[t] := item. 
          Transcript show: t; show: '' ''; show: item; show: '' ''
 		}
 	} else self halt.

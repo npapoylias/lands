@@ -7,5 +7,6 @@ message
 		| <identifier>
 		| <impMethodInvocation>
 		| <functorInvocation>
+		| <impIndexingAssignment>
 		| <impIndexing>
 		

@@ -1,4 +1,4 @@
 Parsec-LanguageClasses
 impIndexingAssignment
 
-	<impIndexingAssignment> ::= <expression> <index> ":=" <expression>
+	<impIndexingAssignment> ::= || <index> ":=" <expression>
