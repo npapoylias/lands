@@ -14,7 +14,7 @@ altPostcard
         		var t := item.class().name().
 				t := t[1::t.size()-1].
 		  		d[t] := item.
-        		Transcript.show(t);show('' '');show(item);show('' '')
+        		Transcript.show(t);.show('' '');.show(item);.show('' '')
 	 		}
 	 	} else self.halt(). 
     	return x < y.first()'
