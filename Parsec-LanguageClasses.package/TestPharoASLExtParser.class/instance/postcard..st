@@ -13,6 +13,7 @@ postcard: x
 		[y first + x < 255] whileTrue: [step value: x].
 		inter do: [ :item | 
 			|t| t := item class name.
+			t := t copyFrom: 1 to: t size -1.
 			d at: t put: item. 
          Transcript show: t; show: ' '; show: item; show: ' '
 		].

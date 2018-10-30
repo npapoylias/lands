@@ -14,6 +14,7 @@ impDeclForFBlockReturnWhileIfPostcard
 		while y first + x < 255. step value: x.
 		for item in inter do: { 
 			|t| t := item class name.
+			t := t copyFrom: 1 to: t size -1.
 			d at: t put: item. 
          Transcript show: t; show: '' ''; show: item; show: '' ''
 		}
