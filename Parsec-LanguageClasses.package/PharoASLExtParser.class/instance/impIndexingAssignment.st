@@ -3,9 +3,9 @@ impIndexingAssignment
 
 	^ super impIndexingAssignment ==> [ :values | 
 			values first isAssociation
-				ifFalse: [{ #at: . values third . #put: values last } ]
+				ifFalse: [{ #at: . values first . #put: . values last } ]
 				ifTrue: [ { 
-					#copyReplaceFrom: values third key . 
-					#to: . values third value . 
+					#copyReplaceFrom: values first key . 
+					#to: . values first value . 
 					#with: . values last } ] "slice with association"
 		]
