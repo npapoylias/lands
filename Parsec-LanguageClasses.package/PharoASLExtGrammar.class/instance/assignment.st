@@ -2,4 +2,4 @@ Parsec-LanguageClasses
 assignment
 
 	<assignment> ::= <variable> ":=" <expression> 
-		|| <impIndexingAssignment> 
+		| <impIndexingAssignment> 

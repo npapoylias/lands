@@ -1,4 +1,4 @@
 Parsec-LanguageClasses
 impIndexing
 
-	<impIndexing> ::= "[" <index> "]"
+	<impIndexing> ::= <index>

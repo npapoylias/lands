@@ -5,6 +5,6 @@ message
 		\ ( <keyword> <expression> ) +
 		\ <binaryOp> <expression> 
 		| <identifier> 
-		|| <impIndexing>
-		|| <functorInvocation>
-		|| <impMethodInvocation> 
+		| <impIndexing>
+		| <functorInvocation>
+		| <impMethodInvocation> 

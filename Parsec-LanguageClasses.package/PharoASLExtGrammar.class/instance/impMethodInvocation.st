@@ -1,6 +1,4 @@
 Parsec-LanguageClasses
 impMethodInvocation
 
-	<impMethodInvocation> ::= "." <bareKeyword> "(" 
-		( <expression> ("." <bareKeyword> "=" <expression> ) * ) ?  
-	")"
+	<impMethodInvocation> ::= "." <bareKeyword> <impMethodArgs>

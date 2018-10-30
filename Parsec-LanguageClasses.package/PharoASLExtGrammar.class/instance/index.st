@@ -1,5 +1,5 @@
 Parsec-LanguageClasses
 index
 
-	<index> ::= <expression> "::" <expression>
-		| <expression>
+	<index> ::= || "[" <expression> "::" <expression> "]"
+		|| "[" <expression> "]"
