@@ -16,5 +16,5 @@ altPostcard: x
 		  		d[t] := item.
         		Transcript.show(t);show('' '');show(item);show('' '')
 	 		}
-	 	} else { self.halt() } 
+	 	} else self.halt(). 
     	return x < y.first()'
