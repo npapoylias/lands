@@ -2,7 +2,7 @@ Parsec-LanguageClasses
 impIndexing
 
 	^ super impIndexing ==> [ :values | 
-		values second isAssociation
-			ifTrue: [ { #copyFrom: . values second key . #to: . values second value } <-> values ]
-			ifFalse: [ {#at: . values second } <-> values  ]
+		values isAssociation
+			ifTrue: [ { #copyFrom: . values key . #to: . values value } <-> values ]
+			ifFalse: [ {#at: . values } <-> values  ]
 	].
