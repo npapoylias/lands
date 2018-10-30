@@ -4,5 +4,7 @@ message
 	<message> ::= 
 		\ ( <keyword> <expression> ) +
 		\ <binaryOp> <expression> 
-		| <identifier> ! "("
+		| <identifier> ! '[(\[]'
+		| <impMethodInvocation>
 		| <functorInvocation>
+		

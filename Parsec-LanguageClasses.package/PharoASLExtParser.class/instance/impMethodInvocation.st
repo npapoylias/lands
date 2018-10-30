@@ -2,8 +2,8 @@ Parsec-LanguageClasses
 impMethodInvocation
 
 	^ super impMethodInvocation ==> [:values | |keysArgs|
-		keysArgs := values select: [:v | v isNode or: [ ({ '.' . '=' . '(' . ')' . ':' } includes: v string) not ]].
+		keysArgs := values flatten select: [:v | v isNode or: [ ({ '.' . '=' . '(' . ')' . ':' } includes: v string) not ]].
 		keysArgs size = 1 "unaary"
-			ifTrue: [ keysArgs first allButLast asSymbol ]
+			ifTrue: [ keysArgs first string allButLast asSymbol ]
 			ifFalse: [ keysArgs ]
 	]
