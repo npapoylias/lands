@@ -9,7 +9,7 @@ altPostcard: x
 			var inter := {$a. #a class. -4e-2. -10r2. 3s2}.intersetion(#($b b -0.04 -2 3))
 				.groupedBy(f(i){i.class()},having=f(group){group.size() > 1}).
 			var step := f(i) { y := y + i }.
-			while(y.first() + x < 255) step(x). "notice the single statement style here"
+			while y.first() + x < 255. step(x). "notice the single statement style here"
     		for item in inter do: { 
         		var t := item.class().name().
 		  		d[t] := item.

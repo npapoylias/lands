@@ -9,7 +9,7 @@ impInvFuncInvVarImpDeclForFBlockReturnWhileIfPostcard
 		var inter := ({$a. #a class. -4e-2. -10r2. 3s2} intersection: #($b b -0.04 -2 3))
 			groupedBy: [ :i | i class ] having: [ :group | group size > 1 ].
 		var step := f(i) { y := y + i }.
-		while (y first + x < 255) step(x).
+		while y first + x < 255. step(x).
 		for item in inter do: { 
 			var t := item class name.
 			d at: t put: item. 
