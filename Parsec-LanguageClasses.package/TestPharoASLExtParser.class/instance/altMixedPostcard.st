@@ -1,7 +1,7 @@
 as yet unclassified
-altMixedPostcard: x
+altMixedPostcard
 
-  'postcard(x): 
+  ^ 'postcard(x): 
 	 	<menu: 3 priority: #''-34''>
 		|d|
     	var y := #[100] + self bSize + super.bSize().
