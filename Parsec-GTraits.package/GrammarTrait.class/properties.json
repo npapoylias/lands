@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "Trait",
+	"category" : "Parsec-GTraits",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "GrammarTrait",
+	"type" : "normal"
+}
