@@ -1,8 +1,8 @@
 as yet unclassified
-altMixedPostcard
+altMixedPostcard(x): 
 
-  ^ 'postcard(x): 
-	 	<menu: 3 priority: #''-34''>
+	 	<menu: 3 priority: #'-34'>
+
     	var y := #[100] + self bSize + super.bSize().
   		var d := Dictionary new.  	
 		if true & false.not() & nil isNil {
@@ -15,7 +15,7 @@ altMixedPostcard
         		var t := (item class).name().
 				t := t[1::t.size()-1].
 		  		d[t] := item.
-        		Transcript.show(t);.show('' '');show: item;.show('' '')
+        		Transcript.show(t);.show(' ');show: item;.show(' ')
 	 		}
 	 	} else self halt. 
-    	return x < y.first()'
+    	return x < y.first()

@@ -1,5 +1,5 @@
 Parsec-LanguageClasses
 temporariesDeclaration
 
-	<temporariesDeclaration> ::= "|" <variable> + "|"
+	<temporariesDeclaration> ::= "|" <variable> + "|" 
 		| <impVarDeclaration> +
