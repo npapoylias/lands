@@ -1,4 +1,4 @@
-compiling
+compiler
 grammar
 
 	^ MOGParser

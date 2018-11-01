@@ -1,4 +1,4 @@
 compiling
 grammar
 
-	^ EPEGgrammar
+	^ MOGParser

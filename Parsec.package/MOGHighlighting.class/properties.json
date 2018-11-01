@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "EPEGgrammarRules",
+	"super" : "MOGrammarRules",
 	"category" : "Parsec",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "EPEGgrammarSH",
+	"name" : "MOGHighlighting",
 	"type" : "normal"
 }

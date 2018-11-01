@@ -1,7 +1,7 @@
 tests
 testExpressionGrammar
 
-	self assert: (EPEGgrammar new parse: '
+	self assert: (MOGParser new parse: '
 	<expression> ::= <expression> "*" <expression>
 						| <expression> "/" <expression>
 						| <expression> "+" <expression>

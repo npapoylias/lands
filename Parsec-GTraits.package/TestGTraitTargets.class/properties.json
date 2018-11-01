@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "TestCase",
+	"super" : "MOGrammar",
 	"category" : "Parsec-GTraits",
 	"classinstvars" : [ ],
 	"pools" : [ ],
