@@ -21,6 +21,6 @@
 		"delimeterStar",
 		"delimeterStaro"
 	],
-	"name" : "MOGrammarRules",
+	"name" : "EPEGgrammarRules",
 	"type" : "normal"
 }

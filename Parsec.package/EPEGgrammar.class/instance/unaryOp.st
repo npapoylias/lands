@@ -1,7 +1,7 @@
 accessing
 "protocol: accessing"
 unaryOp
-
+ 
 	^ super unaryOp ==> {
 		[ :tokens | tokens first staro ]. 
 		[ :tokens | tokens first staro ]."staro" "concrete examples of difference"

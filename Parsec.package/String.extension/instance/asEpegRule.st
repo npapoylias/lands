@@ -1,4 +1,4 @@
 *Parsec
 asEpegRule
 
-	^ (MOGParser new parse: self) results first
+	^ (EPEGgrammar new parse: self) results first
