@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "TestCase",
-	"category" : "Parsec-GTraits-Tests",
+	"super" : "MOGrammarRules",
+	"category" : "Parsec",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "TestGTraits",
+	"name" : "MOGHighlight",
 	"type" : "normal"
 }

@@ -1,0 +1,4 @@
+compiler
+compiler
+
+	^ super compiler
