@@ -1,8 +1,6 @@
 as yet unclassified
 altMixedPostcard(x): 
-
-	 	<menu: 3 priority: #'-34'>
-
+	 	<menu: 3 priority: #'-34'> 
     	var y := #[100] + self bSize + super.bSize().
   		var d := Dictionary new.  	
 		if true & false.not() & nil isNil {

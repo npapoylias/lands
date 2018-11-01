@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "MOGrammarRules",
+	"category" : "Parsec-LanguageClasses-Compatibility",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "MOGMethodGrammar",
+	"type" : "normal"
+}
