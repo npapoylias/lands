@@ -1,0 +1,4 @@
+compiling
+defaultSyntaxHighlighting
+
+	^ nil

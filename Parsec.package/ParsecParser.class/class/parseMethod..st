@@ -1,4 +1,4 @@
-compiling
+parsing
 parseMethod: source
 	|results|
 	results := self new parseval: source.

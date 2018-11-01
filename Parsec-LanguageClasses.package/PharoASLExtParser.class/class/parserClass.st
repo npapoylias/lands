@@ -1,4 +1,4 @@
 compiling
-syntaxHighlighting
+parserClass
 
 	^ super defaultParserClass 
