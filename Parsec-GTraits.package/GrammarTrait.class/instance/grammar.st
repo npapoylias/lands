@@ -1,4 +1,0 @@
-compiler
-grammar
-
-	^ MOGParser

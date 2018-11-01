@@ -1,0 +1,4 @@
+accessing
+syntaxHighlighting
+
+	^ MOGMethodSH 
