@@ -1,4 +1,4 @@
 Parsec-GTraits
 test
 
-	<test> ::= 'example' 
+	<test> ::= 'example'  

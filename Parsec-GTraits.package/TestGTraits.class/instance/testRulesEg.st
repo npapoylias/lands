@@ -1,4 +1,4 @@
 tests
 testRulesEg
 
-	self assert: (TestGTraitParser parseval: 'test') results first = 'whatever'	
+	self assert: (TestGTraitParser new parseval: 'test') results first = 'whatever'	

@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "MOGrammar",
-	"category" : "Parsec-GTraits",
+	"category" : "Parsec-GTraits-Tests",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

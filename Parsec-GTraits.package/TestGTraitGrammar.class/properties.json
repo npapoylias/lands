@@ -9,5 +9,5 @@
 	"type" : "normal",
 	"classinstvars" : [ ],
 	"pools" : [ ],
-	"category" : "Parsec-GTraits"
+	"category" : "Parsec-GTraits-Tests"
 }
