@@ -1,4 +1,4 @@
 Parsec-LanguageClasses
 classicReturn
 
-	<classicReturn> ::= "return" <expression>
+	<classicReturn> ::= "return" <expression> 

@@ -3,7 +3,7 @@ postcard: x
 
 	<menu: 3 priority: #'-34'>
    |y d| 
-	y :=  #[100] + self bSize + super bSize.
+	y :=  #[100] + self bSize + super bSize. 
 	d := Dictionary new.
    true & false not & nil isNil ifTrue: [  
   		|inter step| 
