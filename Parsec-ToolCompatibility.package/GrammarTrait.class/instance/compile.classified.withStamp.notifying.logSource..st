@@ -2,8 +2,6 @@ compiler
 compile: text classified: cat withStamp: changeStamp notifying: requestor logSource: logSource
 	
 	|transformedCode methodBody method|
-		
-	self halt.	
 	
 	transformedCode := self transformCode: text.
 	methodBody := transformedCode value.

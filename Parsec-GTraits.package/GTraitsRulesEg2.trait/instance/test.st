@@ -1,4 +1,0 @@
-tests
-test
-
-	<start> ::= <example>

@@ -1,4 +1,4 @@
 tests
 test
 
-	^ super test ==> [ :values | "whatever" ]
+	^ super test ==> [ :values | 'whatever' ]

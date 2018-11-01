@@ -1,0 +1,13 @@
+{
+	"classtraitcomposition" : "GTraitsAction classTrait + GTraitsRulesEgAction classTrait",
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "TestGTraitParser",
+	"commentStamp" : "",
+	"super" : "TestGTraitGrammar",
+	"traitcomposition" : "GTraitsAction + GTraitsRulesEgAction",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Parsec-GTraits"
+}
