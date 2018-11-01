@@ -5,4 +5,4 @@ expression
 		| <variable>
 		| <numerical> 
 		| <relational>
-		| <logical> 
+		| <logical>  

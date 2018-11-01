@@ -2,7 +2,7 @@ parsing
 highlightSyntaxOn: aText 
 
 	| stream methodCode |
-	stream := aText string readStream.
+	stream := aText string readStream. 
 	methodOffset := 0.
 	methodCode := stream upToEnd. 
 	input := aText. "will be used in syntax highlighting actions"

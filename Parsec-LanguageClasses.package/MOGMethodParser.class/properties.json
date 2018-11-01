@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "MOGMethodGrammar",
-	"category" : "Parsec-LanguageClasses-Compatibility",
+	"category" : "Parsec-LanguageClasses",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

@@ -7,7 +7,7 @@ atom
 		[ :token | self highlight: token with: (TextColor color: Color lightBlue) ].
 		[ :token | self highlight: token with: (TextColor color: Color yellow) ]. 
 		[ :token | token ].
-		[ :tokens | tokens ].
+		[ :tokens | tokens ]. 
 		[ :tokens | tokens ].
 		[ :tokens | tokens ].
 	}.
