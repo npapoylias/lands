@@ -1,4 +1,4 @@
 compiling
 parserClass
 
-	^ PharoASLExtParser 
+	^ PharoASLExtParser

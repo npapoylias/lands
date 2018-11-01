@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "PharoExtClass",
+	"name" : "PharoExtClassExample",
 	"type" : "normal"
 }
