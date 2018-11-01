@@ -1,4 +1,0 @@
-pages
-syntaxHighlighting
-
-	^ EPEGgrammarSH
