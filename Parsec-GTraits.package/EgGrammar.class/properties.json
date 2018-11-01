@@ -1,0 +1,13 @@
+{
+	"classtraitcomposition" : "EgGrammarTraitRules classTrait",
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "EgGrammar",
+	"commentStamp" : "",
+	"super" : "MOGrammar",
+	"traitcomposition" : "EgGrammarTraitRules",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Parsec-GTraits"
+}
