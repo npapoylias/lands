@@ -1,4 +1,4 @@
 accessing
 method
 
-	method --> methodDeclaration , rule 
+	^ method --> methodDeclaration , rule 

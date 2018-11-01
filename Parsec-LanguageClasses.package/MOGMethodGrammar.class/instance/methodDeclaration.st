@@ -1,4 +1,4 @@
 accessing
 methodDeclaration
 
-	methodDeclaration --> '[a-zA-Z][a-zA-Z0-9]*'  
+	^ methodDeclaration --> '[a-zA-Z][a-zA-Z0-9]*'  
