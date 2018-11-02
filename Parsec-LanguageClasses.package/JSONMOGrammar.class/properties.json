@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "MOGrammar",
+	"super" : "MOGRecognizer",
 	"category" : "Parsec-LanguageClasses",
 	"classinstvars" : [ ],
 	"pools" : [ ],

@@ -4,7 +4,7 @@
 	"instvars" : [ ],
 	"name" : "PharoExtRecognizer",
 	"commentStamp" : "",
-	"super" : "MOGrammar",
+	"super" : "MOGRecognizer",
 	"traitcomposition" : "PharoGrammar - {#message. #primaryValue. #statements. #temporariesDeclaration. #methodDeclaration} + ClassicControl + Functors + ImperativeStyle",
 	"type" : "normal",
 	"classinstvars" : [ ],

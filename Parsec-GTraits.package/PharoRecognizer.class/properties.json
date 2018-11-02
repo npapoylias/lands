@@ -4,7 +4,7 @@
 	"instvars" : [ ],
 	"name" : "PharoRecognizer",
 	"commentStamp" : "",
-	"super" : "MOGrammar",
+	"super" : "MOGRecognizer",
 	"traitcomposition" : "PharoGrammar",
 	"type" : "normal",
 	"classinstvars" : [ ],

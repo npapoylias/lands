@@ -4,7 +4,7 @@
 	"instvars" : [ ],
 	"name" : "EgGrammar",
 	"commentStamp" : "",
-	"super" : "MOGrammar",
+	"super" : "MOGRecognizer",
 	"traitcomposition" : "EgGrammarTraitRules",
 	"type" : "normal",
 	"classinstvars" : [ ],

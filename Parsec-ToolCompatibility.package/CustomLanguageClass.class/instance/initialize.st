@@ -2,7 +2,7 @@ Parsec-ToolCompatibility
 initialize
 
 	self class recompile. "loading order temporary fix - REDO"
-	(self class allSuperclassesIncluding: MOGrammar) do: [ :c | c recompile ].
+	(self class allSuperclassesIncluding: MOGRecognizer) do: [ :c | c recompile ].
 	
 	
 	grammar := ParsecGrammar 
