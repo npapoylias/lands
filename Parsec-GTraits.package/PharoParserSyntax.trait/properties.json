@@ -1,5 +1,5 @@
 {
 	"name" : "PharoParserSyntax",
 	"commentStamp" : "",
-	"category" : "Parsec-GTraits-Pharo-Syntax"
+	"category" : "Parsec-GTraits-Pharo-Parser"
 }

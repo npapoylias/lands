@@ -1,0 +1,7 @@
+{
+	"commentStamp" : "",
+	"traitcomposition" : "ASLActions",
+	"classtraitcomposition" : "ASLActions classTrait",
+	"category" : "Parsec-GTraits-Pharo-Ext-Parser",
+	"name" : "IndexingParser"
+}

@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "PharoExtRecognizer",
+	"category" : "Parsec-GTraits-Pharo-Ext-Parser",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "PharoExtParser",
+	"type" : "normal"
+}

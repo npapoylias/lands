@@ -1,0 +1,7 @@
+{
+	"commentStamp" : "",
+	"traitcomposition" : "ASLActions + IndexingParser",
+	"classtraitcomposition" : "ASLActions classTrait + IndexingParser classTrait",
+	"category" : "Parsec-GTraits-Pharo-Ext-Parser",
+	"name" : "ImperativeStyleParser"
+}
