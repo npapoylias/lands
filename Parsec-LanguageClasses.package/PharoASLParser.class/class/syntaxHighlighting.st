@@ -1,4 +1,0 @@
-compiling
-syntaxHighlighting
-
-	^ super defaultParserClass 

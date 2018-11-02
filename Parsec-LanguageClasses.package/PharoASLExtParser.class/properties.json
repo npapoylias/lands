@@ -1,11 +1,13 @@
 {
-	"commentStamp" : "",
-	"super" : "PharoASLExtGrammar",
-	"category" : "Parsec-LanguageClasses",
-	"classinstvars" : [ ],
-	"pools" : [ ],
+	"classtraitcomposition" : "ASLActions classTrait",
 	"classvars" : [ ],
 	"instvars" : [ ],
 	"name" : "PharoASLExtParser",
-	"type" : "normal"
+	"commentStamp" : "",
+	"super" : "PharoASLExtGrammar",
+	"traitcomposition" : "ASLActions",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Parsec-LanguageClasses"
 }

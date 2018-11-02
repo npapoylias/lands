@@ -1,13 +1,15 @@
 {
-	"commentStamp" : "",
-	"super" : "CalcMOGrammar",
-	"category" : "Parsec-LanguageClasses",
-	"classinstvars" : [ ],
-	"pools" : [ ],
+	"classtraitcomposition" : "ASLActions classTrait",
 	"classvars" : [ ],
 	"instvars" : [
 		"env"
 	],
 	"name" : "CalcEvaluator",
-	"type" : "normal"
+	"commentStamp" : "",
+	"super" : "CalcMOGrammar",
+	"traitcomposition" : "ASLActions",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Parsec-LanguageClasses"
 }

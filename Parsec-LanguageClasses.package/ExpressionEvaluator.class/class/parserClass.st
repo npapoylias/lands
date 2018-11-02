@@ -1,4 +1,0 @@
-compiling
-parserClass
-
-	^ self defaultParserClass 

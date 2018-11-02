@@ -1,11 +1,13 @@
 {
-	"commentStamp" : "",
-	"super" : "ExpressionMOGrammar",
-	"category" : "Parsec-LanguageClasses",
-	"classinstvars" : [ ],
-	"pools" : [ ],
+	"classtraitcomposition" : "ASLActions classTrait",
 	"classvars" : [ ],
 	"instvars" : [ ],
 	"name" : "ExpressionEvaluator",
-	"type" : "normal"
+	"commentStamp" : "",
+	"super" : "ExpressionMOGrammar",
+	"traitcomposition" : "ASLActions",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Parsec-LanguageClasses"
 }
