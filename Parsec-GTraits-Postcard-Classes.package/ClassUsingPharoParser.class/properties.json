@@ -9,5 +9,5 @@
 	"type" : "normal",
 	"classinstvars" : [ ],
 	"pools" : [ ],
-	"category" : "Parsec-GTraits-Pharo-Parser"
+	"category" : "Parsec-GTraits-Postcard-Classes"
 }

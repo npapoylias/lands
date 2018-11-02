@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "ParsecParser",
-	"category" : "Parsec-LanguageClasses",
+	"category" : "Parsec-ToolCompatibility",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

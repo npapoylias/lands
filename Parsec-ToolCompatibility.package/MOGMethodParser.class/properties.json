@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
 	"super" : "MOGMethodGrammar",
-	"category" : "Parsec-LanguageClasses",
+	"category" : "Parsec-ToolCompatibility",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "MOGMethodSH",
+	"name" : "MOGMethodParser",
 	"type" : "normal"
 }
