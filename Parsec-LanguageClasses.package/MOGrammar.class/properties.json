@@ -1,11 +1,13 @@
 {
-	"commentStamp" : "",
-	"super" : "CustomLanguageClass",
-	"category" : "Parsec-LanguageClasses",
-	"classinstvars" : [ ],
-	"pools" : [ ],
+	"classtraitcomposition" : "MOGRules classTrait",
 	"classvars" : [ ],
 	"instvars" : [ ],
 	"name" : "MOGrammar",
-	"type" : "normal"
+	"commentStamp" : "",
+	"super" : "CustomLanguageClass",
+	"traitcomposition" : "MOGRules",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Parsec-LanguageClasses"
 }

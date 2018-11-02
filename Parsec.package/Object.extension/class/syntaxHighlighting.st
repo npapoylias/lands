@@ -1,4 +1,4 @@
-compiling
+*Parsec
 syntaxHighlighting
 
 	^ self defaultSyntaxHighlighting 

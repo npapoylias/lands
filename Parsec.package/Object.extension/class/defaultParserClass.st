@@ -1,4 +1,4 @@
-compiling
+*Parsec
 defaultParserClass
 
 	^ RBParser 
