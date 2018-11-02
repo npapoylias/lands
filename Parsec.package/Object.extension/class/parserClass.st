@@ -1,4 +1,4 @@
 *Parsec
 parserClass
 
-	self defaultParserClass
+	^ self defaultParserClass
