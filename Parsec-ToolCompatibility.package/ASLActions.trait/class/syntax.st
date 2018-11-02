@@ -1,6 +1,16 @@
 accessing
 syntax
-	|t|
-	t := Trait named: self name, 'Syntax' ; uses: {  }; category: self category.
-	t classTrait compile: 'parserClass ^ ' , self name.
+	|t tName tPClass|
+	tName := self name, 'Syntax'.
+	t := Trait named: tName uses: {  } category: self category.
+	tPClass := WriteStream on: String new.
+	tPClass 
+		nextPutAll: 'parserClass';
+		nextPut: Character cr;
+		nextPut: Character cr;
+		nextPut: Character tab;
+		nextPutAll: '^ ';
+		nextPutAll: self name.
+	t classTrait compile: tPClass contents.
+	Smalltalk globals at: tName asSymbol put: t.
 	^ t

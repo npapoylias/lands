@@ -1,4 +1,4 @@
-compiling
+as yet unclassified
 parserClass
 
 	^ PharoASLExtParser

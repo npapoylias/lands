@@ -1,11 +1,13 @@
 {
-	"commentStamp" : "",
-	"super" : "PharoMOGClass",
-	"category" : "Parsec-LanguageClasses",
-	"classinstvars" : [ ],
-	"pools" : [ ],
+	"classtraitcomposition" : "PharoASLExtParserSyntax classTrait",
 	"classvars" : [ ],
 	"instvars" : [ ],
 	"name" : "PharoExtClassExample",
-	"type" : "normal"
+	"commentStamp" : "",
+	"super" : "PharoMOGClass",
+	"traitcomposition" : "PharoASLExtParserSyntax",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Parsec-LanguageClasses"
 }
