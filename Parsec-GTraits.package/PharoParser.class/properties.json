@@ -1,11 +1,11 @@
 {
-	"classtraitcomposition" : "PharoMethodsParser classTrait + PharoPragmasParser classTrait + PharoTemporariesParser classTrait + PharoStatementsParser classTrait + PharoExpressionsParser classTrait + PharoMsgSendsParser classTrait + PharoPrimaryValuesParser classTrait + PharoArraysParser classTrait + PharoBlockParser classTrait + PharoTerminalsParser classTrait",
+	"classtraitcomposition" : "PharoGrammarActions classTrait",
 	"classvars" : [ ],
 	"instvars" : [ ],
 	"name" : "PharoParser",
 	"commentStamp" : "",
 	"super" : "PharoRecognizer",
-	"traitcomposition" : "PharoMethodsParser + PharoPragmasParser + PharoTemporariesParser + PharoStatementsParser + PharoExpressionsParser + PharoMsgSendsParser + PharoPrimaryValuesParser + PharoArraysParser + PharoBlockParser + PharoTerminalsParser",
+	"traitcomposition" : "PharoGrammarActions",
 	"type" : "normal",
 	"classinstvars" : [ ],
 	"pools" : [ ],
