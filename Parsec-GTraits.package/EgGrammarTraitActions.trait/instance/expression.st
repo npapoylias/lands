@@ -1,4 +1,4 @@
 generated
 expression
 
-	^ super expression ==> [ :value | value string , ' parsed !' ]
+	^ super expression ==> [ :value | value string , ' was parsed !' ]
