@@ -3,19 +3,19 @@ parseUnordered
 
 "Larger examples will blow up memory for actions and viewing"
 
-PharoMOGrammar new 
+PharoRecognizer new 
 	parse: 'at: index put: aValue
 		<menu: 3 priority: #''-34''>
 		|x y z|
 		#(-422434.3342e-10 343434 -10r9 32424s at:put: selector ''string'' [3] (car (cdr list)))
 		' using: algo new "log"; defaultView.
 		
-PharoMOGrammar new 
+PharoRecognizer new 
 	parse: 'method
 		rcv at: 3 class	
 	'using: algo new "log"; defaultView.
 
-PharoMOGrammar new 
+PharoRecognizer new 
 	parse: 'method
 		3 + 4 class	
 	'using: algo new "log"; defaultView.
@@ -23,12 +23,12 @@ PharoMOGrammar new
 
 "very very nice example this one, for the difference cases, be mindfull of the temp
 and the implicit cases"
-PharoMOGrammar new 
+PharoRecognizer new 
 	parse: 'at: index put: aValue
 		x dict size at: 3 + 4 + 6 put: (''meh'')
 		'using: algo new "log"; defaultView.
 		
-PharoMOGrammar new
+PharoRecognizer new
 		parse: 'exampleWithNumber: x
     	"A comment"
 	 	<menu: 3 priority: #''-34''>
