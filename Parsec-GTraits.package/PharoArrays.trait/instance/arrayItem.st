@@ -4,4 +4,4 @@ arrayItem
 	<arrayItem> ::= <literal> 
 		| <bareSymbol> 
 		| <bareByteArray>
-		| <embeddedArray>    
+		| <embeddedArray>     
