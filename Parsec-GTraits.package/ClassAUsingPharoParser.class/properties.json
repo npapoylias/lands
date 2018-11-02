@@ -1,0 +1,13 @@
+{
+	"classtraitcomposition" : "PharoParserSyntax classTrait",
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "ClassAUsingPharoParser",
+	"commentStamp" : "",
+	"super" : "Object",
+	"traitcomposition" : "PharoParserSyntax",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Parsec-GTraits-Pharo-Syntax"
+}
