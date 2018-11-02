@@ -2,6 +2,6 @@
 	"commentStamp" : "",
 	"traitcomposition" : "MOGRules",
 	"classtraitcomposition" : "MOGRules classTrait",
-	"category" : "Parsec-GTraits-PharoSyntax",
-	"name" : "PharoMethodRules"
+	"category" : "Parsec-GTraits-Pharo-Syntax",
+	"name" : "PharoIgnore"
 }

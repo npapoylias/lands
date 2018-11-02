@@ -1,0 +1,13 @@
+{
+	"classtraitcomposition" : "PharoGrammar classTrait",
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "PharoRecognizer",
+	"commentStamp" : "",
+	"super" : "MOGrammar",
+	"traitcomposition" : "PharoGrammar",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Parsec-GTraits-Pharo-Syntax"
+}

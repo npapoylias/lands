@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "Parsec-GTraits-Pharo-Syntax",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"algo"
+	],
+	"name" : "TestPharoRecognizer",
+	"type" : "normal"
+}
