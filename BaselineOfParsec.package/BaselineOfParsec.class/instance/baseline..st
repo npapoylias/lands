@@ -8,5 +8,7 @@ baseline: spec
 		package: 'Parsec-ToolCompatibility';
 		package: 'Parsec-LanguageClasses';
 		package: 'Parsec-GTraits';
-		package: 'Parsec-GTraits-Postcard-Classes'
+		package: 'Parsec-GTraits-Postcard-Classes';
+		package: 'Parsec-MOODs-Targets';
+		package: 'Parsec-Lise'
 	]
