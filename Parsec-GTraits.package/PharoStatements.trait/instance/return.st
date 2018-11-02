@@ -1,0 +1,4 @@
+generated
+return
+
+	<return> ::= "^" <expression>

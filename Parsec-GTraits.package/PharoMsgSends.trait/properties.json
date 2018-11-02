@@ -3,5 +3,5 @@
 	"traitcomposition" : "MOGRules",
 	"classtraitcomposition" : "MOGRules classTrait",
 	"category" : "Parsec-GTraits-PharoSyntax",
-	"name" : "PharoMethodRules"
+	"name" : "PharoMsgSends"
 }
