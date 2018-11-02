@@ -2,6 +2,6 @@
 	"commentStamp" : "",
 	"traitcomposition" : "ASLActions",
 	"classtraitcomposition" : "ASLActions classTrait",
-	"category" : "Parsec-GTraits-Pharo-Syntax",
+	"category" : "Parsec-GTraits-Pharo-Parser",
 	"name" : "PharoExpressionsParser"
 }
