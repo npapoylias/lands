@@ -1,11 +1,13 @@
 {
-	"commentStamp" : "",
-	"super" : "PharoExtRecognizer",
-	"category" : "Parsec-GTraits-Pharo-Ext-Parser",
-	"classinstvars" : [ ],
-	"pools" : [ ],
+	"classtraitcomposition" : "PharoGrammarActions classTrait + ClassicControlParser classTrait + FunctorsParser classTrait + ImperativeStyleParser classTrait",
 	"classvars" : [ ],
 	"instvars" : [ ],
 	"name" : "PharoExtParser",
-	"type" : "normal"
+	"commentStamp" : "",
+	"super" : "PharoExtRecognizer",
+	"traitcomposition" : "PharoGrammarActions - {#temporariesDeclaration} + ClassicControlParser + FunctorsParser + ImperativeStyleParser",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Parsec-GTraits-Pharo-Ext-Parser"
 }
