@@ -5,7 +5,7 @@
 	"name" : "PharoExtRecognizer",
 	"commentStamp" : "",
 	"super" : "MOGrammar",
-	"traitcomposition" : "PharoGrammar - {#message} + ClassicControl + Functors + ImperativeStyle",
+	"traitcomposition" : "PharoGrammar - {#message. #primaryValue. #statements. #temporariesDeclaration} + ClassicControl + Functors + ImperativeStyle",
 	"type" : "normal",
 	"classinstvars" : [ ],
 	"pools" : [ ],
