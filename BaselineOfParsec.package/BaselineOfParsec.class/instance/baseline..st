@@ -6,5 +6,7 @@ baseline: spec
 	spec for: #common do: [ spec
 		package: 'Parsec';
 		package: 'Parsec-ToolCompatibility';
-		package: 'Parsec-LanguageClasses'
+		package: 'Parsec-LanguageClasses';
+		package: 'Parsec-GTraits';
+		package: 'Parsec-GTraits-Postcard-Classes'
 	]
