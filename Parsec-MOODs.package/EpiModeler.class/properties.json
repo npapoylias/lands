@@ -1,0 +1,13 @@
+{
+	"classtraitcomposition" : "BlueprintActions classTrait",
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "EpiModeler",
+	"commentStamp" : "",
+	"super" : "EpiDomain",
+	"traitcomposition" : "BlueprintActions",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Parsec-MOODs"
+}

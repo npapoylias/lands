@@ -1,0 +1,13 @@
+{
+	"classtraitcomposition" : "BlueprintRules classTrait",
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "EpiDomain",
+	"commentStamp" : "",
+	"super" : "MOODsDomain",
+	"traitcomposition" : "BlueprintRules",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Parsec-MOODs"
+}
