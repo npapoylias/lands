@@ -1,13 +1,15 @@
 {
-	"commentStamp" : "",
-	"super" : "PharoExtRecognizer",
-	"category" : "Parsec-MOODs",
-	"classinstvars" : [ ],
-	"pools" : [ ],
+	"classtraitcomposition" : "MOGRules classTrait + PharoTerminals classTrait",
 	"classvars" : [ ],
 	"instvars" : [
 		"domain"
 	],
 	"name" : "MOODsBlueprints",
-	"type" : "normal"
+	"commentStamp" : "",
+	"super" : "Object",
+	"traitcomposition" : "MOGRules + PharoTerminals",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Parsec-MOODs"
 }
