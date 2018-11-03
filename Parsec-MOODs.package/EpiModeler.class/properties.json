@@ -1,11 +1,11 @@
 {
-	"classtraitcomposition" : "BlueprintActions classTrait",
+	"classtraitcomposition" : "EpiModelModeler classTrait + EpiMapModeler classTrait",
 	"classvars" : [ ],
 	"instvars" : [ ],
 	"name" : "EpiModeler",
 	"commentStamp" : "",
 	"super" : "EpiDomain",
-	"traitcomposition" : "BlueprintActions",
+	"traitcomposition" : "EpiModelModeler + EpiMapModeler",
 	"type" : "normal",
 	"classinstvars" : [ ],
 	"pools" : [ ],
