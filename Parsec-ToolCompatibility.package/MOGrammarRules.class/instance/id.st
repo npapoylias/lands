@@ -2,4 +2,4 @@ accessing
 "protocol: accessing"
 id
 
-	^ id --> '<[a-zA-Z0-9_\-]+>' 
+	^ id --> '<[@a-zA-Z0-9_\-]+>' 
