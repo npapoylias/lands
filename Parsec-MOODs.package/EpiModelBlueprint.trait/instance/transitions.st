@@ -1,4 +1,4 @@
 accessing
 transitions
 
-	<transitions> ::= "where:" { <transition> "," }
+	<@transitions> ::= "where:" { <transition> "," }
