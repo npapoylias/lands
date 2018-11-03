@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "PharoExtRecognizer",
+	"category" : "Parsec-MOODs",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"domain"
+	],
+	"name" : "MOODsBlueprints",
+	"type" : "normal"
+}
