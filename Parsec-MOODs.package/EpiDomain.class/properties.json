@@ -1,11 +1,11 @@
 {
-	"classtraitcomposition" : "EpiModelBlueprint classTrait + EpiMapBlueprint classTrait",
+	"classtraitcomposition" : "EpiModelBlueprint classTrait + MapBlueprint classTrait",
 	"classvars" : [ ],
 	"instvars" : [ ],
 	"name" : "EpiDomain",
 	"commentStamp" : "",
 	"super" : "MOODsDomain",
-	"traitcomposition" : "EpiModelBlueprint + EpiMapBlueprint",
+	"traitcomposition" : "EpiModelBlueprint + MapBlueprint",
 	"type" : "normal",
 	"classinstvars" : [ ],
 	"pools" : [ ],

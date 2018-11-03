@@ -1,11 +1,11 @@
 {
-	"classtraitcomposition" : "EpiModelModeler classTrait + EpiMapModeler classTrait",
+	"classtraitcomposition" : "EpiModelModeler classTrait + MapModeler classTrait",
 	"classvars" : [ ],
 	"instvars" : [ ],
 	"name" : "EpiModeler",
 	"commentStamp" : "",
 	"super" : "EpiDomain",
-	"traitcomposition" : "EpiModelModeler + EpiMapModeler",
+	"traitcomposition" : "EpiModelModeler + MapModeler",
 	"type" : "normal",
 	"classinstvars" : [ ],
 	"pools" : [ ],
