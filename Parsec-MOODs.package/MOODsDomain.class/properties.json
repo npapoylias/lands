@@ -4,7 +4,7 @@
 	"instvars" : [ ],
 	"name" : "MOODsDomain",
 	"commentStamp" : "",
-	"super" : "MOGRecognizer",
+	"super" : "MOODsMOGRecognizer",
 	"traitcomposition" : "BlueprintRules",
 	"type" : "normal",
 	"classinstvars" : [ ],

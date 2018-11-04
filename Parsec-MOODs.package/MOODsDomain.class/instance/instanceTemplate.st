@@ -1,4 +1,4 @@
 accessing
 instanceTemplate
 
-	<instanceTemplate> ::= <modelClass> <instanceName> ("extends:" <parentName>) ? "{" <ambRules> * "}"
+	<instanceTemplate> ::= <modelClass> <instanceName> ("extends:" <parentName>) ? "{" <stateRules> * "}"

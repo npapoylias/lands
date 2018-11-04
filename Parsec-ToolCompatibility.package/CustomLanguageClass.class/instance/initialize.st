@@ -7,5 +7,6 @@ initialize
 	
 	grammar := ParsecGrammar 
 		new named: self class name; 
-		with: ((self class allSelectorsBelow: CustomLanguageClass) collect: 
-			[ :name | self perform: name]).
+		with: ((self class allSelectorsBelow: CustomLanguageClass) 
+			select: [ :sel | sel isUnary and: [ sel ~= #initialize ] ] 
+			thenCollect: [ :name | self perform: name]).

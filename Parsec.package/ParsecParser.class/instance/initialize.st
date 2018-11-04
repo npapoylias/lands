@@ -12,5 +12,6 @@ initialize
 	
 	grammar := ParsecGrammar 
 		new named: self class name; 
-		with: ((self class allSelectorsBelow: ParsecParser) collect: 
-			[ :name | self perform: name]).
+		with: ( (self class allSelectorsBelow: ParsecParser) 
+						select: [ :sel | sel isUnary ] 
+						thenCollect: [ :name | self perform: name]).

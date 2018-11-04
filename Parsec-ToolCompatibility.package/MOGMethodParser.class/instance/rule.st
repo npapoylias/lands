@@ -2,11 +2,14 @@ accessing
 "protocol: accessing"
 rule
 
-	^ super rule ==> [ :tokens | |r expressions operators operands| 
+	^ super rule ==> [ :tokens | |r expressions operators operands name| 
 		"TODO: why not giving tokens the names of the symbols in EPEG ?"
 		expressions := tokens third key. 
-		operators := tokens third value.  
-		r := ParsecRule new name: tokens first.
+		operators := tokens third value. 
+		name := tokens first.
+		name first = '@' 
+			ifTrue: [ r := ParsecRule new name: name allButFirst; beAnnotated ]
+			ifFalse: [r := ParsecRule new name: name].
 		"r := (tokens first --> expressions first asArrayIfCollection)."
 		expressions size == operators size 
 			ifTrue: [ r rightHandSide removeFirst. "empty" operands := expressions]

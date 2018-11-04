@@ -1,0 +1,13 @@
+{
+	"classtraitcomposition" : "ASLActions classTrait",
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "MOODsMOGRecognizer",
+	"commentStamp" : "",
+	"super" : "MOGRecognizer",
+	"traitcomposition" : "ASLActions",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Parsec-MOODs"
+}

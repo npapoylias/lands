@@ -22,7 +22,8 @@
 		"action",
 		"parent",
 		"recursiveIndex",
-		"directFirsts"
+		"directFirsts",
+		"annotated"
 	],
 	"name" : "ParsecRule",
 	"type" : "normal"

@@ -1,0 +1,4 @@
+copying
+beAnnotated
+
+	annotated := true
