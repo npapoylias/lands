@@ -14,5 +14,6 @@ instanceTemplate
 			selector := (iv , ':') asSymbol.
 			(instance class canUnderstand: selector)
 				ifTrue: [ instance perform: selector withArguments: { value } ].
-		]
+		].
+		instance
 	]
