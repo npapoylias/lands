@@ -11,7 +11,7 @@ initialize
 		(sel isUnary and: [ sel ~= #initialize ]) ifTrue: [ unarySel add: sel ].
 		sel isBinary ifTrue: [ binarySel add: sel ]
 	].
-	
+	grammar := unarySel collect: [ :name | self perform: name].
 	stateRules := grammar values select: [ :r | r annotated ] thenCollect: [ :r | r name ].
 	stateDictionary := Dictionary new.
 	validationDictionary := Dictionary new.
@@ -27,4 +27,4 @@ initialize
 	stateRules allButFirst do: [ :s | gRule / s ].
 	grammar := ParsecGrammar 
 		new named: self class name; 
-		with: ((unarySel collect: [ :name | self perform: name]) add: gRule; yourself)
+		with: (grammar add: gRule; yourself)
