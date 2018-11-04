@@ -12,7 +12,7 @@ initialize
 		sel isBinary ifTrue: [ binarySel add: sel ]
 	].
 	grammar := unarySel collect: [ :name | self perform: name].
-	stateRules := grammar values select: [ :r | r annotated ] thenCollect: [ :r | r name ].
+	stateRules := grammar select: [ :r | r annotated ] thenCollect: [ :r | r name ].
 	stateDictionary := Dictionary new.
 	validationDictionary := Dictionary new.
 	stateRules do: [ :name | 
