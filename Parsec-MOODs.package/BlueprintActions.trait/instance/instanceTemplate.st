@@ -7,6 +7,7 @@ instanceTemplate
 			ifTrue: [ values fourth ]
 			ifFalse: [ values sixth ]) asDictionary. "extends"	
 		instance := class new.
+		instance name: values second string.
 		"update the whole instance before validation, to have access to all state"
 		state keysAndValuesDo: [ :iv :value | instance instVarNamed: iv put: value ].
 		"validation per instance"
