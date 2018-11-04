@@ -7,7 +7,7 @@ rule
 		expressions := tokens third key. 
 		operators := tokens third value. 
 		name := tokens first.
-		name first = '@' 
+		name first = $@
 			ifTrue: [ r := ParsecRule new name: name allButFirst; beAnnotated ]
 			ifFalse: [r := ParsecRule new name: name].
 		"r := (tokens first --> expressions first asArrayIfCollection)."
