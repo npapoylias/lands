@@ -1,0 +1,13 @@
+{
+	"classtraitcomposition" : "EpiModelerSyntax classTrait",
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "EpiScripter",
+	"commentStamp" : "",
+	"super" : "Object",
+	"traitcomposition" : "EpiModelerSyntax",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Parsec-MOODs"
+}

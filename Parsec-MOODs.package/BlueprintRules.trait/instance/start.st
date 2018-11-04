@@ -1,4 +1,4 @@
 Parsec-LanguageClasses
 start
 
-	<start> ::= <instanceTemplate> *
+	<start> ::= <scriptName> <instanceTemplate> *
