@@ -26,7 +26,7 @@ parse
 		
 	PharoParser new
 		parseval: 'exampleWithNumber: x
-    	"A comment"
+		"A comment"
 	 	<menu: 3 priority: #''-34''>
     	| y |
     	true & false not & (nil isNil) ifFalse: [self halt].
