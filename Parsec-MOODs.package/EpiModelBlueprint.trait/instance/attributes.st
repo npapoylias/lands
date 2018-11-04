@@ -1,4 +1,4 @@
 accessing
 attributes
 
-	<@attributes> ::= "attr" <attributeName> "[" { <compartmentName> "," } "]"
+	<@attributes> ::= "attr" <attributeName> "[" <compartmentNames> "]"
