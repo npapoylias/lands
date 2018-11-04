@@ -1,4 +1,4 @@
 accessing
 attributeName
 
-	<attributeName> ::= <identifier>
+	<attributeName> ::= <identifier> 
