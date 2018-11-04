@@ -1,4 +1,4 @@
 accessing
 parameters
 
-	<@parameters> ::= "param"  { <parameterName> "," }
+	<@parameters> ::= "params"  { <parameterName> "," }
