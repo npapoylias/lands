@@ -3,9 +3,9 @@ instanceTemplate
 
 	^ super instanceTemplate ==> [ :values | |class state instance|
 		class := Smalltalk globals at: values first string asSymbol.
-		state := values size = 5
+		state := (values size = 5
 			ifTrue: [ values fourth ]
-			ifFalse: [ values sixth ]. "extends"	
+			ifFalse: [ values sixth ]) asDictionary. "extends"	
 		instance := class new.
 		"update the whole instance before validation, to have access to all state"
 		state keysAndValuesDo: [ :iv :value | instance instVarNamed: iv put: value ].
