@@ -2,7 +2,9 @@ accessing
 parameters
 
 	^ super parameters ==> [ :values | 
-		values second odds collect: [ :v | v symbol ] 
+		values second 
+			select: [ :v | v isToken not ]
+			thenCollect: [ :v | v symbol ] 
 	]
 
 	
