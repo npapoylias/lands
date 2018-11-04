@@ -10,6 +10,9 @@ instanceTemplate
 		"update the whole instance before validation, to have access to all state"
 		state keysAndValuesDo: [ :iv :value | instance instVarNamed: iv put: value ].
 		"validation per instance"
-		state keysAndValuesDo: [ :iv :value | 
-			instance perform: (iv , ':') asSymbol withArguments: { value } ].
+		state keysAndValuesDo: [ :iv :value | |selector| 
+			selector := (iv , ':') asSymbol.
+			(instance canUnderstand: selector)
+				ifTrue: [ instance perform: selector withArguments: { value } ].
+		]
 	]
