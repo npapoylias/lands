@@ -2,5 +2,5 @@ accessing
 start
 
 	^ super start ==> [ :values | 
-		{ values first } method: { { values allButFirst } array return } 	
+		{ values first } method: { values allButFirst array return } 	
 	]
