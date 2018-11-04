@@ -1,7 +1,10 @@
 as yet unclassified
 generateMetaModel
 
+	"should clean here to remove first when re-generating ?"
+
 	|packageName |
+
 	 
 	packageName := self metaModelNameFor: self class name.
 	stateDictionary keysAndValuesDo: [ :name :vars | |class ivs|
