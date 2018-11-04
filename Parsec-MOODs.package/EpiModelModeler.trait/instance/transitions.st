@@ -1,8 +1,12 @@
 accessing
 transitions
 
-	^ super transitions ==> [ :values | 
-		values second select: [ :v | v isToken not ]
-	]
+	^ super transitions ==> [ :values | |assocs| 
+		assocs := values second odds. "ie this will create a 2D tr[S][I]=param" 
+		((assocs collect: #key) asSet
+			collect: [ :key | 
+				key -> (assocs select: [ :a | a key = key ] thenCollect: #value) asDictionary 
+			]) asDictionary 
+		]
 
 	

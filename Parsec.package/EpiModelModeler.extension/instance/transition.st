@@ -1,4 +1,6 @@
 accessing
 transition
 
-	^ super transition ==> [ :v | v  ]
+	^ super transition ==> [ :values | 
+		values first symbol -> (values last symbol -> values third symbol)
+	]
