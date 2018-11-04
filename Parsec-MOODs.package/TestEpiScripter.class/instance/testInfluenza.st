@@ -2,7 +2,7 @@ tests
 testInfluenza
 	|scriptResult|
 	"maybe return a dict with the names ?"
-	scriptResult := EpiScripter new Influenza.
+	scriptResult := EpiScripter new Influenza. "should recompile here ?"
 	self assert:  scriptResult size = 2.
 	self assert: (scriptResult at: 1) class = EpiModel.
 	self assert: (scriptResult at: 1) name = #SEIRS.

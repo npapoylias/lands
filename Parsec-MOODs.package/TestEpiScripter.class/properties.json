@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "TestCase",
-	"category" : "Parsec-MOODs",
+	"category" : "Parsec-MOODs-Epi",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
