@@ -12,7 +12,7 @@ instanceTemplate
 		"validation per instance"
 		state keysAndValuesDo: [ :iv :value | |selector| 
 			selector := (iv , ':') asSymbol.
-			(instance canUnderstand: selector)
+			(instance class canUnderstand: selector)
 				ifTrue: [ instance perform: selector withArguments: { value } ].
 		]
 	]
