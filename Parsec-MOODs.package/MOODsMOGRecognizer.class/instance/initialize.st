@@ -24,6 +24,7 @@ initialize
 			(validationDictionary at: (self class >> name) origin name ifAbsentPut: [ OrderedCollection new ]) add: name
 	].
 	self halt.
+	self generateMetaModel.
 	gRule := #stateRules --> stateRules first.
 	stateRules allButFirst do: [ :s | gRule / s ].
 	grammar := ParsecGrammar 
