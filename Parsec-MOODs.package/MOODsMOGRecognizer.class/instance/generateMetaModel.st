@@ -10,9 +10,10 @@ generateMetaModel
 						instanceVariableNames: ivs
 						classVariableNames: ''
 						package: packageName.
+		vars do: [:iv | class compile: iv asString	, '
+		^ ' , iv asString
+		].
 		(validationDictionary at: name) do: [ :validationMethod | 
-			class compile: (self class >> validationMethod) source.
-			class compile: validationMethod allButLast	, '
-				^ ' , validationMethod allButLast
-		]
-	].
+			class compile: (self class >> validationMethod) sourceCode
+		].
+	]
