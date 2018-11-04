@@ -1,7 +1,7 @@
 initialization
 initialize
 
-	|stateRules unarySel binarySel validationRules stateDictionary validationDictionary gRule |
+	|stateRules unarySel binarySel validationRules gRule |
 	self class recompile. "loading order temporary fix - REDO"
 	(self class allSuperclassesIncluding: MOODsDomain) do: [ :c | c recompile ].
 	
@@ -9,7 +9,7 @@ initialize
 	binarySel := OrderedCollection new.
 	(self class allSelectorsBelow: MOODsMOGRecognizer) do: [:sel |
 		(sel isUnary and: [ sel ~= #initialize ]) ifTrue: [ unarySel add: sel ].
-		self isBinary ifTrue: [ binarySel add: sel ]
+		sel isBinary ifTrue: [ binarySel add: sel ]
 	].
 	
 	stateRules := grammar values select: [ :r | r annotated ] thenCollect: [ :r | r name ].
