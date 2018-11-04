@@ -5,7 +5,7 @@ metaModelNameFor: aName
 	index := 1.
 	entityNames := { 'Modeler' . 'Domain' . 'Blueprint' }. 
 	[index <= entityNames size and: [nameIndex = 0]] whileTrue: [  
-		nameIndex := self class name 
+		nameIndex := aName
 			findLastOccurrenceOfString: (entityNames at: index) 
 			startingAt: 1.
 			index := index + 1

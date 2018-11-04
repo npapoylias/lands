@@ -1,5 +1,6 @@
 as yet unclassified
 generateMetaModel
+
 	|packageName |
 	 
 	packageName := self metaModelNameFor: self class name.
