@@ -1,6 +1,4 @@
 accessing
-"protocol: #'as yet unclassified'"
-
 transitions: aGraph
 
 	"validate"
