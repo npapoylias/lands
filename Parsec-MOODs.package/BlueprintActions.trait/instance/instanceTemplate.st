@@ -15,5 +15,5 @@ instanceTemplate
 			(instance class canUnderstand: selector)
 				ifTrue: [ instance perform: selector withArguments: { value } ].
 		].
-		instance
+		instance lit
 	]
