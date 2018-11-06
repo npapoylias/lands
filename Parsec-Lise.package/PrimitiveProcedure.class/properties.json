@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Procedure",
+	"category" : "Parsec-Lise",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"symbol",
+		"block"
+	],
+	"name" : "PrimitiveProcedure",
+	"type" : "normal"
+}

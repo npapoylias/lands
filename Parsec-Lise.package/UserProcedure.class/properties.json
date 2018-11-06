@@ -1,11 +1,15 @@
 {
 	"commentStamp" : "",
-	"super" : "Object",
+	"super" : "Procedure",
 	"category" : "Parsec-Lise",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
-	"name" : "TestLiseExamples",
+	"instvars" : [
+		"parameters",
+		"procedureBody",
+		"definitionEnvironment"
+	],
+	"name" : "UserProcedure",
 	"type" : "normal"
 }

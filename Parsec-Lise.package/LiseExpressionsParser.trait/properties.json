@@ -1,0 +1,7 @@
+{
+	"commentStamp" : "",
+	"traitcomposition" : "PharoTerminalsParser",
+	"classtraitcomposition" : "PharoTerminalsParser classTrait",
+	"category" : "Parsec-Lise",
+	"name" : "LiseExpressionsParser"
+}

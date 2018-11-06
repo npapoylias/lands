@@ -1,0 +1,4 @@
+traits
+start
+
+	<start> ::= <liseExpression>

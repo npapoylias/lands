@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Dictionary",
+	"category" : "Parsec-Lise",
+	"classinstvars" : [
+		"global"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"outerEnvironment"
+	],
+	"name" : "Environment",
+	"type" : "normal"
+}
