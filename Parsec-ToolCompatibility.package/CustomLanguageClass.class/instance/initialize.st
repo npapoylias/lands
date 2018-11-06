@@ -3,7 +3,6 @@ initialize
 
 	self class recompile. self class traits do: [ :t | t recompile ]."loading order temporary fix - REDO"
 	(self class allSuperclassesIncluding: MOGRecognizer) do: [ :c | 
-		self halt.
 		c recompile. c traits do: [ :t | t recompile ] ].
 	
 	
