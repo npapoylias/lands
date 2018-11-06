@@ -1,9 +1,9 @@
 Parsec-ToolCompatibility
 initialize
 
-	self class recompile. self class traits do: [ :t | t recompile ]."loading order temporary fix - REDO"
+	self class recompileRecursivelyWithTraits."loading order temporary fix - REDO"
 	(self class allSuperclassesIncluding: MOGRecognizer) do: [ :c | 
-		c recompile. c traits do: [ :t | t recompile ] ].
+		c recompileRecursivelyWithTraits ].
 	
 	
 	grammar := ParsecGrammar 
