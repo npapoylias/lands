@@ -2,4 +2,5 @@ accessing
 initialize
 
 	super initialize.
-	default := nil
+	default := nil.
+	self populateGlobals.
