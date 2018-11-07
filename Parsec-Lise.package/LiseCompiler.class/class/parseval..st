@@ -1,4 +1,6 @@
 accessing
 parseval: aString
-
-	^ self default parseval: aString
+	|results|
+	results :=  self default parseval: aString.
+	self assert: results size = 1.
+	^ results first
