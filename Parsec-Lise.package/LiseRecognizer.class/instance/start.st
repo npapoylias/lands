@@ -1,4 +1,4 @@
-traits
+accessing
 start
 
 	<start> ::= <liseExpression>

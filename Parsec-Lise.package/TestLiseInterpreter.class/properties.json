@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
 	"super" : "TestCase",
-	"category" : "Parsec-Lise",
+	"category" : "Parsec-Lise-Interpreter",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "TestLise",
+	"name" : "TestLiseInterpreter",
 	"type" : "normal"
 }

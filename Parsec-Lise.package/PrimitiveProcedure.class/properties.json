@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "Procedure",
-	"category" : "Parsec-Lise",
+	"category" : "Parsec-Lise-Interpreter-Support",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

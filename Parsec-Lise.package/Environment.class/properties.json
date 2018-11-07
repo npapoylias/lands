@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "Dictionary",
-	"category" : "Parsec-Lise",
+	"category" : "Parsec-Lise-Interpreter-Support",
 	"classinstvars" : [
 		"global"
 	],

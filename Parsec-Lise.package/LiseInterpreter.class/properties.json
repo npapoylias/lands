@@ -11,5 +11,5 @@
 		"default"
 	],
 	"pools" : [ ],
-	"category" : "Parsec-Lise"
+	"category" : "Parsec-Lise-Interpreter"
 }

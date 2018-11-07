@@ -2,6 +2,6 @@
 	"commentStamp" : "",
 	"traitcomposition" : "ASLActions",
 	"classtraitcomposition" : "ASLActions classTrait",
-	"category" : "Parsec-Lise",
+	"category" : "Parsec-Lise-Interpreter",
 	"name" : "LiseExpressionsInterpreter"
 }

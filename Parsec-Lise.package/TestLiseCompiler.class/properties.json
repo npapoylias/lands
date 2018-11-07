@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "Object",
-	"category" : "Parsec-Lise-Interpreter-Support",
+	"super" : "TestCase",
+	"category" : "Parsec-Lise-Compiler",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "Procedure",
+	"name" : "TestLiseCompiler",
 	"type" : "normal"
 }
