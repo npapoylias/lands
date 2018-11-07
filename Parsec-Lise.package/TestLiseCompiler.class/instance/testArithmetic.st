@@ -1,5 +1,5 @@
-as yet unclassified
+tests
 testArithmetic
 
-	self assert: (LiseInterpreter parseval: '(+ 2 2)') = 4.
-	self assert: (LiseInterpreter parseval: '(+ (* 2 100) (* 1 10))') = 210.
+	self assert: ((LiseCompiler parseval: '(+ 2 2)') isKindOf: RBProgramNode).
+	self assert: ((LiseCompiler parseval: '(+ (* 2 100) (* 1 10))') isKindOf: RBProgramNode).

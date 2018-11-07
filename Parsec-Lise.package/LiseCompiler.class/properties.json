@@ -7,7 +7,9 @@
 	"super" : "LiseRecognizer",
 	"traitcomposition" : "LiseExpressionsParser",
 	"type" : "normal",
-	"classinstvars" : [ ],
+	"classinstvars" : [
+		"default"
+	],
 	"pools" : [ ],
 	"category" : "Parsec-Lise-Compiler"
 }
