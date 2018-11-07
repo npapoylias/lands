@@ -3,7 +3,7 @@ liseExpression
 
 	^ super liseExpression ==> { 
 		[ :values | 
-			values second |> { #valueWithArguments: . values nodes allButFirst array } <-> values
+			values second |> { #polyValueWithArguments: . values nodes allButFirst array } <-> values
 		].
 		[ :values | values second ].
 		[ :values | values second ].
