@@ -6,5 +6,5 @@ quotedExpression
 		[ :values | { #quote . values } array <-> values ].
 		[ :value | value ].
 		[ :value | value ].
-		[ :value | value symbol <-> value ].
+		[ :value | value sym <-> value ].
 	}
