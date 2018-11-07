@@ -2,7 +2,7 @@ tests
 testCdrCarCons
 
 	self assert: 
-		(LiseInterpreter parseval: '(cons 
+		(LiseCompiler compileval: '(cons 
 	(car (cdr ''(3434.3 afsdf ''asdfasdfas'' 5)))
 	''(5))') = 
-		{#afsdf . 5 } asOrderedCollection
+		{#afsdf . 5 } 

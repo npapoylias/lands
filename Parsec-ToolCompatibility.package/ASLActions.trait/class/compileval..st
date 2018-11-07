@@ -1,4 +1,4 @@
 converting
-compeval: aString
+compileval: aString
 
 	^ self asCompiler evaluate: aString

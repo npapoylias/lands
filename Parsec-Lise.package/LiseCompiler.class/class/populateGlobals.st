@@ -16,9 +16,9 @@ populateGlobals
 										yourself ] " op.add " .  
         #apply ->  [:l | l first apply: l second]. "  apply " .
         #begin ->  [:l | l last] "  lambda *x: x[-1] " .
-        #car -> [:l | self halt. l first first] "    lambda x: x[0] " .
-        #cdr -> [:l | self halt. l first allButFirst] "    lambda x: x[1:] " . 
-        #cons -> [:l | {l first} asOrderedCollection addAll: l second asOrderedCollection; yourself] "   lambda x,y: [x] + y " .
+        #car -> [:l | l first] "    lambda x: x[0] " .
+        #cdr -> [:l | l allButFirst] "    lambda x: x[1:] " . 
+        #cons -> [:a :b | ({a} asOrderedCollection addAll: b asOrderedCollection; yourself) asArray] "   lambda x,y: [x] + y " .
         #'eq?' -> #== "    op.is_ " . 
         #'equal?' -> #= " op.eq " . 
         #length -> #size " len " . 
@@ -59,9 +59,9 @@ populateGlobals
 			]].
 		  #select -> [:l | l first select: [:litem | l second apply: litem]].
 		  #collect -> [:l | l first collect: [:litem | l second apply: litem]].
-		  #parse -> [ :l | LiseInterpreter parse: l first ].
-		  #eval -> [ :l | LiseInterpreter eval: l first ].
-		  #parseval -> [ :l | LiseInterpreter eval: (LiseInterpreter parse: l first) ].
+		  #parse -> [ :l | LiseInterpreter parse: l first ]. "string to list"
+		  #eval -> [ :l | LiseCompiler compileval: l first ]. "list to value / now string to value -- fix"
+		  #parseval -> [ :l | LiseInterpreter compileval: l first ]. "string to value -- correct"
 			} do: [ :assoc |  
 				assoc value isSymbol
 					ifTrue: [ 
