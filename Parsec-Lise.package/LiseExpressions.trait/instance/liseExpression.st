@@ -1,8 +1,8 @@
 accessing
 liseExpression
 
-	<liseExpression> ::= || "(" <liseExpression> * ")" 
-		|| "(" <specialForm> ")" 
+	<liseExpression> ::= || "(" <specialForm> ")" 
+		|| "(" <liseExpression> * ")" 
 		|| "'" <quotedExpression>
 		|| "(:" <hostExpression> ")"
 		| <number>
