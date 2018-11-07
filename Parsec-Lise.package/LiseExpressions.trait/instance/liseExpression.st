@@ -7,4 +7,4 @@ liseExpression
 		|| "(:" <hostExpression> ")"
 		| <number>
 		| <string>
-		| <identifier>
+		| <liseId>
