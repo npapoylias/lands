@@ -7,8 +7,8 @@ populateGlobals
 			addAll: (Object methods select: [ :m | m protocol = 'comparing']);
 			addAll: (Magnitude methods select: [ :m | m protocol = 'testing']);
 			addAll: (Number methods select: 
-				[ :m | m protocol = 'mathematical functions' or: [ m protocol = 'arithmetic' ] ]))
-			collect: [ :m | m selector ].
+				[ :m | m protocol = 'mathematical functions' or: [ m protocol = 'arithmetic' ] ]);
+			yourself) collect: [ :m | m selector ].
 	globalSelectors do: [:s | self addGlobalSelectorAsBlock: s ].
 	{
 		  #append -> [ :l | (l first copy) 
