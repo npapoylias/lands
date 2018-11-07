@@ -16,8 +16,8 @@ populateGlobals
 										yourself ] " op.add " .  
         #apply ->  [:l | l first apply: l second]. "  apply " .
         #begin ->  [:l | l last] "  lambda *x: x[-1] " .
-        #car -> [:l | l first first] "    lambda x: x[0] " .
-        #cdr -> [:l | l first allButFirst] "    lambda x: x[1:] " . 
+        #car -> [:l | self halt. l first first] "    lambda x: x[0] " .
+        #cdr -> [:l | self halt. l first allButFirst] "    lambda x: x[1:] " . 
         #cons -> [:l | {l first} asOrderedCollection addAll: l second asOrderedCollection; yourself] "   lambda x,y: [x] + y " .
         #'eq?' -> #== "    op.is_ " . 
         #'equal?' -> #= " op.eq " . 
