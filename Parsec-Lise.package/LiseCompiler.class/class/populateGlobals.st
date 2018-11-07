@@ -66,6 +66,6 @@ populateGlobals
 				assoc value isSymbol
 					ifTrue: [ 
 						self addGlobalSelectorAsBlock: assoc value. "create the block and then also install the synonym"
-						Smalltalk globals at: assoc key put: (Smalltalk globals at: assoc value) ]
-					ifFalse: [ Smalltalk globals at: assoc key put: assoc value ]	
+						self addGlobal: (Smalltalk globals at: assoc value) as: assoc key ]
+					ifFalse: [ self addGlobal: assoc value as: assoc key ]	
 			]

@@ -3,7 +3,8 @@ addGlobalSelectorAsBlock: s
 	
 	"Should we handle this with polymorphic valueWithArguments: a special # ? or ASL here ?"
 	
-	^ s isUnary 
+	| block |
+	block :=  s isUnary 
 		ifTrue: [ Compiler evaluate: '[ :a | ' , 'a ' , s asString , ']' ]
 		ifFalse: [  
 			s isBinary
@@ -14,5 +15,7 @@ addGlobalSelectorAsBlock: s
 					(args allButFirst inject: '' into: [:t :n | t , n , ': ' , n , ' '  ]) , ' ]'.
 					Compiler evaluate: bl
 				]	
-		]
+		].
+	
+	^ self addGlobal: block as: s 
 	
