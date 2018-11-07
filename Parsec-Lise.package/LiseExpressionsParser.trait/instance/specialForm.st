@@ -3,7 +3,7 @@ specialForm
 
 	^ super specialForm ==> { 
 		[ :values | values second ].
-		[ :values | (values nodes first |> { #ifTrue:ifFalse: . values nodes allButFirst }) <-> values ].
+		[ :values | (values second |> { #ifTrue: . values third . #ifFalse: values fourth }) <-> values ].
 		[ :values | { 
 				values second var <-> values second.
 				values second symbol === values third <-> values
