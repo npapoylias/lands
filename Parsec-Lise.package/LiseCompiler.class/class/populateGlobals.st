@@ -1,16 +1,16 @@
 accessing
 populateGlobals
 	"You should make them all lambdas to preserve polymorphism !"
-	| dict globalSelectors |
+	| globalSelectors |
 	globalSelectors := ((ProtoObject methods select: 
-				[:m | m protocol = 'class membership' or: [ m protocol = 'comparing']])
+				[:m | m protocol = 'class membership' or: [ m protocol = 'comparing']]) asOrderedCollection
 			addAll: (Object methods select: [ :m | m protocol = 'comparing']);
 			addAll: (Magnitude methods select: [ :m | m protocol = 'testing']);
 			addAll: (Number methods select: 
 				[ :m | m protocol = 'mathematical functions' or: [ m protocol = 'arithmetic' ] ]))
 			collect: [ :m | m selector ].
 	globalSelectors do: [:s | self addGlobalSelectorAsBlock: s ].
-	dict := {
+	{
 		  #append -> [ :l | (l first copy) 
 										addAll: l second asOrderedCollection; 
 										yourself ] " op.add " .  
@@ -62,4 +62,10 @@ populateGlobals
 		  #parse -> [ :l | LiseInterpreter parse: l first ].
 		  #eval -> [ :l | LiseInterpreter eval: l first ].
 		  #parseval -> [ :l | LiseInterpreter eval: (LiseInterpreter parse: l first) ].
-			} asDictionary.
+			} do: [ :assoc |  
+				assoc value isSymbol
+					ifTrue: [ 
+						self addGlobalSelectorAsBlock: assoc value. "create the block and then also install the synonym"
+						Smalltalk globals at: assoc key put: (Smalltalk globals at: assoc value) ]
+					ifFalse: [ Smalltalk globals at: assoc key put: assoc value ]	
+			]
