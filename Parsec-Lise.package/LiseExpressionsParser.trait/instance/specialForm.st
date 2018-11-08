@@ -9,6 +9,7 @@ specialForm
 				values second === values third <-> values
 			}
 		].
-		[ :values | values symbol === values third <-> values ].
-		[ :values | (values third block arguments: values second) <-> values ]
+		[ :values | values second symbol === values third <-> values ].
+		[ :values | (values third block arguments: values second) <-> values ].
+		[ :values | values allButFirst block <-> values ]
 	}
