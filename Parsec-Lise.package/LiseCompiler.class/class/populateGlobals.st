@@ -59,9 +59,9 @@ populateGlobals
 			]].
 		  #select -> [:l | l first select: [:litem | l second apply: litem]].
 		  #collect -> [:l | l first collect: [:litem | l second apply: litem]].
-		  #parse -> [ :l | LiseInterpreter parse: l first ]. "string to list"
-		  #eval -> [ :l | LiseCompiler compileval: l first ]. "list to value / now string to value -- fix"
-		  #parseval -> [ :l | LiseInterpreter compileval: l first ]. "string to value -- correct"
+		  #parse -> [ :l | LiseCompiler compileval: '''(' , l  , ')' ]. "string to list through quoting"
+		  #eval -> [ :l | LiseCompiler compileval: l  asLiseString ]. "list to value / now from list to string to value -- could do better with eval:in: that compiles to ASL"
+		  #parseval -> [ :l | LiseCompiler compileval: l  ]. "string to value -- correct"
 			} do: [ :assoc |  
 				assoc value isSymbol
 					ifTrue: [ 

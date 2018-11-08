@@ -1,8 +1,8 @@
 accessing
 quotedExpression
 
-	<quotedExpression> ::= "(" <quotedExpression> * ")" 
-		| "'" <quotedExpression>
-		| <number>
+	<quotedExpression> ::= || "(" <quotedExpression> * ")" 
 		| <string>
+		|| "'" <quotedExpression>
+		/ <number>
 		| <liseId> 

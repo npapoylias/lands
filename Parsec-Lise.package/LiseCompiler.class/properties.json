@@ -5,7 +5,7 @@
 	"name" : "LiseCompiler",
 	"commentStamp" : "",
 	"super" : "LiseRecognizer",
-	"traitcomposition" : "LiseExpressionsParser",
+	"traitcomposition" : "LiseExpressionsParser - {#liseId}",
 	"type" : "normal",
 	"classinstvars" : [
 		"default"

@@ -1,9 +1,9 @@
 accessing
 specialForm
 
-	<specialForm> ::= "quote" <liseExpression>
+	<specialForm> ::= "quote" <quotedExpression>
 		| "if" <liseExpression> +
 		| "define" <liseExpression> + 
 		| "set" <liseExpression> + 
-		| "lambda" <liseExpression> + 
+		| "lambda" <quotedExpression> <liseExpression> + 
 		| "begin" <liseExpression> +

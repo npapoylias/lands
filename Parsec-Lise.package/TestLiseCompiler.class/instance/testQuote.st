@@ -1,5 +1,5 @@
-as yet unclassified
+tests
 testQuote
-
-	self assert: (LiseInterpreter parseval: '(quote (testing 1 (2.0) -3.14))') = 
-		{ #testing.  1 . {2.0} asOrderedCollection . -3.14} asOrderedCollection.
+	"ordered quoting to have both - + as id and number in ids as x3 etc.."
+	self assert: (LiseCompiler compileval: '(quote (testing 1 (2.0) -3.14))') = 
+		{ #testing.  1 . {2.0} . -3.14}.
