@@ -1,5 +1,5 @@
 keywords
 keywords
 
-	^ #(#quote #if #define #set #lambda)
+	^ #(#quote #if #define #set #lambda #begin)
 	

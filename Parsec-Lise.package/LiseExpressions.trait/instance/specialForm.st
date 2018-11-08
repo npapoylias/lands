@@ -6,3 +6,4 @@ specialForm
 		| "define" <liseExpression> + 
 		| "set" <liseExpression> + 
 		| "lambda" <liseExpression> + 
+		| "begin" <liseExpression> +

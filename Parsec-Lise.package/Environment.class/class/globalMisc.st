@@ -2,17 +2,15 @@ as yet unclassified
 globalMisc
 
 		"check semanticts for in-place additons etc"
-
-        |dict|
-
-	     dict := {
+		  |primitives|
+	     primitives := {
 		  #true -> true.
 		  #false -> false.
 		  #append -> [ :l | (l first copy) 
 										addAll: l second asOrderedCollection; 
 										yourself ] " op.add " .  
         #apply ->  [:l | l first apply: l second]. "  apply " .
-        #begin ->  [:l | l last] "  lambda *x: x[-1] " .
+        "#begin ->  [:l | l last]" "  lambda *x: x[-1] " .
         #car -> [:l | l first first] "    lambda x: x[0] " .
         #cdr -> [:l | l first allButFirst] "    lambda x: x[1:] " . 
         #cons -> [:l | {l first} asOrderedCollection addAll: l second asOrderedCollection; yourself] "   lambda x,y: [x] + y " .
@@ -61,7 +59,7 @@ globalMisc
 		  #parseval -> [ :l | LiseInterpreter eval: (LiseInterpreter parse: l first) ].
 			} asDictionary.
 		 
-		  ^ dict keys -> (dict values collect: [:value |  
+		  ^ primitives keys -> (primitives values collect: [:value |  
 				value isSymbol 
 					ifTrue: [ PrimitiveProcedure new withSymbol: value ]
 					ifFalse: [ value isBlock
