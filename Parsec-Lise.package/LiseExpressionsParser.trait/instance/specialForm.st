@@ -3,7 +3,7 @@ specialForm
 
 	^ super specialForm ==> { 
 		[ :values | values second ].
-		[ :values | (values second |> { 
+		[ :values | self halt. (values second |> { 
 				#ifTrue: . { values third } block . 
 				#ifFalse: . { values fourth  } block 
 			}) <-> values ].
