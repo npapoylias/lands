@@ -1,14 +1,14 @@
 SmalltalkCISpec {
   #loading : [
   	SCIMetacelloLoadSpec {
-        #baseline : 'Parsec',
+        #baseline : 'Lands',
         #directory : './',
         #platforms : [ #pharo ]
   }
   ],
   #testing : {
   #coverage : {
-    #categories : ['Parsec-*']
+    #categories : ['Lands-*']
   }
   }
 }
