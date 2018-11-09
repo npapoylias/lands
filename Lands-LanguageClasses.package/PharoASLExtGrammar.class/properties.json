@@ -1,0 +1,13 @@
+{
+	"classtraitcomposition" : "MOGRules classTrait",
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "PharoASLExtGrammar",
+	"commentStamp" : "",
+	"super" : "PharoASLParser",
+	"traitcomposition" : "MOGRules",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Lands-LanguageClasses"
+}

@@ -1,0 +1,13 @@
+{
+	"classtraitcomposition" : "PharoASLParserSyntax classTrait",
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "PharoMOGClass",
+	"commentStamp" : "",
+	"super" : "Object",
+	"traitcomposition" : "PharoASLParserSyntax",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Lands-LanguageClasses"
+}

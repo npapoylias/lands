@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "Lands-LanguageClasses",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"algo"
+	],
+	"name" : "TestPharoASLExtParser",
+	"type" : "normal"
+}

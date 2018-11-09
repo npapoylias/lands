@@ -1,0 +1,13 @@
+{
+	"classtraitcomposition" : "ASLActions classTrait",
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "ExpressionEvaluator",
+	"commentStamp" : "",
+	"super" : "ExpressionMOGrammar",
+	"traitcomposition" : "ASLActions",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Lands-LanguageClasses"
+}

@@ -1,0 +1,13 @@
+{
+	"classtraitcomposition" : "PharoASLExtParserSyntax classTrait",
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "PharoExtClassExample",
+	"commentStamp" : "",
+	"super" : "PharoMOGClass",
+	"traitcomposition" : "PharoASLExtParserSyntax",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Lands-LanguageClasses"
+}

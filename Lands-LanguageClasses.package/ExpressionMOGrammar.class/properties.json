@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "MOGRecognizer",
+	"category" : "Lands-LanguageClasses",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "ExpressionMOGrammar",
+	"type" : "normal"
+}

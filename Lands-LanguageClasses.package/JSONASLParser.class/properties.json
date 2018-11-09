@@ -1,0 +1,13 @@
+{
+	"classtraitcomposition" : "ASLActions classTrait",
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "JSONASLParser",
+	"commentStamp" : "",
+	"super" : "JSONMOGrammar",
+	"traitcomposition" : "ASLActions",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Lands-LanguageClasses"
+}
