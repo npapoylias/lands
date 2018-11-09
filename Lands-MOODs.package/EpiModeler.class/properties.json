@@ -1,0 +1,13 @@
+{
+	"classtraitcomposition" : "EpiModelModeler classTrait + MapModeler classTrait",
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "EpiModeler",
+	"commentStamp" : "",
+	"super" : "EpiDomain",
+	"traitcomposition" : "EpiModelModeler + MapModeler",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Lands-MOODs-Epi"
+}

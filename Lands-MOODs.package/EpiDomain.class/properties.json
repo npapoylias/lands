@@ -1,0 +1,13 @@
+{
+	"classtraitcomposition" : "EpiModelBlueprint classTrait + MapBlueprint classTrait",
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "EpiDomain",
+	"commentStamp" : "",
+	"super" : "MOODsDomain",
+	"traitcomposition" : "EpiModelBlueprint + MapBlueprint",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Lands-MOODs-Epi"
+}

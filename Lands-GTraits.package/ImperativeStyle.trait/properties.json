@@ -1,0 +1,7 @@
+{
+	"commentStamp" : "",
+	"traitcomposition" : "MOGRules + Indexing",
+	"classtraitcomposition" : "MOGRules classTrait + Indexing classTrait",
+	"category" : "Lands-GTraits-Pharo-Ext-Syntax",
+	"name" : "ImperativeStyle"
+}

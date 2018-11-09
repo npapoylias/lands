@@ -1,0 +1,13 @@
+{
+	"classtraitcomposition" : "LiseExpressions classTrait",
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "LiseRecognizer",
+	"commentStamp" : "",
+	"super" : "MOGRecognizer",
+	"traitcomposition" : "LiseExpressions",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Lands-Lise-Recognizer"
+}

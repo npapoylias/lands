@@ -1,0 +1,4 @@
+Parsec-LanguageClasses
+string
+
+	<string> ::= '\'[^\']*\''  

@@ -1,0 +1,15 @@
+{
+	"classtraitcomposition" : "LiseExpressionsParser classTrait",
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "LiseCompiler",
+	"commentStamp" : "",
+	"super" : "LiseRecognizer",
+	"traitcomposition" : "LiseExpressionsParser - {#liseId}",
+	"type" : "normal",
+	"classinstvars" : [
+		"default"
+	],
+	"pools" : [ ],
+	"category" : "Lands-Lise-Compiler"
+}

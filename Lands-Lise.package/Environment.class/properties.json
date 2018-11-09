@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Dictionary",
+	"category" : "Lands-Lise-Lise-Support",
+	"classinstvars" : [
+		"global"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"outerEnvironment"
+	],
+	"name" : "Environment",
+	"type" : "normal"
+}

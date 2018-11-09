@@ -1,0 +1,13 @@
+{
+	"classtraitcomposition" : "PharoGrammar classTrait + ClassicControl classTrait + Functors classTrait + ImperativeStyle classTrait",
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "PharoExtRecognizer",
+	"commentStamp" : "",
+	"super" : "MOGRecognizer",
+	"traitcomposition" : "PharoGrammar - {#message. #primaryValue. #statements. #temporariesDeclaration. #methodDeclaration} + ClassicControl + Functors + ImperativeStyle",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Lands-GTraits-Pharo-Ext-Syntax"
+}

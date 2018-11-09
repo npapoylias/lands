@@ -1,0 +1,13 @@
+{
+	"classtraitcomposition" : "EgGrammarTraitActions classTrait",
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "EgParser",
+	"commentStamp" : "",
+	"super" : "EgGrammar",
+	"traitcomposition" : "EgGrammarTraitActions",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Lands-GTraits"
+}

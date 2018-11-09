@@ -1,0 +1,4 @@
+accessing
+scriptName
+
+	<scriptName> ::= <identifier>

@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "MOODsDomain",
+	"category" : "Lands-MOODs",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "GeoDomain",
+	"type" : "normal"
+}

@@ -1,0 +1,7 @@
+{
+	"commentStamp" : "",
+	"traitcomposition" : "PharoTerminalsParser",
+	"classtraitcomposition" : "PharoTerminalsParser classTrait",
+	"category" : "Lands-Lise-Compiler",
+	"name" : "LiseExpressionsParser"
+}

@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Procedure",
+	"category" : "Lands-Lise-Lise-Support",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"symbol",
+		"block"
+	],
+	"name" : "PrimitiveProcedure",
+	"type" : "normal"
+}

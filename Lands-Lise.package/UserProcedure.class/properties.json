@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Procedure",
+	"category" : "Lands-Lise-Lise-Support",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"parameters",
+		"procedureBody",
+		"definitionEnvironment"
+	],
+	"name" : "UserProcedure",
+	"type" : "normal"
+}

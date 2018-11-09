@@ -1,0 +1,7 @@
+{
+	"commentStamp" : "",
+	"traitcomposition" : "ASLActions",
+	"classtraitcomposition" : "ASLActions classTrait",
+	"category" : "Lands-GTraits-Pharo-Parser",
+	"name" : "PharoArraysParser"
+}

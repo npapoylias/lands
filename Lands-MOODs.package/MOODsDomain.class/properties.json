@@ -1,0 +1,13 @@
+{
+	"classtraitcomposition" : "BlueprintRules classTrait",
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "MOODsDomain",
+	"commentStamp" : "",
+	"super" : "MOODsMOGRecognizer",
+	"traitcomposition" : "BlueprintRules",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Lands-MOODs"
+}

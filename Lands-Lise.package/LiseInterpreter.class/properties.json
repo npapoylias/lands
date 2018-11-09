@@ -1,0 +1,15 @@
+{
+	"classtraitcomposition" : "LiseExpressionsInterpreter classTrait",
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "LiseInterpreter",
+	"commentStamp" : "",
+	"super" : "LiseRecognizer",
+	"traitcomposition" : "LiseExpressionsInterpreter",
+	"type" : "normal",
+	"classinstvars" : [
+		"default"
+	],
+	"pools" : [ ],
+	"category" : "Lands-Lise-Interpreter"
+}

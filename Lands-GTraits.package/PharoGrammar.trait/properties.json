@@ -1,0 +1,7 @@
+{
+	"commentStamp" : "",
+	"traitcomposition" : "PharoMethods + PharoPragmas + PharoTemporaries + PharoStatements + PharoExpressions + PharoMsgSends + PharoPrimaryValues + PharoArrays + PharoBlock + PharoTerminals + PharoIgnore",
+	"classtraitcomposition" : "PharoMethods classTrait + PharoPragmas classTrait + PharoTemporaries classTrait + PharoStatements classTrait + PharoExpressions classTrait + PharoMsgSends classTrait + PharoPrimaryValues classTrait + PharoArrays classTrait + PharoBlock classTrait + PharoTerminals classTrait + PharoIgnore classTrait",
+	"category" : "Lands-GTraits-Pharo-Syntax",
+	"name" : "PharoGrammar"
+}

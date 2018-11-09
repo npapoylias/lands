@@ -1,0 +1,7 @@
+{
+	"commentStamp" : "",
+	"traitcomposition" : "MOGRules",
+	"classtraitcomposition" : "MOGRules classTrait",
+	"category" : "Lands-GTraits-Pharo-Syntax",
+	"name" : "PharoIgnore"
+}

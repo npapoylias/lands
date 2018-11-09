@@ -9,6 +9,7 @@ baseline: spec
 		package: 'Lands-LanguageClasses';
 		package: 'Lands-GTraits';
 		package: 'Lands-GTraits-Postcard-Classes';
+		package: 'Lands-MOODs';
 		package: 'Lands-MOODs-Targets';
 		package: 'Lands-Lise'
 	]
