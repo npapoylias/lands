@@ -1,4 +1,0 @@
-accessing
-interrupt
-
-	interrupt := true

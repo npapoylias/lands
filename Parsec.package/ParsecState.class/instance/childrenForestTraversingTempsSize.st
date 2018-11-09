@@ -1,4 +1,0 @@
-action
-childrenForestTraversingTempsSize
-
-	^ self childrenForestTraversingTemps size

@@ -1,4 +1,0 @@
-accessing
-rulePrettyName
-
-	^ rule prettyName

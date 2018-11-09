@@ -1,4 +1,0 @@
-*Gray
-to
-
-	^ self stop

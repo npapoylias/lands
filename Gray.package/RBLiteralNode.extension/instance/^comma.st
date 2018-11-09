@@ -1,4 +1,0 @@
-*Gray
-, e
-
-	stop := e

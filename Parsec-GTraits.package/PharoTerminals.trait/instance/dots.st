@@ -1,4 +1,0 @@
-Parsec-LanguageClasses
-dots
-
-	<dots> ::= "." +

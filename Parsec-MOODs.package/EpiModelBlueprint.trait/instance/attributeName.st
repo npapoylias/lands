@@ -1,4 +1,0 @@
-accessing
-attributeName
-
-	<attributeName> ::= <identifier> 

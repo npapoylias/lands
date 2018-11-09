@@ -1,7 +1,0 @@
-{
-	"commentStamp" : "",
-	"traitcomposition" : "MOGRules + Indexing",
-	"classtraitcomposition" : "MOGRules classTrait + Indexing classTrait",
-	"category" : "Parsec-GTraits-Pharo-Ext-Syntax",
-	"name" : "ImperativeStyle"
-}

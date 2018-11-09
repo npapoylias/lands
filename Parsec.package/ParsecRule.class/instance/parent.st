@@ -1,4 +1,0 @@
-testing
-parent
-
-	^ parent

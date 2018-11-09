@@ -1,4 +1,0 @@
-accessing
-ruleName
-
-	^ rule name

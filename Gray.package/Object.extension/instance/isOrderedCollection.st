@@ -1,4 +1,0 @@
-*Gray
-isOrderedCollection
-
-	^ false

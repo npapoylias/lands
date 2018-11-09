@@ -1,6 +1,0 @@
-ops
-asEpegRule
-
-	^ self
-	
-	

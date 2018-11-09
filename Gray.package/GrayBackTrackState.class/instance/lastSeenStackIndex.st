@@ -1,4 +1,0 @@
-accessing
-lastSeenStackIndex
-
-	^ lastSeenStackIndex

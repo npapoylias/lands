@@ -1,5 +1,0 @@
-action
-childrenForestSize
-
-	^ childrenForest size
-

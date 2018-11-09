@@ -1,9 +1,0 @@
-tests
-testFMOenglisOpsMixedWithError
-
-
-	charts := ParsecMixedOrderedFilteredAlgo new log
-		parse: 'book that flight   8'
-		using: ParsecGrammar englishWithTempsEmptyInlineTerminalsAndOpsMixed.
-		
-	self assert: charts succeeded not.

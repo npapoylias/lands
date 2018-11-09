@@ -1,5 +1,0 @@
-action
-action
-
-	^ rule action
-

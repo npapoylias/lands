@@ -1,4 +1,0 @@
-tests
-classToTest
-
-	^ ParsecCollection

@@ -1,4 +1,0 @@
-*Gray
-isAssociation
-
-	^ false

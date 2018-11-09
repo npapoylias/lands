@@ -1,4 +1,0 @@
-compiling
-log
-
-	^ true

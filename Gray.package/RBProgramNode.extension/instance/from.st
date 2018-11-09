@@ -1,4 +1,0 @@
-*Gray
-from
-
-	^ self start

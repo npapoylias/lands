@@ -1,4 +1,0 @@
-*Gray
-block
-
-	^ { self } block

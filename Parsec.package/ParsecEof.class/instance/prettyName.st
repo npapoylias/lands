@@ -1,4 +1,0 @@
-accessing
-prettyName
-
-	^ #Eof asString

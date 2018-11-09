@@ -1,3 +1,0 @@
-*Gray
-isVar
-	^ false

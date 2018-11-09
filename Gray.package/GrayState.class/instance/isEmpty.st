@@ -1,4 +1,0 @@
-accessing
-isEmpty
-
-	^ from == to

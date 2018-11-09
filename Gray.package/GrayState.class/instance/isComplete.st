@@ -1,4 +1,0 @@
-testing
-isComplete
-
-	^ dotPosition >= rightHandSize

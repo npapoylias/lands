@@ -1,4 +1,0 @@
-accessing
-scriptName
-
-	<scriptName> ::= <identifier>

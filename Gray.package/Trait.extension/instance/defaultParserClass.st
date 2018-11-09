@@ -1,4 +1,0 @@
-*Gray
-defaultParserClass
-
-	^ RBParser 

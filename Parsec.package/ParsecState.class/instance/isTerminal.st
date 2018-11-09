@@ -1,5 +1,0 @@
-action
-isTerminal
-
-	^ rule isTerminal
-

@@ -1,4 +1,0 @@
-accessing
-parameterName
-
-	<parameterName> ::= <identifier>

@@ -1,4 +1,0 @@
-copying
-beAnnotated
-
-	annotated := true

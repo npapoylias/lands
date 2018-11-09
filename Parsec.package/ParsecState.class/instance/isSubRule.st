@@ -1,5 +1,0 @@
-action
-isSubRule
-
-	^ rule isSubRule
-

@@ -1,4 +1,0 @@
-*Gray
-last
-
-	^ self

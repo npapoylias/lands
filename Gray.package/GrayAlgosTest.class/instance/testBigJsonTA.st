@@ -1,4 +1,0 @@
-tests
-testBigJsonTA
-
-	self shouldPass

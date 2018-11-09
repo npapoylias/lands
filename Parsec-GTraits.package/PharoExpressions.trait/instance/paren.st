@@ -1,4 +1,0 @@
-generated
-paren
-
-	<paren> ::= "(" <expression> ")"

@@ -1,4 +1,0 @@
-adding
-array
-
-	^ array

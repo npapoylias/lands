@@ -1,4 +1,0 @@
-accessing
-end
-
-	^ self to

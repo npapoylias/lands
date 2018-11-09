@@ -1,4 +1,0 @@
-accessing
-instanceName
-
-	<instanceName> ::= <identifier> 

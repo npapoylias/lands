@@ -1,4 +1,0 @@
-*Gray
-asArrayIfCollection
-
-	^ self 

@@ -1,4 +1,0 @@
-*Gray
-syntaxHighlighting
-
-	^ self defaultSyntaxHighlighting 

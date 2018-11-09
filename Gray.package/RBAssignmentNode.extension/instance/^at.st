@@ -1,4 +1,0 @@
-*Gray
-@ s
-
-	assignment := s

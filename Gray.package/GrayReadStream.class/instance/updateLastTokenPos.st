@@ -1,3 +1,0 @@
-accessing
-updateLastTokenPos
-	lastTokenPos := position

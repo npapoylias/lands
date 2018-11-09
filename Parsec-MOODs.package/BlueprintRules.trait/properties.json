@@ -1,7 +1,0 @@
-{
-	"commentStamp" : "",
-	"traitcomposition" : "MOGRules + PharoTerminals",
-	"classtraitcomposition" : "MOGRules classTrait + PharoTerminals classTrait",
-	"category" : "Parsec-MOODs",
-	"name" : "BlueprintRules"
-}

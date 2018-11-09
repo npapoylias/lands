@@ -1,4 +1,0 @@
-accessing
-modelClass
-
-	<modelClass> ::= <identifier>

@@ -1,4 +1,0 @@
-generated
-return
-
-	<return> ::= "^" <expression>

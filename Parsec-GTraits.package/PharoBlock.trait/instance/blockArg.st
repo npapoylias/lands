@@ -1,4 +1,0 @@
-generated
-blockArg
-
-	<blockArg> ::= ":" <variable> 

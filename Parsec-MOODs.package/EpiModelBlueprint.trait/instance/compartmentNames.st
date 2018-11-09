@@ -1,4 +1,0 @@
-accessing
-compartmentNames
-
-	<compartmentNames> ::= { <identifier> "," }

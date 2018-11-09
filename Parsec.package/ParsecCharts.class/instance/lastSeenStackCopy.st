@@ -1,4 +1,0 @@
-recursive-ordering
-lastSeenStackCopy
-
-	^ lastSeenStackCopy
