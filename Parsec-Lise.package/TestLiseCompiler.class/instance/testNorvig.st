@@ -41,7 +41,7 @@ testNorvig
     '(zip (list 1 2 3 4) (list 5 6 7 8))' 
 		|=? {{1. 5} . {2 . 6} . {3 . 7} . {4 . 8} } .
     '(gdefine ''riff-shuffle (lambda (deck) (begin
-    	(define ''take 
+    	(define take 
 			(lambda (n seq) (if (<= n 0) (quote ()) (cons (car seq) (take (- n 1) (cdr seq))))))
     (define drop 
 			(lambda (n seq) (if (<= n 0) seq (drop (- n 1) (cdr seq)))))
