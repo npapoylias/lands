@@ -62,6 +62,8 @@ populateGlobals
 		  #parse -> [ :l | LiseCompiler compileval: '''(' , l  , ')' ]. "string to list through quoting"
 		  #eval -> [ :l | LiseCompiler compileval: l  asLiseString ]. "list to value / now from list to string to value -- could do better with eval:in: that compiles to ASL"
 		  #parseval -> [ :l | LiseCompiler compileval: l  ]. "string to value -- correct"
+		  #gdefine -> [ :s :v | Smalltalk globals at: s put: v ].
+		  #gset -> [ :s :v | Smalltalk globals at: s put: v ]
 			} do: [ :assoc |  
 				assoc value isSymbol
 					ifTrue: [ 
