@@ -22,7 +22,7 @@ populateGlobals
         #'eq?' -> #== "    op.is_ " . 
         #'equal?' -> #= " op.eq " . 
         #length -> #size " len " . 
-        #list -> [:l | l ] "   lambda *x: list(x) " . 
+        #list -> [:l | l ] variadic"   lambda *x: list(x) " . 
         #'list?' -> #isArray "  lambda x: isinstance(x,list) " . 
         #map -> [:l | l second collect: [:litem | l first apply: litem]] "    map " .
         #max -> #max "    max " .

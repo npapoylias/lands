@@ -1,15 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "Procedure",
+	"super" : "Object",
 	"category" : "Parsec-Lise-Lise-Support",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"parameters",
-		"procedureBody",
-		"definitionEnvironment"
+		"block"
 	],
-	"name" : "UserProcedure",
+	"name" : "VariadicBlock",
 	"type" : "normal"
 }
