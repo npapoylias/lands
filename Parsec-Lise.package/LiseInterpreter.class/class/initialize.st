@@ -2,4 +2,5 @@ eval
 initialize
 
 	super initialize.
-	default := nil
+	default := nil.
+	Environment initialize.

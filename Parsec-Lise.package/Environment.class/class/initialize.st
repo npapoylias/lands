@@ -1,10 +1,10 @@
-as yet unclassified
+initialization
 initialize
 
 	|params args arithmetic operands misc|
 	
 	super initialize.
-	
+
 	arithmetic := self globalArithmetic.
 	operands := self globalOperands.
 	misc := self globalMisc.
