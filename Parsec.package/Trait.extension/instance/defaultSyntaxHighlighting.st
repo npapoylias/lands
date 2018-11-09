@@ -1,4 +1,0 @@
-*Parsec
-defaultSyntaxHighlighting
-
-	^ nil

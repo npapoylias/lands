@@ -1,3 +1,0 @@
-*Parsec
-isPragma
-	^ false

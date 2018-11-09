@@ -1,4 +1,0 @@
-accessing
-start
-
-	^ self from

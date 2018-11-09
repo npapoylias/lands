@@ -1,3 +1,0 @@
-*Parsec
-isToken
-	^ false

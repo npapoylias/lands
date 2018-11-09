@@ -1,4 +1,0 @@
-*Parsec
-defaultParserClass
-
-	^ RBParser 

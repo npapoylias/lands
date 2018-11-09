@@ -1,4 +1,0 @@
-*Parsec
-, e
-
-	right := e

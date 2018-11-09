@@ -1,4 +1,0 @@
-*Parsec
-to
-
-	^ self stop

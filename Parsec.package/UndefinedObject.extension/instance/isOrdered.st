@@ -1,4 +1,0 @@
-*Parsec
-isOrdered
-
-	^ false

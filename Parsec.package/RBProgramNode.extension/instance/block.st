@@ -1,4 +1,0 @@
-*Parsec
-block
-
-	^ { self } block

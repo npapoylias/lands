@@ -1,4 +1,0 @@
-*Parsec
-isAssociation
-
-	^ false
