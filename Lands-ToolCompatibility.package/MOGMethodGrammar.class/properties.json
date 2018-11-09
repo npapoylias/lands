@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "MOGrammarRules",
+	"category" : "Lands-ToolCompatibility",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"methodDeclaration",
+		"method"
+	],
+	"name" : "MOGMethodGrammar",
+	"type" : "normal"
+}

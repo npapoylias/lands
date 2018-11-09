@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "MCTraitDefinition",
+	"category" : "Lands-ToolCompatibility",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "MCGrammarTraitDefinition",
+	"type" : "normal"
+}

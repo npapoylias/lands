@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "GrayParser",
+	"category" : "Lands-ToolCompatibility",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "CustomLanguageClass",
+	"type" : "normal"
+}

@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "RubSHTextStylerST80",
+	"category" : "Lands-ToolCompatibility",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "LandsTextStyler",
+	"type" : "normal"
+}
