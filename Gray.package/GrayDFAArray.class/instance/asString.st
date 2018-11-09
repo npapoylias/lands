@@ -1,0 +1,4 @@
+instance creation
+asString
+
+	^ regExpr

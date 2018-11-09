@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "ParsecParser",
+	"super" : "GrayParser",
 	"category" : "Parsec-ToolCompatibility",
 	"classinstvars" : [ ],
 	"pools" : [ ],

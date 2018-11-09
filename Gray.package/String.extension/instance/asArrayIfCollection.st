@@ -1,0 +1,4 @@
+*Gray
+asArrayIfCollection
+
+	^ self 

@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "ReadStream",
+	"category" : "Gray",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"lastTokenPos"
+	],
+	"name" : "GrayReadStream",
+	"type" : "normal"
+}

@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Gray-Lexing",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"EscapeChars"
+	],
+	"instvars" : [
+		"stream"
+	],
+	"name" : "GrayLexer",
+	"type" : "normal"
+}

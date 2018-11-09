@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "Gray-Visual",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"results"
+	],
+	"instvars" : [
+		"grammar"
+	],
+	"name" : "TestGrayTree",
+	"type" : "normal"
+}

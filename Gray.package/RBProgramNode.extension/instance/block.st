@@ -1,0 +1,4 @@
+*Gray
+block
+
+	^ { self } block

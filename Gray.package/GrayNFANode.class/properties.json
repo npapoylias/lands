@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Gray-Lexing",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"char",
+		"out",
+		"outWithoutEpsilons"
+	],
+	"name" : "GrayNFANode",
+	"type" : "normal"
+}

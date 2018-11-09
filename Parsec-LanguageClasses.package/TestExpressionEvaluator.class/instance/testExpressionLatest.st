@@ -2,7 +2,7 @@ tests
 testExpressionLatest
 
 	|results grammar|
-	grammar := ParsecGrammar new
+	grammar := GrayGrammar new
 		named: #ExpressionGrammar;
 		with: { 
 		'<start> ::= <expression>'.
@@ -22,7 +22,7 @@ testExpressionLatest
 		}
 	}.
 
-	results := grammar parse: '5*3*4+4/(2-8)^2^3-7' using: ParsecMixedOrderedFilteredAlgo  new log."'4+3*4^7^9/7-6'." "5*3*4+4/2-8^2^3-7"
+	results := grammar parse: '5*3*4+4/(2-8)^2^3-7' using: GrayMixedOrderedFilteredAlgo  new log."'4+3*4^7^9/7-6'." "5*3*4+4/2-8^2^3-7"
 	
 	self assert: results eval first = (22254913/419904).
 
@@ -30,7 +30,7 @@ testExpressionLatest
 	
 	self assert: results results first value = 2417851639229258349412352."
 
-	(ParsecTree new 
+	(GrayTree new 
 			startingFrom: results
 			withChildren: #childrenForestTraversingTemps 
 			named: #rulePrettyName

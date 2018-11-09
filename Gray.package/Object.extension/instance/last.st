@@ -1,0 +1,4 @@
+*Gray
+last
+
+	^ self

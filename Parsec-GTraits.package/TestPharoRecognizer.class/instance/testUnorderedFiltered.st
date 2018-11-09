@@ -1,5 +1,5 @@
 tests
 testUnorderedFiltered
 
-	algo := ParsecFilteredAlgo.
+	algo := GrayFilteredAlgo.
 	self parseUnordered

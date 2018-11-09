@@ -8,8 +8,8 @@ rule
 		operators := tokens third value. 
 		name := tokens first.
 		name first = $@
-			ifTrue: [ r := ParsecRule new name: name allButFirst asSymbol; beAnnotated ]
-			ifFalse: [r := ParsecRule new name: name].
+			ifTrue: [ r := GrayRule new name: name allButFirst asSymbol; beAnnotated ]
+			ifFalse: [r := GrayRule new name: name].
 		"r := (tokens first --> expressions first asArrayIfCollection)."
 		expressions size == operators size 
 			ifTrue: [ r rightHandSide removeFirst. "empty" operands := expressions]

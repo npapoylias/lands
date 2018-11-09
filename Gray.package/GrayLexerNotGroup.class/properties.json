@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "GrayLexerGroup",
+	"category" : "Gray-Lexing",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "GrayLexerNotGroup",
+	"type" : "normal"
+}

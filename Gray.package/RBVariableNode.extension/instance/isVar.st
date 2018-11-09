@@ -1,0 +1,4 @@
+*Gray
+isVar
+
+	^ true

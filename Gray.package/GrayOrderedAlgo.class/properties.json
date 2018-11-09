@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "NickPapoulias 11/30/2016 14:38",
+	"super" : "GrayAlgo",
+	"category" : "Gray",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"backTrackStack",
+		"ruleToAlternativeIndex"
+	],
+	"name" : "GrayOrderedAlgo",
+	"type" : "normal"
+}

@@ -1,0 +1,4 @@
+copying
+annotated
+
+	^ annotated

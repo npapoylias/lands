@@ -1,0 +1,6 @@
+ops
+asEpegRule
+
+	^ self
+	
+	

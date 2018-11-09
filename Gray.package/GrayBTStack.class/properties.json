@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "GrayCollection",
+	"category" : "Gray",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"charts"
+	],
+	"name" : "GrayBTStack",
+	"type" : "normal"
+}

@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "GrayTerminalRule",
+	"category" : "Gray",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "GrayTerminalSubRule",
+	"type" : "normal"
+}

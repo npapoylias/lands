@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "Gray",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"grammar",
+		"results"
+	],
+	"name" : "GrayTestOrderAndAssociativity",
+	"type" : "normal"
+}

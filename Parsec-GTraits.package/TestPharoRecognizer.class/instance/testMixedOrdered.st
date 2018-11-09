@@ -1,5 +1,5 @@
 tests
 testMixedOrdered
 
-	algo := ParsecMixedOrderedAlgo.
+	algo := GrayMixedOrderedAlgo.
 	self parse

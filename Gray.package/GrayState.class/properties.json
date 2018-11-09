@@ -1,0 +1,30 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Gray",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"rule",
+		"dotPosition",
+		"from",
+		"to",
+		"fromTerminal",
+		"toTerminal",
+		"rightHandIndex",
+		"ruleAtDot",
+		"rightHand",
+		"rightHandSize",
+		"dRefRightHand",
+		"childrenStates",
+		"childrenForest",
+		"alternative",
+		"memoizedChildrenForest",
+		"memoizedChildrenForestTraversingTempsAsSet",
+		"childrenForestTraversingTemps",
+		"trimmedEnd"
+	],
+	"name" : "GrayState",
+	"type" : "normal"
+}

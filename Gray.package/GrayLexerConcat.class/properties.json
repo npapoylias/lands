@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "GrayLexerNode",
+	"category" : "Gray-Lexing",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"sequence"
+	],
+	"name" : "GrayLexerConcat",
+	"type" : "normal"
+}

@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Gray",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"charts",
+		"trees",
+		"results",
+		"input",
+		"memoizedChildrenForestTraversingTempsAsSet"
+	],
+	"name" : "GrayResult",
+	"type" : "normal"
+}

@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "MOGJsonGrammar",
+	"category" : "Gray",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "MOGJsonLoggingGrammar",
+	"type" : "normal"
+}

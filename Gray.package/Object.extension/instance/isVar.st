@@ -1,0 +1,3 @@
+*Gray
+isVar
+	^ false

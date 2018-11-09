@@ -1,0 +1,4 @@
+testing
+isToken
+
+	^ true 

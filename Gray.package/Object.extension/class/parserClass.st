@@ -1,0 +1,4 @@
+*Gray
+parserClass
+
+	^ self defaultParserClass

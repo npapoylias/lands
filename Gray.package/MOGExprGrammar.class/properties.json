@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "GrayParser",
+	"category" : "Gray",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"start",
+		"expression",
+		"number"
+	],
+	"name" : "MOGExprGrammar",
+	"type" : "normal"
+}

@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "GrayFancyGraph",
+	"category" : "Gray-Visual",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "GrayFancyTree",
+	"type" : "normal"
+}

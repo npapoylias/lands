@@ -1,0 +1,3 @@
+*Gray
+isToken
+	^ false

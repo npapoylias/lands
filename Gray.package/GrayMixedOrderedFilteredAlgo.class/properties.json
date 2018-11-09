@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "GrayMixedOrderedAlgo",
+	"category" : "Gray",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "GrayMixedOrderedFilteredAlgo",
+	"type" : "normal"
+}

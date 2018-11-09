@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "GrayRule",
+	"category" : "Gray",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "GrayGammaStart",
+	"type" : "normal"
+}

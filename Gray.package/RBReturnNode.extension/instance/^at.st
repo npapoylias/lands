@@ -1,0 +1,4 @@
+*Gray
+@ start
+
+	return := start
