@@ -1,5 +1,5 @@
 ops
-asEpegRule
+asMogRule
 
 	^ self
 	

@@ -1,4 +1,4 @@
 *Lands-MOGs-Gray
-asEpegRule
+asMogRule
 
 	^ (MOGgrammar new parse: self) results first

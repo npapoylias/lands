@@ -3,7 +3,7 @@ accessing
 rule
 
 	^ super rule ==> [ :tokens | |r expressions operators operands| 
-		"TODO: why not giving tokens the names of the symbols in EPEG ?"
+		"TODO: why not giving tokens the names of the symbols in MOG ?"
 		expressions := tokens third key. 
 		operators := tokens third value.  
 		r := GrayRule new name: tokens first.
@@ -20,5 +20,5 @@ rule
 		r 		 
 	]
 	 
-	"'(\n|\r){2}' , '\n|\r' star" "remember space is handled implicitely (See ParseGrammar>>#init))"
+	"'(\n|\r){2}' , '\n|\r' star" "remember space is handled implicitely (See GrayGrammar>>#init))"
 	"you can add optimized version for regExpression where you automatically handl lplus, lstar || etc"
