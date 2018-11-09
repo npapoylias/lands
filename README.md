@@ -1,4 +1,4 @@
-Lands framework: From PEGs to the Future through Earley (On going)
+Lands framework: Theory and Applications of Multi-Ordered Grammars.
 
 Mirroring on github for CI and Testing on mulitple platforms.
 
