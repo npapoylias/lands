@@ -1,0 +1,29 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Lands-MOGs-Gray-Visual",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"modelRoot",
+		"nameSelector",
+		"childrenSelector",
+		"edgesSelector",
+		"forestIndexPerNode",
+		"popUpBlock",
+		"elements",
+		"defaultLabel",
+		"defaultNodeShape",
+		"defaultNodeShapeWithLabel",
+		"defaultForestSurroundingShape",
+		"defaultControls",
+		"down",
+		"v",
+		"defaultPopUp",
+		"forestSelector",
+		"sizeSelector"
+	],
+	"name" : "GrayTree",
+	"type" : "normal"
+}

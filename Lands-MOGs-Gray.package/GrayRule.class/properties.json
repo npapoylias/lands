@@ -1,0 +1,30 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Lands-MOGs-Gray",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"name",
+		"rightHandSide",
+		"grammar",
+		"childRules",
+		"ordered",
+		"isAnd",
+		"isNot",
+		"iregExpr",
+		"directRefs",
+		"firsts",
+		"follow",
+		"canBeEmpty",
+		"predict",
+		"action",
+		"parent",
+		"recursiveIndex",
+		"directFirsts",
+		"annotated"
+	],
+	"name" : "GrayRule",
+	"type" : "normal"
+}

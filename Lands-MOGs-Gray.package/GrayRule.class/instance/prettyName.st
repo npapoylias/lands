@@ -1,0 +1,4 @@
+accessing
+prettyName
+	
+	^ self name

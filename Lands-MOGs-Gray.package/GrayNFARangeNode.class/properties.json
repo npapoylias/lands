@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "GrayNFANode",
+	"category" : "Lands-MOGs-Gray-Lexing",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"rangePair"
+	],
+	"name" : "GrayNFARangeNode",
+	"type" : "normal"
+}

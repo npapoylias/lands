@@ -1,0 +1,4 @@
+testing
+isSubRule
+
+	^ true

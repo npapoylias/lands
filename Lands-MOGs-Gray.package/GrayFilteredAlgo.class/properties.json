@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "GrayAlgo",
+	"category" : "Lands-MOGs-Gray",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "GrayFilteredAlgo",
+	"type" : "normal"
+}

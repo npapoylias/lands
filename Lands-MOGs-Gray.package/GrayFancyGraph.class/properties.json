@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Lands-MOGs-Gray-Visual",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"gEdges",
+		"gElements"
+	],
+	"name" : "GrayFancyGraph",
+	"type" : "normal"
+}

@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "GrayLexerNode",
+	"category" : "Lands-MOGs-Gray-Lexing",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"options"
+	],
+	"name" : "GrayLexerOption",
+	"type" : "normal"
+}

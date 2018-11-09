@@ -1,0 +1,4 @@
+tests
+testBigJsonTA
+
+	self shouldPass

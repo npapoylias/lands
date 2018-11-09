@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Lands-MOGs-Gray-Lexing",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"startNode",
+		"endNode"
+	],
+	"name" : "GrayNFAGraph",
+	"type" : "normal"
+}

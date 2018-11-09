@@ -1,0 +1,3 @@
+accessing
+updateLastTokenPos
+	lastTokenPos := position

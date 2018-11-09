@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "GrayRule",
+	"category" : "Lands-MOGs-Gray",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "GraySubRule",
+	"type" : "normal"
+}

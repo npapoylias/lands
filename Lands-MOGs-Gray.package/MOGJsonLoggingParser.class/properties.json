@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "MOGJsonParser",
+	"category" : "Lands-MOGs-Gray",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "MOGJsonLoggingParser",
+	"type" : "normal"
+}

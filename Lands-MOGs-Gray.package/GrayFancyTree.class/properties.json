@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "GrayFancyGraph",
+	"category" : "Lands-MOGs-Gray-Visual",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "GrayFancyTree",
+	"type" : "normal"
+}

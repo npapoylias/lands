@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Lands-MOGs-Gray-Visual",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"shapeElement",
+		"labelElement",
+		"gapSize",
+		"group"
+	],
+	"name" : "PolyShape",
+	"type" : "normal"
+}

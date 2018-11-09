@@ -1,0 +1,4 @@
+testing
+isVar
+
+	^ false

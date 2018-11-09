@@ -1,0 +1,4 @@
+accessing
+start
+
+	^ self from

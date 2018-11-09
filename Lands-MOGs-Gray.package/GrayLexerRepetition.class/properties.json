@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "GrayLexerOperand",
+	"category" : "Lands-MOGs-Gray-Lexing",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"between"
+	],
+	"name" : "GrayLexerRepetition",
+	"type" : "normal"
+}

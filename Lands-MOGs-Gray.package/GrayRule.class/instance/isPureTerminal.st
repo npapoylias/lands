@@ -1,0 +1,4 @@
+ops
+isPureTerminal
+
+	^ false

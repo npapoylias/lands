@@ -1,0 +1,4 @@
+testing
+isComplete
+
+	^ dotPosition >= rightHandSize

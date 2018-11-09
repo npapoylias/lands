@@ -1,0 +1,7 @@
+*Lands-MOGs-Gray
+stmts
+	|stmts|
+	stmts := self deepFlatten select: [ :i | i isVar not and: [i isPragma not and: [i isToken not] ] ].
+	self last isVar ifTrue: [ stmts := (stmts asOrderedCollection addLast: self last) asArray ]. "only case where single var expr has side effects,
+	as last expr in blocks"
+	^ stmts

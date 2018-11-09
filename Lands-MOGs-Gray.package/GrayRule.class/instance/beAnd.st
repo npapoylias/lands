@@ -1,0 +1,4 @@
+ops
+beAnd
+
+	isAnd := true

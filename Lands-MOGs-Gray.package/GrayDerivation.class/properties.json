@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "OrderedCollection",
+	"category" : "Lands-MOGs-Gray",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"parsecState",
+		"input"
+	],
+	"name" : "GrayDerivation",
+	"type" : "normal"
+}

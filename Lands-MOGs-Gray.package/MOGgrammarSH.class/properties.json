@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "MOGgrammarRules",
+	"category" : "Lands-MOGs-Gray",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "MOGgrammarSH",
+	"type" : "normal"
+}
