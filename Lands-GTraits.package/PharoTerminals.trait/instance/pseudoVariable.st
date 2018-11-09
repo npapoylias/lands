@@ -1,4 +1,4 @@
-Parsec-LanguageClasses
+accessing
 pseudoVariable
 
 	<pseudoVariable> ::= "self"

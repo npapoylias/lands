@@ -1,4 +1,4 @@
-Parsec-LanguageClasses
+accessing
 index
 
 	^ super index ==> [ :values | 

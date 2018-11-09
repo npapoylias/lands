@@ -1,4 +1,4 @@
-Parsec-LanguageClasses
+accessing
 index
 
 	<index> ::= || "[" <expression> "::" <expression> "]"

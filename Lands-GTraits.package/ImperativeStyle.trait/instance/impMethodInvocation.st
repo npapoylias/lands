@@ -1,4 +1,4 @@
-Parsec-LanguageClasses
+accessing
 impMethodInvocation
 
 	<impMethodInvocation> ::= <invKeyword> <impMethodArgs>

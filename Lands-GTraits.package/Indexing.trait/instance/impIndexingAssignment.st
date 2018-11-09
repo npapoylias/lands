@@ -1,4 +1,4 @@
-Parsec-LanguageClasses
+accessing
 impIndexingAssignment
 
 	<impIndexingAssignment> ::= || <index> ":=" <expression>

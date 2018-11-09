@@ -1,4 +1,4 @@
-Parsec-LanguageClasses
+accessing
 classicFor
 
 	^ super classicFor ==> [ :values | 

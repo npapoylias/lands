@@ -1,4 +1,4 @@
-Parsec-LanguageClasses
+accessing
 methodDeclaration
 
 	<methodDeclaration> ::= <identifier>

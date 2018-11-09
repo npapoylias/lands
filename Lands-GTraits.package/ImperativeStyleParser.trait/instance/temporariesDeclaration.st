@@ -1,4 +1,4 @@
-Parsec-LanguageClasses
+accessing
 temporariesDeclaration
 
 	^ super temporariesDeclaration ==> {

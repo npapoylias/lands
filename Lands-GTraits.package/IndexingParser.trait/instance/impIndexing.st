@@ -1,4 +1,4 @@
-Parsec-LanguageClasses
+accessing
 impIndexing
 
 	^ super impIndexing ==> [ :values | 

@@ -1,4 +1,4 @@
-Parsec-LanguageClasses
+accessing
 classicWhile
 
 	^ super classicWhile ==> [ :values | 

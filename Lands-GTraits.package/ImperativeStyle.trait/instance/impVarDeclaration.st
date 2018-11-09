@@ -1,4 +1,4 @@
-Parsec-LanguageClasses
+accessing
 impVarDeclaration
 
 	<impVarDeclaration> ::= "var" <identifier> ":=" <expression> <dots>

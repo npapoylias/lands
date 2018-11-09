@@ -1,4 +1,4 @@
-Parsec-LanguageClasses
+accessing
 members
 
 	<members> ::= { <pair> "," }

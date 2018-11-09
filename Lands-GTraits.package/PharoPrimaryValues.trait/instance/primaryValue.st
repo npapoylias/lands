@@ -1,4 +1,4 @@
-Parsec-LanguageClasses
+accessing
 primaryValue
 
 	<primaryValue> ::= <literal>
