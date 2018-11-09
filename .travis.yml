@@ -7,7 +7,7 @@ osx_image: xcode6.4
 smalltalk:
 - Moose-6.1
 
-before_deploy: "PLATFORM_FILE=Parsec-`uname`.zip; zip -r $PLATFORM_FILE $SMALLTALK_CI_HOME"
+before_deploy: "PLATFORM_FILE=Lands-`uname`.zip; zip -r $PLATFORM_FILE $SMALLTALK_CI_HOME"
 
 deploy:
   provider: releases
@@ -16,6 +16,6 @@ deploy:
   file: $PLATFORM_FILE
   skip_cleanup: true
   on:
-    repo: npapoylias/parsec
+    repo: npapoylias/Lands
     tags: true 
     #branches: release
