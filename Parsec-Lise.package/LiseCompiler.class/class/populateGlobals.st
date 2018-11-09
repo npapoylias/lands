@@ -11,9 +11,9 @@ populateGlobals
 			yourself) collect: [ :m | m selector ].
 	globalSelectors do: [:s | self addGlobalSelectorAsBlock: s ].
 	{
-		  #append -> [ :l | (l first copy) 
-										addAll: l second asOrderedCollection; 
-										yourself ] " op.add " .  
+		  #append -> [ :l :i | ((l copy) asOrderedCollection
+										addAll: i; 
+										yourself) asArray ] " op.add " .  
         #apply ->  [:l | l first apply: l second]. "  apply " .
         #begin ->  [:l | l last] "  lambda *x: x[-1] " .
         #car -> [:l | l first] "    lambda x: x[0] " .
