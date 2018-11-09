@@ -7,7 +7,7 @@ example2
 
 	| result root |
 	result := MOGExprGrammar new 
-		"should be 250" "parse: '(1*2+3/4)+(5*6+7/8)*(9*10+11/12)' using: ParsecMixedOrderAlgo new log."
+		"should be 250" "parse: '(1*2+3/4)+(5*6+7/8)*(9*10+11/12)' using: GrayMixedOrderAlgo new log."
 		parse: '1*2+3/4' using: GrayMixedOrderedFilteredAlgo new log.
 	"children := root perform: #childrenStates.
 	edges := root perform: #childrenPositions."

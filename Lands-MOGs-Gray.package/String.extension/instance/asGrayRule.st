@@ -1,5 +1,5 @@
 *Lands-MOGs-Gray
-asParsecRule
+asGrayRule
 
 	|name|
 	name := ('ta' , self hash asString) asSymbol.

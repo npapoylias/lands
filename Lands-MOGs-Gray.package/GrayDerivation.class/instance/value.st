@@ -1,4 +1,4 @@
 instance creation
 value
 
-	^ input atAll: (parsecState from + 1 to: parsecState to)
+	^ input atAll: (grayState from + 1 to: grayState to)

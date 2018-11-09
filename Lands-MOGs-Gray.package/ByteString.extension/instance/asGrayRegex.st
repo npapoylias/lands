@@ -1,4 +1,4 @@
 *Lands-MOGs-Gray
-asParsecRegex
+asGrayRegex
 
  ^ GrayLexer new parse: self

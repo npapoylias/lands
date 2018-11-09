@@ -8,7 +8,7 @@ computeFirsts
 	"test for mutual recursion"
 	rightHandSide doWithIndex: [ :rule :index | firsts at: index put: (self firstForRightHandSide: rule)].
 	canBeEmpty := firsts deepFlatten anySatisfy: [ :r | r isEmpty ].
-	^ firsts := firsts	asParsecCollection.
+	^ firsts := firsts	asGrayCollection.
 	
 	
 	

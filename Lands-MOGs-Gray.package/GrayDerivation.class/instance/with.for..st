@@ -1,5 +1,5 @@
 instance creation
 with: aState for: aString
 
-	parsecState := aState.
+	grayState := aState.
 	input := aString

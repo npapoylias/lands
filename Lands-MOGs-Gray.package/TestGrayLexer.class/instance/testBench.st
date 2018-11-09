@@ -3,7 +3,7 @@ testBench
 
 	| oldLex newLex result |
 	oldLex := '[0-9]+' asRegex.
-	newLex := '[0-9]+' asParsecRegex.
+	newLex := '[0-9]+' asGrayRegex.
 	result := [1 to: 500000 do: [:i | oldLex matchesStreamPrefix: '324525 sfsdf' readStream]] timeToRun asNanoSeconds asFloat /
 	[1 to: 500000 do: [:i | newLex matchesStreamPrefix: '324525 sfsdf' readStream]] timeToRun asNanoSeconds asFloat.
 	self assert: result > 1.

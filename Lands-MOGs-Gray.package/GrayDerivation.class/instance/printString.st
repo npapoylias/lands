@@ -1,4 +1,4 @@
 instance creation
 printString
 
-	^ parsecState rule name , '(' , (input atAll: (parsecState from + 1 to: parsecState to)) , ')'
+	^ grayState rule name , '(' , (input atAll: (grayState from + 1 to: grayState to)) , ')'

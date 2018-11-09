@@ -6,7 +6,7 @@ initialize
 	stateIndex := 0.
 	logging := false.
 	interrupt := false.
-"	successfullTrees := ParsecCollection new."
+"	successfullTrees := GrayCollection new."
 	lastSeenStack := Stack new.
 	lastSeenStack push: Dictionary new.
 	self augment.

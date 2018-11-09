@@ -6,8 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"parsecState",
-		"input"
+		"input",
+		"grayState"
 	],
 	"name" : "GrayDerivation",
 	"type" : "normal"

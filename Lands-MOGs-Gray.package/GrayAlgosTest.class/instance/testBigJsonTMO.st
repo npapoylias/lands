@@ -3,8 +3,8 @@ testBigJsonTMO
 
 	| tJSParser  |
 	tJSParser := MOGJsonGrammar new with: GrayMixedOrderedFilteredAlgo 
-	"check memory consumption in the ParsecMixedOrderAlgo test in the smaller JSON test below"
-	"ParsecMixedOrderAlgo". "remember that the grammar is created its time -- for bench etc"
+	"check memory consumption in the GrayMixedOrderAlgo test in the smaller JSON test below"
+	"GrayMixedOrderAlgo". "remember that the grammar is created its time -- for bench etc"
 
 	charts := tJSParser parse: '[
   {

@@ -1,6 +1,6 @@
 accessing
 memoizedChildrenForestTraversingTempsAsSet
-	"polymorphic with ParsecState use the result as root"
+	"polymorphic with GrayState use the result as root"
 	^ memoizedChildrenForestTraversingTempsAsSet 
 		ifNil: [
 			memoizedChildrenForestTraversingTempsAsSet := 

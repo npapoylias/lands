@@ -1,5 +1,5 @@
 *Lands-MOGs-Gray
-asParsecCollection
+asGrayCollection
 
 	|pCollection|
 	pCollection := GrayCollection new.
