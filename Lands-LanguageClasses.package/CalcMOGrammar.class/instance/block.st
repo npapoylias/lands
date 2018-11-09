@@ -1,4 +1,4 @@
 Parsec-LanguageClasses
 block
 
-	<block> ::= "{" <statements> "}"
+	<block> ::= "{" <statements> "}" 
