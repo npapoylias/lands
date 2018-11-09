@@ -1,4 +1,4 @@
-Parsec-LanguageClasses
+as yet unclassified
 functorInvocation
 
 	^ super functorInvocation ==> [ :values | 

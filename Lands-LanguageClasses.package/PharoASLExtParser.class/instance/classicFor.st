@@ -1,4 +1,4 @@
-Parsec-LanguageClasses
+as yet unclassified
 classicFor
 
 	^ super classicFor ==> [ :values | 

@@ -1,4 +1,4 @@
-Parsec-LanguageClasses
+as yet unclassified
 impIndexingAssignment
 
 	^ super impIndexingAssignment ==> [ :values | 

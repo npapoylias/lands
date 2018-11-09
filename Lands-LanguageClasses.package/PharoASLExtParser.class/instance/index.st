@@ -1,4 +1,4 @@
-Parsec-LanguageClasses
+as yet unclassified
 index
 
 	^ super index ==> [ :values | 
