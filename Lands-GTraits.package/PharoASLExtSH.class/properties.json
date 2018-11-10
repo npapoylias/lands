@@ -1,0 +1,13 @@
+{
+	"classtraitcomposition" : "ASLActions classTrait",
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "PharoASLExtSH",
+	"commentStamp" : "",
+	"super" : "PharoExtRecognizer",
+	"traitcomposition" : "ASLActions",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Lands-GTraits-Pharo-Ext-Parser"
+}
