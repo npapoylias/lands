@@ -2,5 +2,9 @@ accessing
 methodDeclaration
 
 	^ super methodDeclaration ==> [ :token | 
-			[self halt. token color: #blue; emphasis: #underlined; size: 20] fork
+			self 
+				token: token color: Color white; 
+				token: token emphasis: #underlined;
+				token: token emphasis: #bold; 
+				token: token size: 13
 	]
