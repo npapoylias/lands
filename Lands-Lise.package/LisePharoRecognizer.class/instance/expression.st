@@ -4,6 +4,6 @@ expression
 	<expression> ::= <assignment>
 		/ <msgSend>
 		|| <paren>
-		|| "(:" <hostedExpression> ")"
+		|| <hostedExpression>
 		| <primaryValue>
 		| <variable>

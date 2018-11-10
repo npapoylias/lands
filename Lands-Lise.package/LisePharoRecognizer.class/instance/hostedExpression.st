@@ -1,6 +1,6 @@
 accessing
 hostedExpression
 
-	<hostedExpression> ::= <specialForm>
-		/ <liseExpression> *
+	<hostedExpression> ::= "(:" <specialForm> ")"
+		/ "(:" <liseExpression> * ")"
 		

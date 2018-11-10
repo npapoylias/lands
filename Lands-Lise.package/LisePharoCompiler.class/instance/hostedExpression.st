@@ -2,8 +2,8 @@ accessing
 hostedExpression
 
 	^ super hostedExpression ==> {  
-		[ :values | values ].
+		[ :values | values second ].
 		[ :values | 
-			values first |> { #polyValueWithArguments: . values allButFirst array } <-> values
+			values second |> { #polyValueWithArguments: . values nodes allButFirst array } <-> values
 		].
 	} 

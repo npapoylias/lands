@@ -4,5 +4,5 @@ quotedExpression
 	<quotedExpression> ::= || "(" <quotedExpression> * ")" 
 		| <string>
 		|| "'" <quotedExpression>
-		/ <number>
+		| <number>
 		| <liseId> 
