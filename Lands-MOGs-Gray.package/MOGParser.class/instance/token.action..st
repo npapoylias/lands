@@ -1,4 +1,4 @@
-instance creation
-action: anAction
+parsing
+token: token action: anAction
 
 	self shouldBeImplemented "see TextAction class"

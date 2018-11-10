@@ -3,4 +3,4 @@ bareSymbol
 
 	<bareSymbol> ::= <identifier> 
 		| <keyword>
-		| <binaryOp> 
+		| <binaryOp>   

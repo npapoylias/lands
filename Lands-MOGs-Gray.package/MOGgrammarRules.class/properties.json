@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "GrayParser",
+	"super" : "MOGParser",
 	"category" : "Lands-MOGs-Gray",
 	"classinstvars" : [ ],
 	"pools" : [ ],

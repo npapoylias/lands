@@ -1,4 +1,4 @@
-instance creation
-link: aLink
+parsing
+token: token link: aLink
 
 	self shouldBeImplemented "see text link class"
