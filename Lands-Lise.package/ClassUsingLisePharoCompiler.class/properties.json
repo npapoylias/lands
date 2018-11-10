@@ -1,0 +1,13 @@
+{
+	"classtraitcomposition" : "LisePharoCompilerSyntax classTrait",
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "ClassUsingLisePharoCompiler",
+	"commentStamp" : "",
+	"super" : "Object",
+	"traitcomposition" : "LisePharoCompilerSyntax",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Lands-Lise-Compiler"
+}

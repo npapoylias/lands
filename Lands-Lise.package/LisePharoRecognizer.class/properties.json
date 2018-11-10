@@ -1,0 +1,13 @@
+{
+	"classtraitcomposition" : "PharoGrammar classTrait + LiseExpressions classTrait",
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "LisePharoRecognizer",
+	"commentStamp" : "",
+	"super" : "MOGRecognizer",
+	"traitcomposition" : "PharoGrammar + LiseExpressions",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Lands-Lise-Recognizer"
+}

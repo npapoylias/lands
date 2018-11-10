@@ -1,0 +1,13 @@
+{
+	"classtraitcomposition" : "PharoGrammarActions classTrait + LiseExpressionsParser classTrait",
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "LisePharoCompiler",
+	"commentStamp" : "",
+	"super" : "LisePharoRecognizer",
+	"traitcomposition" : "PharoGrammarActions + LiseExpressionsParser",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Lands-Lise-Compiler"
+}
