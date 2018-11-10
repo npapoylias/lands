@@ -3,6 +3,6 @@ testOcontextSensitive
 	
 	charts := GrayMixedOrderedFilteredAlgo new log
 		parse: 'aaabbbccc'
-		using: GrayGrammar contextSensitive.
+		using: MOGrammar contextSensitive.
 
 	self assert: charts succeeded

@@ -1,7 +1,7 @@
 tests
 testExpressionGrammar
 
-	self assert: (MOGgrammar new parse: '
+	self assert: (MOGgrammarActions new parse: '
 	<expression> ::= <expression> "*" <expression>
 						| <expression> "/" <expression>
 						| <expression> "+" <expression>

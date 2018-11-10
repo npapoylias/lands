@@ -3,6 +3,6 @@ testNonPeg
 
 	charts := GrayMixedOrderedFilteredAlgo new log
 		parse: 'xxxxxxx'
-		using: GrayGrammar nonPeg.
+		using: MOGrammar nonPeg.
 		
 	self assert: charts succeeded

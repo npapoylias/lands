@@ -3,6 +3,6 @@ testOnumberFloatOrdered
 
 	charts := GrayOrderedFilteredAlgo new log
 		parse: '23.23'
-		using: GrayGrammar numberFloatOrdered.
+		using: MOGrammar numberFloatOrdered.
 		
 	self assert: charts succeeded

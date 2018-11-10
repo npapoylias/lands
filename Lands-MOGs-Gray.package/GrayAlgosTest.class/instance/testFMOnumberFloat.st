@@ -3,6 +3,6 @@ testFMOnumberFloat
 
 	charts := GrayMixedOrderedFilteredAlgo new log
 		parse: '23.23'
-		using: GrayGrammar numberFloat.
+		using: MOGrammar numberFloat.
 		
 	self assert: charts succeeded.

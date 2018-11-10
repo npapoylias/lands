@@ -26,6 +26,6 @@ initialize
 	self generateMetaModel.
 	gRule := #stateRules --> stateRules first.
 	stateRules allButFirst do: [ :s | gRule / s ].
-	grammar := GrayGrammar 
+	grammar := MOGrammar 
 		new named: self class name; 
 		with: (grammar add: gRule; yourself)

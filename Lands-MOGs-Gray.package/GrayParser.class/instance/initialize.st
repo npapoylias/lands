@@ -10,7 +10,7 @@ initialize
 	"if we put direct references inside rules it should be done here and then we just
 	re-initialize"
 	
-	grammar := GrayGrammar 
+	grammar := MOGrammar 
 		new named: self class name; 
 		with: ( (self class allSelectorsBelow: GrayParser) 
 						select: [ :sel | sel isUnary ] 

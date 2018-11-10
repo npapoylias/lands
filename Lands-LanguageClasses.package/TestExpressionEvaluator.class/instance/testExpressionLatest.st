@@ -2,7 +2,7 @@ tests
 testExpressionLatest
 
 	|results grammar|
-	grammar := GrayGrammar new
+	grammar := MOGrammar new
 		named: #ExpressionGrammar;
 		with: { 
 		'<start> ::= <expression>'.

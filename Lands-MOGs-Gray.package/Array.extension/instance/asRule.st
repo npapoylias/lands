@@ -10,9 +10,9 @@ asRule
 	self doWithIndex: [ :item :index | "catch unary" 
 		(self catchUnaryFor: rule at: index given: op)
 			ifFalse: [  
-				(GrayGrammar unaryOps includes: item) "ignore cause it was handled as unary"
+				(MOGrammar unaryOps includes: item) "ignore cause it was handled as unary"
 					ifFalse: [  
-						(item isSymbol and: [GrayGrammar binaryOps includes: item])
+						(item isSymbol and: [MOGrammar binaryOps includes: item])
 							ifTrue: [ op := item ]
 							ifFalse: [  rule perform: op withArguments: {item} ]
 				]

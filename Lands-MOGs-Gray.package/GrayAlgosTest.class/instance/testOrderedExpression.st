@@ -3,7 +3,7 @@ testOrderedExpression
 
 	|grammar results |
 
-	grammar := GrayGrammar new
+	grammar := MOGrammar new
 		named: #ExpressionGrammar;
 		with: { 
 		'<start> ::= <expression>'.

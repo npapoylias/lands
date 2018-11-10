@@ -3,7 +3,7 @@ testFirstFollowSetEquivalence
 
 	|grammar|
 
-	grammar := GrayGrammar firstFollowExample.
+	grammar := MOGrammar firstFollowExample.
 	self assert: (grammar at: #E) firstsAsStrings = (grammar at: #F) firstsAsStrings.
 	self assert: (grammar at: #E) firstsAsStrings = (grammar at: #T) firstsAsStrings.
 	self assert: (grammar at: #E) followAsStrings = (grammar at: #E_) followAsStrings.

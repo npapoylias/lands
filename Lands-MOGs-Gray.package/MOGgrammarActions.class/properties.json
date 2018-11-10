@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "MOGgrammar",
+	"name" : "MOGgrammarActions",
 	"type" : "normal"
 }

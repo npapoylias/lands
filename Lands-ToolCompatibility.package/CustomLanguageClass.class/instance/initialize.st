@@ -6,7 +6,7 @@ initialize
 		c recompileRecursivelyWithTraits ].
 	
 	
-	grammar := GrayGrammar 
+	grammar := MOGrammar 
 		new named: self class name; 
 		with: ((self class allSelectorsBelow: CustomLanguageClass) 
 			select: [ :sel | sel isUnary and: [ sel ~= #initialize ] ] 
