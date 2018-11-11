@@ -1,4 +1,4 @@
 accessing
 invKeyword
 
-	^ super invKeyword ==> [ :token | self token: token color: Color green; token: token emphasis: #italic; token: token emphasis: #bold  ]
+	^ super invKeyword ==> [ :token | self token: token color: Color orange; token: token emphasis: #italic; token: token emphasis: #bold  ]
