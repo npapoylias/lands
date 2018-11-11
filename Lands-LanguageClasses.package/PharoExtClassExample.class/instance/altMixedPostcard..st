@@ -14,10 +14,10 @@ altMixedPostcard(x):
 		while y.first() + x < 255. step(x).
    
 	 	for item in inter do: { 
-        		var t := (item class).name().
-				t := t[1::t.size()-1].
-		  		d[t] := item.
-        		Transcript.show(t);.show(' ');show: item;.show(' ')
+        	var t := (item class).name().
+			t := t[1::t.size()-1].
+		  	d[t] := item.
+        	Transcript.show(t);.show(' ');show: item;.show(' ')
 	 	}
 	 } else self halt. 
     
