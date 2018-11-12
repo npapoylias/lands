@@ -2,6 +2,9 @@ initialization
 initialize
 
 	|stateRules unarySel keySel validationRules gRule |
+	
+	self isAbstract ifTrue: [ ^ self ]
+	
 	self class recompile. "loading order temporary fix - REDO"
 	(self class allSuperclassesIncluding: MOODsDomain) do: [ :c | c recompile ].
 	
@@ -23,11 +26,9 @@ initialize
 	validationRules do: [ :name | 
 			(validationDictionary at: (self class >> name) origin name ifAbsentPut: [ OrderedCollection new ]) add: name
 	].
-	stateRules ifNotEmpty: [
-		self generateMetaModel.
-		gRule := #stateRules --> stateRules first.
-		stateRules allButFirst do: [ :s | gRule / s ].
-		grammar := MOGrammar 
-			new named: self class name; 
-			with: (grammar add: gRule; yourself)
-	]
+	self generateMetaModel.
+	gRule := #stateRules --> stateRules first.
+	stateRules allButFirst do: [ :s | gRule / s ].
+	grammar := MOGrammar 
+		new named: self class name; 
+		with: (grammar add: gRule; yourself)
