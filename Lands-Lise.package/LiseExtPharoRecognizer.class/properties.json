@@ -1,0 +1,13 @@
+{
+	"classtraitcomposition" : "PharoExtGrammar classTrait + LiseExpressions classTrait",
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "LiseExtPharoRecognizer",
+	"commentStamp" : "",
+	"super" : "MOGRecognizer",
+	"traitcomposition" : "PharoExtGrammar + LiseExpressions",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Lands-Lise-Recognizer"
+}
