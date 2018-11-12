@@ -5,7 +5,6 @@ initialize
 	chartIndex := 1.
 	stateIndex := 0.
 	logging := false.
-	interrupt := false.
 "	successfullTrees := GrayCollection new."
 	lastSeenStack := Stack new.
 	lastSeenStack push: Dictionary new.
