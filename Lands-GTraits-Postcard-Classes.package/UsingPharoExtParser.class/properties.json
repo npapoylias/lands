@@ -1,11 +1,11 @@
 {
-	"classtraitcomposition" : "PharoExtParserSyntax classTrait",
+	"classtraitcomposition" : "PharoExtParserSyntax classTrait + PharoExtSHColors classTrait",
 	"classvars" : [ ],
 	"instvars" : [ ],
 	"name" : "UsingPharoExtParser",
 	"commentStamp" : "",
 	"super" : "Object",
-	"traitcomposition" : "PharoExtParserSyntax",
+	"traitcomposition" : "PharoExtParserSyntax + PharoExtSHColors",
 	"type" : "normal",
 	"classinstvars" : [ ],
 	"pools" : [ ],
