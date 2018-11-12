@@ -3,7 +3,7 @@ initialize
 
 	|stateRules unarySel keySel validationRules gRule |
 	
-	self isAbstract ifTrue: [ ^ self ]
+	self class isAbstract ifTrue: [ ^ self ].
 	
 	self class recompile. "loading order temporary fix - REDO"
 	(self class allSuperclassesIncluding: MOODsDomain) do: [ :c | c recompile ].

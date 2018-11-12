@@ -2,9 +2,7 @@
 	"commentStamp" : "",
 	"super" : "MOGParser",
 	"category" : "Lands-ToolCompatibility",
-	"classinstvars" : [
-		"default"
-	],
+	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
