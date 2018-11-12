@@ -2,6 +2,8 @@ compiling
 initialize
 
 	super initialize.
-	self recompile
+	self recompile.
+	default := self new.
+	
 	
 	

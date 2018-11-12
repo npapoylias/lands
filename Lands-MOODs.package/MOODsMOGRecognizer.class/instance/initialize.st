@@ -23,9 +23,11 @@ initialize
 	validationRules do: [ :name | 
 			(validationDictionary at: (self class >> name) origin name ifAbsentPut: [ OrderedCollection new ]) add: name
 	].
-	self generateMetaModel.
-	gRule := #stateRules --> stateRules first.
-	stateRules allButFirst do: [ :s | gRule / s ].
-	grammar := MOGrammar 
-		new named: self class name; 
-		with: (grammar add: gRule; yourself)
+	stateRules ifNotEmpty: [
+		self generateMetaModel.
+		gRule := #stateRules --> stateRules first.
+		stateRules allButFirst do: [ :s | gRule / s ].
+		grammar := MOGrammar 
+			new named: self class name; 
+			with: (grammar add: gRule; yourself)
+	]
