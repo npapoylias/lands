@@ -1,7 +1,7 @@
 as yet unclassified
 Influenza
   
-	EpiModel SEIRS {  
+	EpiModel SEIRS {   
   		attr status[S , E , I , R]
   		params beta, lambda, gamma, mu, sigma, nu
   		where: S -- lambda --> E,

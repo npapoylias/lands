@@ -1,0 +1,4 @@
+accessing
+new
+
+	^ self default
