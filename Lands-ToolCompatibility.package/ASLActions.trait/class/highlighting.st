@@ -1,7 +1,7 @@
 accessing
 highlighting
 	|t tName tPClass|
-	tName := self name, 'Syntax'.
+	tName := self name, 'Colors'.
 	t := Trait named: tName uses: {  } category: self category.
 	tPClass := WriteStream on: String new.
 	tPClass 
