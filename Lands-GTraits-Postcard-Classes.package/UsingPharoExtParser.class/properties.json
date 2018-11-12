@@ -1,0 +1,13 @@
+{
+	"classtraitcomposition" : "PharoExtParserSyntax classTrait + PharoExtSHSyntax classTrait",
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "UsingPharoExtParser",
+	"commentStamp" : "",
+	"super" : "Object",
+	"traitcomposition" : "PharoExtParserSyntax + PharoExtSHSyntax",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Lands-GTraits-Postcard-Classes"
+}
