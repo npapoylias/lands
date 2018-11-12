@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
-	"traitcomposition" : "ASLActions",
-	"classtraitcomposition" : "ASLActions classTrait",
+	"traitcomposition" : "ASLPharoSH - {#message}",
+	"classtraitcomposition" : "ASLPharoSH classTrait",
 	"category" : "Lands-GTraits-Pharo-Ext-Parser",
 	"name" : "ASLPharoExtSH"
 }

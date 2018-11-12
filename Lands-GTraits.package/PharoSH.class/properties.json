@@ -1,0 +1,13 @@
+{
+	"classtraitcomposition" : "ASLPharoSH classTrait",
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "PharoSH",
+	"commentStamp" : "",
+	"super" : "PharoRecognizer",
+	"traitcomposition" : "ASLPharoSH",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Lands-GTraits-Pharo-Parser"
+}

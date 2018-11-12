@@ -1,0 +1,13 @@
+{
+	"classtraitcomposition" : "PharoParserSyntax classTrait + PharoSHColors classTrait",
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "UsingPharoParser",
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"traitcomposition" : "PharoParserSyntax + PharoSHColors",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Lands-GTraits-Postcard-Classes"
+}
