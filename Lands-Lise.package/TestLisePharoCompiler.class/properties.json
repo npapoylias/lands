@@ -1,11 +1,11 @@
 {
-	"classtraitcomposition" : "LisePharoCompilerSyntax classTrait",
+	"classtraitcomposition" : "LisePharoCompilerSyntax classTrait + LisePharoSHColors classTrait",
 	"classvars" : [ ],
 	"instvars" : [ ],
 	"name" : "TestLisePharoCompiler",
 	"commentStamp" : "",
 	"super" : "TestCase",
-	"traitcomposition" : "LisePharoCompilerSyntax",
+	"traitcomposition" : "LisePharoCompilerSyntax + LisePharoSHColors",
 	"type" : "normal",
 	"classinstvars" : [ ],
 	"pools" : [ ],
