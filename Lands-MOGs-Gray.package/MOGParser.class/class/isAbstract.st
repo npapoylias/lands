@@ -1,5 +1,5 @@
 parsing
 isAbstract
 
-	^ { CustomLanguageClass . MOGRecognizer. MOODsMOGRecognizer . MOODsDomain } includes: self
+	^ { MOGParser . CustomLanguageClass . MOGRecognizer. MOODsMOGRecognizer . MOODsDomain } includes: self 
 		
