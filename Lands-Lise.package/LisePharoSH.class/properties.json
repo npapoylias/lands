@@ -1,11 +1,13 @@
 {
-	"commentStamp" : "",
-	"super" : "LisePharoRecognizer",
-	"category" : "Lands-Lise-Compiler",
-	"classinstvars" : [ ],
-	"pools" : [ ],
+	"classtraitcomposition" : "ASLPharoExtSH classTrait",
 	"classvars" : [ ],
 	"instvars" : [ ],
 	"name" : "LisePharoSH",
-	"type" : "normal"
+	"commentStamp" : "",
+	"super" : "LisePharoRecognizer",
+	"traitcomposition" : "ASLPharoExtSH",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Lands-Lise-Compiler"
 }
