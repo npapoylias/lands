@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "LisePharoRecognizer",
+	"category" : "Lands-Lise-Compiler",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "LisePharoSH",
+	"type" : "normal"
+}

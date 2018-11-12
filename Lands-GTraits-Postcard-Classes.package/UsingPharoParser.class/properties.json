@@ -2,7 +2,7 @@
 	"classtraitcomposition" : "PharoParserSyntax classTrait",
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "ClassUsingPharoParser",
+	"name" : "UsingPharoParser",
 	"commentStamp" : "",
 	"super" : "Object",
 	"traitcomposition" : "PharoParserSyntax",

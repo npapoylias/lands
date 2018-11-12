@@ -1,11 +1,11 @@
 {
-	"classtraitcomposition" : "ASLActions classTrait",
+	"classtraitcomposition" : "ASLPharoExtSH classTrait",
 	"classvars" : [ ],
 	"instvars" : [ ],
 	"name" : "PharoExtSH",
 	"commentStamp" : "",
 	"super" : "PharoExtRecognizer",
-	"traitcomposition" : "ASLActions",
+	"traitcomposition" : "ASLPharoExtSH",
 	"type" : "normal",
 	"classinstvars" : [ ],
 	"pools" : [ ],
