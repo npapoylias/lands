@@ -1,0 +1,7 @@
+{
+	"commentStamp" : "",
+	"traitcomposition" : "PharoGrammar - {#message. #primaryValue. #statements. #temporariesDeclaration. #methodDeclaration} + ClassicControl + Functors + ImperativeStyle",
+	"classtraitcomposition" : "PharoGrammar classTrait + ClassicControl classTrait + Functors classTrait + ImperativeStyle classTrait",
+	"category" : "Lands-GTraits-Pharo-Ext-Syntax",
+	"name" : "PharoExtGrammar"
+}

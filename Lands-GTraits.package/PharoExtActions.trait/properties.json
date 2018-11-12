@@ -1,0 +1,7 @@
+{
+	"commentStamp" : "",
+	"traitcomposition" : "PharoGrammarActions - {#temporariesDeclaration} + ClassicControlParser + FunctorsParser + ImperativeStyleParser",
+	"classtraitcomposition" : "PharoGrammarActions classTrait + ClassicControlParser classTrait + FunctorsParser classTrait + ImperativeStyleParser classTrait",
+	"category" : "Lands-GTraits-Pharo-Ext-Parser",
+	"name" : "PharoExtActions"
+}

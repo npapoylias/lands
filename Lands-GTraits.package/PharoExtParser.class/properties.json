@@ -1,11 +1,11 @@
 {
-	"classtraitcomposition" : "PharoGrammarActions classTrait + ClassicControlParser classTrait + FunctorsParser classTrait + ImperativeStyleParser classTrait",
+	"classtraitcomposition" : "PharoExtActions classTrait",
 	"classvars" : [ ],
 	"instvars" : [ ],
 	"name" : "PharoExtParser",
 	"commentStamp" : "",
 	"super" : "PharoExtRecognizer",
-	"traitcomposition" : "PharoGrammarActions - {#temporariesDeclaration} + ClassicControlParser + FunctorsParser + ImperativeStyleParser",
+	"traitcomposition" : "PharoExtActions",
 	"type" : "normal",
 	"classinstvars" : [ ],
 	"pools" : [ ],
