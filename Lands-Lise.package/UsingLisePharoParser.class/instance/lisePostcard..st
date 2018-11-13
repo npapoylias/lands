@@ -4,7 +4,7 @@ lisePostcard: x
  	
 	^ (:begin	
 			(define y (+ #[100] (self 'bSize) ('bSize super))).  
-			(define d (:Dictionary new)).
+			(define d (dict '()))
    			(if (:true & false not & nil isNil) ([  
   				|inter step| 
 				inter := ({$a. #a class. -4e-2. -10r2. 3s2} intersection: #($b b -0.04 -2 3))
@@ -17,4 +17,4 @@ lisePostcard: x
          			Transcript show: t; show: ' '; show: item; show: ' '
 				].
 			]) ([self halt])).
-		(:x < y first))
+		(< x (y 'first)))
