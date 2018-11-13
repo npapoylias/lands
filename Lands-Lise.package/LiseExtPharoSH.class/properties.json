@@ -1,11 +1,11 @@
 {
-	"classtraitcomposition" : "ASLPharoExtSH classTrait",
+	"classtraitcomposition" : "ASLPharoExtSH classTrait + LiseSH classTrait",
 	"classvars" : [ ],
 	"instvars" : [ ],
 	"name" : "LiseExtPharoSH",
 	"commentStamp" : "",
 	"super" : "LiseExtPharoRecognizer",
-	"traitcomposition" : "ASLPharoExtSH",
+	"traitcomposition" : "ASLPharoExtSH + LiseSH",
 	"type" : "normal",
 	"classinstvars" : [ ],
 	"pools" : [ ],

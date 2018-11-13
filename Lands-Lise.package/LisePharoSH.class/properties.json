@@ -1,11 +1,11 @@
 {
-	"classtraitcomposition" : "ASLPharoSH classTrait",
+	"classtraitcomposition" : "ASLPharoSH classTrait + LiseSH classTrait",
 	"classvars" : [ ],
 	"instvars" : [ ],
 	"name" : "LisePharoSH",
 	"commentStamp" : "",
 	"super" : "LisePharoRecognizer",
-	"traitcomposition" : "ASLPharoSH",
+	"traitcomposition" : "ASLPharoSH + LiseSH",
 	"type" : "normal",
 	"classinstvars" : [ ],
 	"pools" : [ ],
