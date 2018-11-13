@@ -2,7 +2,7 @@ as yet unclassified
 postcard: x
 
 	<menu: 3 priority: #'-34'>
- 	(:define y (:#[100] + self bSize + super bSize)).  
+ 	(:define y (+ #[100] (self 'bSize) ('bSize super))).  
 	(:define d (:Dictionary new)).
    true & false not & nil isNil ifTrue: [  
   		|inter step| 
