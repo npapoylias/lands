@@ -1,5 +1,5 @@
 tests
-testPrimaryValuesAndAlternativeFunctors
+testPrimaryValuesAlternativeFunctorsAndVariadic
 
 	self assert: (:+ 
 		([:x | x first - 5] {'string' size})

@@ -5,5 +5,5 @@ test
 	self assert: (:twice 5) = 10.
 	(:gdefine 'compose (lambda (f g) (lambda (x) (f (g x))))). 
 	self assert: (:(compose list twice)  5) = {10}. 
-	self assert: (:+ 1 2) equals: 3.
+	self assert: (:+ 1 2 3) equals: 6.
 	self assert: (:[Object name]) equals: #Object
