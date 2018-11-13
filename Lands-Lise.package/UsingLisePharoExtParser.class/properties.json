@@ -1,0 +1,13 @@
+{
+	"classtraitcomposition" : "PharoExtParserSyntax classTrait + PharoExtSHColors classTrait",
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "UsingLisePharoExtParser",
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"traitcomposition" : "PharoExtParserSyntax + PharoExtSHColors",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Lands-Lise-Compiler"
+}

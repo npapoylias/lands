@@ -5,6 +5,5 @@ liseExpression
 		|| "(" <liseExpression> * ")" 
 		|| "'" <quotedExpression>
 		|| "(:" <hostExpression> ")"
-		| <number>
-		| <string>
+		| <primaryValue>
 		| <liseId>

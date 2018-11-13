@@ -1,0 +1,13 @@
+{
+	"classtraitcomposition" : "LisePharoCompilerSyntax classTrait + LisePharoSHColors classTrait",
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "UsingLisePharoParser",
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"traitcomposition" : "LisePharoCompilerSyntax + LisePharoSHColors",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Lands-Lise-Compiler"
+}
