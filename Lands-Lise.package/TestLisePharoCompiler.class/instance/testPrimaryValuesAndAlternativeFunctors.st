@@ -5,5 +5,5 @@ testPrimaryValuesAndAlternativeFunctors
 		([:x | x first - 5] {'string' size})
 		(:{Object class} size)
 		('size '(sym))
-		(+ ((Object 'instanceVariables) 'size) + 1)
+		(+ ((Object 'instanceVariables) 'size) 1)
 	) = 4.
