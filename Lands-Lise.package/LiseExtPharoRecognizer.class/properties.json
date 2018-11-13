@@ -5,7 +5,7 @@
 	"name" : "LiseExtPharoRecognizer",
 	"commentStamp" : "",
 	"super" : "MOGRecognizer",
-	"traitcomposition" : "PharoExtGrammar + LiseExpressions",
+	"traitcomposition" : "PharoExtGrammar + (LiseExpressions - {#primaryValue})",
 	"type" : "normal",
 	"classinstvars" : [ ],
 	"pools" : [ ],
