@@ -55,6 +55,4 @@ testNorvig
     '((repeat riff-shuffle) (list 1 2 3 4 5 6 7 8))' 
 		|=? {1 . 3 . 5 . 7 . 2 . 4 . 6 . 8}.
     '(riff-shuffle (riff-shuffle (riff-shuffle (list 1 2 3 4 5 6 7 8))))' 
-		|=? {1 . 2 . 3 . 4 . 5 . 6 . 7 . 8}.
-	{#'riff-shuffle' . #zip . #combine . #fact . #repeat . #compose . #twice} do: [ :key | Smalltalk globals removeKey: key ].
-	LiseCompiler initialize. "restore globals"
+		|=? {1 . 2 . 3 . 4 . 5 . 6 . 7 . 8}

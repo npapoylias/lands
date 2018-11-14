@@ -1,5 +1,5 @@
 tests
-testMisc
+miscTest
 
 	(:gdefine 'twice (lambda (x) (* 2 x))).
 	self assert: (:twice 5) = 10.

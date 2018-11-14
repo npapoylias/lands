@@ -1,5 +1,5 @@
 as yet unclassified
-altMixedPostcard(x): 
+altLiseMixedPostcard(x): 
 	<menu: 3 priority: #'-34'> 
 		
    var y := #[100] + self bSize + super.bSize().  
