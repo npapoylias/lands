@@ -12,7 +12,7 @@ altLiseMixedPostcard(x):
 		
 		step := f(i) { y := y + i }.
 		
-		while (:lambda () (< (+ (:y.first()) x) 255)). step(x).
+		while (:< (+ (:y.first()) x) 255). step(x).
     	
 		for item in inter do: { 
         	var t := (item class).name().

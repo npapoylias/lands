@@ -11,7 +11,7 @@ altLisePostcard(x):
 			
 		var step := (:lambda (i) (set y (+ y i))).
 			
-		while (:lambda () (< (+ (:y.first()) x) 255)). step(x).
+		while (:< (+ (:y.first()) x) 255). step(x).
     		
 		for item in inter do: { 
         	var t := (:class item).name().
