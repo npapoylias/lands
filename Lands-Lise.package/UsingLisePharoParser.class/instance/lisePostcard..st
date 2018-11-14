@@ -5,16 +5,17 @@ lisePostcard: x
 	^ (:begin	
 			(define y (+ #[100] (self 'bSize) ('bSize super))).  
 			(define d (dict '())). 
-   			(if (& true (not false) (isNil nil)) ([  
-  				|inter step| 
-				inter := ({$a. #a class. -4e-2. -10r2. 3s2} intersection: #($b b -0.04 -2 3))
-					groupedBy: [ :i | i class ] having: [ :group | group size > 1 ].
-				step := [:i | y := y + i ].
-				[y first + x < 255] whileTrue: [step value: x].
-				inter do: [ :item | 
-					|t| t := item class name.
-					d at: t put: item. 
-         			Transcript show: t; show: ' '; show: item; show: ' '
-				].
-			]) ([self halt])).
+   			(if (& true (not false) (isNil nil)) (begin 
+					(define inter (groupByHaving 
+											(intersection (list $a ('class #a) -4e-2 -10r2 3s2) (list $b #b -0.04 -2 3))
+											(lambda (i) (class i))
+											(lambda (group) (> (size group) 1))))
+					(define step (lambda (i) (set y (+ y i))))
+					(whileTrue (lambda () (< (+ (y 'first) x) 255)) (lambda () (step x)))
+					(do inter (lambda (item) (begin
+						(define t ('name (class item))) 
+				 		(atPut d t item)
+				 		(print t ' ')
+						(print item ' ')))) 
+			) (self 'halt)).
 		(< x (y 'first)))

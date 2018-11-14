@@ -38,7 +38,7 @@ populateGlobals
         #'procedure?' -> [:l | l first isKindOf: Procedure] "callable " .
         #round -> #rounded "  round " .
         #'symbol?' -> #isSymbol "lambda x: isinstance(x,Symbol) " .
-        #print -> [:l | l do: [:litem | Transcript show: litem]] "fix this -- lambda x: scm_print(x)".	  
+        #print -> [:l | l do: [:litem | Transcript show: litem]] variadic "fix this -- lambda x: scm_print(x)".	  
 		  #dict -> [:l | 
 				|d|
 				d := Dictionary new.
@@ -51,10 +51,11 @@ populateGlobals
 		  #at -> #at:.
 		  #addFirst -> #addFirst:.
 		  #addLast -> #addLast:.
-		  #do -> [:l | l first do: [:litem |
-				l second apply: litem	
-			]]."different depending if this is list or dict"
-		  #doWithIndex -> [:l | l first doWithIndex: [:litem :index |
+		  #whileTrue -> #whileTrue:.
+		  #intersection -> #intersection:.
+		  #groupByHaving -> #groupedBy:having:.
+		  #do -> [:l :b | l do: b]."different depending if this is list or dict" 
+		 #doWithIndex -> [:l | l first doWithIndex: [:litem :index |
 				l second apply: { litem . index }	
 			]].
 		  #keysAndValuesDo -> [:l | l first keysAndValuesDo: [:key :value |
