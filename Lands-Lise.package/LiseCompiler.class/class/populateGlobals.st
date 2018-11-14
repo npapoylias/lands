@@ -6,6 +6,8 @@ populateGlobals
 				[:m | m protocol = 'class membership' or: [ m protocol = 'comparing']]) asOrderedCollection
 			addAll: (Object methods select: [ :m | m protocol = 'comparing']);
 			addAll: (Magnitude methods select: [ :m | m protocol = 'testing']);
+			addAll: (Boolean methods select: [:m | m protocol = 'logical operations']);
+			addAll: (UndefinedObject methods select: [:m | m protocol = 'testing']);
 			addAll: (Number methods select: 
 				[ :m | m protocol = 'mathematical functions' or: [ m protocol = 'arithmetic' ] ]);
 			yourself) collect: [ :m | m selector ].

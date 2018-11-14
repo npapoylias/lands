@@ -4,8 +4,8 @@ lisePostcard: x
  	
 	^ (:begin	
 			(define y (+ #[100] (self 'bSize) ('bSize super))).  
-			(define d (:Dictionary new)).
-   			(if (:true & false not & nil isNil) ([  
+			(define d (dict '())). 
+   			(if (& (& true (not false) (isNil nil))) ([  
   				|inter step| 
 				inter := ({$a. #a class. -4e-2. -10r2. 3s2} intersection: #($b b -0.04 -2 3))
 					groupedBy: [ :i | i class ] having: [ :group | group size > 1 ].
