@@ -19,7 +19,8 @@ lisePostcard: x
 					(whileTrue (lambda () (< (+ (y 'first) x) 255)) (lambda () (step x)))
 					
 					(do inter (lambda (item) (begin
-						(define t ('name (class item))) 
+						(define t ('name (class item)))
+						(:t copyFrom: 1 to: t size -1) 
 				 		(atPut d t item)
 				 		(print t ' ')
 						(print item ' ')))) 

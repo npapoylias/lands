@@ -2,23 +2,24 @@ as yet unclassified
 altLisePostcard(x): 
 	<menu: 3 priority: #'-34'>
 		
-   var y := #[100] + self.bSize() + super.bSize().
-	var d := Dictionary.new().
+   var y := (:+ #[100] (:self.bSize())) + super.bSize().
+	(:define d (:Dictionary.new())). 
     	
-	if true & false.not() & nil.isNil() { 
-		var inter := {$a. #a class. -4e-2. -10r2. 3s2}.intersection(#($b b -0.04 -2 3))
-			.groupedBy(f(i){i.class()}.having=f(group){group.size() > 1}).
+	if true & (:not false) & nil.isNil() { 
+		var inter := (:intersection (list $a ('class #a) -4e-2 -10r2 3s2) (list $b #b -0.04 -2 3))
+			.groupedBy(f(i){i.class()}.having=(:lambda (group) (> (size group) 1))).
 			
-		var step := f(i) { y := y + i }.
+		var step := (:lambda (i) (set y (+ y i))).
 			
-		while y.first() + x < 255. step(x).
+		while (:lambda () (< (+ (:y.first()) x) 255)). step(x).
     		
 		for item in inter do: { 
-        	var t := item.class().name().
-			t := t[1::t.size()-1].
+        	var t := (:class item).name().
+			t := t[1::(:- (size t) 1)].
 		  	d[t] := item.
-        	Transcript.show(t);.show(' ');.show(item);.show(' ')
+        	(:print t ' ').
+			(:print item ' ')
 	 	}
 	 } else self.halt(). 
     
-	return x < y.first()
+	return (:< x  (:y.first()))

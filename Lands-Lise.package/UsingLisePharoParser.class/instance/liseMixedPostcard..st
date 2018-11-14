@@ -18,10 +18,11 @@ liseMixedPostcard: x
 		(:whileTrue [y first + x < 255] (lambda () (step x))).
 	
 		inter do: (:lambda (item) (begin
-						(define t ('name (class item))) 
+						(define t ('name (class item)))
+						(:t copyFrom: 1 to: t size -1) 
 				 		(:d at: t put: item)
 				 		(print t ' ')
 						(print item ' '))) 
-	] (self 'halt))
+	] (:self halt))
 
 	^ (:< x  (:y first))
