@@ -1,5 +1,5 @@
 tests
 testIf
 
-	self assert: (LiseCompiler compileval: '(if (> 6 5) (+ 1 1) (+ 2 2))') = 2.
-	self assert: (LiseCompiler compileval: '(if (< 6 5) (+ 1 1) (+ 2 2))') = 4.
+	(:if (> 6 5) (+ 1 1) (+ 2 2)) |=? 2.
+	(:if (< 6 5) (+ 1 1) (+ 2 2)) |=? 4.
