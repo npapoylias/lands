@@ -1,5 +1,5 @@
 as yet unclassified
 start
 
-	env := Dictionary new.
-	^ super start ==> [ :tokens | env -> (tokens collect: [:t | t value]) ] 
+	
+	^ super start ==> [ :tokens | env := Dictionary new. env -> (tokens collect: [:t | t value]) ] 
