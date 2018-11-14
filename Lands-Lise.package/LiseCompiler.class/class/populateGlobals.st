@@ -12,7 +12,7 @@ populateGlobals
 				[ :m | m protocol = 'mathematical functions' or: [ m protocol = 'arithmetic' ] ]);
 			yourself) collect: [ :m | m selector ].
 	globalSelectors do: [:s | self addGlobalSelectorAsBlock: s ].
-	#(+ * - /) do: [ :s | Smalltalk globals at: s put: (Smalltalk globals at: s) variadic ]. "make primary arithm. ops variadic"
+	#(+ * - / & |) do: [ :s | Smalltalk globals at: s put: (Smalltalk globals at: s) variadic ]. "make primary arithm. ops variadic"
 	{
 		  #append -> [ :l :i | ((l copy) asOrderedCollection
 										addAll: i; 
