@@ -1,0 +1,13 @@
+{
+	"classtraitcomposition" : "GeoModelerSyntax classTrait + GeoModelerSHColors classTrait",
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "GeoScripter",
+	"commentStamp" : "",
+	"super" : "Object",
+	"traitcomposition" : "GeoModelerSyntax + GeoModelerSHColors",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Lands-MOODs-Geo"
+}

@@ -1,0 +1,13 @@
+{
+	"classtraitcomposition" : "BlueprintSH classTrait",
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "GeoModelerSH",
+	"commentStamp" : "",
+	"super" : "GeoDomain",
+	"traitcomposition" : "BlueprintSH",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Lands-MOODs-Geo"
+}

@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "GeoDomain",
-	"category" : "Lands-MOODs",
+	"category" : "Lands-MOODs-Geo",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
