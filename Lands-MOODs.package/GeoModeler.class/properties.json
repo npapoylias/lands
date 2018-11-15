@@ -1,11 +1,13 @@
 {
-	"commentStamp" : "",
-	"super" : "GeoDomain",
-	"category" : "Lands-MOODs-Geo",
-	"classinstvars" : [ ],
-	"pools" : [ ],
+	"classtraitcomposition" : "StatScenarioModeler classTrait + UrbanProfileModeler classTrait",
 	"classvars" : [ ],
 	"instvars" : [ ],
 	"name" : "GeoModeler",
-	"type" : "normal"
+	"commentStamp" : "",
+	"super" : "GeoDomain",
+	"traitcomposition" : "StatScenarioModeler + UrbanProfileModeler",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Lands-MOODs-Geo"
 }

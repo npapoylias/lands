@@ -1,11 +1,13 @@
 {
-	"commentStamp" : "",
-	"super" : "MOODsDomain",
-	"category" : "Lands-MOODs-Geo",
-	"classinstvars" : [ ],
-	"pools" : [ ],
+	"classtraitcomposition" : "StatScenarioBlueprint classTrait + UrbanProfileBlueprint classTrait",
 	"classvars" : [ ],
 	"instvars" : [ ],
 	"name" : "GeoDomain",
-	"type" : "normal"
+	"commentStamp" : "",
+	"super" : "MOODsDomain",
+	"traitcomposition" : "StatScenarioBlueprint + UrbanProfileBlueprint",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Lands-MOODs-Geo"
 }
