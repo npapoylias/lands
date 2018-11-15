@@ -4,11 +4,11 @@ Influenza
 	EpiModel SEIRS {   
   		attr status[S , E , I , R]
   		params beta, lambda, gamma, mu, sigma, nu
-  		where: S -- lambda --> E,
+  		where: S -- lambda --> E, 
   	 		E -- sigma --> I,
   	 		I -- gamma --> R,
   	 		R -- nu --> S,
-  	 		status -- mu --> Empty,
+  	 		status -- mu --> Empty, 
   	 		Empty -- mu --> S
 	} 
 

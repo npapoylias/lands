@@ -5,8 +5,10 @@ initialize
 	
 	self class isAbstract ifTrue: [ ^ self ].
 	
-	self class recompile. "loading order temporary fix - REDO"
-	(self class allSuperclassesIncluding: MOODsDomain) do: [ :c | c recompile ].
+	self class recompileRecursivelyWithTraits."loading order temporary fix - REDO"
+	(self class allSuperclassesIncluding: MOGRecognizer) do: [ :c | 
+		c recompileRecursivelyWithTraits ].
+	
 	
 	unarySel := OrderedCollection new.
 	keySel := OrderedCollection new.
