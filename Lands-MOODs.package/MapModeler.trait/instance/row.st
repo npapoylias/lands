@@ -1,4 +1,4 @@
-accessing
+traits
 row
 
-	^ super row ==> [ :values | values second ]
+	^ super row ==> [ :values | (values copyFrom: 2 to: values size - 1) collect: [ :t | t value ] ] 

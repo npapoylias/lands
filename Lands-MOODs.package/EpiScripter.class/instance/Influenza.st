@@ -15,3 +15,13 @@ Influenza
 	EpiModel Biological{
   		attr species[Human, Bird]
 	}
+	
+	Map Indochina {
+  		countries = MyanmarBurma , Cambodia , Laos , Thailand , Vietnam
+  		borders = .............
+	             . 0 0 0 1 0 .
+	             . 0 0 0 0 1 .
+	             . 1 0 0 0 0 .
+	             . 0 0 1 0 0 .
+	             .............
+   }

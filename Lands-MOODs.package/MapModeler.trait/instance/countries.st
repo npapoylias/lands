@@ -1,4 +1,4 @@
-accessing
+traits
 countries
 
-	^ super countries ==> [ :values | values third odds ]
+	^ super countries ==> [ :values | values odds allButFirst collect: [ :c | c symbol ] ]
