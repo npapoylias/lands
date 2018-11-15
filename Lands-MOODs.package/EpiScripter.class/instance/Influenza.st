@@ -10,7 +10,7 @@ Influenza
   	 		R -- nu --> S,
   	 		status -- mu --> Empty,
   	 		Empty -- mu --> S
-	}
+	} 
 
 	EpiModel Biological{
   		attr species[Human, Bird]
