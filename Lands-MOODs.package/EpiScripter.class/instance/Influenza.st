@@ -2,7 +2,7 @@ as yet unclassified
 Influenza
   
 	EpiModel SEIRS {   
-  		attr status [S , E , I , R]
+  		attr status [ S , E , I , R ]
   		params beta, lambda, gamma, mu, sigma, nu
   		where: S -- lambda --> E, 
   	 		E -- sigma --> I, 
@@ -13,7 +13,7 @@ Influenza
 	} 
 
 	EpiModel Biological {
-  		attr species [Human, Bird]
+  		attr species [ Human, Bird ]
 	}
 	
 	Map Indochina {
