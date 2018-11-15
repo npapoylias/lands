@@ -5,7 +5,7 @@ Influenza
   		attr status[S , E , I , R]
   		params beta, lambda, gamma, mu, sigma, nu
   		where: S -- lambda --> E, 
-  	 		E -- sigma --> I,
+  	 		E -- sigma --> I, 
   	 		I -- gamma --> R,
   	 		R -- nu --> S,
   	 		status -- mu --> Empty, 
