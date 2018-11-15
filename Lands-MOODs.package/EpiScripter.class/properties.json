@@ -1,11 +1,11 @@
 {
-	"classtraitcomposition" : "EpiModelerSyntax classTrait",
+	"classtraitcomposition" : "EpiModelerSyntax classTrait + EpiModelerSHColors classTrait",
 	"classvars" : [ ],
 	"instvars" : [ ],
 	"name" : "EpiScripter",
 	"commentStamp" : "",
 	"super" : "Object",
-	"traitcomposition" : "EpiModelerSyntax",
+	"traitcomposition" : "EpiModelerSyntax + EpiModelerSHColors",
 	"type" : "normal",
 	"classinstvars" : [ ],
 	"pools" : [ ],
