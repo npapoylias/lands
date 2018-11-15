@@ -1,0 +1,13 @@
+{
+	"classtraitcomposition" : "BlueprintSH classTrait",
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "EpiModelerSH",
+	"commentStamp" : "",
+	"super" : "EpiDomain",
+	"traitcomposition" : "BlueprintSH",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Lands-MOODs-Epi"
+}
