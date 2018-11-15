@@ -19,7 +19,8 @@
 		"atom",
 		"ruleExpressions",
 		"delimeterStar",
-		"delimeterStaro"
+		"delimeterStaro",
+		"orderOp"
 	],
 	"name" : "MOGrammarRules",
 	"type" : "normal"
