@@ -1,4 +1,4 @@
 parsing
-token: token link: aLink
+region: token link: aLink
 
 	self shouldBeImplemented "see text link class"
