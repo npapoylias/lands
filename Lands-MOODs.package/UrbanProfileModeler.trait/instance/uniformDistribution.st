@@ -1,0 +1,4 @@
+accessing
+uniformDistribution
+
+	self shouldBeImplemented

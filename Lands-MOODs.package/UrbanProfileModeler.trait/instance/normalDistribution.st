@@ -1,0 +1,4 @@
+accessing
+normalDistribution
+
+	self shouldBeImplemented
