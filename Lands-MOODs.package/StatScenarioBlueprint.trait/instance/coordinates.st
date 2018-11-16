@@ -1,4 +1,4 @@
 as yet unclassified
 coordinates
 
-	<@coordinates> ::= { ( '[SWNE]' <number> ) ',' }
+	<@coordinates> ::= "coordinates" "=" { ( '[SWNE]' <number> ) ',' }

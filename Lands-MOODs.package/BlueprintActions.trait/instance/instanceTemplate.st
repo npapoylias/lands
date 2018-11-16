@@ -5,9 +5,9 @@ instanceTemplate
 		c := Smalltalk globals at: values first string asSymbol.
 		state := (values size = 5
 			ifTrue: [ values fourth ]
-			ifFalse: [ values sixth ]) asDictionary. "extends"	
+			ifFalse: [ values sixth ]) asItemsDictionary. "extends"	 
 		instance := c new.
-		instance name: values second symbol.
+		instance name: values second symbol. 
 		"update the whole instance before validation, to have access to all state"
 		state keysAndValuesDo: [ :iv :value | |v|
 			"update to Ord collection for multiple entries"
