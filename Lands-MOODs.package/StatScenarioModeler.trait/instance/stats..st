@@ -1,4 +1,4 @@
 accessing
-stats: stats
+stats: assoc
 	
-	stats do: [ :s | self assert: s value keys sum equals: 100 ]
+	assoc do: [ :a | self assert: (a value values sum closeTo: 100.0) ] "float precision"
