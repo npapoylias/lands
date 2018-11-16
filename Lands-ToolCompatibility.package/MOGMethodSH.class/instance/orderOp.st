@@ -2,5 +2,5 @@ accessing
 orderOp
 
 	^ super orderOp ==> { 
-			[ :values | self region: values second color: #white emphasis: #bold ].
+			[ :values | self region: values color: #orange emphasis: #bold ].
 	}

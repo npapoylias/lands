@@ -6,5 +6,5 @@ rule
 			self 
 				region: tokens first color: Color green emphasis: #bold. 
 			self 
-				region: tokens second color: Color yellow emphasis: #bold.
+				region: tokens second color: Color orange emphasis: #bold.
 	] 

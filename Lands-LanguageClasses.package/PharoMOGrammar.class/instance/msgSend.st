@@ -1,4 +1,4 @@
 accessing
 msgSend
 
-	<msgSend> ::= <expression> <message> (";" <message>) *
+	<msgSend> ::= <expression> <message> ( ";" <message> ) *
