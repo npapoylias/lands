@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
-	"traitcomposition" : "BlueprintRules",
-	"classtraitcomposition" : "BlueprintRules classTrait",
+	"traitcomposition" : "BlueprintRules + CommonUrbanBlueprint",
+	"classtraitcomposition" : "BlueprintRules classTrait + CommonUrbanBlueprint classTrait",
 	"category" : "Lands-MOODs-Geo",
 	"name" : "UrbanProfileBlueprint"
 }
