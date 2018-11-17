@@ -6,5 +6,5 @@ Load through Metacello as follows (waiting for direct gitlab support):
 
 Metacello new
   baseline: 'Lands';
-  repository: 'github://npapoylias/lands';
+  repository: 'github://npapoylias/lands'; 
   load.
