@@ -5,7 +5,7 @@
 	"name" : "GeoDomain",
 	"commentStamp" : "",
 	"super" : "MOODsDomain",
-	"traitcomposition" : "StatScenarioBlueprint + UrbanProfileBlueprint",
+	"traitcomposition" : "StatScenarioBlueprint + (UrbanProfileBlueprint - {#namedParameter. #categoryDistribution})",
 	"type" : "normal",
 	"classinstvars" : [ ],
 	"pools" : [ ],

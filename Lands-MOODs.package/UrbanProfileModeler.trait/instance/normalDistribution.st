@@ -3,9 +3,9 @@ normalDistribution
 
 	^ super normalDistribution ==> [ :values |  
 		|median sigma minim maxim|
-		median := values at: 5.
-		sigma := values at:  9.
-		minim := values at: 13.
-		maxim := values at: 15.
+		median := (values at: 5) number.
+		sigma := (values at:  9) number.
+		minim := (values at: 13) number.
+		maxim := (values at: 15) number.
 		{ median . sigma } -> (Interval from: minim to: maxim)
 	]

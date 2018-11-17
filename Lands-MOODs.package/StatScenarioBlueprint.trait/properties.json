@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
-	"traitcomposition" : "BlueprintRules + CommonUrbanBlueprint",
-	"classtraitcomposition" : "BlueprintRules classTrait + CommonUrbanBlueprint classTrait",
+	"traitcomposition" : "BlueprintRules",
+	"classtraitcomposition" : "BlueprintRules classTrait",
 	"category" : "Lands-MOODs-Geo",
 	"name" : "StatScenarioBlueprint"
 }

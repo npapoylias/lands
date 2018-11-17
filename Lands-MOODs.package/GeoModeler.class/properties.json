@@ -5,7 +5,7 @@
 	"name" : "GeoModeler",
 	"commentStamp" : "",
 	"super" : "GeoDomain",
-	"traitcomposition" : "StatScenarioModeler + UrbanProfileModeler",
+	"traitcomposition" : "StatScenarioModeler + (UrbanProfileModeler - {#categoryDistribution})",
 	"type" : "normal",
 	"classinstvars" : [ ],
 	"pools" : [ ],

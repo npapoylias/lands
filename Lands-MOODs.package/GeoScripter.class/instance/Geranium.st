@@ -20,3 +20,16 @@ Geranium
     	weights = EmpiricalHypothesis
     	time(simulation) = 1 year 
 	}
+	
+	UrbanProfile HLMNew {
+		category = Dpe A
+    	surface = N(m=73.0,s=10.0) E [48,98]
+    	occupants = 42.10% SingleAdult,
+	       21.06% Couple,
+	       36.84% Family
+    	children = U(1,3)
+    	income = N(m=25000,s=10000) E [13800, 36000] 
+    	awareness = 31.58% ConsumptionAware, 
+                68.42% ConsumptionUnAware
+    	ownership = 90%
+	}

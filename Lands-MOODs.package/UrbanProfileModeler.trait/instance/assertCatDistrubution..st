@@ -1,4 +1,4 @@
 accessing
-assertCatDistrubution: assoc
+assertCatDistrubution: aDict
 	
-	assoc do: [ :a | self assert: (a value values sum closeTo: 100.0) ] "float precision"
+	self assert: (aDict values sum closeTo: 100.0) "float precision"
