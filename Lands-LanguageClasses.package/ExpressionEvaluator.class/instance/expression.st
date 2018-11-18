@@ -1,11 +1,10 @@
-as yet unclassified
+accessing
 expression
 
 	^ super expression ==> {  
-			[ :tokens | tokens second ].
-			[ :tokens | tokens first * tokens last ]. 
-			[ :tokens | tokens first / tokens last ]. 
-			[ :tokens | tokens first + tokens last ].
-			[ :tokens | tokens first - tokens last ].
-			[ :token  | token  string asNumber ] 
+			[ :v | v first |> {v second . v third} ].
+			[ :v | v first |> {v second . v third}].
+			[ :v | v first |> { #raisedTo: . v last } ].
+			[ :v | v second ].
+			[ :v | v number lit ].
 		}  

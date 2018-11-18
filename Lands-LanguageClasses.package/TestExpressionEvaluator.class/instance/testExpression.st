@@ -2,7 +2,5 @@ tests
 testExpression
 	|results|
 
-	results := ExpressionEvaluator new parse: '1*2+3'.
-
-	self assert: results trees size = 2.
-	self assert: results results first value = 5
+	results := ExpressionEvaluator compileval: '(2*3+8/4)^2^3'.
+	self assert: results = 16777216
