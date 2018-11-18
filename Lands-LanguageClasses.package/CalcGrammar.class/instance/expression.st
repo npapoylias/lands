@@ -2,9 +2,14 @@ accessing
 expression
 
 	<expression> ::= 
-		\ <logical> 
-		\ <relational>
-		| <numerical>  
+		\ <expression> ("||"|"&&") <expression>
+		\ <expression> ("=="|"~=") <expression>
+		\ <expression> ("<="|">="|">"|"<") <expression> 
+		\ <expression> ("+"|"-") <expression>
+		\ <expression> ("*"|"/"|"%") <expression>
+		| <expression> "^" <expression>
 		|| "(" <expression> ")"
-		|  <variable>
-		
+		| <variable>
+		| <number>
+		| "true"
+		| "false"
