@@ -1,6 +1,6 @@
 generated
 classicIf
 
-	<classicIf> ::=  "if" <expression> <bracketBlock>
-		|| "if" <expression> <bracketBlock> "else" <bracketBlock>
-	
+	<classicIf> ::=  "if" <expression> <bracketBlock> "else" <bracketBlock>
+		/ "if" <expression> <bracketBlock>
+		
