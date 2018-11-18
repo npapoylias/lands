@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Lands-LanguageClasses",
+	"classinstvars" : [
+		"printList"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"printList"
+	],
+	"name" : "CalcTranscript",
+	"type" : "normal"
+}

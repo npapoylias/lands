@@ -1,4 +1,5 @@
 accessing
 print
 
-	<print> ::= "print" <printList>
+	<print> ::= "print" "clear" 
+		| "print" <printList> 

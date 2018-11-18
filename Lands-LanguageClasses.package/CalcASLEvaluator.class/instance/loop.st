@@ -2,6 +2,6 @@ accessing
 loop
 
 	^ super loop ==> [ :values |  
-		values third |> { #whileTrue: . values fifth }	
+		values third block |> { #whileTrue: . values fifth }	
 	]
 	

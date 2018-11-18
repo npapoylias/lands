@@ -1,5 +1,7 @@
 printing
 print
 
-	^ super print ==> [ :values | Transcript |> {#show: . values second} ]
-	
+	^ super print ==> {
+		[ :values | CalcTranscript |> #clear ].
+		[ :values | CalcTranscript |> {#showAll: . values second} ]
+	}	
