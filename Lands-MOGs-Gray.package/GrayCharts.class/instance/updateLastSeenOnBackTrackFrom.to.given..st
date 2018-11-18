@@ -1,7 +1,6 @@
 recursive-ordering
 updateLastSeenOnBackTrackFrom: oldState to: aNewState given: aBtState
 
-
 	"update for old state should be obsolete"
 	"oldState ifNotNil: [ |s |
 		oldState indexedParent ifNotNil: [
@@ -13,6 +12,9 @@ updateLastSeenOnBackTrackFrom: oldState to: aNewState given: aBtState
 		]."
 		"nil can happen in fully ordered cases"
 		aBtState lastSeenStackIndex ifNotNil: [ lastSeenStack := aBtState lastSeenStackIndex deepCopy ]. 
+		aBtState completedState ifNotNil: [  
+			aBtState completedState rule isOrdered 
+				ifTrue: [ self popLastSeenAt: aBtState completedState ] ].
 		"btStates that were
 		pushed together share the same lastSeenIndex"
 	
