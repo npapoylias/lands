@@ -1,4 +1,4 @@
-accessing
+syntax
 countries
 
 	<@countries> ::= "countries" "=" { <countryName> "," }

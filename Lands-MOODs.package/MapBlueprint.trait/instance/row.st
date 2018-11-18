@@ -1,4 +1,4 @@
-accessing
+syntax
 row
 
 	<row> ::= "." <number> + "." 

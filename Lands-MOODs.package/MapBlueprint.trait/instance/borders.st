@@ -1,4 +1,4 @@
-accessing
+syntax
 borders
 
 	<@borders> ::= "borders" "=" <table>
