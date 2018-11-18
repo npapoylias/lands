@@ -1,4 +1,0 @@
-tests
-test
-
-	^ 42   

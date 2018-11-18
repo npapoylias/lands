@@ -1,0 +1,13 @@
+{
+	"classtraitcomposition" : "PharoASLParserSyntax classTrait + PharoSHColors classTrait",
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "PharoASLClassExample",
+	"commentStamp" : "",
+	"super" : "Object",
+	"traitcomposition" : "PharoASLParserSyntax + PharoSHColors",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Lands-LanguageClasses"
+}

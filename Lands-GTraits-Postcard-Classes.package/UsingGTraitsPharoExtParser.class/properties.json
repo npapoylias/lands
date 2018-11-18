@@ -2,7 +2,7 @@
 	"classtraitcomposition" : "PharoExtParserSyntax classTrait + PharoExtSHColors classTrait",
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "UsingPharoExtParser",
+	"name" : "UsingGTraitsPharoExtParser",
 	"commentStamp" : "",
 	"super" : "TestCase",
 	"traitcomposition" : "PharoExtParserSyntax + PharoExtSHColors",
