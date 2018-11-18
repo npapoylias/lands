@@ -1,7 +1,7 @@
 tests
 testNumberFloatRegEx
 
-	charts := GrayAlgo new log
+	charts := GrayBaseAlgo new log
 		parse: '23.23'
 		using: MOGrammar numberFloatRegEx.
 		

@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "NickPapoulias 11/30/2016 14:48",
+	"commentStamp" : "NickPapoulias 11/18/2018 20:36",
 	"super" : "Object",
 	"category" : "Lands-MOGs-Gray",
 	"classinstvars" : [ ],
@@ -14,6 +14,6 @@
 		"logging",
 		"string"
 	],
-	"name" : "GrayAlgo",
+	"name" : "GrayBaseAlgo",
 	"type" : "normal"
 }

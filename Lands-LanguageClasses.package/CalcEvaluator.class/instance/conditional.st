@@ -1,18 +1,11 @@
-as yet unclassified
+accessing
 conditional
 
 	^ super conditional ==> { 
-	
-		[ :tokens | [
-			tokens third value
-				ifTrue: [ tokens fifth do: [ :stmt | stmt value ] ] "if else"
-				ifFalse: [ (tokens at: 7) do: [:stmt | stmt value ] ]
-		] ]. 
-
-		[ :tokens | [
-			tokens third value
-				ifTrue: [ tokens fifth do: [ :stmt | stmt value ] ] "if"
-		] ].
-
+			[:values | values third |> { #ifTrue: . values fifth block} ]. 
+			[ :values | values third |> { 
+				#ifTrue: . values fifth block. 
+				#ifFalse: . values seventh block
+			} ].
 	}
 	

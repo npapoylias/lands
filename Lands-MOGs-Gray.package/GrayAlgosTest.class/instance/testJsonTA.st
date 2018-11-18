@@ -2,7 +2,7 @@ tests
 testJsonTA
 
 	| tJSParser  |
-	tJSParser := MOGJsonGrammar new with: GrayAlgo. "remember that the grammar is created its time -- for bench etc"
+	tJSParser := MOGJsonGrammar new with: GrayBaseAlgo. "remember that the grammar is created its time -- for bench etc"
 
 	charts := tJSParser parse: '{ "firstName" : "John",
 "lastName" : "Smith",

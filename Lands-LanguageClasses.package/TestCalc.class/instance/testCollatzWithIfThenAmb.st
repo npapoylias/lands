@@ -14,7 +14,7 @@ testCollatzWithIfThenAmb
 			x = x / 2
 			print " , " , x
 		}	
-	' using: GrayAlgo new.
+	' using: GrayBaseAlgo new.
 
 	self assert: results trees size = 32.
 	"this is an intresting case where some amb are related with the halting problem

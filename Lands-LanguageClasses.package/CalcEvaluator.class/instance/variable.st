@@ -1,5 +1,5 @@
-as yet unclassified
+accessing
 variable
 
-	^ super variable ==> [ :token | token string asSymbol ]
+	^ super variable ==> [ :token | token var ]
 	

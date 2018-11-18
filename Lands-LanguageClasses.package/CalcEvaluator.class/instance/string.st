@@ -1,5 +1,5 @@
-as yet unclassified
+accessing
 string
 
-	^ super string ==> [ :token | |str| str := token string. str atAll: (2 to: str size - 1) ]
+	^ super string ==> [ :token | (token string copyFrom: 2 to: token string size - 1) lit ]
 	

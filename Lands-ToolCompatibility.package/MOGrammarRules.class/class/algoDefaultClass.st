@@ -1,4 +1,4 @@
 as yet unclassified
 algoDefaultClass
 
-	^ GrayAlgo
+	^ GrayBaseAlgo

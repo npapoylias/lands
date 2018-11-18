@@ -1,5 +1,5 @@
-as yet unclassified
+accessing
 start
 
+	^ super start ==> [ :values | (values addLast: CalcTranscript |> #print; yourself) sequence ]
 	
-	^ super start ==> [ :tokens | env := Dictionary new. env -> (tokens collect: [:t | t value]) ] 

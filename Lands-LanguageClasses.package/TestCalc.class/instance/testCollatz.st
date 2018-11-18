@@ -12,7 +12,7 @@ testCollatz
 			else x = x / 2
 			print " , " , x
 		}	
-	' using: GrayAlgo new.
+	' using: GrayBaseAlgo new.
 
 	self assert: results trees size = 4.
 	"self assert: results results first value key = {#x -> 1} asDictionary"

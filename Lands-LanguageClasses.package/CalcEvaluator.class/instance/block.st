@@ -1,6 +1,4 @@
-as yet unclassified
+accessing
 block
 
-	^ super block ==> {  
-			[ :tokens | tokens second ]. 
-		}  
+	^ super block ==>  [ :values | values second block ]. 

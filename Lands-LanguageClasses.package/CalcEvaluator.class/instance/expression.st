@@ -1,7 +1,13 @@
-as yet unclassified
+accessing
 expression
 
 	^ super expression ==> {  
-			[ :tokens | tokens second ].
-			[ :token 	 | [env at: token]  ]
+			[ :v | v first |> {v second . v third} ].
+			[ :v | v first |> {v second . v third}].
+			[ :v | v first |> {v second . v third} ].
+			[ :v | v first |> {v second . v third}].
+			[ :v | v first |> {v second . v third} ].
+			[ :v | v first |> { #raisedTo: . v last } ].
+			[ :v | v second ].
+			[ :v | v number lit ].
 		}  

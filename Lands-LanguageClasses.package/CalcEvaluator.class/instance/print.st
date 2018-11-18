@@ -1,10 +1,7 @@
-as yet unclassified
+printing
 print
 
-	^ super print ==> [ :tokens | [ |value|
-			1 to: tokens second size by: 2 do: [ :i |  "ignore commas"
-						value := (tokens second at: i) value.	
-						Transcript show: value
-			]
-	]]
-	
+	^ super print ==> {
+		[ :values | CalcTranscript |> #clear ].
+		[ :values | CalcTranscript |> {#showAll: . values second} ]
+	}	

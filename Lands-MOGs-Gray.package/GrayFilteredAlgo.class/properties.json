@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "GrayAlgo",
+	"super" : "GrayBaseAlgo",
 	"category" : "Lands-MOGs-Gray",
 	"classinstvars" : [ ],
 	"pools" : [ ],

@@ -6,10 +6,10 @@
 	],
 	"name" : "CalcEvaluator",
 	"commentStamp" : "",
-	"super" : "CalcMOGrammar",
+	"super" : "CalcGrammar",
 	"traitcomposition" : "ASLActions",
 	"type" : "normal",
 	"classinstvars" : [ ],
 	"pools" : [ ],
-	"category" : "Lands-LanguageClasses-Old-Refactor"
+	"category" : "Lands-LanguageClasses"
 }

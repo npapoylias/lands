@@ -1,5 +1,5 @@
-as yet unclassified
+accessing
 assignment
 
-	^ super assignment ==> [ :tokens | [env at: tokens first put: tokens third value] ].
+	^ super assignment ==> [ :values | values first === values third ].
 	
