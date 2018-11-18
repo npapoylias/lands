@@ -4,7 +4,7 @@ testCollatzWithIfThenAmb
 
 	"check ambiguity when considering expressions as statements"
 
-	results := CalcEvaluator new parse: '
+	results := CalcGrammar new parse: '
 		x=7
 		print x 
 		while(x > 1) { 
@@ -14,7 +14,7 @@ testCollatzWithIfThenAmb
 			x = x / 2
 			print " , " , x
 		}	
-	'.
+	' using: GrayAlgo new.
 
 	self assert: results trees size = 32.
 	"this is an intresting case where some amb are related with the halting problem

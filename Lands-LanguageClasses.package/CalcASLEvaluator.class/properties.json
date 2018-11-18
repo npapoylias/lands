@@ -1,0 +1,15 @@
+{
+	"classtraitcomposition" : "ASLActions classTrait",
+	"classvars" : [ ],
+	"instvars" : [
+		"env"
+	],
+	"name" : "CalcASLEvaluator",
+	"commentStamp" : "",
+	"super" : "CalcGrammar",
+	"traitcomposition" : "ASLActions",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Lands-LanguageClasses"
+}

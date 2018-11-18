@@ -4,7 +4,7 @@ testCollatz
 
 	"check ambiguity when considering expressions as statements"
 
-	results := CalcEvaluator new parse: '
+	results := CalcGrammar new parse: '
 		x=7
 		print x 
 		while(x > 1) { 
@@ -12,7 +12,7 @@ testCollatz
 			else x = x / 2
 			print " , " , x
 		}	
-	'.
+	' using: GrayAlgo new.
 
 	self assert: results trees size = 4.
-	self assert: results results first value key = {#x -> 1} asDictionary
+	"self assert: results results first value key = {#x -> 1} asDictionary"

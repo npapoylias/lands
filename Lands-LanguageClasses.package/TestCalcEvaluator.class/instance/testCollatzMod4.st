@@ -18,7 +18,7 @@ testCollatzMod4
 				else x = (9*x+5)/4
 			print " , " , x
 		}	
-	'.
+	' using: GrayAlgo new.
 
 	self assert: results trees size = 32.
 	
