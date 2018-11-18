@@ -4,12 +4,12 @@
 	"instvars" : [
 		"env"
 	],
-	"name" : "CalcEvaluator",
+	"name" : "CalcASLEvaluator",
 	"commentStamp" : "",
-	"super" : "CalcMOGrammar",
+	"super" : "CalcGrammar",
 	"traitcomposition" : "ASLActions",
 	"type" : "normal",
 	"classinstvars" : [ ],
 	"pools" : [ ],
-	"category" : "Lands-LanguageClasses-Old-Refactor"
+	"category" : "Lands-LanguageClasses"
 }
