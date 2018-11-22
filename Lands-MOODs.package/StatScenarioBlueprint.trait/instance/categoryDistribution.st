@@ -1,4 +1,4 @@
-mathematical functions
+as yet unclassified
 categoryDistribution
 
 	<categoryDistribution> ::= { (<number> '%' <identifier>) ',' } 
