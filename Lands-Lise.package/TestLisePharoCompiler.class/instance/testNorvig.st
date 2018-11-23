@@ -6,7 +6,7 @@ testNorvig
 	(:define compose (lambda (f g) (lambda (x) (f (g x))))). 
 	(:(compose list twice) 5) |=? { 10 }.
 	(:define repeat (lambda (f) (compose f f))).
-	(:(repeat twice) 5) |=? 20.
+	(:(repeat twice) 5) |=? 20. 
 	(:(repeat (repeat twice)) 5) |=? 80.
 	(:define fact (lambda (n) (if (<= n 1) 1 (* n (fact (- n 1)))))).
    (:fact 3) |=? 6.
