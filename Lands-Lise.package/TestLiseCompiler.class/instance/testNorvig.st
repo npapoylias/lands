@@ -5,7 +5,7 @@ testNorvig
 	use gdefine / gset with symbols
 	promote to special forms if needed, or just straight up 
 	use macros when avail."
- 
+  
    self assert: (LiseCompiler compileval: '(gdefine ''twice (lambda (x) (* 2 x)))') class = BlockClosure.
 	self assert: (LiseCompiler compileval: '(twice 5)') = 10.
 	"enough of these -- use helper method"

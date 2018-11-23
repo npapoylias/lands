@@ -6,7 +6,7 @@ testCollatzMod4
 
 	results := CalcEvaluator new parse: '
 		x=7
-		print x 
+		print x  
 		while(x > 2) {
 			mod4 = x%4
 			mod2 = x%2
