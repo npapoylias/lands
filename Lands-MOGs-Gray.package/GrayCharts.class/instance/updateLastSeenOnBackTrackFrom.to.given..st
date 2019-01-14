@@ -11,7 +11,12 @@ updateLastSeenOnBackTrackFrom: oldState to: aNewState given: aBtState
 			].
 		]."
 		"nil can happen in fully ordered cases"
-		aBtState lastSeenStackIndex ifNotNil: [ lastSeenStack := aBtState lastSeenStackIndex deepCopy ]. 
+		aBtState lastSeenStackIndex ifNotNil: [ |btIndex|
+			btIndex := aBtState lastSeenStackIndex.
+			btIndex value to: lastSeenStack size do: [:i | lastSeenStack pop ].
+			lastSeenStack push: btIndex key deepCopy.
+			"lastSeenStack := aBtState lastSeenStackIndex deepCopy" 	
+		]. 
 		aBtState completedState ifNotNil: [  
 			aBtState completedState rule isOrdered 
 				ifTrue: [ self popLastSeenAt: aBtState completedState ] ].

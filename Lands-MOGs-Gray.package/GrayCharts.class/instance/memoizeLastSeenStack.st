@@ -1,4 +1,4 @@
 recursive-ordering
 memoizeLastSeenStack
 
-	lastSeenStackCopy := lastSeenStack deepCopy
+	lastSeenStackCopy := lastSeenStack top deepCopy -> lastSeenStack size

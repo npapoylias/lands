@@ -1,12 +1,8 @@
 parsing
 checkSuccessOrBackTrack
 
-	charts last
-		detect: [ :state | state isFinal ]
-		ifNone: [ 
-			backTrackStack isEmpty ifFalse: [  
+	[(charts last anySatisfy: [ :state | state isFinal ])
+		or: [ backTrackStack isEmpty ]] whileFalse: [  
 				self backTrack.
 				self algoLoop.
-				self checkSuccessOrBackTrack 
-			]
 		]
