@@ -1,7 +1,7 @@
 accessing
 parse: aString using: algoInst
 
-	|charts|
+	|charts trees |
 
 	"put a timeout by default for debugging purposes"
 
@@ -10,5 +10,5 @@ parse: aString using: algoInst
 	^ GrayResult new
 		 for: aString;
 		 charts: charts;
-		 trees: charts successfullTrees;
-		 results: (charts successfullTrees collect: [ :tree | self evaluateActionsFor: tree first on: aString "send start rule without EOF" ])
+		 trees: (trees := charts successfullTrees);
+		 results: (trees collect: [ :tree | self evaluateActionsFor: tree first on: aString "send start rule without EOF" ])

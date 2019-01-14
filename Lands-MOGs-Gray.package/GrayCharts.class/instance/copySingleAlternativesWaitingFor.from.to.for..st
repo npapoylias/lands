@@ -10,6 +10,7 @@ copySingleAlternativesWaitingFor: aState from: start to: end for: anAlgo
 		element := chart at: index.
 		((element expecting: name at: start) and: [ addedState isNil ])
 			ifTrue: [ | stateAdded |
+				self memoizeLastSeenStack. 
 				newState := self copy: element till: end.
 				newState ancestor: element.
 				addedState := newState.
