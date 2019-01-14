@@ -1,4 +1,5 @@
 as yet unclassified
+"protocol: as yet unclassified"
 terminalMatchForInput: input atPosition: readingPosition
 
 	^ readingPosition == input size 

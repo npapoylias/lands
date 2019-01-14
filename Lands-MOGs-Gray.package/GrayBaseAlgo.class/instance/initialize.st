@@ -7,5 +7,5 @@ initialize
 	dummyRule := (#gamma --> #start , #Eof) asGammaStart.
 	charts := GrayCharts new.
 	logging := false.
-	memoLexing := GrayMemoLexing new.
+	memoLexing := GrayLexing new.
 	

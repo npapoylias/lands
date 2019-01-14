@@ -3,7 +3,7 @@ for: input with: terminal at: position
 
 	"^ terminal 
 		terminalMatchForInput: input 
-		atPosition: position "
+		atPosition: position" 
 
 	^ (terminalPosToNextPos optAt: terminal ifAbsentPut: [ Dictionary new ])
 			optAt: position ifAbsentPut: [ 

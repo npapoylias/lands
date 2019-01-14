@@ -9,7 +9,7 @@ scan: aState
 	match := memoLexing for: input with: aState ruleAtDot at: aState to.
 	"aState ruleAtDot 
 		terminalMatchForInput: input
-		atPosition: aState to".
+		atPosition: aState to."
 			
 	(match > aState to)
 		ifTrue: [ 

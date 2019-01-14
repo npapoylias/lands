@@ -8,6 +8,6 @@
 	"instvars" : [
 		"terminalPosToNextPos"
 	],
-	"name" : "GrayMemoLexing",
+	"name" : "GrayLexing",
 	"type" : "normal"
 }
