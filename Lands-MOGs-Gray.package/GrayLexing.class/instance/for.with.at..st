@@ -1,13 +1,13 @@
 initialization
 for: input with: terminal at: position
 
-	"^ terminal 
+	^ terminal 
 		terminalMatchForInput: input 
-		atPosition: position"
+		atPosition: position
 
-	^ (terminalPosToNextPos optAt: terminal ifAbsentPut: [ Dictionary new ])
+	"^ (terminalPosToNextPos optAt: terminal ifAbsentPut: [ Dictionary new ])
 			optAt: position ifAbsentPut: [ 
 				terminal 
 					terminalMatchForInput: input 
 					atPosition: position 
-			]
+			]"
