@@ -1,4 +1,4 @@
-as yet unclassified
+running
 run
 
-	^ (self totJson / self ppJson) asFloat
+	^ self runFilteredWithPPC 

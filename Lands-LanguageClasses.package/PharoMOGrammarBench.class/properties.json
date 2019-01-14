@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "PharoASLParserBench",
+	"name" : "PharoMOGrammarBench",
 	"type" : "normal"
 }

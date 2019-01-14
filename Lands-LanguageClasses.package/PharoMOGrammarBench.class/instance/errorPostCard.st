@@ -1,7 +1,7 @@
 as yet unclassified
-validPostCard
+errorPostCard
 
-	PharoASLParser parseval: 'postcard: x
+	^ [PharoMOGrammar parse: 'postcard: x
 
 	<menu: 3 priority: #''-34''>
    |y d| 
@@ -19,4 +19,4 @@ validPostCard
          Transcript show: t; show: '' ''; show: item; show: '' ''
 		].
 	] ifFalse: [self halt].
-	^ x < y first'
+	^ x < y first &'] on: GrayError do: [ self ]
