@@ -1,4 +1,4 @@
 recursive-ordering-api
 lastSeenAt: aName
 
-	^ self lastSeenIndex at: aName ifAbsentPut: [ Stack new ] "return index not position"
+	^ self lastSeenIndex at: aName ifAbsent: [ nil ] "return index not position"
