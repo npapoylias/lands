@@ -7,5 +7,9 @@ updateLastSeenForAddOn: aState
 		ifTrue: [   
 			(aState rule recursiveIndexOf: aState index) = -1
 				ifTrue: [ aState isStarting ifTrue: [self enterNewLastSeenScope] ]
-				ifFalse: [ self lastSeenAt: aState rule name  push: aState ].
+				ifFalse: [ 
+					aState rule isOrdered ifTrue: [
+						self lastSeenAt: aState rule name  push: aState 
+					]
+				].
 		]

@@ -1,12 +1,9 @@
 *Lands-MOGs-Gray
 shallowValueCopy
 
-	| newObject  index |
+	| newObject |
 	newObject := Association basicNew.
-	index := 2.
-	[index > 0]
-		whileTrue: 
-			[newObject instVarAt: index put: (self instVarAt: index) shallowValueCopy.
-			index := index - 1].
+	newObject instVarAt: 1 put: (self instVarAt: 1) shallowValueCopy.
+	newObject instVarAt: 2 put: (self instVarAt: 2) shallowValueCopy.
 	^newObject
 	

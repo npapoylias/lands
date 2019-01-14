@@ -1,11 +1,8 @@
 *Lands-MOGs-Gray
 shallowValueCopy
 	
-	| newObject index |
+	| newObject |
 	newObject := Stack basicNew.
-	index := 2.
-	[index > 0]
-		whileTrue: 
-			[newObject instVarAt: index put: (self instVarAt: index).
-			index := index - 1].
+	newObject instVarAt: 1 put: (self instVarAt: 1).
+	newObject instVarAt: 2 put: (self instVarAt: 2).
 	^newObject

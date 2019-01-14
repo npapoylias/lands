@@ -1,13 +1,11 @@
 *Lands-MOGs-Gray
 shallowValueCopy
-	| newObject index |
+		| newObject |
 	newObject := Dictionary basicNew.
-	index := 2.
-	[index > 0]
-		whileTrue: 
-			[newObject instVarAt: index put: (self instVarAt: index) shallowValueCopy.
-			index := index - 1].
+	newObject instVarAt: 1 put: (self instVarAt: 1) shallowValueCopy.
+	newObject instVarAt: 2 put: (self instVarAt: 2) shallowValueCopy.
 	^newObject
+	
 	"|ret|
 	ret := Dictionary new.
 	tally = 0 ifTrue: [^ ret].
