@@ -6,11 +6,11 @@ testNorvig
 	(:define compose (lambda (f g) (lambda (x) (f (g x))))). 
 	(:(compose list twice) 5) |=? { 10 }.
 	(:define repeat (lambda (f) (compose f f))).
-	(:(repeat twice) 5) |=? 20. 
+	(:(repeat twice) 5) |=? 20.
 	(:(repeat (repeat twice)) 5) |=? 80.
 	(:define fact (lambda (n) (if (<= n 1) 1 (* n (fact (- n 1)))))).
    (:fact 3) |=? 6.
-   (:fact 50) |=? 30414093201713378043612608166064768844377641568960512000000000000.
+   (:fact 50) |=? 30414093201713378043612608166064768844377641568960512000000000000. 
 	(:gdefine 'abs (lambda (n) ((if (> n 0) + -) 0 n))).
    (:list (abs -3) (abs 0) (abs 3)) |=? {3 . 0 . 3 }.
    (:define combine (lambda (f)

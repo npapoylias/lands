@@ -3,6 +3,8 @@ push: anItem
 
 	anItem lastSeenStackIndex: charts lastSeenStackCopy. 
 	
-	self 
+	"self 
 		detect: [ :state | state hasFailed and: [state equalTo: anItem ]]
-		ifNone: [ self add: anItem ]
+		ifNone: [ self add: anItem ]" "Try adding the check here"
+		
+	(self check: anItem state) ifNil: [ self add: anItem ]

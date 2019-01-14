@@ -23,7 +23,9 @@
 		"memoizedChildrenForest",
 		"memoizedChildrenForestTraversingTempsAsSet",
 		"childrenForestTraversingTemps",
-		"trimmedEnd"
+		"trimmedEnd",
+		"ancestor",
+		"canBeCompletedAt"
 	],
 	"name" : "GrayState",
 	"type" : "normal"

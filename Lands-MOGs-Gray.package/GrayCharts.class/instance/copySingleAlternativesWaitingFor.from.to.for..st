@@ -11,6 +11,7 @@ copySingleAlternativesWaitingFor: aState from: start to: end for: anAlgo
 		((element expecting: name at: start) and: [ addedState isNil ])
 			ifTrue: [ | stateAdded |
 				newState := self copy: element till: end.
+				newState ancestor: element.
 				addedState := newState.
 				stateAdded := self currentAddWithState: newState.
 				self
@@ -18,7 +19,10 @@ copySingleAlternativesWaitingFor: aState from: start to: end for: anAlgo
 					withNewState: newState
 					andStateAdded: stateAdded ]
 			ifFalse: [ (element expecting: name at: start)
-					ifTrue: [ newState := self copy: element till: end. backTrackList addFirst: newState ] ] ].
+					ifTrue: [ 
+						newState := self copy: element till: end. 
+						newState ancestor: element.
+						backTrackList addFirst: newState ] ] ].
 	backTrackList
 		do: [ :s | anAlgo backTrackAdd: s for: addedState thatCompleted: aState ]	"should be added in BTStack in reverse"
 

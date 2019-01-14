@@ -14,6 +14,7 @@ copyStatesWaitingFor: aState from: start to: end
 				newState := element copy.
 				newState fromTerminal: element fromTerminal; toTerminal: chartIndex - 1.
 				newState advanceDot end: end.
+				newState ancestor: element.
 				stateAdded := self currentAddWithState: newState.
 				self
 					updateChildrenWaitingFor: aState

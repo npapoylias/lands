@@ -15,7 +15,7 @@ lisePostcard: x
 											(lambda (group) (> (size group) 1))))
 					
 					(define step (lambda (i) (set y (+ y i))))
-					
+					 
 					(whileTrue (lambda () (< (+ (y 'first) x) 255)) (lambda () (step x)))
 					
 					(do inter (lambda (item) (begin

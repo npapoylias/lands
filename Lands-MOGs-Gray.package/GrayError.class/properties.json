@@ -1,14 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "GrayCollection",
+	"super" : "Error",
 	"category" : "Lands-MOGs-Gray",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"charts",
-		"failures"
-	],
-	"name" : "GrayBTStack",
+	"instvars" : [ ],
+	"name" : "GrayError",
 	"type" : "normal"
 }
