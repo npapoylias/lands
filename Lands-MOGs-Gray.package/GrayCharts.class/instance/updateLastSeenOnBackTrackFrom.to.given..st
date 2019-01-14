@@ -14,7 +14,7 @@ updateLastSeenOnBackTrackFrom: oldState to: aNewState given: aBtState
 		aBtState lastSeenStackIndex ifNotNil: [ |btIndex|
 			btIndex := aBtState lastSeenStackIndex.
 			btIndex value to: lastSeenStack size do: [:i | lastSeenStack pop ].
-			lastSeenStack push: btIndex key deepCopy.
+			lastSeenStack push: btIndex key shallowValueCopy.
 			"lastSeenStack := aBtState lastSeenStackIndex deepCopy" 	
 		]. 
 		aBtState completedState ifNotNil: [  
