@@ -1,6 +1,7 @@
 as yet unclassified
 try: pRule at: position
 
-	^ (pRule
+	^ (memoLexing for: input with: pRule at: position) > position.
+	"(pRule
 		terminalMatchForInput: input
-		atPosition: position) > position
+		atPosition: position) > position"

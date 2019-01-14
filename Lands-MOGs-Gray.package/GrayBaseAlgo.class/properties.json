@@ -12,7 +12,8 @@
 		"input",
 		"charts",
 		"logging",
-		"string"
+		"string",
+		"memoLexing"
 	],
 	"name" : "GrayBaseAlgo",
 	"type" : "normal"

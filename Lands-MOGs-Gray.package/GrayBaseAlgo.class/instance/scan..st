@@ -6,9 +6,10 @@ scan: aState
 	aState expectingEmpty ifTrue: [ ^ self scanEmpty: aState ].
 	aState expectingEof ifTrue: [ ^ self scanEof: aState ].
 
-	match := aState ruleAtDot 
+	match := memoLexing for: input with: aState ruleAtDot at: aState to.
+	"aState ruleAtDot 
 		terminalMatchForInput: input
-		atPosition: aState to.
+		atPosition: aState to".
 			
 	(match > aState to)
 		ifTrue: [ 

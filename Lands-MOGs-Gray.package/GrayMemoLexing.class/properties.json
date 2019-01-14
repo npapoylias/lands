@@ -1,13 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "GrayRule",
+	"super" : "Object",
 	"category" : "Lands-MOGs-Gray",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"regExpr"
+		"terminalPosToNextPos"
 	],
-	"name" : "GrayTerminalRule",
+	"name" : "GrayMemoLexing",
 	"type" : "normal"
 }

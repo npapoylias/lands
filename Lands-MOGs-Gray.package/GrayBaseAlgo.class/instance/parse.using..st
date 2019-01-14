@@ -2,6 +2,7 @@ parsing
 parse: aString using: aGrammar
 	string := aString.
 	input := GrayReadStream on: aString.
+	memoLexing clear.
 	grammar := aGrammar.
 	dummyRule grammar: grammar.
 	(grammar at: #ignore) regExpr matchesStreamPrefix: input.	"always at the start of next token"
