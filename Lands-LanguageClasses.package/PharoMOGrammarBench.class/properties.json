@@ -5,7 +5,10 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"pharoMOGrammar",
+		"ppcGrammar"
+	],
 	"name" : "PharoMOGrammarBench",
 	"type" : "normal"
 }

@@ -1,7 +1,7 @@
 as yet unclassified
 errorPostCard
 
-	^ [PharoMOGrammar parse: 'postcard: x
+	^ 'postcard: x
 
 	<menu: 3 priority: #''-34''>
    |y d| 
@@ -19,4 +19,4 @@ errorPostCard
          Transcript show: t; show: '' ''; show: item; show: '' ''
 		].
 	] ifFalse: [self halt].
-	^ x < y first &'] on: GrayError do: [ self ]
+	^ x < y first &'

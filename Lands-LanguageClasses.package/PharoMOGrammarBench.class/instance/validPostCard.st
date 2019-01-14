@@ -1,7 +1,7 @@
 as yet unclassified
 validPostCard
 
-	^ PharoMOGrammar parse: 'postcard: x
+	^ 'postcard: x
 
 	<menu: 3 priority: #''-34''>
    |y d| 
