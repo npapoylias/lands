@@ -1,4 +1,4 @@
 adding
 asOrderedCollection
 
-	self halt
+	^ self

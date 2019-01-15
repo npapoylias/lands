@@ -4,7 +4,7 @@ copySingleAlternativesWaitingFor: aState from: start to: end for: anAlgo
 
 	| name chart element newState addedState backTrackList |
 	name := aState rule name.
-	backTrackList := OrderedCollection new.
+	backTrackList := GrayCollection new.
 	chart := self at: aState fromTerminal + 1.
 	chart size to: 1 by: -1 do: [ :index | 
 		element := chart at: index.

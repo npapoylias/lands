@@ -1,4 +1,4 @@
 adding
 isOrderedCollection
 
-	self halt
+	^ true
