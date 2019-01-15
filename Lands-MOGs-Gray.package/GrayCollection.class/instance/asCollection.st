@@ -1,0 +1,4 @@
+adding
+asCollection
+
+	^ self

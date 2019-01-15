@@ -5,7 +5,7 @@ alternativesFor: aState
 	
 	| newStates rule |
 	
-	newStates := OrderedCollection new.
+	newStates := GrayCollection new.
 	rule := aState ruleAtDot.
 	
 	1 to: rule rightHandSide size do: [ :i | "we can use either predict either first here"
@@ -23,5 +23,5 @@ alternativesFor: aState
 							toTerminal: aState toTerminal) ] 
 				ifFalse: [ newStates add: nil ]
 	].
-				
+
 	^ newStates
