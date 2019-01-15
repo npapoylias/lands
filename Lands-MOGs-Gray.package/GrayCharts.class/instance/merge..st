@@ -1,12 +1,12 @@
 accessing
 merge: roots
 
-	|dict|
+	|d|
 
-	dict := roots first childrenStates.
+	d := roots first childrenStates.
 	roots allButFirst do: [ :r | 
 		r childrenStates keysAndValuesDo: [ :key :value |
-			(dict at: key ifAbsentPut: [ OrderedCollection new ])
+			(d at: key ifAbsentPut: [ GrayCollection new ])
 				addAll: value 
 		]	
 	].

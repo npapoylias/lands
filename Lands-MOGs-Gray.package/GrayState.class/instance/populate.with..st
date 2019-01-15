@@ -11,7 +11,7 @@ populate: aForest with: childOrChildren
 			aForest do: [ :tree | tree add: childOrChildren ].
 			recurseWith := (childrenStates
 				at: childOrChildren to
-				ifAbsent: [ {} asOrderedCollection ]) copy
+				ifAbsent: [ {} asGrayCollection ]) copy
 				select: [ :cState | cState isEmpty not ].
 			recurseWith isEmpty
 				ifTrue: [ ^ aForest ].
