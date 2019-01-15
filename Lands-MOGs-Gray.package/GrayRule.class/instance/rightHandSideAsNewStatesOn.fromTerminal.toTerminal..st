@@ -2,7 +2,7 @@ accessing
 rightHandSideAsNewStatesOn: readingPosition fromTerminal: fromTerminal toTerminal: toTerminal
 
 	| newStates |
-	newStates := OrderedCollection new.
+	newStates := GrayCollection new.
 
 	1 to: self rightHandSide size do: [ :i |
 		newStates add: 
