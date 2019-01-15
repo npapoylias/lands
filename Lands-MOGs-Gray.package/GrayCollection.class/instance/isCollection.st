@@ -1,0 +1,4 @@
+accessing
+isCollection 
+
+	^ true

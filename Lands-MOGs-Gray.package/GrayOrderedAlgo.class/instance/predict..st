@@ -12,7 +12,7 @@ predict: aState
 		ifTrue: [ added := alter first."could be duplicate"alter size to: 2 by: -1 "2 to: alter size" do: [:i| |a| a := (alter at: i). self backTrackAdd: a for: aState]] 
 		ifFalse: [  
 			| toStack|
-			toStack := OrderedCollection new.
+			toStack := GrayCollection new.
 			toStack add:	alter first.
 			2 to: alter size do: [ :i | |a|
 				a := alter at: i. 

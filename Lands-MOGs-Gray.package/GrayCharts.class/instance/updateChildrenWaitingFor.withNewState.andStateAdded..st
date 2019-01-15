@@ -13,7 +13,7 @@ updateChildrenWaitingFor: aState withNewState: newState andStateAdded: stateAdde
 						do: [ :v | 
 								col := childrenDict
 									at: k
-									ifAbsent: [ OrderedCollection new ].
+									ifAbsent: [ GrayCollection new ].
 								col detect: [ :p | p equalTo: v ] ifNone: [ v isEmpty not ifTrue: [  col add: v ]].
 								col isEmpty not ifTrue: [ childrenDict at: k put: col ]. 
 						]]].	"already exists transfer children"
@@ -23,6 +23,6 @@ updateChildrenWaitingFor: aState withNewState: newState andStateAdded: stateAdde
 		ifNotNil: [
 			(childrenDict
 				at: aState from
-				ifAbsent: [ col := OrderedCollection new ]) 
+				ifAbsent: [ col := GrayCollection new ]) 
 				detect: [ :p | p equalTo: aState ] 
 				ifNone: [ aState isEmpty not ifTrue: [(childrenDict at: aState from ifAbsentPut: [ col ] ) add: aState]]]	"children from multiple trees"
