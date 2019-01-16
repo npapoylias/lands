@@ -8,7 +8,7 @@ initialize
 	
 	grammar := MOGrammar 
 		new named: self class name; 
-		"sanitize;" "messes with value actions semantics.. for + * delimeter"
+		sanitize; "messes with value actions semantics.. for + * delimeter"
 		with: ((self class allSelectorsBelow: CustomLanguageClass) 
 			select: [ :sel | sel isUnary and: [ sel ~= #initialize ] ] 
 			thenCollect: [ :name | self perform: name]).

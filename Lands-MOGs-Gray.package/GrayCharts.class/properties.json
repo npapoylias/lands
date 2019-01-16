@@ -11,7 +11,8 @@
 		"logging",
 		"current",
 		"lastSeenStack",
-		"lastSeenStackCopy"
+		"lastSeenStackCopy",
+		"algo"
 	],
 	"name" : "GrayCharts",
 	"type" : "normal"
