@@ -1,5 +1,6 @@
 accessing
 "protocol: accessing"
+"protocol: accessing"
 ruleExpressions
 
 	^ super ruleExpressions ==> [ :tokens | |operands operators opStart ruleTokens|

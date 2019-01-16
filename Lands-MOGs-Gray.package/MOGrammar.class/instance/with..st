@@ -1,19 +1,20 @@
 accessing
 with: aRuleCollection
 
-	|size|
-
+	|s|
+ 
 	self withRec: aRuleCollection.
+	sanitize ifTrue: [self sanitizeGrammar].
 	self values do: [ :v | v preComputeDirectRefs ].
-	size := 0. "init first and follow as sets"
-	[size ~= (size := self values sum: [:rule |
+	s := 0. "init first and follow as sets"
+	[s ~= (s := self values sum: [:rule |
 		"self halt."
 		rule computeFirsts. 
 		rule flattenFirsts size])] whileTrue. 
 	"ie run as long as there is nothing to add -- recheck how this works with memoization"
-	size := 0.
+	s := 0.
 	(self at: #start) follow addAll: (self at: #Eof) flattenFirsts.
-	[size ~= (size := self values sum: [:rule |
+	[s ~= (s := self values sum: [:rule |
 		"self halt."
 		rule computeFollow. 
 		rule follow size])] whileTrue.

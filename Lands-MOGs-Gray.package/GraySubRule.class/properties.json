@@ -5,7 +5,9 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"isTerminalChoice"
+	],
 	"name" : "GraySubRule",
 	"type" : "normal"
 }
