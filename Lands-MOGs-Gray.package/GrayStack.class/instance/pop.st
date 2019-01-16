@@ -1,0 +1,4 @@
+accessing
+pop
+
+	^ self removeLast

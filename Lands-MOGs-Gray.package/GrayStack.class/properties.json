@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "GrayCollection",
+	"category" : "Lands-MOGs-Gray",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "GrayStack",
+	"type" : "normal"
+}

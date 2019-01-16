@@ -1,0 +1,4 @@
+accessing
+shallowValueCopy
+
+	^ self copy

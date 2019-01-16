@@ -6,7 +6,7 @@ initialize
 	stateIndex := 0.
 	logging := false.
 "	successfullTrees := GrayCollection new."
-	lastSeenStack := Stack new.
+	lastSeenStack := GrayStack new.
 	lastSeenStack push: Dictionary new.
 	self augment.
 	current := self at:1.

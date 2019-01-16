@@ -3,4 +3,4 @@ enumerating
 
 allButLast
 
-	^ self copy removeIndex: currentSize 
+	^ self copy removeLast
