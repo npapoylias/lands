@@ -1,15 +1,16 @@
 accessing
-evaluateActionsFor: aTree on: input
+evaluateActionsForSingleTree: aTree  on: input
 
-	|childrenTokens|
+	|childrenTokens childrenStates |
 	
 	aTree isEmpty ifTrue: [ ^ nil ].
 	
-	childrenTokens := OrderedCollection new.
 	
-	aTree childrenForest first "forests have been seperated already"
-			do: [ :child | |tokens|
-						tokens := (self evaluateActionsFor: child on: input).
+	childrenTokens := OrderedCollection new.
+	childrenStates := aTree childrenStates.
+	childrenStates keys sorted do: [ :pos | |tokens child|
+						child := (childrenStates at: pos) first.
+						tokens := (self evaluateActionsForSingleTree: child on: input).
 						tokens ifNotNil: [ 
 							(aTree isSubRule and: [child isSubRule])
 						 		ifTrue: [childrenTokens addAll: tokens ]
@@ -24,4 +25,4 @@ evaluateActionsFor: aTree on: input
 	
   ^ 	(aTree rule action keys includes: aTree rightHandIndex)
 			ifTrue: [(aTree rule action at: aTree rightHandIndex) lazyValue: childrenTokens]
-			ifFalse: [childrenTokens "with: aTree for: input should be GrayDerivation already"]. 
+			ifFalse: [^ childrenTokens "with: aTree for: input should be GrayDerivation already"]. 

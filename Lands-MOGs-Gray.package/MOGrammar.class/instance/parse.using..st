@@ -11,4 +11,8 @@ parse: aString using: algoInst
 		 for: aString;
 		 charts: charts;
 		 trees: (trees := charts successfullTrees);
-		 results: (trees collect: [ :tree | self evaluateActionsFor: tree first on: aString "send start rule without EOF" ])
+		 results: (trees collect: [ :tree | 
+			charts ambiguous 
+				ifFalse: [ self evaluateActionsForSingleTree: tree first on: aString  ]
+				ifTrue: [self evaluateActionsFor: tree first on: aString]  
+		])

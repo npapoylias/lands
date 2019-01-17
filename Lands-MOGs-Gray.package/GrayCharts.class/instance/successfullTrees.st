@@ -1,4 +1,6 @@
 accessing
 successfullTrees
 
-	^ self successfullRoots childrenForest
+	^ ambiguous 
+		ifTrue: [self successfullRoots childrenForest]
+		ifFalse: [ {{self successfullRoots}} ]

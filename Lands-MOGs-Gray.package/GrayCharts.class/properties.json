@@ -12,7 +12,8 @@
 		"current",
 		"lastSeenStack",
 		"lastSeenStackCopy",
-		"algo"
+		"algo",
+		"ambiguous"
 	],
 	"name" : "GrayCharts",
 	"type" : "normal"

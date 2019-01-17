@@ -16,7 +16,9 @@ copyStatesWaitingFor: aState from: start to: end
 				newState advanceDot end: end.
 				newState ancestor: element.
 				stateAdded := self alreadyInCharts: newState.
-				stateAdded == newState ifTrue: [ current add: newState. added := added + 1 ].
+				stateAdded == newState 
+					ifTrue: [ current add: newState. added := added + 1 ]
+					ifFalse: [ ambiguous := true ].
 				self
 					updateChildrenWaitingFor: aState
 					withNewState: newState
