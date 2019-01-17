@@ -25,7 +25,8 @@
 		"childrenForestTraversingTemps",
 		"trimmedEnd",
 		"ancestor",
-		"canBeCompletedAt"
+		"canBeCompletedAt",
+		"ignore"
 	],
 	"name" : "GrayState",
 	"type" : "normal"

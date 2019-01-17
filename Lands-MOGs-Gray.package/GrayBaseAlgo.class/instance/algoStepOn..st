@@ -3,6 +3,8 @@ algoStepOn: state
 	
 	"logging ifTrue: [ Transcript show: state; cr. ]."
 
+	state shouldIgnore ifTrue: [ ^ self ].
+
 	state	isIncomplete
 		ifTrue: [   
 			state expectingTerminal

@@ -7,7 +7,7 @@ currentDo: aBlock
 	[ stateIndex < self current size ] whileTrue: [ |state|
 			stateIndex := stateIndex + 1. 
 			state := self current at: stateIndex.
-			logging ifTrue: [ Transcript show: $(; show: stateIndex; show: ') '; show: state;  cr. ].
+			logging ifTrue: [ state shouldIgnore ifFalse: [Transcript show: $(; show: stateIndex; show: ') '; show: state;  cr] ].
 			aBlock value: state.
 	].
 
