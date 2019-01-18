@@ -1,7 +1,6 @@
 accessing
 view
 	"see RTRoassalExample>>exampleArrow"
-
 	v := RTView new.
 	v canvas theme: TRGrayDarkTheme new.
 	self redrawElementsFor: v.

@@ -11,6 +11,7 @@ parse: aString using: algoInst
 		 for: aString;
 		 charts: charts;
 		 trees: (trees := charts successfullTrees);
+		 ambiguous: charts ambiguous;
 		 results: (trees collect: [ :tree | 
 			charts ambiguous 
 				ifFalse: [ self evaluateActionsForSingleTree: tree first on: aString  ]

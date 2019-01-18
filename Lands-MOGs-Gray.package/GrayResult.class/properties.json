@@ -10,7 +10,8 @@
 		"trees",
 		"results",
 		"input",
-		"memoizedChildrenForestTraversingTempsAsSet"
+		"memoizedChildrenForestTraversingTempsAsSet",
+		"ambiguous"
 	],
 	"name" : "GrayResult",
 	"type" : "normal"
