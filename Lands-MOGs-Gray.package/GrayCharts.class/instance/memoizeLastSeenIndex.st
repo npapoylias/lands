@@ -1,4 +1,4 @@
 recursive-ordering
 memoizeLastSeenIndex
 
-	btLastSeenIndex := lastSeenStack size
+	btLastSeenIndex := lastSeenStack size 

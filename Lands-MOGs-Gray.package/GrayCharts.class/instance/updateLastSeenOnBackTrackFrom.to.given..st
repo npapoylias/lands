@@ -1,32 +1,17 @@
 recursive-ordering
 updateLastSeenOnBackTrackFrom: oldState to: aNewState given: aBtState
-	"update for old state should be obsolete"
+ | btIndex lastIndex |
 
-	"oldState ifNotNil: [ |s |
-		oldState indexedParent ifNotNil: [
-			s := lastSeenIndex at: oldState indexedParent name ifAbsent: [ nil ].
-			s ifNotNil: [s ifNotEmpty: [ s pop ]].
-			logging ifTrue: [ 
-				Transcript cr; cr; show: oldState indexedParent name; show: ' has now RI: '; show: s; cr.
-			].
-		]."
-
-	"nil can happen in fully ordered cases"
-
-	(aBtState lastSeenStackIndex = 0
-		or: [ aBtState lastSeenStackIndex isNil ])
-		ifFalse: [ | btIndex lastIndex |
 			btIndex := aBtState lastSeenStackIndex.
-			btIndex value to: lastSeenStack size do: [ :i | lastIndex := lastSeenStack pop ].
-			lastIndex ifNotNil: [ 
+			(btIndex > 1 and: [ btIndex <= lastSeenStack size ])
+				ifTrue: [ btIndex to: lastSeenStack size do: [ :i | lastIndex := lastSeenStack pop. ]]
+				ifFalse: [ lastIndex := lastSeenStack pop ].
 				lastIndex values do: [ :indexes | | i |
 							i := 0.
 							indexes 
 								detect: [ :index | i := i + 1. index y >= aBtState readingPosition ]
 								ifFound: [ :index | "self halt." indexes removeAllFromIndex: i ] ].
-					"self halt."
-					lastSeenStack push: lastIndex	"btIndex key shallowValueCopy" ] 
-		].
+			lastSeenStack push: lastIndex	"btIndex key shallowValueCopy".
 	
 	aBtState completedState
 		ifNotNil: [ aBtState completedState rule isOrdered
