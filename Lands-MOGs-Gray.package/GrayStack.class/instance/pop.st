@@ -1,4 +1,4 @@
 accessing
 pop
 
-	^ self removeLast
+	^ currentSize = 0 ifTrue: [nil] ifFalse: [self removeLast]

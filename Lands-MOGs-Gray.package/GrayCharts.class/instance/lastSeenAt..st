@@ -1,4 +1,4 @@
 recursive-ordering-api
 lastSeenAt: aName
-
-	^ self lastSeenIndex at: aName ifAbsent: [ nil ] "return index not position"
+	^ self lastSeenIndex
+		ifNotNil: [ :top | "return index not position" top at: aName ifAbsent: [ nil ] ]

@@ -11,9 +11,9 @@
 		"logging",
 		"current",
 		"lastSeenStack",
-		"lastSeenStackCopy",
 		"algo",
-		"ambiguous"
+		"ambiguous",
+		"btLastSeenIndex"
 	],
 	"name" : "GrayCharts",
 	"type" : "normal"

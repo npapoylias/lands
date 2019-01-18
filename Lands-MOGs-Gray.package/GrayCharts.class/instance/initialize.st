@@ -8,6 +8,7 @@ initialize
 "	successfullTrees := GrayCollection new."
 	lastSeenStack := GrayStack new.
 	lastSeenStack push: Dictionary new.
+	btLastSeenIndex = 1.
 	ambiguous := false. "on pre-existing complete, set"
 	self augment.
 	current := self at:1.

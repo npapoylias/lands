@@ -15,7 +15,7 @@ copySingleAlternativesWaitingFor: aState from: start to: end for: anAlgo
 				addedState := newState.
 				"we may be memoizing for duplicates here.." "stateAdded := self currentAddWithState: newState."
 				(stateAdded := self alreadyInCharts: newState) = newState
-					ifTrue: [self memoizeLastSeenStack. current add: newState ]
+					ifTrue: [self memoizeLastSeenIndex. current add: newState ]
 					ifFalse: [ ambiguous := true ].
 				self
 					updateChildrenWaitingFor: aState
