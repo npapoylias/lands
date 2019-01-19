@@ -1,4 +1,4 @@
 initialization
 initialize
 	super initialize.
-	failures := Dictionary new
+	failures := GrayCollection basicNew initialize: 128. "should auto-grow"
