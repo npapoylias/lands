@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "MorphTreeModel",
+	"category" : "Lands-ToolCompatibility",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"icons"
+	],
+	"name" : "GeneralMorphTree",
+	"type" : "normal"
+}

@@ -1,0 +1,4 @@
+accessing
+rootNodeClassFromItem: anItem
+	
+	^ GeneralMorphNode
