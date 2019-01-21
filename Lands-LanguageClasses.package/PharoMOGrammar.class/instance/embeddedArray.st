@@ -1,4 +1,4 @@
 accessing
 embeddedArray
 
-	<embeddedArray> ::= "(" <arrayItem> + ")" 
+	<embeddedArray> ::= "(" <arrayItem> * ")" 

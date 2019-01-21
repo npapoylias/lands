@@ -1,4 +1,4 @@
 accessing
 ignore
 
-	<ignore> ::= '([ \t\n\r]|"[^"]*")*'
+	<ignore> ::= '([ \t\n\r\f]|"[^"]*")*'

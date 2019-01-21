@@ -1,4 +1,4 @@
 accessing
 block
 
-	<block> ::= "[" ( <blockArg> + "|" ) ? <temporariesDeclaration> ? <statements>  "]" 
+	<block> ::= "[" ( <blockArg> + "|" ? ) ? <temporariesDeclaration> ? <statements>  "]" 
