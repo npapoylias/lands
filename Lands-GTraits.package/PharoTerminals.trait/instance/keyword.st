@@ -1,4 +1,4 @@
 accessing
 keyword
 
-	<keyword> ::= '[a-zA-z][a-zA-Z0-9]*:' 
+	<keyword> ::= '[a-zA-z_][a-zA-Z0-9_]*:' 

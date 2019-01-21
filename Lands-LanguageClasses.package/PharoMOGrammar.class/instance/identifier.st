@@ -1,4 +1,4 @@
 accessing
 identifier
 
-	<identifier> ::=  '[a-zA-Z][a-zA-Z0-9]*'  
+	<identifier> ::=  '[a-zA-Z_][a-zA-Z0-9_]*'  
