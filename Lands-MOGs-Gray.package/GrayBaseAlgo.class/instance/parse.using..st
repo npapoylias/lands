@@ -1,7 +1,9 @@
 parsing
 parse: aString using: aGrammar
-	string := aString.
-	input := GrayReadStream on: aString.
+	aString isWideString 
+		ifFalse: [string := aString]
+		ifTrue: [ (string asByteArray asString select: [:c | (c == Character null) not]) ].
+	input := GrayReadStream on: string.
 	memoLexing clear.
 	grammar := aGrammar.
 	dummyRule grammar: grammar.

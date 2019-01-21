@@ -1,4 +1,4 @@
 accessing
 dynArray
 
-	<dynArray> ::= "{" { <expression> <dots> } ? "}" 
+	<dynArray> ::= "{" { <expression> <dots> } ? <dots> ? "}" 
