@@ -1,5 +1,5 @@
 accessing
 temporariesDeclaration
 
-	<temporariesDeclaration> ::= "|" <variable> + "|" 
+	<temporariesDeclaration> ::= "|" <variable> * "|" 
 		| <impVarDeclaration> +

@@ -1,7 +1,8 @@
 accessing
 method
 
-	<method> ::= <methodDeclaration> 
-		<pragmas> ? 
+	<method> ::= <methodDeclaration> <dots> ?
+		<pragmas>
 		<temporariesDeclaration> ? 
+		<pragmas> 
 		<statements> 

@@ -2,5 +2,5 @@ accessing
 bareSymbol
 
 	<bareSymbol> ::= <identifier> 
-		| <keyword>
-		| <binaryOp>   
+		| '([a-zA-z_][a-zA-Z0-9_]*:+)+' 
+		| <binaryOp> 

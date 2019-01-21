@@ -1,4 +1,4 @@
 accessing
 temporariesDeclaration
 
-	<temporariesDeclaration> ::= "|" <variable> + "|" 
+	<temporariesDeclaration> ::= "|" <variable> * "|" 
