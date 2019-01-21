@@ -1,8 +1,8 @@
 parsing
 parse: aString using: aGrammar
-	aString isWideString 
-		ifFalse: [string := aString]
-		ifTrue: [ (string asByteArray asString select: [:c | (c == Character null) not]) ].
+	aString isWideString
+		ifFalse: [ string := aString ]
+		ifTrue: [ string := self normalize: aString ].
 	input := GrayReadStream on: string.
 	memoLexing clear.
 	grammar := aGrammar.
