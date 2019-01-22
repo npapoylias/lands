@@ -1,5 +1,5 @@
 accessing
 symbol
 
-	<symbol> ::= "#" <bareSymbol>
-		| "#" <string> 
+	<symbol> ::= '#+' <bareSymbol>
+		| '#+' <string> 

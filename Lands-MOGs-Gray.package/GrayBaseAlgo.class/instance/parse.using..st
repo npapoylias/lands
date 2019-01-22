@@ -1,8 +1,6 @@
 parsing
 parse: aString using: aGrammar
-	aString isWideString
-		ifFalse: [ string := aString ]
-		ifTrue: [ string := self normalize: aString ].
+	string := aString .
 	input := GrayReadStream on: string.
 	memoLexing clear.
 	grammar := aGrammar.

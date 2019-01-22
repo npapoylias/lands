@@ -1,6 +1,6 @@
 accessing
 bareSymbol
 
-	<bareSymbol> ::= <identifier> 
-		| '([a-zA-z_][a-zA-Z0-9_]*:+)+|[;\.]' 
+	<bareSymbol> ::= '([a-zA-Z_ªµºÀ-ÿ][a-zA-Z0-9_ªµºÀ-ÿ]*:*)+'
+		| '[;\.]' 
 		| <binaryOp> 
