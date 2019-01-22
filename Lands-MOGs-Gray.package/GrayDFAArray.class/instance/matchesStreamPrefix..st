@@ -8,8 +8,8 @@ matchesStreamPrefix: s
 	[ 
 		(row at: 257) ifTrue: [ endPos := s position ]. "next may proceed without succeeding"
 		(c := s next) 
-			ifNil: [ false ] 
-			ifNotNil: [(index := row at: c asciiValue + 1) isNotNil]  
+			ifNil: [ false ] "handle unicode for now -- by assuming 256 as a . for everything above ascii"
+			ifNotNil: [(index := row at: ((c asciiValue + 1) min: 256)) isNotNil]  
 	] whileTrue: [ row := array at: index].
 	
 	^ endPos 
