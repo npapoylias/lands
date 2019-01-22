@@ -2,6 +2,7 @@ generated
 statements
 
 	<statements> ::= 
+		<dots> ?
 		{ <expression> <dots> } ? 
 		<dots> ? 
 		<return> ? 
