@@ -26,8 +26,7 @@
 		"trimmedEnd",
 		"ancestor",
 		"canBeCompletedAt",
-		"ignore",
-		"btIndexOnPredict"
+		"ignore"
 	],
 	"name" : "GrayState",
 	"type" : "normal"
