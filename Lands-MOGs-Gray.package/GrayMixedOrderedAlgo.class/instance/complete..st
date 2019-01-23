@@ -5,5 +5,8 @@ complete: aState
 
 	aState rule isOrdered
 		ifTrue: [ super complete: aState] 
-		ifFalse: [super completeUnordered: aState].
+		ifFalse: [
+			aState hasAlternatives ifFalse: [ backTrackStack removeAllFromIndex: aState btIndexOnPredict - 1 ]. "keep last"
+			super completeUnordered: aState
+		].
 	
