@@ -1,4 +1,4 @@
 accessing
 start
 
-	<start> ::= <method> 
+	<start> ::= <method>  

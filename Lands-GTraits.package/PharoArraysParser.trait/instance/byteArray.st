@@ -1,4 +1,4 @@
 as yet unclassified
 byteArray
 
-	^ super byteArray ==> [ :tokens | tokens second asByteArray lit <-> tokens ]
+	^ super byteArray ==> [ :tokens | (tokens second collect: [ :n | n value ]) asByteArray lit <-> tokens ]
