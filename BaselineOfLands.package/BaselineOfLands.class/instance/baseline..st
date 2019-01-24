@@ -14,7 +14,7 @@ baseline: spec
 				package: 'Lands-GTraits-Postcard-Classes';
 				package: 'Lands-MOODs';
 				package: 'Lands-MOODs-Epi';
-				package: 'Lands-MOODSs-Geo';
+				package: 'Lands-MOODs-Geo';
 				"package: 'Lands-MOODs-Targets';"
 				package: 'Lands-Lise-GTraits';
 				package: 'Lands-Lise' ]
