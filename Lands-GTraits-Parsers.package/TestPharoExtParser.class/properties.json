@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "Lands-GTraits-Parsers-Ext-Parser",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"algo"
+	],
+	"name" : "TestPharoExtParser",
+	"type" : "normal"
+}

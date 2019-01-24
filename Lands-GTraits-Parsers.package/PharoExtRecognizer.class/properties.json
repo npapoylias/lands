@@ -1,0 +1,13 @@
+{
+	"classtraitcomposition" : "PharoExtGrammar classTrait",
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "PharoExtRecognizer",
+	"commentStamp" : "",
+	"super" : "MOGRecognizer",
+	"traitcomposition" : "PharoExtGrammar",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Lands-GTraits-Parsers-Ext-Syntax"
+}

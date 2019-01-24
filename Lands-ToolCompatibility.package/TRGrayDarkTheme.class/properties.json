@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "TRDarkSolarizedTheme",
+	"category" : "Lands-ToolCompatibility",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "TRGrayDarkTheme",
+	"type" : "normal"
+}

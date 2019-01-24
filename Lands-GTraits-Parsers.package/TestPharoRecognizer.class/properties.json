@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "Lands-GTraits-Parsers-Pharo-Syntax",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"algo"
+	],
+	"name" : "TestPharoRecognizer",
+	"type" : "normal"
+}

@@ -1,0 +1,13 @@
+{
+	"classtraitcomposition" : "PharoExtActions classTrait",
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "PharoExtParser",
+	"commentStamp" : "",
+	"super" : "PharoExtRecognizer",
+	"traitcomposition" : "PharoExtActions",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Lands-GTraits-Parsers-Ext-Parser"
+}

@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "MOGRecognizer",
+	"category" : "Lands-Parsers",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "PharoMOGrammar",
+	"type" : "normal"
+}

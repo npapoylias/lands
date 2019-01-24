@@ -1,0 +1,13 @@
+{
+	"classtraitcomposition" : "ASLActions classTrait",
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "PharoASLParser",
+	"commentStamp" : "",
+	"super" : "PharoMOGrammar",
+	"traitcomposition" : "ASLActions",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Lands-Parsers"
+}

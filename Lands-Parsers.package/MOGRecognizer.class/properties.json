@@ -1,0 +1,13 @@
+{
+	"classtraitcomposition" : "MOGRules classTrait",
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "MOGRecognizer",
+	"commentStamp" : "",
+	"super" : "CustomLanguageClass",
+	"traitcomposition" : "MOGRules",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Lands-Parsers"
+}
