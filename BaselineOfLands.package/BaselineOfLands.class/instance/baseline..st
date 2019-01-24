@@ -8,8 +8,8 @@ baseline: spec
 				package: 'Lands-MOGs-Gray';
 				package: 'Lands-ToolCompatibility';
 				package: 'Lands-Parsers';
-				package: 'Lands-LanguageClasses';
 				package: 'Lands-GTraits';
+				package: 'Lands-LanguageClasses';
 				package: 'Lands-GTraits-Parsers';
 				package: 'Lands-GTraits-Postcard-Classes';
 				package: 'Lands-MOODs';
