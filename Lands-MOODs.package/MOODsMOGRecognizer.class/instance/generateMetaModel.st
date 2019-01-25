@@ -8,12 +8,13 @@ generateMetaModel
 		keysAndValuesDo: [ :name :vars | 
 			| c ivs |
 			ivs := vars inject: '' into: [ :subTotal :next | subTotal , next asString , ' ' ].
-			c := MOODsEntity
-				private_subclass: (self metaModelNameFor: name)
-				instanceVariableNames: ivs
-				classVariableNames: ''
-				poolDictionaries: ''
-				category: packageName.
+			SystemAnnouncer uniqueInstance suspendAllWhile: [ 
+				c := MOODsEntity
+					subclass: (self metaModelNameFor: name)
+					instanceVariableNames: ivs
+					classVariableNames: ''
+					package: packageName
+			].
 			vars
 				do: [ :iv | 
 					c
