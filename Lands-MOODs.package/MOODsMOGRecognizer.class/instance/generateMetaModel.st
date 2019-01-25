@@ -9,13 +9,11 @@ generateMetaModel
 		keysAndValuesDo: [ :name :vars | 
 			| c ivs |
 			ivs := vars inject: '' into: [ :subTotal :next | subTotal , next asString , ' ' ].
-			Author useAuthor: 'Lands-MOODs' during: [ 
 				c := MOODsEntity
 					subclass: (self metaModelNameFor: name)
 					instanceVariableNames: ivs
 					classVariableNames: ''
-					package: packageName
-			].
+					package: packageName.
 			vars
 				do: [ :iv | 
 					c

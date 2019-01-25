@@ -20,7 +20,7 @@ initialize
 	stateRules do: [ :name | (stateDictionary at: (self class >> name) origin name ifAbsentPut: [ OrderedCollection new ]) add: name ].
 	validationRules := keySel select: [ :sel | (self class >> sel) origin isTrait and: [ (self class >> sel) origin traitComposition allTraits includes: BlueprintActions ] ].
 	validationRules do: [ :name | (validationDictionary at: (self class >> name) origin name ifAbsentPut: [ OrderedCollection new ]) add: name ].
-	self generateMetaModel.
+	Author useAuthor: 'Lands-MOODs' during: [ self generateMetaModel ].
 	gRule := #stateRules --> stateRules first.
 	stateRules allButFirst do: [ :s | gRule / s ].
 	grammar := MOGrammar new
