@@ -7,7 +7,7 @@
 	],
 	"name" : "MOODsMOGRecognizer",
 	"commentStamp" : "",
-	"super" : "MOGRecognizer",
+	"super" : "AnObsoleteMOGRecognizer",
 	"traitcomposition" : "ASLActions",
 	"type" : "normal",
 	"classinstvars" : [ ],

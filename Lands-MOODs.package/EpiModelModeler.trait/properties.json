@@ -2,6 +2,6 @@
 	"commentStamp" : "",
 	"traitcomposition" : "BlueprintActions",
 	"classtraitcomposition" : "BlueprintActions classTrait",
-	"category" : "Lands-MOODs-Epi",
-	"name" : "MapModeler"
+	"category" : "Lands-MOODs",
+	"name" : "EpiModelModeler"
 }

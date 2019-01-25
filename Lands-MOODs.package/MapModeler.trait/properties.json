@@ -2,6 +2,6 @@
 	"commentStamp" : "",
 	"traitcomposition" : "BlueprintActions",
 	"classtraitcomposition" : "BlueprintActions classTrait",
-	"category" : "Lands-MOODs-Geo",
-	"name" : "StatScenarioModeler"
+	"category" : "Lands-MOODs",
+	"name" : "MapModeler"
 }
