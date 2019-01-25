@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
 	"super" : "TestCase",
-	"category" : "Lands-Lise-Compiler",
+	"category" : "Lands-Lise-Playground",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "TestLiseCompiler",
+	"name" : "TestLiseInterpreter",
 	"type" : "normal"
 }

@@ -17,4 +17,5 @@ baseline: spec
 				package: 'Lands-MOODs-Geo';
 				"package: 'Lands-MOODs-Targets';"
 				package: 'Lands-Lise-GTraits';
-				package: 'Lands-Lise' ]
+				package: 'Lands-Lise';
+				package: 'Lands-Lise-Playground' ]
