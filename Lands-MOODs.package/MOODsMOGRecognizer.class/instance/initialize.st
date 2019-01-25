@@ -3,12 +3,8 @@ initialize
 	| stateRules unarySel keySel validationRules gRule |
 	self class isAbstract
 		ifTrue: [ ^ self ].
-	SystemAnnouncer uniqueInstance 
-		suspendAllWhile:
-		[
-			self class recompileRecursivelyWithTraits.	"loading order temporary fix - REDO"
-			(self class allSuperclassesIncluding: MOGRecognizer) do: [ :c | c recompileRecursivelyWithTraits ]
-		].
+	self class recompileRecursivelyWithTraits.	"loading order temporary fix - REDO"
+			(self class allSuperclassesIncluding: MOGRecognizer) do: [ :c | c recompileRecursivelyWithTraits ].
 	unarySel := OrderedCollection new.
 	keySel := OrderedCollection new.
 	(self class allSelectorsBelow: MOODsMOGRecognizer)

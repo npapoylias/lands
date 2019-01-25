@@ -9,7 +9,7 @@ generateMetaModel
 		keysAndValuesDo: [ :name :vars | 
 			| c ivs |
 			ivs := vars inject: '' into: [ :subTotal :next | subTotal , next asString , ' ' ].
-			SystemAnnouncer uniqueInstance suspendAllWhile: [ 
+			Author useAuthor: 'Lands-MOODs' during: [ 
 				c := MOODsEntity
 					subclass: (self metaModelNameFor: name)
 					instanceVariableNames: ivs
