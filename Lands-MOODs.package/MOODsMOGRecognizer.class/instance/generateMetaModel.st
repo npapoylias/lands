@@ -4,6 +4,7 @@ generateMetaModel
 
 	| packageName |
 	packageName := self metaModelNameFor: self class name.
+	Transcript show: 'Generating Meta-model for: ', packageName; cr.
 	stateDictionary
 		keysAndValuesDo: [ :name :vars | 
 			| c ivs |
