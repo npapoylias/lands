@@ -9,10 +9,11 @@ generateMetaModel
 			| c ivs |
 			ivs := vars inject: '' into: [ :subTotal :next | subTotal , next asString , ' ' ].
 			c := MOODsEntity
-				subclass: (self metaModelNameFor: name)
+				private_subclass: (self metaModelNameFor: name)
 				instanceVariableNames: ivs
 				classVariableNames: ''
-				package: packageName.
+				poolDictionaries: ''
+				category: packageName.
 			vars
 				do: [ :iv | 
 					c
