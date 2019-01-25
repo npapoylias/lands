@@ -4,7 +4,7 @@
 	"instvars" : [ ],
 	"name" : "LiseRecognizer",
 	"commentStamp" : "",
-	"super" : "MOGRecognizer",
+	"super" : "AnObsoleteMOGRecognizer",
 	"traitcomposition" : "LiseExpressions",
 	"type" : "normal",
 	"classinstvars" : [ ],

@@ -4,7 +4,7 @@
 	"instvars" : [ ],
 	"name" : "LiseExtPharoRecognizer",
 	"commentStamp" : "",
-	"super" : "MOGRecognizer",
+	"super" : "AnObsoleteMOGRecognizer",
 	"traitcomposition" : "PharoExtGrammar + (LiseExpressions - {#primaryValue})",
 	"type" : "normal",
 	"classinstvars" : [ ],
