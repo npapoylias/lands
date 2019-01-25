@@ -1,4 +1,3 @@
 as yet unclassified
 parserClass
-
-	^ PharoParser
+	^ PharoParser 

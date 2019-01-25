@@ -1,4 +1,3 @@
 as yet unclassified
 syntaxHighlighting
-
-	^ PharoSH
+	^ PharoSH 
