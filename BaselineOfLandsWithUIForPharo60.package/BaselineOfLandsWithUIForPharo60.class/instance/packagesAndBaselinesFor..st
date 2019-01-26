@@ -5,7 +5,7 @@ packagesAndBaselinesFor: spec
 			with: [ spec
 				className: 'ConfigurationOfRoassal2';
 				file: 'ConfigurationOfRoassal2';
-				version: '1.59';
+				version: '1.49';
 				repository: 'http://www.smalltalkhub.com/mc/ObjectProfile/Roassal2/main' ];
 				package: 'Lands-MOGs-Gray-Lexing';
 		package: 'Lands-MOGs-Gray';
