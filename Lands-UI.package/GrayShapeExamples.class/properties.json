@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "TestCase",
-	"category" : "Lands-MOGs-Gray-Visual",
+	"super" : "Object",
+	"category" : "Lands-UI",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "TestShapeComposition",
+	"name" : "GrayShapeExamples",
 	"type" : "normal"
 }

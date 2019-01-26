@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "TestCase",
-	"category" : "Lands-MOGs-Gray-Visual",
+	"super" : "GrayFancyGraph",
+	"category" : "Lands-UI",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "TestPolyShape",
+	"name" : "GrayFancyTree",
 	"type" : "normal"
 }

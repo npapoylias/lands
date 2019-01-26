@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "GrayFancyGraph",
-	"category" : "Lands-MOGs-Gray-Visual",
+	"super" : "RTPopup",
+	"category" : "Lands-UI",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "GrayFancyTree",
+	"name" : "GrayPopup",
 	"type" : "normal"
 }

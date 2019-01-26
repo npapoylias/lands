@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "RTPopup",
-	"category" : "Lands-MOGs-Gray-Visual",
+	"super" : "TestCase",
+	"category" : "Lands-UI",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "GrayPopup",
+	"name" : "TestPolyShape",
 	"type" : "normal"
 }
