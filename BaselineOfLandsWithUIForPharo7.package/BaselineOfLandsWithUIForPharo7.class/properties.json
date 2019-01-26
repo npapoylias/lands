@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
 	"super" : "BaselineOfLands",
-	"category" : "BaselineOfLands",
+	"category" : "BaselineOfLandsWithUIForPharo7",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "BaselineOfLandsWithUIForPharo61",
+	"name" : "BaselineOfLandsWithUIForPharo7",
 	"type" : "normal"
 }

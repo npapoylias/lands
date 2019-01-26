@@ -1,0 +1,1 @@
+SystemOrganization addCategory: #BaselineOfLandsWithUIForPharo7!
