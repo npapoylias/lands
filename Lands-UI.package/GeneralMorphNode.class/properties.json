@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "MorphTreeNodeModel",
-	"category" : "Lands-ToolCompatibility",
+	"category" : "Lands-UI",
 	"classinstvars" : [
 		"icons"
 	],

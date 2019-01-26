@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "MorphTreeModel",
-	"category" : "Lands-ToolCompatibility",
+	"category" : "Lands-UI",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

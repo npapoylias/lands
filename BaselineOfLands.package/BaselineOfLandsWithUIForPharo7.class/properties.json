@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "Object",
-	"category" : "Lands-ToolCompatibility",
+	"super" : "BaselineOfLands",
+	"category" : "BaselineOfLands",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "LandsExperiments",
+	"name" : "BaselineOfLandsWithUIForPharo7",
 	"type" : "normal"
 }
