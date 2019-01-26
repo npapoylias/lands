@@ -13,7 +13,8 @@
 		"lastSeenStack",
 		"algo",
 		"ambiguous",
-		"btLastSeenIndex"
+		"btLastSeenIndex",
+		"lastSeenStackCopy"
 	],
 	"name" : "GrayCharts",
 	"type" : "normal"
