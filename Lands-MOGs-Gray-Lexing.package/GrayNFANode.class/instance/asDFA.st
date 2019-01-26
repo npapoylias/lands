@@ -6,7 +6,7 @@ asDFA
 	|setToInt counter newSetStack finalCollection|
 	finalCollection := OrderedCollection new.
 	setToInt := Dictionary new.
-	newSetStack := FILOStack new.
+	newSetStack := ReverseStack new.
 	counter := 0.
 	newSetStack push: (self isAuto ifFalse: [{self}] ifTrue: [self followEpsilons])  asSet. "follow epsilons in the initial state".
 	setToInt at: newSetStack top put: (counter := counter + 1).
