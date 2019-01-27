@@ -1,4 +1,4 @@
 example
 example
 
-	^ self exampleTreeItemList defaultTreeMorph buildContents expandAll
+	^ self exampleTreeItemList defaultTreeMorph buildContents expandRoots "expandAll"

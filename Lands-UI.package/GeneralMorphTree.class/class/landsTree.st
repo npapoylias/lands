@@ -1,5 +1,5 @@
 example
-exampleTree
+landsTree
 
 	^'Lands' -> {  
 		'' -> {  
@@ -89,5 +89,5 @@ exampleTree
 			'Day 5' -> {  } @ 'project'.
 			'Day 6' -> {  } @ 'project'.
 		} @ 'lectures'.
-	
+		"'Run Tests' -> {  } @ 'project'."
 	}

@@ -1,4 +1,5 @@
 event handling
 doubleClick
 
-	self halt: 'doubleClick'
+	TOCAnnouncer default announce: (TOCDoubleClick on: self)
+	"self halt: 'doubleClick'"

@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "Announcer",
+	"category" : "Lands-UI",
+	"classinstvars" : [
+		"default"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "TOCAnnouncer",
+	"type" : "normal"
+}
