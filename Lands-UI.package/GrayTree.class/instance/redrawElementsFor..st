@@ -11,7 +11,7 @@ redrawElementsFor: view
 	view addAll: (velements collect: [ :ve | ve allElements ]) deepFlatten.
 	"velements @ self elementLabel."
 	arrow := RTArrowedLine new
-		color: Color black;
+		color: Color white;
 		attachPoint: RTVerticalAttachPoint instance.
 	eb := RTEdgeBuilder new
 		view: view;

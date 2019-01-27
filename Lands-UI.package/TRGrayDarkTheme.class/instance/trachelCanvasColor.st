@@ -1,3 +1,3 @@
 accessing
 trachelCanvasColor
-	^ Color blue alpha: 0.6
+	^ Color black alpha: 0.5
