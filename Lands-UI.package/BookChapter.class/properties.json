@@ -1,13 +1,16 @@
 {
 	"commentStamp" : "",
-	"super" : "MorphTreeModel",
+	"super" : "ComposableModel",
 	"category" : "Lands-UI-Book",
-	"classinstvars" : [ ],
+	"classinstvars" : [
+		"default"
+	],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"icons"
+		"tab",
+		"tabContents"
 	],
-	"name" : "GeneralMorphTree",
+	"name" : "BookChapter",
 	"type" : "normal"
 }

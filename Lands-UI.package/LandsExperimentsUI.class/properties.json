@@ -1,13 +1,14 @@
 {
 	"commentStamp" : "",
 	"super" : "ComposableModel",
-	"category" : "Lands-UI",
+	"category" : "Lands-UI-Book",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
 		"navigationPane",
-		"tabArea"
+		"tabArea",
+		"toc"
 	],
 	"name" : "LandsExperimentsUI",
 	"type" : "normal"

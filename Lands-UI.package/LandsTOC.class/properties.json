@@ -1,13 +1,17 @@
 {
 	"commentStamp" : "",
-	"super" : "MorphTreeModel",
+	"super" : "Object",
 	"category" : "Lands-UI-Book",
-	"classinstvars" : [ ],
+	"classinstvars" : [
+		"default"
+	],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"icons"
+		"contents",
+		"packageName",
+		"classPreFix"
 	],
-	"name" : "GeneralMorphTree",
+	"name" : "LandsTOC",
 	"type" : "normal"
 }

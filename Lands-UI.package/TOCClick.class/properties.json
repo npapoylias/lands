@@ -1,13 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "MorphTreeModel",
-	"category" : "Lands-UI-Book",
+	"super" : "Announcement",
+	"category" : "Lands-UI",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"icons"
+		"node"
 	],
-	"name" : "GeneralMorphTree",
+	"name" : "TOCClick",
 	"type" : "normal"
 }

@@ -1,0 +1,3 @@
+accessing
+classPreFix
+	^ default classPreFix

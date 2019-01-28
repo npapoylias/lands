@@ -1,4 +1,5 @@
 initialization
 createNavigationPane
 
-	navigationPane := GeneralMorphTree landsToc asSpecAdapter 
+	toc := LandsTOC.
+	navigationPane := toc asMorph asSpecAdapter.
