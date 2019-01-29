@@ -1,6 +1,12 @@
 initialization
 open: aNode
-	|node| node := aNode.
-	[node parentNode = nil] whileFalse: [node := node parentNode].
-	self updateTabAreaWith: (Smalltalk globals at: (self classNameFor: node item) asSymbol) default tab.
+	|nodes tManager tabs path| 
+	nodes := OrderedCollection new add: aNode; yourself.
+	[nodes last parentNode = nil] whileFalse: [nodes add: nodes last parentNode].
+	self updateTabAreaWith: (tManager := (Smalltalk globals at: (self classNameFor: nodes last item) asSymbol) default tab).
+	path := aNode pathIndex.
+	path doWithIndex: [:pathIndex :index | 
+		tManager widget widget selectTabAt: pathIndex. 
+		tManager := (Smalltalk globals at: (self classNameFor: (nodes at: nodes size - index) item) asSymbol) default tabContents
+	]. 
 	"handle indexing later"

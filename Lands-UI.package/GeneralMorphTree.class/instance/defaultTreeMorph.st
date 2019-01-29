@@ -1,6 +1,6 @@
 view
 defaultTreeMorph
 	^ super defaultTreeMorph
-			doubleClickSelector: #doubleClick;
+			"doubleClickSelector: #doubleClick;"
 			nodeStringGetter: #asString;
 			getMenuSelector: #menu:shifted:.

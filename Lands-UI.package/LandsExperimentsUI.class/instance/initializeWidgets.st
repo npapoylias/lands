@@ -3,6 +3,10 @@ initializeWidgets
 
 	self createNavigationPane.
 	self createTabArea.
-	TOCAnnouncer default "should be one that's shared between ui and pane.."
-		subscribe: TOCClick 
-		do: [ :announcement | self open: announcement node ]
+	announcer ":= TOCAnnouncer new 
+		"subscribe: TOCClick 
+		do: [ :announcement | self open: announcement node ].
+	navigationPane widget model selectNodePath:		
+			navigationPane widget model rootNodes first path.
+	navigationPane widget selectNodePath: 
+		navigationPane widget roots first complexContents path.

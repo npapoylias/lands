@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"icons"
+		"icons",
+		"announcer"
 	],
 	"name" : "GeneralMorphTree",
 	"type" : "normal"

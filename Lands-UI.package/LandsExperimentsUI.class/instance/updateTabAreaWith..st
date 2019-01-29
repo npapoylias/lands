@@ -1,4 +1,7 @@
 initialization
 updateTabAreaWith: aTabManager
-	tabArea := aTabManager.
-	self update.
+	tabArea ~= aTabManager
+		ifTrue: [
+			tabArea := aTabManager.
+			self update
+		]

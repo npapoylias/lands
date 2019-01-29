@@ -1,5 +1,8 @@
 accessing
 selectionChanged
-	self changed.
-	self selectedNode ifNotNil: [:n | n click]
+	self selectedNode ifNotNil: [:n |
+		self expandAllFromNode: n.
+		announcer announce: (TOCClick on: n).
+		self changed.
+	].
 	
