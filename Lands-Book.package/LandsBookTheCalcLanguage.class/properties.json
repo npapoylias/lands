@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "LandsBookGrayandASL",
+	"category" : "Lands-Book",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "LandsBookTheCalcLanguage",
+	"type" : "normal"
+}

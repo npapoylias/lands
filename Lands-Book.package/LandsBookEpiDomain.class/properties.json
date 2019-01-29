@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "LandsBookExampleInfluenza",
+	"category" : "Lands-Book",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "LandsBookEpiDomain",
+	"type" : "normal"
+}

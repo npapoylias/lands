@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "LandsBookExpressionExplorations",
+	"category" : "Lands-Book",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "LandsBookGrammarREPL",
+	"type" : "normal"
+}

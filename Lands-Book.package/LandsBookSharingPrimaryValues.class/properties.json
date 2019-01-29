@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "LandsBookLise",
+	"category" : "Lands-Book",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "LandsBookSharingPrimaryValues",
+	"type" : "normal"
+}

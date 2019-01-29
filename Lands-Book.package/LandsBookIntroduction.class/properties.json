@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "BookChapter",
+	"category" : "Lands-Book",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "LandsBookIntroduction",
+	"type" : "normal"
+}
