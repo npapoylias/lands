@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "Pharo3DarkTheme",
+	"category" : "Lands-UI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "LandsDarkTheme",
+	"type" : "normal"
+}
