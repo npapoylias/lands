@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "ComposableModel",
+	"category" : "Lands-UI-Book",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"morph"
+	],
+	"name" : "SpecBrowser",
+	"type" : "normal"
+}
