@@ -1,7 +1,5 @@
 not defined category
 playground
-|grammar|
-
 grammar := MOGrammar new
 		named: #ExpressionGrammar;
 		with: { 

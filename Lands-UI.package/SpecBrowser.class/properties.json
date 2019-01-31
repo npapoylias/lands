@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"morph"
+		"morph",
+		"initialMorph"
 	],
 	"name" : "SpecBrowser",
 	"type" : "normal"
