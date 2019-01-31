@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "LandsBookMOODs",
+	"super" : "LandsBookGrammarTraits",
 	"category" : "Lands-Book",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "LandsBookBeyondtheWorkbench",
+	"name" : "LandsBookPharoGTraitsRecognizer",
 	"type" : "normal"
 }

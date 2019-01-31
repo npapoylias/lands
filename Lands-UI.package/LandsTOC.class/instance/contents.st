@@ -43,17 +43,17 @@ contents
 			'GTraits Overview' -> {  } @ 'project'.
 			'GTraits Grammar' -> {  } @ 'project'.
 			'GTraits ASL Actions' -> {  } @ 'project'.
+			'Pharo GTraits Recognizer'-> {  } @ 'project'.
 			'Pharo GTraits Parser'-> {  } @ 'project'.
 			'GTraits Postcard' -> {  } @ 'project'.	
 			'Pharo Extentions' -> {  
 				'Extending Pharo' -> {  } @ 'project'.
-				'Alternative Postcard' -> {  } @ 'class'.
 				'Alternative Mixed Postcard' -> {  } @ 'class'.
-				'Mixed Postcard' -> {  } @ 'class'.
+				'Alternative Postcard' -> {  } @ 'class'.
+				'Testing Postcards' -> {  } @ 'class'.
 				'Extended Grammar' -> {  } @ 'class'.
 				'Extended Actions' -> {  } @ 'class'
 			} @ 'project'.
-			'Beyond the Workbench' -> {  } @ 'project'
 		} @ 'grammarTraits'.	
 			
 		'*MOODs' -> {  
@@ -66,6 +66,8 @@ contents
 					'EpiDomain' -> {  } @ 'class'.
 					'EpiModeler' -> {  } @ 'class'.  
 			} @ 'project'.
+			'Beyond the Workbench' -> {  } @ 'project'
+			"co-existance of DSLs and dialects in the same run-time !!!"
 		} @ 'moods'.
 		
 		'*Lise' -> {  
