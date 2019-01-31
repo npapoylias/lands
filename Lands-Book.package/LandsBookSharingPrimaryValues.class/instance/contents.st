@@ -1,4 +1,4 @@
 not defined category
 contents
 
-	^ self browserOnMethod: UsingLisePharoExtParser>>#testPrimaryValuesAlternativeFunctorsAndVariadic
+	^ self browserOnMethod: TestLisePharoCompiler>>#testPrimaryValuesAlternativeFunctorsAndVariadic
