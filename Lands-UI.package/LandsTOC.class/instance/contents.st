@@ -63,6 +63,7 @@ contents
 			'GeoDomain' -> {  } @ 'project'.
 			'GeoModeler' -> {  } @ 'project'.
 			'Example: Influenza' -> {
+					'EpiScripter' -> {  } @ 'class'.
 					'EpiDomain' -> {  } @ 'class'.
 					'EpiModeler' -> {  } @ 'class'.  
 			} @ 'project'.
