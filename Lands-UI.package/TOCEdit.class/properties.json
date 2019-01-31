@@ -1,15 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "Object",
+	"super" : "TOCEvent",
 	"category" : "Lands-UI-Book",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"contents",
-		"packageName",
-		"classPreFix"
-	],
-	"name" : "LandsTOC",
+	"instvars" : [ ],
+	"name" : "TOCEdit",
 	"type" : "normal"
 }

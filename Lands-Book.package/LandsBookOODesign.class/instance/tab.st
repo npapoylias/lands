@@ -5,5 +5,5 @@ tab
 					tab 
 						label: 'OO Design';
 						closeable: false;
-						icon: (self appIcon: #class size: 28@28).
+						icon: (self appIcon: #project size: 28@28).
 					tab model: self tabContents. tab ]
