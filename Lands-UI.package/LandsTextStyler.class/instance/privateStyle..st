@@ -1,5 +1,6 @@
 private
 privateStyle: aText
+
 	classOrMetaClass ifNil: [ ^ super privateStyle: aText ].
 	^ (classOrMetaClass class canUnderstand: #syntaxHighlighting)
 		ifFalse: [ super privateStyle: aText ]
