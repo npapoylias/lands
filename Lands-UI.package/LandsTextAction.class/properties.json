@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "TextAction",
+	"category" : "Lands-UI-Editor",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"interval"
+	],
+	"name" : "LandsTextAction",
+	"type" : "normal"
+}
