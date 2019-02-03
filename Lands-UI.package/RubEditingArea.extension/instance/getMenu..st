@@ -5,7 +5,20 @@ getMenu: shiftKeyState
 	menu := shiftKeyState
 		ifTrue: [ self getMenuPolicy lookupShiftMenu ]
 		ifFalse: [ self getMenuPolicy lookupMenu ].
-	menu add: 'Font' target: editor selector: #changeTextFont.
-	menu add: 'Emph/Align' target: editor selector: #changeEmphasisOrAlignment.
-	menu add: 'Color' target: editor selector: #chooseColor.
+	menu addLine.
+	menu addMenuItem: (MenuItemMorph new 
+		contents: 'Font'; 
+		target: editor; 
+		selector: #forceTextFont;
+		icon: (self iconNamed: #haloFontStyle)).
+	menu addMenuItem: (MenuItemMorph new 
+		contents: 'Emph/Align'; 
+		target: editor; 
+		selector: #forceEmphasisOrAlignement;
+		icon: (self iconNamed: #haloFontEmph)).
+	menu addMenuItem: (MenuItemMorph new 
+		contents: 'Color'; 
+		target: editor; 
+		selector: #forceColor;
+		icon: (self iconNamed: #paint)).
 	^ menu
