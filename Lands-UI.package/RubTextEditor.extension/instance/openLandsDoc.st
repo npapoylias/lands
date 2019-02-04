@@ -10,7 +10,7 @@ openLandsDoc
 		"chooseFullFileNameMatching: nil." 
 	"self halt."
 	file ifNotNil: [ |shoutStyler|
-		assoc := FLMaterializer materializeFromFileNamed: file.
+		assoc := FLMaterializer materializeFromFileNamed: file fullName.
 		self textArea model text: assoc key asText.
 		shoutStyler := self textArea shoutStyler. 
 		shoutStyler 

@@ -1,12 +1,12 @@
 *Lands-UI-Editor
 saveLandsDoc
-	|file assoc|
+	|file |
 	file := UIManager default theme
-		chooseFileNameIn: UIManager default
+		fileSaveIn: UIManager default
 		title: 'Open .lands doc'
 		extensions: '.lands'
 		path: FileSystem workingDirectory
-		preview: nil.
+		"preview: nil".
 		"chooseFullFileNameMatching: nil." 
 	"self halt."
 	file ifNotNil: [ |shoutStyler actions|
@@ -14,5 +14,5 @@ saveLandsDoc
 		shoutStyler 
 			ifNotNil: [ actions := shoutStyler styler postStyleActions ]
 			ifNil: [ actions := self textArea model text runs asOrderedCollection flatten ].
-		FLSerializer serialize: self textArea model text string -> actions toFileNamed: file.
+		FLSerializer serialize: self textArea model text string -> actions toFileNamed: file fullName.
 	]
