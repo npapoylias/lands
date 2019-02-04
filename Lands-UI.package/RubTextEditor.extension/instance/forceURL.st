@@ -1,10 +1,11 @@
 *Lands-UI-Editor
 forceURL
 	|action selection|
-	selection := self selection.
+	selection := self selection asString.
 	action := LandsTextAction new 
 		interval: self selectionInterval; 
-		actOnClickBlock: [WebBrowser openOn: selection].
+		argument: selection;
+		actOnClickBlock: [:act :event :target :paragraph :editor | WebBrowser openOn: act argument].
 	self forceAttribute: action.
 	self forceAttribute: (TextColor color: Color orange).
 	self forceAttribute: (TextEmphasis underlined)

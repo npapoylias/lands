@@ -1,15 +1,15 @@
 {
 	"commentStamp" : "",
-	"super" : "TextAction",
+	"super" : "Object",
 	"category" : "Lands-UI-Editor",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
 		"interval",
-		"actionSerialization",
-		"argument"
+		"hash",
+		"attribute"
 	],
-	"name" : "LandsTextAction",
+	"name" : "PostStyleAction",
 	"type" : "normal"
 }

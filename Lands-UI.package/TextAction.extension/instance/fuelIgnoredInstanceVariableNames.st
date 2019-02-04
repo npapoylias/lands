@@ -1,0 +1,4 @@
+*Lands-UI
+fuelIgnoredInstanceVariableNames
+
+	^ #('actOnClickBlock')
