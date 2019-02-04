@@ -39,9 +39,25 @@ getMenu: shiftKeyState
 		selector: #forceColor;
 		icon: (self iconNamed: #paint)).
 	landsMenu addMenuItem: (MenuItemMorph new 
-		contents: 'Link'; 
+		contents: 'Action'; 
 		target: editor; 
-		selector: #forceLink;
+		selector: #forceAction;
+		icon: (self iconNamed: #scriptManager)).
+	landsMenu addMenuItem: (MenuItemMorph new 
+		contents: 'URL'; 
+		target: editor; 
+		selector: #forceURL;
 		icon: (self iconNamed: #publish)).
+	landsMenu addLine.
+	landsMenu addMenuItem: (MenuItemMorph new 
+		contents: 'Open .lands'; 
+		target: editor; 
+		selector: #openLandsDoc;
+		icon: (self iconNamed: #smallOpen)).
+	landsMenu addMenuItem: (MenuItemMorph new 
+		contents: 'Save  .lands'; 
+		target: editor; 
+		selector: #saveLandsDoc;
+		icon: (self iconNamed: #smallSave)).
 	menu add: 'Lan.d.s' icon: (self iconNamed: #objects) subMenu: landsMenu.
 	^ menu
