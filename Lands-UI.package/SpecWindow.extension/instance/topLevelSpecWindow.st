@@ -1,0 +1,4 @@
+*Lands-UI
+topLevelSpecWindow
+
+	^ self

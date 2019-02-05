@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "DynamicComposableModel",
+	"category" : "Lands-UI-Book",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"containedWidgets",
+		"layoutClass"
+	],
+	"name" : "LandsContainer",
+	"type" : "normal"
+}

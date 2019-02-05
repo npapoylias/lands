@@ -1,4 +1,6 @@
 *Lands-UI-Editor
 scrollIt
 
-	^ self doIt
+	^ self evaluate: self selection asString andDo: [ :r | 
+			self topLevelSpecAnnouncer announce: (ScrollIt with: r) 
+	]
