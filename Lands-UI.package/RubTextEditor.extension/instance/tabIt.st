@@ -2,5 +2,5 @@
 tabIt
 
 	^ self evaluate: self selection asString andDo: [ :r | 
-			self topLevelSpecAnnouncer announce: (TabIt with: r) 
+			self textArea topLevelSpecAnnouncer announce: (TabIt with: r) 
 	]

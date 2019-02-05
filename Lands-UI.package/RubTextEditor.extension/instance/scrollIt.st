@@ -2,5 +2,5 @@
 scrollIt
 
 	^ self evaluate: self selection asString andDo: [ :r | 
-			self topLevelSpecAnnouncer announce: (ScrollIt with: r) 
+			self textArea topLevelSpecAnnouncer announce: (ScrollIt with: r) 
 	]
