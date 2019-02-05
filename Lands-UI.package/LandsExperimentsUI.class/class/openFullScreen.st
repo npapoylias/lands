@@ -9,5 +9,5 @@ openFullScreen
 	instance := self new.
 	window := instance openWithSpec; window. 
 	window value openFullScreen.
-	instance window: window
+	instance window: window window value "SpecWindow"
 	"self splashLogo."

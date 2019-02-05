@@ -1,6 +1,6 @@
 accessing
 window: win
-
+	self halt.
 	myWindow := win.
-	myWindow announcer on: TabIt do: [ :a | Transcript show: a result; cr ].
-	myWindow announcer on: ScrollIt do: [ :a | Transcript show: a result; cr ].
+	myWindow announcer subscribe: TabIt do: [ :a | Transcript show: a result; cr ].
+	myWindow announcer subscribe: ScrollIt do: [ :a | Transcript show: a result; cr ].
