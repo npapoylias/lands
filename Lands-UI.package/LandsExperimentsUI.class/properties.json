@@ -9,7 +9,8 @@
 		"navigationPane",
 		"tabArea",
 		"toc",
-		"myWindow"
+		"myWindow",
+		"selectedNode"
 	],
 	"name" : "LandsExperimentsUI",
 	"type" : "normal"

@@ -9,10 +9,10 @@ window: win
 		tabArea innerTabManager addTab: tab 
 	].
 	myWindow announcer subscribe: ScrollIt do: [ :a |  
-	|selectedTab| selectedTab := tabArea innerTabManager selectedTab.
-		selectedTab model: {
+	|selectedTab container| selectedTab := self tabArea innerTabManager selectedTab.
+		selectedTab model: (container := {
 			selectedTab spec instance widget morph asSpecAdapter.
 			self inspectorWith: a result.
-		} ui.
-		self update
+		} ui).
+		selectedTab spec instance widget refreshContent
 	].

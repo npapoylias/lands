@@ -5,7 +5,7 @@ initializeWidgets
 	self createTabArea.
 	announcer ":= TOCAnnouncer new 
 		"subscribe: TOCSelect 
-		do: [ :announcement | self open: announcement node ].
+		do: [ :announcement | self open: (selectedNode := announcement node) ].
 	announcer subscribe: TOCEdit do: [ :announcment | 
 		(self classFor: announcment node item) browse ]. 
 	navigationPane widget model selectNodePath:		
