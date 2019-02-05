@@ -1,9 +1,12 @@
 specs
 open
 	"self open"
-	|instance|
+	|instance window|
 	"Author useAuthor: 'Lands-UI' during: [ LandsTOC generateBookHierarchy ]."
 	self initFonts.
 	instance := self new.
-	(instance openWithSpec; window) maximize.
+	window := instance openWithSpec; window.
+	window extent: 1280@1024.
+	window maximize.
+	instance window: window
 	"self splashLogo."

@@ -1,5 +1,13 @@
 specs
 openFullScreen
 	"self openFullScreen"
-	(self new openWithSpec; window) window value openFullscreen.
-	self splashLogo.
+		|instance window|
+	"(self new openWithSpec; window) window value openFullscreen.
+	self splashLogo."
+	"Author useAuthor: 'Lands-UI' during: [ LandsTOC generateBookHierarchy ]."
+	self initFonts.
+	instance := self new.
+	window := instance openWithSpec; window. 
+	window value openFullScreen.
+	instance window: window
+	"self splashLogo."
