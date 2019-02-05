@@ -8,4 +8,11 @@ window: win
 		tab model: (self inspectorWith: a result).
 		tabArea innerTabManager addTab: tab 
 	].
-	myWindow announcer subscribe: ScrollIt do: [ :a | self halt. Transcript show: a result; cr ].
+	myWindow announcer subscribe: ScrollIt do: [ :a |  
+	|selectedTab| selectedTab := tabArea innerTabManager selectedTab.
+		selectedTab model: {
+			selectedTab spec instance widget morph asSpecAdapter.
+			self inspectorWith: a result.
+		} ui.
+		self update
+	].
