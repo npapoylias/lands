@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"postStyleActions"
+		"postStyleActions",
+		"stylingActive"
 	],
 	"name" : "LandsTextStyler",
 	"type" : "normal"

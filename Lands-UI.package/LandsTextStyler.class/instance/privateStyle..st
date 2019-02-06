@@ -1,6 +1,7 @@
 private
 privateStyle: aText
 	|ret|
+	self stylingActive ifFalse: [ ^ false ].
 	classOrMetaClass ifNil: [ ret := super privateStyle: aText ].
 	ret := (classOrMetaClass class canUnderstand: #syntaxHighlighting)
 		ifFalse: [ super privateStyle: aText ]

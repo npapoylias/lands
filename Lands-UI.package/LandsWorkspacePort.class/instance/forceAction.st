@@ -8,7 +8,7 @@ forceAction
 	action := LandsTextAction new 
 		interval: self selectionInterval; "arg version of block, should ease serialization"
 		argument: expr;
-		actOnClickBlock: [:act :event :target :paragraph :area | area editor evaluate: act argument andDo: [ :result | result ]].
+		actOnClickBlock: [:act :event :target :paragraph :ed | "area" ed evaluate: act argument andDo: [ :result | result ]].
 	self forceAttribute: action.
 	self forceAttribute: (TextColor color: Color cyan).
 	self forceAttribute: (TextEmphasis underlined)
