@@ -1,0 +1,25 @@
+{
+	"commentStamp" : "",
+	"super" : "Model",
+	"category" : "Lands-UI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"LastContents"
+	],
+	"instvars" : [
+		"bindings",
+		"acceptDroppedMorphs",
+		"acceptAction",
+		"mustDeclareVariables",
+		"fileName",
+		"lineEnding",
+		"encoding",
+		"stylingActive",
+		"contents",
+		"pluggableTextMorph",
+		"editor"
+	],
+	"name" : "LandsWorkspacePort",
+	"type" : "normal"
+}
