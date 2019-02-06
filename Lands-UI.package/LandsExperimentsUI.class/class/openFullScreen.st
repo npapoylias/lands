@@ -8,6 +8,6 @@ openFullScreen
 	self initFonts.
 	instance := self new.
 	window := instance openWithSpec; window. 
-	window value openFullScreen.
+	window window value openFullscreen.
 	instance window: window window value "SpecWindow"
 	"self splashLogo."
