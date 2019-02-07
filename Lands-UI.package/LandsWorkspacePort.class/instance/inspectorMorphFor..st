@@ -6,4 +6,4 @@ inspectorMorphFor: anObject
 	rnd := ins defaultRenderer.
 	ins startOn: anObject.
 	^ (((GLMMorphicWindowRenderer render: ins from: rnd) extent: 800@600) 
-		allMorphs select: [ :m | m class = LazyTabGroupMorph ]) first extent: 800@600.
+		allMorphs select: [ :m | m class = LazyTabGroupMorph ]) first extent: 800@600; color: Color darkGray.

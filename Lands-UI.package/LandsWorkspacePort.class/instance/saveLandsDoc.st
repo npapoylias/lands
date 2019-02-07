@@ -13,6 +13,6 @@ saveLandsDoc
 		shoutStyler := self textArea shoutStyler. 
 		shoutStyler 
 			ifNotNil: [ actions := shoutStyler styler postStyleActions ]
-			ifNil: [ actions := self textArea model getText runs asOrderedCollection flatten ].
-		FLSerializer serialize: self textArea model getText string -> actions toFileNamed: file fullName.
+			ifNil: [ actions := self textArea model text runs asOrderedCollection flatten ].
+		FLSerializer serialize: self textArea model text string -> actions toFileNamed: file fullName.
 	]
