@@ -18,7 +18,8 @@
 		"stylingActive",
 		"contents",
 		"pluggableTextMorph",
-		"editor"
+		"editor",
+		"editMorph"
 	],
 	"name" : "LandsWorkspacePort",
 	"type" : "normal"

@@ -1,17 +1,19 @@
 lands-extentions
 embedIt
 
-	^ self evaluate: self selection asString andDo: [:result | |oldInterval|
-			oldInterval := self selectionInterval.  
-			self toggleStylingActive.
-			self textArea setText: 
-				((self text copyFrom: 1 to: oldInterval last)
-					append: Character cr asText;
-					append: Character cr asText;
-					append: '"' asText; 
-					append: (self inspectorMorphFor: result);
-					append: '"' asText;
-					append: (self text copyFrom: oldInterval last + 1 to: self text size)).
-			self toggleStylingActive.
+	^ self evaluate: self selection asString andDo: [:result |
+			self insert: ((WriteStream on: String new)
+				nextPut: Character cr;
+				nextPut: Character cr;
+				nextPut: $"; yourself) contents at: self selectionInterval last.
+			self editMorph 
+				anchorMorph: (self inspectorMorphFor: result)
+				at: self selectionCornerAsGlobalBound
+				type: #inline.
+			self augmentSelectionBy: 2.
+			self insert: ((WriteStream on: String new)
+				nextPut: Character cr;
+				nextPut: $";
+				nextPut: Character cr; yourself) contents at: self selectionInterval last.
 	].
 	"42"
