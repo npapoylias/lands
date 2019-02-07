@@ -1,12 +1,12 @@
 lands-extentions
 insert: text at: position
 	| index |
-	index := (position + 1) min: pluggableTextMorph text size.
+	index := (position + 1) min: (pluggableTextMorph text size + 1).
 	self editMorph paragraph
 		replaceFrom: index 
 		to: index - 1 "insertion"
-		with: ((pluggableTextMorph text at: index) asString , text asString) asText
+		with: text asText
 		displaying: true. 
-	self augmentSelectionBy: text size + 1
+	self augmentSelectionBy: text size
 	
 		
