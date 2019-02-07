@@ -5,8 +5,10 @@ embedIt
 			oldInterval := self selectionInterval.  
 			self toggleStylingActive.
 			self textArea setText: 
-				((self text copyFrom: 1 to: oldInterval first -1) 
-					append: result asMorph;
+				((self text copyFrom: 1 to: oldInterval last)
+					append: Character cr asText;
+					append: Character cr asText; 
+					append: (self inspectorMorphFor: result);
 					append: (self text copyFrom: oldInterval last + 1 to: self text size)).
 			self toggleStylingActive.
 	].
