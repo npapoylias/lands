@@ -18,5 +18,6 @@ embedIt
 				nextPut: Character cr;
 				nextPut: $";
 				nextPut: Character cr; yourself) contents at: self selectionInterval last.
+			"self selectionAtInput."
 	].
 	"42"
