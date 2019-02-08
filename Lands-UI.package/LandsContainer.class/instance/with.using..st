@@ -1,5 +1,5 @@
 instance creation
 with: aCollection using: aLayoutClass
 
-	containedWidgets := aCollection.
+	containedWidgets := aCollection asOrderedCollection.
 	layoutClass := aLayoutClass.

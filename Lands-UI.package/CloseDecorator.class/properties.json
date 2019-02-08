@@ -8,7 +8,10 @@
 	],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"container",
+		"item"
+	],
 	"name" : "CloseDecorator",
 	"type" : "normal"
 }

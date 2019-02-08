@@ -13,6 +13,6 @@ initializeWidgets
 		col addSplitter." 
 	].
 	self whenBuiltDo: [ "the others have it"
-			 CloseDecorator new on: containedWidgets last.
+			 CloseDecorator new on: containedWidgets last updating: self.
 	].
 	"self layout: col."
