@@ -3,4 +3,4 @@ mouseDown: anEvent
 
 	owner owner removeMorph: owner.
 	self changed.
-	container remove: item
+	container ifNotNil: [container remove: item]
