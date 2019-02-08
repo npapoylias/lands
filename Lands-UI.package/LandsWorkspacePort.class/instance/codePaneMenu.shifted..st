@@ -12,6 +12,11 @@ codePaneMenu: menu shifted: shifted
 	menu addLine.
 	landsMenu := MenuMorph new.
 	landsMenu addMenuItem: (MenuItemMorph new 
+		contents: 'Board It'; 
+		target: ed; 
+		selector: #scrollIt;
+		icon: (self iconNamed: #down)).
+	landsMenu addMenuItem: (MenuItemMorph new 
 		contents: 'Embed It'; 
 		target: ed; 
 		selector: #embedIt;
@@ -21,11 +26,13 @@ codePaneMenu: menu shifted: shifted
 		target: ed; 
 		selector: #tabIt;
 		icon: (self iconNamed: #smallOpen)).
-	landsMenu addMenuItem: (MenuItemMorph new 
-		contents: 'Board It'; 
-		target: ed; 
-		selector: #scrollIt;
-		icon: (self iconNamed: #down)).
+	landsMenu
+		addMenuItem:
+			(MenuItemMorph new
+				contents: 'Board It';
+				target: editor;
+				selector: #scrollItRight;
+				icon: (self iconNamed: #forward)).
 	landsMenu addLine.
 	landsMenu addMenuItem: (MenuItemMorph new 
 		contents: 'Font'; 
