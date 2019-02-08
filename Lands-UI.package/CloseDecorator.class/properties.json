@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "ImageMorph",
+	"category" : "Lands-UI",
+	"classinstvars" : [
+		"largeForm",
+		"smallForm"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "CloseDecorator",
+	"type" : "normal"
+}

@@ -18,7 +18,7 @@ getMenu: shiftKeyState
 		selector: #tabIt;
 		icon: (self iconNamed: #smallOpen)).
 	landsMenu addMenuItem: (MenuItemMorph new 
-		contents: 'Scroll It'; 
+		contents: 'Board It'; 
 		target: editor; 
 		selector: #scrollIt;
 		icon: (self iconNamed: #down)).

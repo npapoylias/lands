@@ -1,4 +1,4 @@
-initialization
+rendering
 open: aNode
 	|nodes tManager path| 
 	nodes := OrderedCollection new add: aNode; yourself.
@@ -10,5 +10,7 @@ open: aNode
 				tManager widget widget selectTabAt: pathIndex. 
 				tManager := (self classFor: (nodes at: nodes size - index) item) default tabContents
 			] 
-		] ifTrue: [ (Delay forMilliseconds: 200) wait. self open: aNode ] "self update ignores tab indexing -- wait and repeat"
+		] ifTrue: [ (Delay forMilliseconds: 200) wait. self open: aNode ]. "self update ignores tab
+	indexing -- wait and repeat"
+		
 	

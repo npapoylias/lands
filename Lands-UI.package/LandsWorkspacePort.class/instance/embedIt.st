@@ -6,8 +6,8 @@ embedIt
 				nextPut: Character cr;
 				nextPut: Character cr;
 				nextPut: $"; yourself) contents at: self selectionInterval last.
-			self editMorph 
-				anchorMorph: (self inspectorMorphFor: result)
+			self editMorph "revisit centered" 
+				anchorCenteredMorph:(self inspectorMorphFor: result)
 				at: self selectionCornerAsGlobalBound
 				type: #inline.
 			self augmentSelectionBy: 2.

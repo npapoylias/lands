@@ -14,5 +14,8 @@ window: win
 			selectedTab spec instance widget morph asSpecAdapter.
 			self inspectorWith: a result.
 		} ui).
-		selectedTab spec instance widget refreshContent
+		selectedTab spec instance widget refreshContent.
+		self halt.
+		(self tabArea innerTabManager innerWidget allMorphs 
+					select: [ :m | m class = ProportionalSplitterMorph ]) do: [ :m | m color: Color black ].
 	].

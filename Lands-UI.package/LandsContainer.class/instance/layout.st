@@ -10,6 +10,6 @@ layout
 			ifFalse: [ resolvedWidget := resolvedWidget ui ]. "fluid container api"
 		"self assign: resolvedWidget to: id."
 		col add: id.
-		col addSplitter. 
+		col addSplitter.
 	].
 	"self layout:" ^ col.
