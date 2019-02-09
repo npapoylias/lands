@@ -1,4 +1,4 @@
-lands-extentions
+UI specific
 codePaneMenu: menu shifted: shifted 
 	"Note that unless we override perform:orSendTo:, 
 	PluggableTextController will respond to all menu items in a 
@@ -33,6 +33,11 @@ codePaneMenu: menu shifted: shifted
 				target: editor;
 				selector: #scrollItRight;
 				icon: (self iconNamed: #forward)).
+	landsMenu addMenuItem: (MenuItemMorph new 
+		contents: 'Scroll It'; 
+		target: ed; 
+		selector: #actualScrollIt;
+		icon: (self iconNamed: #greenArrowUpAndDown)).
 	landsMenu addLine.
 	landsMenu addMenuItem: (MenuItemMorph new 
 		contents: 'Font'; 

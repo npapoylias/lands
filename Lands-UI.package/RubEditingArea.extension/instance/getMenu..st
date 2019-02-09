@@ -36,6 +36,11 @@ getMenu: shiftKeyState
 				target: editor;
 				selector: #scrollItRight;
 				icon: (self iconNamed: #forward)).
+	landsMenu addMenuItem: (MenuItemMorph new 
+		contents: 'Scroll It'; 
+		target: editor; 
+		selector: #actualScrollIt;
+		icon: (self iconNamed: #greenArrowUpAndDown)).
 	landsMenu addLine.
 	landsMenu
 		addMenuItem:
