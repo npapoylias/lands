@@ -1,9 +1,10 @@
 lands-extentions
 addLandsItemsToMenu: menu targeting: ed
-	|landsMenu boardMenu |
+	|landsMenu boardMenu styleMenu|
 
 	landsMenu := MenuMorph new.
 	boardMenu := MenuMorph new.
+	styleMenu := MenuMorph new.
 	boardMenu addMenuItem: (MenuItemMorph new 
 		contents: 'Down'; 
 		target: ed; 
@@ -33,31 +34,38 @@ addLandsItemsToMenu: menu targeting: ed
 		selector: #toDoScrollIt;
 		icon: (self iconNamed: #greenArrowUpAndDown)).
 	landsMenu addLine.
-	landsMenu addMenuItem: (MenuItemMorph new 
+	styleMenu addMenuItem: (MenuItemMorph new 
 		contents: 'Font'; 
 		target: ed; 
 		selector: #forceTextFont;
 		icon: (self iconNamed: #haloFontStyle)).
-	landsMenu addMenuItem: (MenuItemMorph new 
+	styleMenu addMenuItem: (MenuItemMorph new 
 		contents: 'Emph/Align'; 
 		target: ed; 
 		selector: #forceEmphasisOrAlignement;
 		icon: (self iconNamed: #haloFontEmph)).
-	landsMenu addMenuItem: (MenuItemMorph new 
+	styleMenu addMenuItem: (MenuItemMorph new 
 		contents: 'Color'; 
 		target: ed; 
 		selector: #forceColor;
 		icon: (self iconNamed: #paint)).
+	landsMenu add: 'Style it' icon: (self iconNamed: #paint) subMenu: styleMenu.
 	landsMenu addMenuItem: (MenuItemMorph new 
-		contents: 'Action'; 
+		contents: 'Image it'; 
 		target: ed; 
-		selector: #forceAction;
-		icon: (self iconNamed: #scriptManager)).
+		selector: #insertImage;
+		icon: (self iconNamed: #catalog)).
+	
 	landsMenu addMenuItem: (MenuItemMorph new 
-		contents: 'URL'; 
+		contents: 'Link it'; 
 		target: ed; 
 		selector: #forceURL;
 		icon: (self iconNamed: #publish)).
+	landsMenu addMenuItem: (MenuItemMorph new 
+		contents: 'Button it'; 
+		target: ed; 
+		selector: #forceAction;
+		icon: (self iconNamed: #scriptManager)).
 	landsMenu addLine.
 	landsMenu addMenuItem: (MenuItemMorph new 
 		contents: 'Open .lands'; 
