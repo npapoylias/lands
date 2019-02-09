@@ -9,5 +9,5 @@ playgroundWith: aString titled: aTitle
 	^ (LandsWorkspace new 
 			buildTextMorph;
 			openString: aString;
-			bringThePane) asSpecAdapter
+			bringThePane) asSpec
 	

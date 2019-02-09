@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "ComposableModel",
+	"category" : "Lands-UI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"morph",
+		"morphAdapter"
+	],
+	"name" : "MorphicSpecModel",
+	"type" : "normal"
+}
