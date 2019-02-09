@@ -1,9 +1,5 @@
 {
-	"commentStamp" : "",
-	"super" : "Model",
-	"category" : "Lands-UI",
-	"classinstvars" : [ ],
-	"pools" : [ ],
+	"classtraitcomposition" : "LandsMenu classTrait",
 	"classvars" : [
 		"LastContents"
 	],
@@ -22,5 +18,11 @@
 		"editMorph"
 	],
 	"name" : "LandsWorkspace",
-	"type" : "normal"
+	"commentStamp" : "",
+	"super" : "Model",
+	"traitcomposition" : "LandsMenu",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Lands-UI"
 }

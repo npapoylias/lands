@@ -1,45 +1,36 @@
 lands-extentions
-codePaneMenu: menu shifted: shifted 
-	"Note that unless we override perform:orSendTo:, 
-	PluggableTextController will respond to all menu items in a 
-	text pane"
-	| donorMenu |
+addLandsItemsToMenu: menu targeting: ed
+	|landsMenu boardMenu |
 
-	donorMenu := shifted
-				ifTrue: [self shiftedYellowButtonMenu]
-				ifFalse: [self yellowButtonMenu].
-	menu addAllFrom: donorMenu.
-	^ self addLandsItemsToMenu: menu targeting: self. 
-	"^ menu"
-	"ed := self.
-	menu addLine.
 	landsMenu := MenuMorph new.
-	landsMenu addMenuItem: (MenuItemMorph new 
-		contents: 'Board It'; 
+	boardMenu := MenuMorph new.
+	boardMenu addMenuItem: (MenuItemMorph new 
+		contents: 'Down'; 
 		target: ed; 
 		selector: #scrollIt;
 		icon: (self iconNamed: #down)).
-	landsMenu addMenuItem: (MenuItemMorph new 
-		contents: 'Embed It'; 
-		target: ed; 
-		selector: #embedIt;
-		icon: (self iconNamed: #smallPushpin)).
+	boardMenu
+		addMenuItem:
+			(MenuItemMorph new
+				contents: 'Right';
+				target: ed;
+				selector: #scrollItRight;
+				icon: (self iconNamed: #forward)).
+	landsMenu add: 'Board it' icon: (self iconNamed: #objects) subMenu: boardMenu.
 	landsMenu addMenuItem: (MenuItemMorph new 
 		contents: 'Tab It'; 
 		target: ed; 
 		selector: #tabIt;
 		icon: (self iconNamed: #smallOpen)).
-	landsMenu
-		addMenuItem:
-			(MenuItemMorph new
-				contents: 'Board It';
-				target: editor;
-				selector: #scrollItRight;
-				icon: (self iconNamed: #forward)).
+	landsMenu addMenuItem: (MenuItemMorph new 
+		contents: 'Embed it'; 
+		target: ed; 
+		selector: #embedIt;
+		icon: (self iconNamed: #smallPushpin)).
 	landsMenu addMenuItem: (MenuItemMorph new 
 		contents: 'Scroll It'; 
 		target: ed; 
-		selector: #actualScrollIt;
+		selector: #toDoScrollIt;
 		icon: (self iconNamed: #greenArrowUpAndDown)).
 	landsMenu addLine.
 	landsMenu addMenuItem: (MenuItemMorph new 
@@ -77,8 +68,8 @@ codePaneMenu: menu shifted: shifted
 		contents: 'Save  .lands'; 
 		target: ed; 
 		selector: #saveLandsDoc;
-		icon: (self iconNamed: #smallSave))."
-	"menu add: 'Lan.d.s' icon: (self iconNamed: #objects) subMenu: landsMenu."
-	"menu addAllFrom: landsMenu.
-	menu addAllFrom: donorMenu.
-	^ menu"
+		icon: (self iconNamed: #smallSave)).
+	landsMenu addLine.
+	landsMenu add: 'Edit...' icon: (self iconNamed: #edit) subMenu: menu.
+	"menu addAllFrom: landsMenu."
+	^ landsMenu

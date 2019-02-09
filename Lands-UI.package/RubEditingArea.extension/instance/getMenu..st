@@ -2,26 +2,26 @@
 getMenu: shiftKeyState
 	"Ask the getMenuPolicy to lookup the menu to popup if any"
 
-	| menu landsMenu |
+	| menu landsMenu boardMenu|
 	menu := shiftKeyState
 		ifTrue: [ self getMenuPolicy lookupShiftMenu ]
 		ifFalse: [ self getMenuPolicy lookupMenu ].
 	menu addLine.
 	landsMenu := MenuMorph new.
-	landsMenu
+	boardMenu := MenuMorph new.
+	boardMenu addMenuItem: (MenuItemMorph new 
+		contents: 'Down'; 
+		target: editor; 
+		selector: #scrollIt;
+		icon: (self iconNamed: #down)).
+	boardMenu
 		addMenuItem:
 			(MenuItemMorph new
-				contents: 'Board It';
+				contents: 'Right';
 				target: editor;
-				selector: #scrollIt;
-				icon: (self iconNamed: #down)).
-	landsMenu
-		addMenuItem:
-			(MenuItemMorph new
-				contents: 'Embed It';
-				target: editor;
-				selector: #embedIt;
-				icon: (self iconNamed: #smallPushpin)).
+				selector: #scrollItRight;
+				icon: (self iconNamed: #forward)).
+	landsMenu add: 'Board it' icon: (self iconNamed: #objects) subMenu: boardMenu.
 	landsMenu
 		addMenuItem:
 			(MenuItemMorph new
@@ -32,6 +32,14 @@ getMenu: shiftKeyState
 	landsMenu
 		addMenuItem:
 			(MenuItemMorph new
+				contents: 'Embed It';
+				target: editor;
+				selector: #embedIt;
+				icon: (self iconNamed: #smallPushpin)).
+
+	landsMenu
+		addMenuItem:
+			(MenuItemMorph new
 				contents: 'Board It';
 				target: editor;
 				selector: #scrollItRight;
@@ -39,7 +47,7 @@ getMenu: shiftKeyState
 	landsMenu addMenuItem: (MenuItemMorph new 
 		contents: 'Scroll It'; 
 		target: editor; 
-		selector: #actualScrollIt;
+		selector: #todoScrollIt;
 		icon: (self iconNamed: #greenArrowUpAndDown)).
 	landsMenu addLine.
 	landsMenu
@@ -92,5 +100,6 @@ getMenu: shiftKeyState
 				target: editor;
 				selector: #saveLandsDoc;
 				icon: (self iconNamed: #smallSave)).
-	menu add: 'Lan.d.s' icon: (self iconNamed: #objects) subMenu: landsMenu.
-	^ menu
+	"menu add: 'Lan.d.s' icon: (self iconNamed: #objects) subMenu: landsMenu."
+	landsMenu add: 'Edit...' icon: (self iconNamed: #edit) subMenu: menu.
+	^ landsMenu
