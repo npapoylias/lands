@@ -1,8 +1,13 @@
 accessing
 playgroundWith: aString titled: aTitle
-	|pg|
+	"|pg|
 	pg := GlamourPresentationModel new.
 	pg 
 		presentationClass: GTPlayground 
 		startOn: (GTPlayPage new saveContent: aString; title: aTitle).
-	^ pg
+	^ pg"
+	^ (LandsWorkspace new 
+			buildTextMorph;
+			openString: aString;
+			bringThePane) asSpecAdapter
+	
