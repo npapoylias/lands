@@ -34,6 +34,8 @@ addLandsItemsToMenu: menu targeting: ed
 		selector: #toDoScrollIt;
 		icon: (self iconNamed: #greenArrowUpAndDown)).
 	landsMenu addLine.
+	self addStyleTemplatesTo: styleMenu targeting: ed.
+	styleMenu addLine.
 	styleMenu addMenuItem: (MenuItemMorph new 
 		contents: 'Font'; 
 		target: ed; 
@@ -49,13 +51,18 @@ addLandsItemsToMenu: menu targeting: ed
 		target: ed; 
 		selector: #forceColor;
 		icon: (self iconNamed: #paint)).
+	styleMenu addLine.
+	styleMenu addMenuItem: (MenuItemMorph new 
+		contents: 'New Style'; 
+		target: ed; 
+		selector: #newStyle;
+		icon: (self iconNamed: #changeAdd)).
 	landsMenu add: 'Style it' icon: (self iconNamed: #paint) subMenu: styleMenu.
 	landsMenu addMenuItem: (MenuItemMorph new 
 		contents: 'Image it'; 
 		target: ed; 
 		selector: #insertImage;
 		icon: (self iconNamed: #catalog)).
-	
 	landsMenu addMenuItem: (MenuItemMorph new 
 		contents: 'Link it'; 
 		target: ed; 
