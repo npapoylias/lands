@@ -9,6 +9,7 @@ newStyle
 						for: style
 						setSelector: #add:
 						getSelector: self fontToUse).
+	style at: 1 put: (TextFontReference toFont: (style at: 1)).
 	attribute := TextColor color: Color white "default".
 	UIManager default chooseColor
 		ifNotNil: [:nc | attribute color: nc].
@@ -19,7 +20,7 @@ newStyle
 		textEntry: 'Save Style as:' 
 		title: 'Style Name' 
 		entryText: ''.
-	FLSerializer serialize: style toFileNamed: 'styles/' , styleName.
-	"self applyStyle: styleName."
+	FLSerializer serialize: style toFileNamed: 'styles/' , styleName , '.style'.
+	self applyStyle: styleName.
 
 	
