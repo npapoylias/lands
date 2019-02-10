@@ -9,7 +9,7 @@ privateStyle: aText
 			attributes (ie foreground, background, bold, links etc -- to go back to the syntax rule)"
 			classOrMetaClass syntaxHighlighting
 				ifNil: [ super privateStyle: aText ]
-				ifNotNil: [ :sh | sh new highlightSyntaxOn: aText ] ].
+				ifNotNil: [: sh | self highlighter highlightSyntaxOn: aText ] ].
 	postStyleActions ifNotNil: [ "eval post-actions / if moved remove"
 		postStyleActions removeAll: (postStyleActions select: [ :a | (a value: aText) = false ]) 
 	].
