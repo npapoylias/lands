@@ -24,5 +24,5 @@
 	"type" : "normal",
 	"classinstvars" : [ ],
 	"pools" : [ ],
-	"category" : "Lands-UI"
+	"category" : "Lands-UI-Editor"
 }
