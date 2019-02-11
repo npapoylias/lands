@@ -1,4 +1,4 @@
 accessing
 return
 
-	^ super return ==> [ :values | self token: values first emphasis: #bold ]
+	^ super return ==> [ :values | self region: values first emphasis: #bold ]

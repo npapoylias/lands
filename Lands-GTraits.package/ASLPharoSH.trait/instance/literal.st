@@ -1,4 +1,4 @@
 accessing
 literal
 
-	^ super literal ==> [ :token | self token: token color: Color yellow ]
+	^ super literal ==> [ :token | self region: token color: Color yellow ]

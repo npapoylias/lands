@@ -2,6 +2,6 @@ accessing
 paren
 
 	^ super paren ==> [ :values | 
-			self token: values first emphasis: #bold.
-			self token: values last emphasis: #bold	
+			self region: values first emphasis: #bold.
+			self region: values last emphasis: #bold	
 	].

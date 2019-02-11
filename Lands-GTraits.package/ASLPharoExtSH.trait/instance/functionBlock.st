@@ -3,10 +3,10 @@ functionBlock
 	
 	^ super functionBlock ==> [ :values | 
 			self 
-				token: values first color: Color orange;
-				token: values first emphasis: #bold.
+				region: values first color: Color orange;
+				region: values first emphasis: #bold.
 			self 
-				token: values third color: Color orange;
-				token: values third emphasis: #bold.  
+				region: values third color: Color orange;
+				region: values third emphasis: #bold.  
 		]
 

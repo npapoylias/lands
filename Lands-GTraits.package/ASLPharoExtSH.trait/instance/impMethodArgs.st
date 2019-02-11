@@ -3,6 +3,6 @@ impMethodArgs
 
 	^ super impMethodArgs ==> 
 		[:values | self 
-			token: values first color: Color orange; token: values first emphasis: #bold;
-			token: values last color: Color orange; token: values last emphasis: #bold
+			region: values first color: Color orange; region: values first emphasis: #bold;
+			region: values last color: Color orange; region: values last emphasis: #bold
 		]

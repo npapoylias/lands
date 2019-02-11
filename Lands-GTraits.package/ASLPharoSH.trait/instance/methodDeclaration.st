@@ -1,4 +1,4 @@
 accessing
 methodDeclaration
 
-	^ super methodDeclaration ==> [ :values | self token: values size: 15; token: values emphasis: #underlined  ]
+	^ super methodDeclaration ==> [ :values | self region: values size: 15; region: values emphasis: #underlined  ]

@@ -4,5 +4,5 @@ message
 	^ super message ==> {
 		[ :values | values ].
 		[ :values | values ].
-		[ :token | self token: token color: Color green; token: token emphasis: #italic; token: token emphasis: #bold ].
+		[ :token | self region: token color: Color green; region: token emphasis: #italic; region: token emphasis: #bold ].
 	}

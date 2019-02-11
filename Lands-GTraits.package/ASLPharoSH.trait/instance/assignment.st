@@ -1,4 +1,4 @@
 accessing
 assignment
 
-	^ super assignment ==> [ :values | self token: values second emphasis: #bold].
+	^ super assignment ==> [ :values | self region: values second emphasis: #bold].

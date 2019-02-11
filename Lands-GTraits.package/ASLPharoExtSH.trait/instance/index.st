@@ -2,10 +2,10 @@ accessing
 index
 
 	^ super index ==> [ :values | 
-			self token: values first color: Color orange;
-				token: values first emphasis: #bold.
-			self token: values third color: Color orange;
-				token: values third emphasis: #bold.
-			self token: values last color: Color orange; 
-				token: values last emphasis: #bold	
+			self region: values first color: Color orange;
+				region: values first emphasis: #bold.
+			self region: values third color: Color orange;
+				region: values third emphasis: #bold.
+			self region: values last color: Color orange; 
+				region: values last emphasis: #bold	
 	].
