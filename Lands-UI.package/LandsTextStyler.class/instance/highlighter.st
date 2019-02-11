@@ -1,4 +1,4 @@
 accessing
 highlighter
 
-	^ highlighter ifNil: [ highlighter := classOrMetaClass syntaxHighlighting new ]
+	^ "highlighter ifNil: [ highlighter :=" classOrMetaClass syntaxHighlighting new "]"

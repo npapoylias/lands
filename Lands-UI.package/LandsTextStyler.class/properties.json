@@ -7,8 +7,7 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"postStyleActions",
-		"stylingActive",
-		"highlighter"
+		"stylingActive"
 	],
 	"name" : "LandsTextStyler",
 	"type" : "normal"

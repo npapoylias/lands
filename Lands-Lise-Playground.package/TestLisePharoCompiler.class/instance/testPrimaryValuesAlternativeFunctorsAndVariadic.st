@@ -6,4 +6,4 @@ testPrimaryValuesAlternativeFunctorsAndVariadic
 		(:{Object class} size)
 		('size '(sym))
 		(+ ((Object 'instanceVariables) 'size) 1)
-	) = 4.
+	) = 4. 

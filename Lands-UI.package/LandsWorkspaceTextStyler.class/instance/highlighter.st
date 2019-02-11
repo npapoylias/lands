@@ -1,5 +1,5 @@
 accessing
 highlighter
 
-	^ highlighter ifNil: [highlighter := PharoWorkspaceSH new]
+	^ "highlighter ifNil: [highlighter := "PharoWorkspaceSH new"]"
 	

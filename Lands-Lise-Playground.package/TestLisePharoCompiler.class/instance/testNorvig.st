@@ -1,9 +1,9 @@
 tests
 testNorvig
 
-	(:define twice (lambda (x) (* 2 x))).  
+	(:define twice (lambda (x) (* 2 x))).   
 	(:twice 5) |=? 10.
-	(:define compose (lambda (f g) (lambda (x) (f (g x))))). 
+	(:define compose (lambda (f g) (lambda (x) (f (g x))))).  
 	(:(compose list twice) 5) |=? { 10 }.
 	(:define repeat (lambda (f) (compose f f))).
 	(:(repeat twice) 5) |=? 20.

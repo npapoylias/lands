@@ -1,4 +1,4 @@
 as yet unclassified
 parserClass
 
-	^ LiseExtPharoCompiler
+	^ LiseExtPharoCompiler 
