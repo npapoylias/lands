@@ -1,5 +1,5 @@
 accessing
 "protocol: accessing"
-parenteses
+parentheses
 
 	^ parentheses --> '\(' , ruleExpressions , '\)' 

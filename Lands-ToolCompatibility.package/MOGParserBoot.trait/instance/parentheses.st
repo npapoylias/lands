@@ -1,8 +1,7 @@
 accessing
-"protocol: accessing"
-parenteses
+parentheses
 
-	^ super parenteses ==> [:tokens | "as with rule compute subrule of parenthesis" 
+	^ super parentheses ==> [:tokens | "as with rule compute subrule of parenthesis" 
 		|r expressions operators|
 		"TODO: why not giving tokens the names of the symbols in MOG ?"
 		expressions := tokens second key.
