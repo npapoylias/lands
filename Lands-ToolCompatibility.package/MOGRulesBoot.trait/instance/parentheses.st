@@ -1,4 +1,4 @@
 accessing
 parentheses
 
-	<parentheses> ::= "(" <ruleExpression> ")"
+	<parentheses> ::= "(" <ruleExpressions> ")"
