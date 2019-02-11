@@ -1,0 +1,4 @@
+accessing
+ruleLiteral
+
+	<ruleLiteral> ::= <rule> 

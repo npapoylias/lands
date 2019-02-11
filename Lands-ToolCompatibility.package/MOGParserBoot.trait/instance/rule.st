@@ -21,6 +21,3 @@ rule
 		].
 		r 		 
 	]
-	 
-	"'(\n|\r){2}' , '\n|\r' star" "remember space is handled implicitely (See GrayGrammar>>#init))"
-	"you can add optimized version for regExpression where you automatically handl lplus, lstar || etc"
