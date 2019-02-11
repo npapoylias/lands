@@ -1,0 +1,13 @@
+{
+	"classtraitcomposition" : "PharoGrammar classTrait",
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "PharoWorkspaceRecognizer",
+	"commentStamp" : "",
+	"super" : "PharoRecognizer",
+	"traitcomposition" : "PharoGrammar",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Lands-GTraits-Parsers-Pharo-Syntax"
+}

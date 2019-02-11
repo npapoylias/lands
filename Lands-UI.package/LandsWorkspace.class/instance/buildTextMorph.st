@@ -1,4 +1,4 @@
-lands-extentions
+display
 buildTextMorph
 	
 	pluggableTextMorph := (PluggableTextMorph 
@@ -7,9 +7,8 @@ buildTextMorph
 					accept: #acceptContents:
 					readSelection: nil 
 					menu: #codePaneMenu:shifted:).
-					"styler: LandsWorkspaceStyler new."
-					"styler: LandsWorkspaceTextStyler new."
-	
+					
+	pluggableTextMorph styler: (LandsWorkspaceTextStyler new view: pluggableTextMorph).
 	
 	pluggableTextMorph font: StandardFonts codeFont.
 
