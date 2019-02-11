@@ -1,4 +1,4 @@
 accessing
 binaryOp
 
-	^ super binaryOp ==> [ :token | self region: token color: Color lightBrown ]
+	^ super binaryOp ==> [ :token | self region: token color: Color white ]
