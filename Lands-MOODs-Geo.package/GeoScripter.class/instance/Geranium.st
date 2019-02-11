@@ -1,7 +1,7 @@
 as yet unclassified
 Geranium
 
-	StatScenario Geranium {
+	StatScenario Geranium { 
    		coordinates = S 46.16352961038194, 
 		              W -1.1302614212036133, 
 		              N 46.166851083597415,

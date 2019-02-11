@@ -27,4 +27,4 @@ postcard: x
 						show: item;
 						show: ' ' ] ]
 		ifFalse: [ self halt ].
-	^ x < y first
+	^ x < y first . 

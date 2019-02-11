@@ -10,4 +10,5 @@ openLandsDoc: file
 		shoutStyler 
 			ifNotNil: [ shoutStyler styler postStyleActions: assoc value. shoutStyler styler privateStyle: self text ]
 			ifNil: [ assoc value do: [ :a | a value: self text ] ]
-	]
+	].
+	self style
