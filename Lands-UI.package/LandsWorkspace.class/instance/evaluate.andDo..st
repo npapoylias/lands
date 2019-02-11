@@ -6,7 +6,6 @@ evaluate: aStream andDo: aBlock
 		ifTrue: [ rcvr := self editor model doItReceiver.
 				ctxt := self editor model doItContext]
 		ifFalse: [ rcvr := ctxt := nil].
-	self halt.
 	compiler :=  rcvr class compiler
 			source: aStream;
 			context: ctxt;
