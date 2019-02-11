@@ -1,11 +1,11 @@
 {
-	"classtraitcomposition" : "ASLPharoSH classTrait",
+	"classtraitcomposition" : "ASLPharoSH classTrait + MOGRulesBootSH classTrait",
 	"classvars" : [ ],
 	"instvars" : [ ],
 	"name" : "PharoWorkspaceSH",
 	"commentStamp" : "",
 	"super" : "PharoWorkspaceRecognizer",
-	"traitcomposition" : "ASLPharoSH",
+	"traitcomposition" : "ASLPharoSH + MOGRulesBootSH",
 	"type" : "normal",
 	"classinstvars" : [ ],
 	"pools" : [ ],

@@ -1,11 +1,11 @@
 {
-	"classtraitcomposition" : "PharoGrammarActions classTrait",
+	"classtraitcomposition" : "PharoGrammarActions classTrait + MOGParserBoot classTrait",
 	"classvars" : [ ],
 	"instvars" : [ ],
 	"name" : "PharoWorkspaceParser",
 	"commentStamp" : "",
 	"super" : "PharoWorkspaceRecognizer",
-	"traitcomposition" : "PharoGrammarActions",
+	"traitcomposition" : "PharoGrammarActions + MOGParserBoot",
 	"type" : "normal",
 	"classinstvars" : [ ],
 	"pools" : [ ],
