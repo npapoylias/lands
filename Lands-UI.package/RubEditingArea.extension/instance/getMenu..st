@@ -2,13 +2,26 @@
 getMenu: shiftKeyState
 	"Ask the getMenuPolicy to lookup the menu to popup if any"
 
-	| menu landsMenu boardMenu styleMenu |
+	| menu landsMenu boardMenu styleMenu updateMenu|
 	menu := shiftKeyState
 		ifTrue: [ self getMenuPolicy lookupShiftMenu ]
 		ifFalse: [ self getMenuPolicy lookupMenu ].
 	landsMenu := MenuMorph new.
 	boardMenu := MenuMorph new.
 	styleMenu := MenuMorph new.
+	updateMenu := MenuMorph.
+	updateMenu addMenuItem: (MenuItemMorph new 
+		contents: 'Down'; 
+		target: editor; 
+		selector: #updateIt;
+		icon: (self iconNamed: #down)).
+	updateMenu
+		addMenuItem:
+			(MenuItemMorph new
+				contents: 'Right';
+				target: editor;
+				selector: #updateItRight;
+				icon: (self iconNamed: #forward)).
 	boardMenu addMenuItem: (MenuItemMorph new 
 		contents: 'Down'; 
 		target: editor; 
@@ -22,6 +35,7 @@ getMenu: shiftKeyState
 				selector: #scrollItRight;
 				icon: (self iconNamed: #forward)).
 	landsMenu add: 'Board it' icon: (self iconNamed: #objects) subMenu: boardMenu.
+	landsMenu add: 'Update it' icon: (self iconNamed: #refresh) subMenu: updateMenu.
 	landsMenu addMenuItem: (MenuItemMorph new 
 		contents: 'Tab It'; 
 		target: editor; 

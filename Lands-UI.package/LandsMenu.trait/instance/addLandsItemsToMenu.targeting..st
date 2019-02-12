@@ -1,9 +1,10 @@
 lands-extentions
 addLandsItemsToMenu: menu targeting: ed
-	|landsMenu boardMenu styleMenu|
+	|landsMenu boardMenu styleMenu updateMenu|
 
 	landsMenu := MenuMorph new.
 	boardMenu := MenuMorph new.
+	updateMenu := MenuMorph new.
 	styleMenu := MenuMorph new.
 	boardMenu addMenuItem: (MenuItemMorph new 
 		contents: 'Down'; 
@@ -17,7 +18,20 @@ addLandsItemsToMenu: menu targeting: ed
 				target: ed;
 				selector: #scrollItRight;
 				icon: (self iconNamed: #forward)).
+	updateMenu addMenuItem: (MenuItemMorph new 
+		contents: 'Down'; 
+		target: ed; 
+		selector: #updateIt;
+		icon: (self iconNamed: #down)).
+	updateMenu
+		addMenuItem:
+			(MenuItemMorph new
+				contents: 'Right';
+				target: ed;
+				selector: #updateItRight;
+				icon: (self iconNamed: #forward)).
 	landsMenu add: 'Board it' icon: (self iconNamed: #objects) subMenu: boardMenu.
+	landsMenu add: 'Update it' icon: (self iconNamed: #refresh) subMenu: updateMenu.
 	landsMenu addMenuItem: (MenuItemMorph new 
 		contents: 'Tab It'; 
 		target: ed; 
