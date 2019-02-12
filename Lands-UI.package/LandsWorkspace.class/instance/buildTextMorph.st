@@ -1,4 +1,4 @@
-display
+lands-extentions
 buildTextMorph
 	
 	pluggableTextMorph := (PluggableTextMorph 
@@ -14,4 +14,5 @@ buildTextMorph
 
 	pluggableTextMorph styler workspace: self.
 	editor := pluggableTextMorph textMorph editor.
+	pluggableTextMorph textMorph allowsKeymapping: false.
 	^ pluggableTextMorph
