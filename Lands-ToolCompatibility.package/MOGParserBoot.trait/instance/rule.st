@@ -1,10 +1,11 @@
 accessing
 rule
 
-	^ super rule ==> [ :tokens | |r expressions operators operands name| 
+	^ super rule ==> [ :tokens | |r expressions operators operands name action| 
 		"TODO: why not giving tokens the names of the symbols in MOG ?"
 		expressions := tokens third key. 
 		operators := tokens third value. 
+		tokens size > 3 ifTrue: [ action := tokens fourth ].
 		name := tokens first.
 		name first = $@
 			ifTrue: [ r := GrayRule new name: name allButFirst asSymbol; beAnnotated ]
@@ -19,5 +20,5 @@ rule
 						perform: (operators at: index) string asSymbol
 						withArguments: { e asArrayIfCollection } 
 		].
-		r 		 
+		action ifNil: [r] ifNotNil: [ r lit |> { #==> . action } ] 		 
 	]

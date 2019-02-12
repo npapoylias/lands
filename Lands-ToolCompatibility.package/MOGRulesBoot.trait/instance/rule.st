@@ -1,4 +1,4 @@
 accessing
 rule
 
-	<rule> ::= <id> "::=" <ruleExpressions> 
+	<rule> ::= <id> "::=" <ruleExpressions> <action> ?
