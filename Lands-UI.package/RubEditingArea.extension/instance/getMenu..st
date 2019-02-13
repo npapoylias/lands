@@ -9,7 +9,7 @@ getMenu: shiftKeyState
 	landsMenu := MenuMorph new.
 	boardMenu := MenuMorph new.
 	styleMenu := MenuMorph new.
-	updateMenu := MenuMorph.
+	updateMenu := MenuMorph new.
 	updateMenu addMenuItem: (MenuItemMorph new 
 		contents: 'Down'; 
 		target: editor; 

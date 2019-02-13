@@ -10,7 +10,8 @@
 		"tabArea",
 		"toc",
 		"myWindow",
-		"selectedNode"
+		"selectedNode",
+		"containers"
 	],
 	"name" : "LandsExperimentsUI",
 	"type" : "normal"

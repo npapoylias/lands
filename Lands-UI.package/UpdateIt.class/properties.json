@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "DoIt",
+	"category" : "Lands-UI-Editor",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"layout"
+	],
+	"name" : "UpdateIt",
+	"type" : "normal"
+}

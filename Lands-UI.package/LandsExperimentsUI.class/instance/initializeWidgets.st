@@ -3,6 +3,7 @@ initializeWidgets
 
 	self createNavigationPane.
 	self createTabArea.
+	containers := OrderedCollection new.
 	announcer ":= TOCAnnouncer new 
 		"subscribe: TOCSelect 
 		do: [ :announcement | self open: (selectedNode := announcement node) ].
