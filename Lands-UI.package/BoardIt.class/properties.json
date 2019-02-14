@@ -1,11 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "ScrollIt",
+	"super" : "DoIt",
 	"category" : "Lands-UI-Editor",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
-	"name" : "ScrollItRight",
+	"instvars" : [
+		"layout"
+	],
+	"name" : "BoardIt",
 	"type" : "normal"
 }

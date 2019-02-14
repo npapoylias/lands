@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "MorphicSpecModel",
+	"category" : "Lands-UI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"items",
+		"model"
+	],
+	"name" : "SpecPager",
+	"type" : "normal"
+}

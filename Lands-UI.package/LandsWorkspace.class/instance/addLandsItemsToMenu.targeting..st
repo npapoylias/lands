@@ -1,98 +1,101 @@
-*Lands-UI-Editor
-getMenu: shiftKeyState
-	"Ask the getMenuPolicy to lookup the menu to popup if any"
+lands-extentions
+addLandsItemsToMenu: menu targeting: ed
+	|landsMenu boardMenu styleMenu updateMenu|
 
-	| menu landsMenu boardMenu styleMenu updateMenu|
-	menu := shiftKeyState
-		ifTrue: [ self getMenuPolicy lookupShiftMenu ]
-		ifFalse: [ self getMenuPolicy lookupMenu ].
 	landsMenu := MenuMorph new.
 	boardMenu := MenuMorph new.
-	styleMenu := MenuMorph new.
 	updateMenu := MenuMorph new.
-	updateMenu addMenuItem: (MenuItemMorph new 
-		contents: 'Down'; 
-		target: editor; 
-		selector: #updateIt;
-		icon: (self iconNamed: #down)).
-	updateMenu
-		addMenuItem:
-			(MenuItemMorph new
-				contents: 'Right';
-				target: editor;
-				selector: #updateItRight;
-				icon: (self iconNamed: #forward)).
+	styleMenu := MenuMorph new.
 	boardMenu addMenuItem: (MenuItemMorph new 
 		contents: 'Down'; 
-		target: editor; 
+		target: ed; 
 		selector: #boardIt;
 		icon: (self iconNamed: #down)).
 	boardMenu
 		addMenuItem:
 			(MenuItemMorph new
 				contents: 'Right';
-				target: editor;
+				target: ed;
 				selector: #boardItRight;
+				icon: (self iconNamed: #forward)).
+	updateMenu addMenuItem: (MenuItemMorph new 
+		contents: 'Down'; 
+		target: ed; 
+		selector: #updateIt;
+		icon: (self iconNamed: #down)).
+	updateMenu
+		addMenuItem:
+			(MenuItemMorph new
+				contents: 'Right';
+				target: ed;
+				selector: #updateItRight;
 				icon: (self iconNamed: #forward)).
 	landsMenu add: 'Board it' icon: (self iconNamed: #objects) subMenu: boardMenu.
 	landsMenu add: 'Update it' icon: (self iconNamed: #refresh) subMenu: updateMenu.
 	landsMenu addMenuItem: (MenuItemMorph new 
 		contents: 'Tab It'; 
-		target: editor; 
+		target: ed; 
 		selector: #tabIt;
 		icon: (self iconNamed: #smallOpen)).
 	landsMenu addMenuItem: (MenuItemMorph new 
 		contents: 'Embed it'; 
-		target: editor; 
+		target: ed; 
 		selector: #embedIt;
 		icon: (self iconNamed: #smallPushpin)).
 	landsMenu addMenuItem: (MenuItemMorph new 
 		contents: 'Scroll It'; 
-		target: editor; 
-		selector: #scrollIt;
+		target: ed; 
+		selector: #toDoScrollIt;
 		icon: (self iconNamed: #greenArrowUpAndDown)).
 	landsMenu addLine.
+	self addStyleTemplatesTo: styleMenu targeting: ed.
+	styleMenu addLine.
 	styleMenu addMenuItem: (MenuItemMorph new 
 		contents: 'Font'; 
-		target: editor; 
+		target: ed; 
 		selector: #forceTextFont;
 		icon: (self iconNamed: #haloFontStyle)).
 	styleMenu addMenuItem: (MenuItemMorph new 
 		contents: 'Emph/Align'; 
-		target: editor; 
+		target: ed; 
 		selector: #forceEmphasisOrAlignement;
 		icon: (self iconNamed: #haloFontEmph)).
 	styleMenu addMenuItem: (MenuItemMorph new 
 		contents: 'Color'; 
-		target: editor; 
+		target: ed; 
 		selector: #forceColor;
 		icon: (self iconNamed: #paint)).
+	styleMenu addLine.
+	styleMenu addMenuItem: (MenuItemMorph new 
+		contents: 'New Style'; 
+		target: ed; 
+		selector: #newStyle;
+		icon: (self iconNamed: #changeAdd)).
 	landsMenu add: 'Style it' icon: (self iconNamed: #paint) subMenu: styleMenu.
 	landsMenu addMenuItem: (MenuItemMorph new 
 		contents: 'Image it'; 
-		target: editor; 
+		target: ed; 
 		selector: #insertImage;
 		icon: (self iconNamed: #catalog)).
-	
 	landsMenu addMenuItem: (MenuItemMorph new 
 		contents: 'Link it'; 
-		target: editor; 
+		target: ed; 
 		selector: #forceURL;
 		icon: (self iconNamed: #publish)).
 	landsMenu addMenuItem: (MenuItemMorph new 
 		contents: 'Button it'; 
-		target: editor; 
+		target: ed; 
 		selector: #forceAction;
 		icon: (self iconNamed: #scriptManager)).
 	landsMenu addLine.
 	landsMenu addMenuItem: (MenuItemMorph new 
 		contents: 'Open .lands'; 
-		target: editor; 
+		target: ed; 
 		selector: #openLandsDoc;
 		icon: (self iconNamed: #smallOpen)).
 	landsMenu addMenuItem: (MenuItemMorph new 
 		contents: 'Save  .lands'; 
-		target: editor; 
+		target: ed; 
 		selector: #saveLandsDoc;
 		icon: (self iconNamed: #smallSave)).
 	landsMenu addLine.

@@ -45,7 +45,7 @@ addLandsItemsToMenu: menu targeting: ed
 	landsMenu addMenuItem: (MenuItemMorph new 
 		contents: 'Scroll It'; 
 		target: ed; 
-		selector: #toDoScrollIt;
+		selector: #scrollIt;
 		icon: (self iconNamed: #greenArrowUpAndDown)).
 	landsMenu addLine.
 	self addStyleTemplatesTo: styleMenu targeting: ed.
