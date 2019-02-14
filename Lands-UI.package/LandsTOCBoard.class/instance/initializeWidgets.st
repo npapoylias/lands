@@ -4,7 +4,8 @@ initializeWidgets
 	self createNavigationPane.
 	self createTabArea.
 	containers := Dictionary new.
-	announcer ":= TOCAnnouncer new 
+	pagers := Dictionary new.
+	announcer ":= TOCAnnouncer new  
 		"subscribe: TOCSelect 
 		do: [ :announcement | self open: (selectedNode := announcement node) ].
 	announcer subscribe: TOCEdit do: [ :announcment | 

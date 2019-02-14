@@ -1,10 +1,10 @@
 as yet unclassified
 scrollWithAnnouncement: ann
-	self halt.
-	self containersAtTab ifNotEmpty: [
-		|last| last := (self containersAtTab 
-			detect: [ :c | c layoutClass = ann layoutClass ] 
-			ifNone: [ nil ]). 
-		last ifNotNil: [last size > 1 ifTrue: [last removeLast]]
-	].
-	myWindow announcer announce: (BoardIt with: ann result positioned: ann layout)
+	| selectedTab pager|
+	selectedTab := self tabArea innerTabManager selectedTab.
+	(pager := (self pagerAtTab: selectedTab)) add: (self inspectorWith: ann result).
+	pager owner ~= selectedTab ifTrue: [
+		selectedTab model: pager.
+		selectedTab spec instance widget refreshContent.
+	]	
+	

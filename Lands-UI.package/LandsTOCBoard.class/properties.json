@@ -11,7 +11,8 @@
 		"toc",
 		"myWindow",
 		"selectedNode",
-		"containers"
+		"containers",
+		"pagers"
 	],
 	"name" : "LandsTOCBoard",
 	"type" : "normal"

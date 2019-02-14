@@ -9,14 +9,14 @@ addLandsItemsToMenu: menu targeting: ed
 	boardMenu addMenuItem: (MenuItemMorph new 
 		contents: 'Down'; 
 		target: ed; 
-		selector: #scrollIt;
+		selector: #boardIt;
 		icon: (self iconNamed: #down)).
 	boardMenu
 		addMenuItem:
 			(MenuItemMorph new
 				contents: 'Right';
 				target: ed;
-				selector: #scrollItRight;
+				selector: #boardItRight;
 				icon: (self iconNamed: #forward)).
 	updateMenu addMenuItem: (MenuItemMorph new 
 		contents: 'Down'; 
