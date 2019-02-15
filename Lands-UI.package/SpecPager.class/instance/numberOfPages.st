@@ -1,0 +1,4 @@
+initialization
+numberOfPages
+
+	^ items size

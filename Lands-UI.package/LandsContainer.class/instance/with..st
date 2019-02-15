@@ -1,4 +1,4 @@
 instance creation
 with: aCollection
 
-	containedWidgets := aCollection
+	self with: aCollection using: SpecRowLayout 
