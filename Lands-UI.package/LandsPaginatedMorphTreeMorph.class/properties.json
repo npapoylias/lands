@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "PaginatedMorphTreeMorph",
+	"category" : "Lands-UI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "LandsPaginatedMorphTreeMorph",
+	"type" : "normal"
+}
