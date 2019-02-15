@@ -7,7 +7,7 @@ boardWithAnnouncement: a
 	model :=	((self containersAtTab: selectedTab) 
 				addFirst: (newContainer := {selectedTab spec instance widget morph asSpecAdapter.
 				(self inspectorWith: a result)} ui: a layout)).
-	self updatePagerAtTab: selectedTab with: {newContainer buildWithSpec innerWidget}.
+	self updatePagerAtTab: selectedTab with: newContainer buildWithSpec innerWidget.
 	(pager := (self pagerAtTab: selectedTab)) numberOfPages > 1
 		ifTrue: [ selectedTab model: pager ]
 		ifFalse: [ selectedTab model: model ]. 
