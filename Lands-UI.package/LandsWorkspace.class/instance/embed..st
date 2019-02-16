@@ -9,7 +9,7 @@ embed: aMorph
 			CloseDecorator new on: aMorph.
 			self editMorph "revisit centered" 
 				anchorMorph: aMorph
-				at: self selectionCornerAsGlobalBound
+				at: self selectionCornerAsGlobalBound 
 				type: #inline.
 			self augmentSelectionBy: 2.
 			self insert: ((WriteStream on: String new)

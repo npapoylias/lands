@@ -16,7 +16,8 @@
 		"pluggableTextMorph",
 		"editor",
 		"editMorph",
-		"compiler"
+		"compiler",
+		"pager"
 	],
 	"name" : "LandsWorkspace",
 	"commentStamp" : "",
