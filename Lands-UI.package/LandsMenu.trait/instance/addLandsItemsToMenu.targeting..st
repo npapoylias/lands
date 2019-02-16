@@ -43,10 +43,10 @@ addLandsItemsToMenu: menu targeting: ed
 		selector: #embedIt;
 		icon: (self iconNamed: #smallPushpin)).
 	landsMenu addMenuItem: (MenuItemMorph new 
-		contents: 'Scroll It'; 
+		contents: 'Page It'; 
 		target: ed; 
 		selector: #scrollIt;
-		icon: (self iconNamed: #greenArrowUpAndDown)).
+		icon: (self iconNamed: #recentMessages)).
 	landsMenu addLine.
 	self addStyleTemplatesTo: styleMenu targeting: ed.
 	styleMenu addLine.

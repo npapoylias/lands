@@ -47,10 +47,10 @@ getMenu: shiftKeyState
 		selector: #embedIt;
 		icon: (self iconNamed: #smallPushpin)).
 	landsMenu addMenuItem: (MenuItemMorph new 
-		contents: 'Scroll It'; 
+		contents: 'Page It'; 
 		target: editor; 
 		selector: #scrollIt;
-		icon: (self iconNamed: #greenArrowUpAndDown)).
+		icon: (self iconNamed: #recentMessages)).
 	landsMenu addLine.
 	styleMenu addMenuItem: (MenuItemMorph new 
 		contents: 'Font'; 
