@@ -3,7 +3,7 @@
 	"classvars" : [ ],
 	"instvars" : [ ],
 	"name" : "PharoASLClassExample",
-	"commentStamp" : "",
+	"commentStamp" : "<historical>",
 	"super" : "Object",
 	"traitcomposition" : "PharoASLParserSyntax + PharoSHColors",
 	"type" : "normal",

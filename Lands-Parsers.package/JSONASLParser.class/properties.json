@@ -3,7 +3,7 @@
 	"classvars" : [ ],
 	"instvars" : [ ],
 	"name" : "JSONASLParser",
-	"commentStamp" : "",
+	"commentStamp" : "<historical>",
 	"super" : "JSONMOGrammar",
 	"traitcomposition" : "ASLActions",
 	"type" : "normal",

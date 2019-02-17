@@ -7,4 +7,6 @@ tab
 		tab addTab: LandsBookChapter3 default tab.
 		tab addTab: LandsBookChapter4 default tab.
 		tab addTab: LandsBookChapter5 default tab.
-		tab addTab: LandsBookChapter6 default tab. tab ].
+		tab addTab: LandsBookChapter6 default tab.
+		tab addTab: LandsBookPatreon default tab.
+		tab addTab: LandsBookTOCBoard default tab. tab ].

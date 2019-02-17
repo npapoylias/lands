@@ -3,7 +3,7 @@
 	"classvars" : [ ],
 	"instvars" : [ ],
 	"name" : "LiseInterpreter",
-	"commentStamp" : "",
+	"commentStamp" : "<historical>",
 	"super" : "LiseRecognizer",
 	"traitcomposition" : "LiseExpressionsInterpreter",
 	"type" : "normal",

@@ -3,7 +3,7 @@
 	"classvars" : [ ],
 	"instvars" : [ ],
 	"name" : "UsingLisePharoParser",
-	"commentStamp" : "",
+	"commentStamp" : "<historical>",
 	"super" : "TestCase",
 	"traitcomposition" : "LisePharoCompilerSyntax + LisePharoSHColors",
 	"type" : "normal",

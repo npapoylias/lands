@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "",
+	"commentStamp" : "<historical>",
 	"super" : "MOGRecognizer",
 	"category" : "Lands-Parsers",
 	"classinstvars" : [ ],

@@ -3,7 +3,7 @@
 	"classvars" : [ ],
 	"instvars" : [ ],
 	"name" : "MOODsDomain",
-	"commentStamp" : "",
+	"commentStamp" : "<historical>",
 	"super" : "MOODsMOGRecognizer",
 	"traitcomposition" : "BlueprintRules",
 	"type" : "normal",

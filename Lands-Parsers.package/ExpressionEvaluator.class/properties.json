@@ -3,7 +3,7 @@
 	"classvars" : [ ],
 	"instvars" : [ ],
 	"name" : "ExpressionEvaluator",
-	"commentStamp" : "",
+	"commentStamp" : "<historical>",
 	"super" : "ExpressionMOGrammar",
 	"traitcomposition" : "ASLActions",
 	"type" : "normal",

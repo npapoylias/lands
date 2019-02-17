@@ -3,7 +3,7 @@
 	"classvars" : [ ],
 	"instvars" : [ ],
 	"name" : "EpiScripter",
-	"commentStamp" : "",
+	"commentStamp" : "<historical>",
 	"super" : "Object",
 	"traitcomposition" : "EpiModelerSyntax + EpiModelerSHColors",
 	"type" : "normal",

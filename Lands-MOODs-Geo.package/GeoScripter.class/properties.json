@@ -3,7 +3,7 @@
 	"classvars" : [ ],
 	"instvars" : [ ],
 	"name" : "GeoScripter",
-	"commentStamp" : "",
+	"commentStamp" : "<historical>",
 	"super" : "Object",
 	"traitcomposition" : "GeoModelerSyntax + GeoModelerSHColors",
 	"type" : "normal",

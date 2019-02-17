@@ -3,7 +3,7 @@
 	"classvars" : [ ],
 	"instvars" : [ ],
 	"name" : "LiseCompiler",
-	"commentStamp" : "",
+	"commentStamp" : "<historical>",
 	"super" : "LiseRecognizer",
 	"traitcomposition" : "LiseExpressionsParser",
 	"type" : "normal",

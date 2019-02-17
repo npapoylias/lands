@@ -3,7 +3,7 @@
 	"classvars" : [ ],
 	"instvars" : [ ],
 	"name" : "LiseExtPharoCompiler",
-	"commentStamp" : "",
+	"commentStamp" : "<historical>",
 	"super" : "LiseExtPharoRecognizer",
 	"traitcomposition" : "PharoExtActions + LiseExpressionsParser",
 	"type" : "normal",

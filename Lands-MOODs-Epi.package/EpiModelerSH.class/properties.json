@@ -3,7 +3,7 @@
 	"classvars" : [ ],
 	"instvars" : [ ],
 	"name" : "EpiModelerSH",
-	"commentStamp" : "",
+	"commentStamp" : "<historical>",
 	"super" : "EpiDomain",
 	"traitcomposition" : "BlueprintSH",
 	"type" : "normal",

@@ -3,7 +3,7 @@
 	"classvars" : [ ],
 	"instvars" : [ ],
 	"name" : "PharoASLExtParser",
-	"commentStamp" : "",
+	"commentStamp" : "<historical>",
 	"super" : "PharoASLExtGrammar",
 	"traitcomposition" : "ASLActions",
 	"type" : "normal",

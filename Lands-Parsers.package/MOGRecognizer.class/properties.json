@@ -3,7 +3,7 @@
 	"classvars" : [ ],
 	"instvars" : [ ],
 	"name" : "MOGRecognizer",
-	"commentStamp" : "",
+	"commentStamp" : "<historical>",
 	"super" : "CustomLanguageClass",
 	"traitcomposition" : "MOGRules",
 	"type" : "normal",

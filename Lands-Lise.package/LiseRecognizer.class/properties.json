@@ -3,7 +3,7 @@
 	"classvars" : [ ],
 	"instvars" : [ ],
 	"name" : "LiseRecognizer",
-	"commentStamp" : "",
+	"commentStamp" : "<historical>",
 	"super" : "MOGRecognizer",
 	"traitcomposition" : "LiseExpressions",
 	"type" : "normal",

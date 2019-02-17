@@ -3,7 +3,7 @@
 	"classvars" : [ ],
 	"instvars" : [ ],
 	"name" : "PharoWorkspaceSH",
-	"commentStamp" : "",
+	"commentStamp" : "<historical>",
 	"super" : "PharoWorkspaceRecognizer",
 	"traitcomposition" : "ASLPharoSH + MOGRulesBootSH",
 	"type" : "normal",

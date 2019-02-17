@@ -3,7 +3,7 @@
 	"classvars" : [ ],
 	"instvars" : [ ],
 	"name" : "UsingGTraitsPharoParser",
-	"commentStamp" : "",
+	"commentStamp" : "<historical>",
 	"super" : "TestCase",
 	"traitcomposition" : "PharoParserSyntax + PharoSHColors",
 	"type" : "normal",

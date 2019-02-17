@@ -3,7 +3,7 @@
 	"classvars" : [ ],
 	"instvars" : [ ],
 	"name" : "GeoModelerSH",
-	"commentStamp" : "",
+	"commentStamp" : "<historical>",
 	"super" : "GeoDomain",
 	"traitcomposition" : "BlueprintSH",
 	"type" : "normal",

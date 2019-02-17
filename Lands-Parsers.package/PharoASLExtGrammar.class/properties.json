@@ -3,7 +3,7 @@
 	"classvars" : [ ],
 	"instvars" : [ ],
 	"name" : "PharoASLExtGrammar",
-	"commentStamp" : "",
+	"commentStamp" : "<historical>",
 	"super" : "PharoASLParser",
 	"traitcomposition" : "MOGRules",
 	"type" : "normal",

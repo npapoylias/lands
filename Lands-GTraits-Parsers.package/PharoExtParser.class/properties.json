@@ -3,7 +3,7 @@
 	"classvars" : [ ],
 	"instvars" : [ ],
 	"name" : "PharoExtParser",
-	"commentStamp" : "",
+	"commentStamp" : "<historical>",
 	"super" : "PharoExtRecognizer",
 	"traitcomposition" : "PharoExtActions",
 	"type" : "normal",

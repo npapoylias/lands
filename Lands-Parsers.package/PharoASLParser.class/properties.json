@@ -3,7 +3,7 @@
 	"classvars" : [ ],
 	"instvars" : [ ],
 	"name" : "PharoASLParser",
-	"commentStamp" : "",
+	"commentStamp" : "<historical>",
 	"super" : "PharoMOGrammar",
 	"traitcomposition" : "ASLActions",
 	"type" : "normal",

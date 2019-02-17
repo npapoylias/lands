@@ -3,7 +3,7 @@
 	"classvars" : [ ],
 	"instvars" : [ ],
 	"name" : "PharoExtSH",
-	"commentStamp" : "",
+	"commentStamp" : "<historical>",
 	"super" : "PharoExtRecognizer",
 	"traitcomposition" : "ASLPharoExtSH",
 	"type" : "normal",

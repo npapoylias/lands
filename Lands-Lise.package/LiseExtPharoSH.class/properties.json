@@ -3,7 +3,7 @@
 	"classvars" : [ ],
 	"instvars" : [ ],
 	"name" : "LiseExtPharoSH",
-	"commentStamp" : "",
+	"commentStamp" : "<historical>",
 	"super" : "LiseExtPharoRecognizer",
 	"traitcomposition" : "ASLPharoExtSH + LiseSH",
 	"type" : "normal",

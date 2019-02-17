@@ -3,7 +3,7 @@
 	"classvars" : [ ],
 	"instvars" : [ ],
 	"name" : "UsingGTraitsPharoExtParser",
-	"commentStamp" : "",
+	"commentStamp" : "<historical>",
 	"super" : "TestCase",
 	"traitcomposition" : "PharoExtParserSyntax + PharoExtSHColors",
 	"type" : "normal",

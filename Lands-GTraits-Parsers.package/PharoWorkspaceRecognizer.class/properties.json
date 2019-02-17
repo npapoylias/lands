@@ -3,7 +3,7 @@
 	"classvars" : [ ],
 	"instvars" : [ ],
 	"name" : "PharoWorkspaceRecognizer",
-	"commentStamp" : "",
+	"commentStamp" : "<historical>",
 	"super" : "PharoRecognizer",
 	"traitcomposition" : "PharoGrammar + MOGRulesBoot",
 	"type" : "normal",

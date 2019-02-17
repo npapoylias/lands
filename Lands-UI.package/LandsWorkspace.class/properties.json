@@ -20,7 +20,7 @@
 		"pager"
 	],
 	"name" : "LandsWorkspace",
-	"commentStamp" : "",
+	"commentStamp" : "<historical>",
 	"super" : "Model",
 	"traitcomposition" : "LandsMenu",
 	"type" : "normal",

@@ -3,7 +3,7 @@
 	"classvars" : [ ],
 	"instvars" : [ ],
 	"name" : "EpiDomain",
-	"commentStamp" : "",
+	"commentStamp" : "<historical>",
 	"super" : "MOODsDomain",
 	"traitcomposition" : "EpiModelBlueprint + MapBlueprint",
 	"type" : "normal",

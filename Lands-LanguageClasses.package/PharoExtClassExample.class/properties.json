@@ -3,7 +3,7 @@
 	"classvars" : [ ],
 	"instvars" : [ ],
 	"name" : "PharoExtClassExample",
-	"commentStamp" : "",
+	"commentStamp" : "<historical>",
 	"super" : "Object",
 	"traitcomposition" : "PharoASLExtParserSyntax + PharoExtSHColors",
 	"type" : "normal",

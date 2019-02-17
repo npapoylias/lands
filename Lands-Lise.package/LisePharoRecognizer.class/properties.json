@@ -3,7 +3,7 @@
 	"classvars" : [ ],
 	"instvars" : [ ],
 	"name" : "LisePharoRecognizer",
-	"commentStamp" : "",
+	"commentStamp" : "<historical>",
 	"super" : "MOGRecognizer",
 	"traitcomposition" : "PharoGrammar + (LiseExpressions - {#primaryValue})",
 	"type" : "normal",

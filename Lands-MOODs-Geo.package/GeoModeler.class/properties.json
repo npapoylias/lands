@@ -3,7 +3,7 @@
 	"classvars" : [ ],
 	"instvars" : [ ],
 	"name" : "GeoModeler",
-	"commentStamp" : "",
+	"commentStamp" : "<historical>",
 	"super" : "GeoDomain",
 	"traitcomposition" : "StatScenarioModeler + (UrbanProfileModeler - {#categoryDistribution})",
 	"type" : "normal",

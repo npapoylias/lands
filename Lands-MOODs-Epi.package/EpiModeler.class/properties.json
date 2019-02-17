@@ -3,7 +3,7 @@
 	"classvars" : [ ],
 	"instvars" : [ ],
 	"name" : "EpiModeler",
-	"commentStamp" : "",
+	"commentStamp" : "<historical>",
 	"super" : "EpiDomain",
 	"traitcomposition" : "EpiModelModeler + MapModeler",
 	"type" : "normal",

@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "",
+	"commentStamp" : "<historical>",
 	"traitcomposition" : "PharoMethodsParser + PharoPragmasParser + PharoTemporariesParser + PharoStatementsParser + PharoExpressionsParser + PharoMsgSendsParser + PharoPrimaryValuesParser + PharoArraysParser + PharoBlockParser + PharoTerminalsParser",
 	"classtraitcomposition" : "PharoMethodsParser classTrait + PharoPragmasParser classTrait + PharoTemporariesParser classTrait + PharoStatementsParser classTrait + PharoExpressionsParser classTrait + PharoMsgSendsParser classTrait + PharoPrimaryValuesParser classTrait + PharoArraysParser classTrait + PharoBlockParser classTrait + PharoTerminalsParser classTrait",
 	"category" : "Lands-GTraits-Pharo-Parser",

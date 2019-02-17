@@ -3,7 +3,7 @@
 	"classvars" : [ ],
 	"instvars" : [ ],
 	"name" : "GeoDomain",
-	"commentStamp" : "",
+	"commentStamp" : "<historical>",
 	"super" : "MOODsDomain",
 	"traitcomposition" : "StatScenarioBlueprint + (UrbanProfileBlueprint - {#namedParameter. #categoryDistribution})",
 	"type" : "normal",

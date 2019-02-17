@@ -3,7 +3,7 @@
 	"classvars" : [ ],
 	"instvars" : [ ],
 	"name" : "EgParser",
-	"commentStamp" : "",
+	"commentStamp" : "<historical>",
 	"super" : "EgGrammar",
 	"traitcomposition" : "EgGrammarTraitActions",
 	"type" : "normal",

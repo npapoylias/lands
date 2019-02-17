@@ -1,4 +1,4 @@
 accessing
 string
 
-	^ super string ==> [ :token | token string withoutQuotes lit <-> token ]
+	^ super string ==> [ :token |  token string withoutQuotes lit <-> token ]
