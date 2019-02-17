@@ -89,6 +89,8 @@ contents
 			'Chapter 4' -> {  } @ 'project'.
 			'Chapter 5' -> {  } @ 'project'.
 			'Chapter 6' -> {  } @ 'project'.
+			'Patreon' -> {  } @ 'project'.
+			'TOC-Board' -> {  } @ 'project'
 		} @ 'landsBook'.
 		
 		'*Lectures' -> {  
