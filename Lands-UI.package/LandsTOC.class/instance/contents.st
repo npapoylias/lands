@@ -11,7 +11,7 @@ contents
 			'Chomsky and Ford' -> {  } @ 'project'.
 			'Multi-ordered Grammars' -> {  } @ 'project'.
 			'The Lan.d.s Project' -> {  } @ 'project'.
-		} @ 'dragon_L_White_Head'. 
+		} @ 'dragon_L_White'. 
 	
 		'*Gray and ASL' -> {  
 			'Expression Explorations' -> {  

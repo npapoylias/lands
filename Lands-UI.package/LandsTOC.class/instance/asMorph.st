@@ -1,4 +1,4 @@
 accessing
 asMorph
 
-	^ self asTreeItemList defaultTreeMorph buildContents "expandRoots" "expandAll"
+	^ self asTreeItemList defaultTreeMorph buildContents expandRoots "expandAll"
