@@ -12,5 +12,5 @@ initializeWidgets
 		(self classFor: announcment node item) browse ]. 
 	navigationPane widget model selectNodePath:		
 			navigationPane widget model rootNodes first path.
-	navigationPane widget selectNodePath: 
-		navigationPane widget roots first complexContents path.
+	"navigationPane widget selectNodePath: 
+		navigationPane widget roots first complexContents path".

@@ -1,4 +1,4 @@
 example
 landsToc
 
-	^ self landsTreeItemList defaultTreeMorph buildContents expandRoots "expandAll"
+	^ self landsTreeItemList defaultTreeMorph buildContents "collapseAll""expandRoots" "expandAll"

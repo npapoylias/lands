@@ -4,6 +4,7 @@ open
 	|instance window|
 	"Author useAuthor: 'Lands-UI' during: [ LandsTOC generateBookHierarchy ]."
 	self initFonts.
+	self clearIcons.
 	instance := self new.
 	window := instance openWithSpec; window.
 	window extent: 1280@1024.
