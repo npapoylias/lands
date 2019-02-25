@@ -16,11 +16,9 @@ contents
 		'*Gray and ASL' -> {  
 			'Expression Explorations' -> {  
 				'Grammar REPL' -> {  } @ 'repl'. 
-				'Actions REPL' -> {  } @ 'repl'.
 				'OO Design' -> {  
 					'Expression MOG' -> {  } @ 'class'.
 					'Expression ASL' -> {  } @ 'class'.
-					'Expression REPL' -> {  } @ 'repl'
 				} @ 'project'
 			} @ 'project'.
 			'The Calc Language' -> {  
