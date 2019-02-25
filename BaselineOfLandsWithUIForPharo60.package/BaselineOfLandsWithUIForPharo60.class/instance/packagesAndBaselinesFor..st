@@ -16,10 +16,8 @@ packagesAndBaselinesFor: spec
 		package: 'Lands-GTraits-Parsers';
 		package: 'Lands-GTraits-Postcard-Classes';
 		package: 'Lands-MOODs';
-		package: 'Lands-MOODs-Epi';
 		package: 'Lands-MOODs-Geo';
-		"package: 'Lands-MOODs-Targets';"
-			package: 'Lands-Lise-GTraits';
+		package: 'Lands-Lise-GTraits';
 		package: 'Lands-Lise';
 		package: 'Lands-Lise-Playground';
 		package: 'Lands-UI'

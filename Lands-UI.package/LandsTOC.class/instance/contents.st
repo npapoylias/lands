@@ -62,11 +62,6 @@ contents
 			} @ 'project'.
 			'GeoDomain' -> {  } @ 'project'.
 			'GeoModeler' -> {  } @ 'project'.
-			'Example: Influenza' -> {
-					'EpiScripter' -> {  } @ 'class'.
-					'EpiDomain' -> {  } @ 'class'.
-					'EpiModeler' -> {  } @ 'class'.  
-			} @ 'project'.
 			'Beyond the Workbench' -> {  } @ 'project'
 			"co-existance of DSLs and dialects in the same run-time !!!"
 		} @ 'moods'.
