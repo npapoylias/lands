@@ -26,8 +26,8 @@ contents
 				'Grammar' -> {  } @ 'class'.
 				'Evaluator' -> {  } @ 'class'
 			} @ 'project'.
-			'ASL Postcards' -> {  
-			} @ 'project'.
+			"'ASL Postcards' -> {  
+			} @ 'project'."
 			'Multi-ordered Pharo' -> {  
 				'Pharo REPL' -> { } @ 'repl'.
 				'Postcard' -> {  } @ 'class'.
