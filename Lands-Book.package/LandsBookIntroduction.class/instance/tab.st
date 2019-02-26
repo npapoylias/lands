@@ -2,6 +2,7 @@ not defined category
 tab 
 	^ tab ifNil: [ 
 		tab := self newTabManager.
+		tab addTab: LandsBookLandsIntroduction default tab.
 		tab addTab: LandsBookLanguagesareEverywhere default tab.
 		tab addTab: LandsBookLanguagesaretheFuture default tab.
 		tab addTab: LandsBookChomskyandFord default tab.
