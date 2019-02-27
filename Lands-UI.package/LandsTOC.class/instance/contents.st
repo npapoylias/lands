@@ -8,13 +8,13 @@ contents
 		'*Introduction' -> {  
 			'Lan.d.s: Introduction' -> {  } @ 'project'.
 			'Languages are Everywhere' -> {  } @ 'project'.
-			'Languages are the Future' -> {  } @ 'project'.
-			'Chomsky and Ford' -> {  } @ 'project'.
-			'Multi-ordered Grammars' -> {  } @ 'project'.
+			'They Are All Around You' -> {  } @ 'project'.
+			'Our Linguistic Future' -> {  } @ 'project'.
 			'The Lan.d.s Project' -> {  } @ 'project'.
 		} @ 'dragon_L_White'. 
 	
 		'*Gray and ASL' -> {  
+			'MOGs, Gray & ASL' -> {  } @ 'project'.
 			'Expression Explorations' -> {  
 				'Grammar REPL' -> {  } @ 'repl'. 
 				'OO Design' -> {  
@@ -57,16 +57,18 @@ contents
 			
 		'*MOODs' -> {  
 			'MOODs Raison d'' etre' -> {  } @ 'project'.
+			'Modeling and Parsing' -> {  } @ 'project'.
 			'Example: GeoScripter' -> {  
 			} @ 'project'.
 			'GeoDomain' -> {  } @ 'project'.
 			'GeoModeler' -> {  } @ 'project'.
-			'Beyond the Workbench' -> {  } @ 'project'
+			"'Beyond the Workbench' -> {  } @ 'project'"
 			"co-existance of DSLs and dialects in the same run-time !!!"
 		} @ 'moods'.
 		
 		'*Lise' -> {  
 			'Xerox+SICP+Bell labs' -> {  } @ 'project'.
+			'Emergent Semantics' -> {  } @ 'project'.
 			'The Lise Postcard' -> {  } @ 'project'.
 			'Test Norvig' -> {  } @ 'project'.
 			'The Alt-Lise Postcard' -> {  } @ 'project'.
@@ -77,23 +79,14 @@ contents
 		} @ 'lise'.
 		
 		'*Book' -> {  
-			'Chapter 1' -> {  } @ 'project'.
-			'Chapter 2' -> {  } @ 'project'.
-			'Chapter 3' -> {  } @ 'project'.
-			'Chapter 4' -> {  } @ 'project'.
-			'Chapter 5' -> {  } @ 'project'.
-			'Chapter 6' -> {  } @ 'project'.
-			'Patreon' -> {  } @ 'project'.
-			'TOC-Board' -> {  } @ 'project'
+			'Theory & App. of MOGs' -> {  } @ 'project'.
+			'TOC and Support' -> {  } @ 'project'.
+			'Patreon Tiers' -> {  } @ 'project'.
 		} @ 'landsBook'.
 		
 		'*Lectures' -> {  
-			'Day 1' -> {  } @ 'project'.
-			'Day 2' -> {  } @ 'project'.
-			'Day 3' -> {  } @ 'project'.
-			'Day 4' -> {  } @ 'project'.
-			'Day 5' -> {  } @ 'project'.
-			'Day 6' -> {  } @ 'project'.
+			'The Lan.d.s Lectures' -> {  } @ 'project'.
+			'Lectures: Days 1 to 6' -> {  } @ 'project'.
 		} @ 'lectures'.
 		
 	}

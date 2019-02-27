@@ -4,7 +4,6 @@ tab
 		tab := self newTabManager.
 		tab addTab: LandsBookLandsIntroduction default tab.
 		tab addTab: LandsBookLanguagesareEverywhere default tab.
-		tab addTab: LandsBookLanguagesaretheFuture default tab.
-		tab addTab: LandsBookChomskyandFord default tab.
-		tab addTab: LandsBookMultiorderedGrammars default tab.
+		tab addTab: LandsBookTheyAreAllAroundYou default tab.
+		tab addTab: LandsBookOurLinguisticFuture default tab.
 		tab addTab: LandsBookTheLandsProject default tab. tab ].

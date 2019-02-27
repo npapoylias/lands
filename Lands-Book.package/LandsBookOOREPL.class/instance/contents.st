@@ -1,4 +1,5 @@
 not defined category
 contents
 
-	^ self playgroundTitled: 'Calc OO Repl'
+	^ self playgroundWithFile: 'calc.lands' titled: 'Calc Doc'
+	"^ self playgroundTitled: 'Calc OO Repl'"

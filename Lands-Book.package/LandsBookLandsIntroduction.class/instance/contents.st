@@ -1,4 +1,4 @@
 not defined category
 contents
 
-	^ self image: 'slide-cover'
+	^ self image: 'slides/lands-cover'

@@ -3,6 +3,7 @@ tab
 	^ tab ifNil: [ 
 		tab := self newTabManager.
 		tab addTab: LandsBookXeroxSICPBelllabs default tab.
+		tab addTab: LandsBookEmergentSemantics default tab.
 		tab addTab: LandsBookTheLisePostcard default tab.
 		tab addTab: LandsBookTestNorvig default tab.
 		tab addTab: LandsBookTheAltLisePostcard default tab.

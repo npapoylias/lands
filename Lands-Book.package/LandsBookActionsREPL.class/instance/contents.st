@@ -1,4 +1,5 @@
 not defined category
 contents
 
-	^ self playgroundWithMethod: #playground titled: 'Grammar Actions REPL'
+	^ self playgroundWithFile: 'expressions.lands' titled: 'Grammar Actions Doc'
+	"^ self playgroundWithMethod: #playground titled: 'Grammar Actions REPL'"

@@ -1,4 +1,4 @@
 not defined category
 contents
 
-	^ self image: 'languages'
+	^ self image: 'slides/languages'
