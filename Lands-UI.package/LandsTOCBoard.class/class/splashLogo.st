@@ -6,5 +6,5 @@ splashLogo
 	logoMorph := (ImageReadWriter formFromStream: logoPath readStream)
 		asMorph.
 	logoMorph openCenteredInWorld.
-	[ (Delay forSeconds: 4) wait.
-	logoMorph delete ] fork
+	"[ (Delay forSeconds: 4) wait.
+	logoMorph delete ] fork"
