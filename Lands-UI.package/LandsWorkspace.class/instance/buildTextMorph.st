@@ -14,5 +14,6 @@ buildTextMorph
 
 	pluggableTextMorph styler workspace: self.
 	editor := pluggableTextMorph textMorph editor.
-	pluggableTextMorph textMorph allowsKeymapping: false.
+	pluggableTextMorph textMorph allowsKeymapping: true"false".
+	"pluggableTextMorph textMorph attachKeymapCategory: #SmalltalkEditor."
 	^ pluggableTextMorph

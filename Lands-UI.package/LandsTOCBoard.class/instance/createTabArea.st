@@ -1,7 +1,7 @@
 initialization
 createTabArea
 	"will create the tabArea for us"
-	tabArea := self newTabManager
+	tabArea := self newTabManager.
 	"tab := self newTab.
 	tab model: (self playgroundWith: '3+4' titled: 'Example').
 	tab 
