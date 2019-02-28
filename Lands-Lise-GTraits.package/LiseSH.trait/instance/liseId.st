@@ -1,4 +1,4 @@
 accessing
 liseId
 
-	^ super liseId ==> [:values | self region: values color: #cyan]
+	^ super liseId ==> [:values | self region: values color: #cyan emphasis: #bold]
