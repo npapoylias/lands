@@ -12,12 +12,12 @@ controlsIndex: atIndex size: forestSize totalSize: totalSize for: node
 				height: 7") element.
 			 up := (RTPolygon triangle
 				"size: 21"
-				color: Color black;
-				elementOn: #up).
+				color: Color black";
+				elementOn: #up") element.
 			down := ((RTPolygon triangleRotated: Float pi)
 				"size: 22"
-				color: Color black;
-				elementOn: #down).
+				color: Color black";
+				elementOn: #down") element.
 			totalLabel := (RTLabel new
 				text: 'Σ=' , totalSize asString;
 				color: Color black";
