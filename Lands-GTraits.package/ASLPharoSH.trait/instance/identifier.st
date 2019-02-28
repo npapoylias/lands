@@ -1,4 +1,4 @@
 accessing
 identifier
 
-	^ super identifier ==> [ :token | self region: token color: #cyan ]
+	^ super identifier ==> [ :token | self region: token color: #cyan emphasis: #bold ]
