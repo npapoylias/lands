@@ -5,6 +5,7 @@ splashLogo
 		parent / 'logo-lands.png'.
 	logoMorph := (ImageReadWriter formFromStream: logoPath readStream)
 		asMorph.
+	Display fullscreenMode: true. Display newDepth: Display depth.
 	logoMorph openCenteredInWorld.
 	"[ (Delay forSeconds: 4) wait.
 	logoMorph delete ] fork"
