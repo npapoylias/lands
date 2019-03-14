@@ -17,4 +17,5 @@ packagesAndBaselinesFor: spec
 		package: 'Lands-Lise-GTraits';
 		package: 'Lands-Lise';
 		package: 'Lands-Lise-Playground';
-		package: 'Lands-UI'
+		package: 'Lands-UI';
+		package: 'Lands-Book'
