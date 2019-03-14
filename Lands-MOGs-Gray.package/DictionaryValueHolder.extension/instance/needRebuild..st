@@ -1,4 +1,4 @@
 *Lands-MOGs-Gray
-needsRebuild: anObject
+needRebuild: anObject
 
 	"fix for emergency debugger"
