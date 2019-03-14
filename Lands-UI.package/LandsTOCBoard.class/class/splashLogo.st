@@ -7,5 +7,5 @@ splashLogo
 		asMorph.
 	"Display fullscreenMode: true. Display newDepth: Display depth."
 	logoMorph openCenteredInWorld.
-	[ (Delay forSeconds: 4) wait.
+	[ (Delay forSeconds: 6) wait.
 	logoMorph delete ] fork
