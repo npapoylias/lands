@@ -2,6 +2,6 @@
 	"commentStamp" : "<historical>",
 	"traitcomposition" : "MOGRules",
 	"classtraitcomposition" : "MOGRules classTrait",
-	"category" : "Lands-ToolCompatibility",
+	"category" : "Lands-Parsers",
 	"name" : "MOGRulesBoot"
 }

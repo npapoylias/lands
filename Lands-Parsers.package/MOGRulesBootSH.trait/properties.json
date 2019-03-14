@@ -2,6 +2,6 @@
 	"commentStamp" : "<historical>",
 	"traitcomposition" : "ASLActions",
 	"classtraitcomposition" : "ASLActions classTrait",
-	"category" : "Lands-ToolCompatibility",
+	"category" : "Lands-Parsers",
 	"name" : "MOGRulesBootSH"
 }
