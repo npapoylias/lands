@@ -1,5 +1,6 @@
 accessing
 "protocol: recursive-ordering-api"
 lastSeenAt: aName
-
-	^ self lastSeenIndex at: aName ifAbsent: [ nil ] "return index not position"
+	|last|
+	last :=  self lastSeenIndex. 
+	^ last ifNotNil: [last at: aName ifAbsent: [ nil ]] "return index not position"
