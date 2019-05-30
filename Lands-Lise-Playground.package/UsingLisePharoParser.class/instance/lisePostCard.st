@@ -3,7 +3,7 @@ as yet unclassified
 	(begin	
 			(define y (+ #[100] (self 'bSize) ('bSize super)))   
 			(define d (dict '()))   
-   
+    
 			(if (& true (not false) (isNil nil)) (begin   
 					(define inter (groupByHaving    
 											(intersection 
