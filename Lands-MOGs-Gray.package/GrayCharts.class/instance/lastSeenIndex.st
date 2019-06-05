@@ -1,4 +1,4 @@
 recursive-ordering
 lastSeenIndex
 
-	^ lastSeenStack top
+	^ lastSeenStack top ifNil: [ lastSeenStack push: Dictionary new ]

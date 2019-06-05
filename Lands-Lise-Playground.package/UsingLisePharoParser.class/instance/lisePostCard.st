@@ -1,16 +1,15 @@
 as yet unclassified
 (define (lisePostCard x) 
-	(begin	
 			(define y (+ #[100] (self 'bSize) ('bSize super)))   
 			(define d (dict '()))   
-    
-			(if (& true (not false) (isNil nil)) (begin   
-					(define inter (groupByHaving    
-											(intersection 
+     
+			(if (& true (not false) (isNil nil)) (begin    
+					(define inter (groupByHaving        
+											(intersection   
 												(list $a ('class #a) -4e-2 -10r2 3s2) 
-												(list $b #b -0.04 -2 3)) 
-											(lambda (i) (class i))
-											(lambda (group) (> (size group) 1))))
+												(list $b #b -0.04 -2 3))  
+											(lambda (i) (class i))  
+											(lambda (group) (> (size group) 1))))  
 					
 					(define step (lambda (i) (set y (+ y i))))
 					  
@@ -24,4 +23,4 @@ as yet unclassified
 						(print item ' ')))) 
 			) (self 'halt))
 			
-		(< x (y 'first))))
+		(< x (y 'first)))
