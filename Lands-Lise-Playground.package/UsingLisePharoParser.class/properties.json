@@ -1,15 +1,13 @@
 {
-	"classtraitcomposition" : "LisePharoCompilerSyntax classTrait + LisePharoSHColors classTrait",
+	"classtraitcomposition" : "LiseTestModule classTrait",
 	"classvars" : [ ],
 	"instvars" : [ ],
 	"name" : "UsingLisePharoParser",
 	"commentStamp" : "<historical>",
 	"super" : "TestCase",
-	"traitcomposition" : "LisePharoCompilerSyntax + LisePharoSHColors",
+	"traitcomposition" : "LiseTestModule",
 	"type" : "normal",
-	"classinstvars" : [
-		"default"
-	],
+	"classinstvars" : [ ],
 	"pools" : [ ],
 	"category" : "Lands-Lise-Playground"
 }
