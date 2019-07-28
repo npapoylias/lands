@@ -10,7 +10,7 @@ globals
 			addAll: (Number methods select: 
 				[ :m | m protocol = 'mathematical functions' or: [ m protocol = 'arithmetic' ] ]);
 			yourself) collect: [ :m | m selector -> m ]).
-	self duplicatesAsBlocks: globalDict.
+	self duplicatesAndSymbolsAsBlocks: globalDict.
 	globalDict := globalDict asDictionary.
 	#(+ * - / & |) do: [ :s | globalDict at: s put: (globalDict at: s) value variadic ]. "make primary arithm. ops variadic"
 	globalDict addAll: {
