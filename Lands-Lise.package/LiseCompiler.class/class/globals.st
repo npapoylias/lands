@@ -68,5 +68,5 @@ globals
 		  #parseval -> [ :l | LiseCompiler compileval: l  ]. "string to value -- correct"
 		  #gdefine -> [ :s :v | Smalltalk globals at: s put: v ].
 		  #gset -> [ :s :v | Smalltalk globals at: s put: v ]
-		}.
+		} asDictionary.
 		^ globalDict 
