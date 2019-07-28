@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "NickPapoulias 7/27/2019 18:08",
-	"traitcomposition" : "LisePharoCompilerSyntax + LisePharoSHColors",
+	"traitcomposition" : "LiseExtPharoCompilerSyntax + LisePharoSHColors",
 	"classtraitcomposition" : "LisePharoCompilerSyntax classTrait + LisePharoSHColors classTrait",
 	"category" : "Lands-Lise-GTraits",
 	"name" : "LiseModuleSystem"
