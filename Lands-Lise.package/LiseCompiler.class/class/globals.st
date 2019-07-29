@@ -10,9 +10,6 @@ globals
 			addAll: (Number methods select: 
 				[ :m | m protocol = 'mathematical functions' or: [ m protocol = 'arithmetic' ] ]);
 			yourself) collect: [ :m | m selector -> m ]).
-	self duplicatesAndSymbolsAsBlocks: globalDict.
-	globalDict := globalDict asDictionary.
-	#(+ * - / & |) do: [ :s | globalDict at: s put: (globalDict at: s) value variadic ]. "make primary arithm. ops variadic"
 	globalDict addAll: {
 		  #append -> [ :l :i | ((l copy) asOrderedCollection
 										addAll: i; 
@@ -68,5 +65,8 @@ globals
 		  #parseval -> [ :l | LiseCompiler compileval: l  ]. "string to value -- correct"
 		  #gdefine -> [ :s :v | Smalltalk globals at: s put: v ].
 		  #gset -> [ :s :v | Smalltalk globals at: s put: v ]
-		} asDictionary.
+		}.
+		self duplicatesAndSymbolsAsBlocks: globalDict.
+		globalDict := globalDict asDictionary.
+		#(+ * - / & |) do: [ :s | globalDict at: s put: (globalDict at: s) value variadic ]. "make primary arithm. ops variadic"
 		^ globalDict 
