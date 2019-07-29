@@ -11,10 +11,13 @@ bindingOf: varName
 	
 	| aSymbol |
 	aSymbol := varName asSymbol.
-	
-	self methods 
-		detect: [ :m | m selector = varName ]
-		ifFound: [ :m | ^ varName ->(m valueWithReceiver: nil arguments: #()) ].
+
+	(self traitComposition includesTrait: LiseModuleSystem)
+		ifTrue: [  
+			self methods 
+				detect: [ :m | m selector = varName ]
+				ifFound: [ :m | ^ varName ->(m valueWithReceiver: nil arguments: #()) ]
+		].
 		
 	^ (self innerBindingOf: aSymbol) ifNil: [
 		 self environment bindingOf: aSymbol
