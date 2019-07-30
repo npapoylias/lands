@@ -1,6 +1,4 @@
 accessing
 msgSend
 
-	<msgSend> ::=  
-		\ <expression> <message> ( ";" <message> ) +
-		| <expression> <message>
+	<msgSend> ::= <expression> <message>
