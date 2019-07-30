@@ -3,7 +3,7 @@ statements
 
 	<statements> ::= 
 		<dots> ?
-		{ ( <expression> | <cascadeMsgSend> ) <dots> } ? 
+		{ <expression> <dots> } ? 
 		<dots> ? 
 		<return> ? 
 		<dots> ? 
