@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 liseId
 
-	<liseId> ::=  '[?!%&*+-/<>=@\^_|a-zA-Z][?!%&*+-/<>=@\^_|a-zA-Z0-9]*'  
+	<liseId> ::=  '[?!%&*+-/<>=@\^_|~a-zA-Z][?!%&*+-/<>=@\^_|~a-zA-Z0-9]*'  
