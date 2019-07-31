@@ -2,7 +2,7 @@ generated
 message
 
 	<message> ::= 
-		\ ( <keyword> <expression> ) +
-		\ <binaryOp> <expression> 
+		\ ( <keyword> <argument> ) +
+		\ <binaryOp> <argument> 
 		| <identifier>
 		| <functorInvocation>
