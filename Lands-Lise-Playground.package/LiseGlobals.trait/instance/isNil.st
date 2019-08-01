@@ -1,4 +1,4 @@
 as yet unclassified
 (define isNil (:
 
-	UndefinedObject>>#isNil))
+	[ :arg1 | arg1 isNil ]))

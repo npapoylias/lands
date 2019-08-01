@@ -1,4 +1,4 @@
 as yet unclassified
 (define arcCos (:
 
-	Number>>#arcCos))
+	[ :arg1 | arg1 arcCos ]))

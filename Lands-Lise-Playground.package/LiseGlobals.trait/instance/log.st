@@ -1,4 +1,4 @@
 as yet unclassified
 (define log (:
 
-	Number>>#log:))
+	[ :arg1 :arg2 | arg1 log: arg2 ]))

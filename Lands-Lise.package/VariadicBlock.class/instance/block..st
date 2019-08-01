@@ -1,5 +1,6 @@
 accessing
-block: anObject
-	anObject argumentCount = 1
-		ifTrue: [ block := anObject ]
-		ifFalse: [ block := [ :b | b allButFirst inject: b first into: anObject ] ]
+block: aBlock
+	initialBlock := aBlock.
+	initialBlock argumentCount = 1
+		ifTrue: [ block := initialBlock ]
+		ifFalse: [ block := [ :args | args reduceLeft: initialBlock ] ]

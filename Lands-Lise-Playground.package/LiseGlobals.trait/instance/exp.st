@@ -1,4 +1,4 @@
 as yet unclassified
 (define exp (:
 
-	Number>>#exp))
+	[ :arg1 | arg1 exp ]))

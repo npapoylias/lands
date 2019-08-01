@@ -1,4 +1,4 @@
 as yet unclassified
 (define class (:
 
-	ProtoObject>>#class))
+	[ :arg1 | arg1 class ]))

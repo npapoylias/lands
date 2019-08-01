@@ -1,4 +1,4 @@
 as yet unclassified
 (define rem (:
 
-	Number>>#rem:))
+	[ :arg1 :arg2 | arg1 rem: arg2 ]))

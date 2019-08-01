@@ -1,4 +1,4 @@
 as yet unclassified
 (define sqrt (:
 
-	Number>>#sqrt))
+	[ :arg1 | arg1 sqrt ]))

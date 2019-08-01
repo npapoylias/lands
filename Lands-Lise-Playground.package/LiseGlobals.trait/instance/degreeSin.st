@@ -1,4 +1,4 @@
 as yet unclassified
 (define degreeSin (:
 
-	Number>>#degreeSin))
+	[ :arg1 | arg1 degreeSin ]))

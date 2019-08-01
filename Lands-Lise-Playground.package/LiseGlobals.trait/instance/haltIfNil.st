@@ -1,4 +1,4 @@
 as yet unclassified
 (define haltIfNil (:
 
-	UndefinedObject>>#haltIfNil))
+	[ :arg1 | arg1 haltIfNil ]))

@@ -1,4 +1,4 @@
 as yet unclassified
 (define sin (:
 
-	Number>>#sin))
+	[ :arg1 | arg1 sin ]))

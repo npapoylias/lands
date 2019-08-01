@@ -1,4 +1,4 @@
 as yet unclassified
 (define cos (:
 
-	Number>>#cos))
+	[ :arg1 | arg1 cos ]))

@@ -1,0 +1,5 @@
+compiling
+initialize
+
+	super initialize
+	

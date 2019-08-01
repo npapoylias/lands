@@ -1,4 +1,4 @@
 as yet unclassified
 (define isLiteral (:
 
-	UndefinedObject>>#isLiteral))
+	[ :arg1 | arg1 isLiteral ]))

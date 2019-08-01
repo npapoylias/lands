@@ -1,4 +1,4 @@
 as yet unclassified
 (define arcSin (:
 
-	Number>>#arcSin))
+	[ :arg1 | arg1 arcSin ]))

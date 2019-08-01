@@ -1,4 +1,4 @@
 as yet unclassified
 (define identityHash (:
 
-	ProtoObject>>#identityHash))
+	[ :arg1 | arg1 identityHash ]))

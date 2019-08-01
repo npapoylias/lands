@@ -1,4 +1,4 @@
 as yet unclassified
 (define arcTan (:
 
-	Number>>#arcTan))
+	[ :arg1 | arg1 arcTan ]))

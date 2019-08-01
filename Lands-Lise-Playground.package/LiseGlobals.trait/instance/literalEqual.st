@@ -1,4 +1,4 @@
 as yet unclassified
 (define literalEqual (:
 
-	Object>>#literalEqual:))
+	[ :arg1 :arg2 | arg1 literalEqual: arg2 ]))

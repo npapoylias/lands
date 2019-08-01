@@ -1,4 +1,4 @@
 as yet unclassified
 (define raisedToInteger (:
 
-	Number>>#raisedToInteger:))
+	[ :arg1 :arg2 | arg1 raisedToInteger: arg2 ]))

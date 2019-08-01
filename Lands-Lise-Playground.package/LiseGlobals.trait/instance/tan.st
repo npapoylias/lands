@@ -1,4 +1,4 @@
 as yet unclassified
 (define tan (:
 
-	Number>>#tan))
+	[ :arg1 | arg1 tan ]))

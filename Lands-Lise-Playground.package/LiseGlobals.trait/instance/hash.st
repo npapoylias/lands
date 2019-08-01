@@ -1,4 +1,4 @@
 as yet unclassified
 (define hash (:
 
-	Object>>#hash))
+	[ :arg1 | arg1 hash ]))

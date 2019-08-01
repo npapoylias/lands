@@ -1,4 +1,4 @@
 as yet unclassified
 (define copySignTo (:
 
-	Number>>#copySignTo:))
+	[ :arg1 :arg2 | arg1 copySignTo: arg2 ]))

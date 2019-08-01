@@ -1,4 +1,4 @@
 as yet unclassified
 (define ln (:
 
-	Number>>#ln))
+	[ :arg1 | arg1 ln ]))

@@ -9,7 +9,7 @@ globals
 			addAll: (UndefinedObject methods select: [:m | m protocol = 'testing']);
 			addAll: (Number methods select: 
 				[ :m | m protocol = 'mathematical functions' or: [ m protocol = 'arithmetic' ] ]);
-			yourself) collect: [ :m | m selector -> m ]).
+			yourself) collect: [ :m | m selector -> (self globalSelectorAsBlock: m selector) ]).
 	globalDict addAll: {
 		  #append -> [ :l :i | ((l copy) asOrderedCollection
 										addAll: i; 
@@ -68,5 +68,5 @@ globals
 		}.
 		self duplicatesAndSymbolsAsBlocks: globalDict.
 		globalDict := globalDict asDictionary.
-		#(+ * - / & |) do: [ :s | globalDict at: s put: (globalDict at: s) value variadic ]. "make primary arithm. ops variadic"
+		#(+ * - / & |) do: [ :s | globalDict at: s put: (globalDict at: s) variadic ]. "make primary arithm. ops variadic"
 		^ globalDict 

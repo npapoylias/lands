@@ -1,4 +1,4 @@
 as yet unclassified
 (define eqv (:
 
-	Boolean>>#eqv:))
+	[ :arg1 :arg2 | arg1 eqv: arg2 ]))

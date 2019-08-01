@@ -1,4 +1,4 @@
 as yet unclassified
 (define squared (:
 
-	Number>>#squared))
+	[ :arg1 | arg1 squared ]))

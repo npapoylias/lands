@@ -1,4 +1,4 @@
 as yet unclassified
 (define abs (:
 
-	Number>>#abs))
+	[ :arg1 | arg1 abs ]))

@@ -1,4 +1,4 @@
 as yet unclassified
 (define quo (:
 
-	Number>>#quo:))
+	[ :arg1 :arg2 | arg1 quo: arg2 ]))

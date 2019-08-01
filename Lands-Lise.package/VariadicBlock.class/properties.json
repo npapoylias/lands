@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"block"
+		"block",
+		"initialBlock"
 	],
 	"name" : "VariadicBlock",
 	"type" : "normal"
