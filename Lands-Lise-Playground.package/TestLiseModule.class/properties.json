@@ -1,0 +1,13 @@
+{
+	"classtraitcomposition" : "LiseGlobals classTrait",
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "TestLiseModule",
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"traitcomposition" : "LiseGlobals - {#class}",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Lands-Lise-Playground"
+}
