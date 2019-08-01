@@ -1,4 +1,4 @@
 as yet unclassified
 (define print (:
 
-	[ :l | l do: [ :litem | Transcript show: litem ] ]))
+	[ :l | l do: [ :litem | Transcript show: litem ] ] variadic))

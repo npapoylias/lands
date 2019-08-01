@@ -1,4 +1,4 @@
 as yet unclassified
 (define list (:
 
-	[ :l | l ]))
+	[ :l | l ] variadic))
