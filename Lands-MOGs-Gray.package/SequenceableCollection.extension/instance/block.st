@@ -9,7 +9,8 @@ block
 			i isOrderedCollection and: [ 
 				|nodes| 
 				nodes := i nodes.  
-				nodes ifNotEmpty: [ i nodes first isVar ] ifEmpty: [ false ] ] 
+				nodes ifNotEmpty: [ 
+					nodes first isVar and: [ i first isToken and: [ i first string = ':' ] ] ] ifEmpty: [ false ] ] 
 			] "ifNone: [#()]".	 
 	temps := (self select: [ :i | i isArray ]) deepFlatten select: [:i | i isVar or: [i isToken]].
 	
