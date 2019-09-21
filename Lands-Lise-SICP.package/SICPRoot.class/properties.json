@@ -1,0 +1,13 @@
+{
+	"classtraitcomposition" : "LiseGlobals classTrait",
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "SICPRoot",
+	"commentStamp" : "NickPapoulias 9/21/2019 15:09",
+	"super" : "Object",
+	"traitcomposition" : "LiseGlobals - {#class}",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Lands-Lise-SICP"
+}

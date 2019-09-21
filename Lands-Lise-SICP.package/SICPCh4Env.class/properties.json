@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "NickPapoulias 9/21/2019 15:10",
+	"super" : "SICPRoot",
+	"category" : "Lands-Lise-SICP",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "SICPCh4Env",
+	"type" : "normal"
+}
